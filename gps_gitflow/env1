@@ -1,6 +1,7 @@
 . fns_EDIT
 . fns_DIRS
 
+# less important but shown first as dont use second#
 # branch 1
 B1=g_1
 B1=g1
@@ -10,6 +11,9 @@ B2=reorganise-after-removing-react
 B2=g2
 #       URL1=https://github.com/gps67/YEAR_src_PLAY
 # URL1=https://gps67@github.com/gps67/YEAR_src_PLAY
+
+
+# TOP os script
 
   gitsite_dom=github.com
   user=gps67
