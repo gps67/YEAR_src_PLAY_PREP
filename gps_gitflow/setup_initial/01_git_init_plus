@@ -1,0 +1,14 @@
+. ./.env
+
+echo "EDIT ../env1"
+
+echo "# YEAR_src_PLAY_PREP" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+# git remote add origin https://github.com/gps67/YEAR_src_PLAY_PREP.git
+git remote add origin ${URL1}.git
+git push -u origin main
+
+# that worked with establish SSL login keys and strings

@@ -1,0 +1,171 @@
+2023-01-15 Jan Sun 22:43 # 55 #  MUX_RELAY.txt
+
+	PC1 -+                            +- PC38
+	PC9 -+                            +- PC39
+	     |                            |
+	     +------- GW1 ---+--- GW3 ----+
+	                     |
+			     +--- PC2
+	                     |
+			     +--- PC3
+	                     |
+			     +--- PC4
+
+ GW1 nominates itself as the primary GW
+ It is supplied from PC11_admin_mode which is usually offline
+
+ GW2 accepts a backup leader role, and a backup database
+
+	 PC1 -- NAS1 --- GW1 --- NAT2 -- PC2
+	 USER1 MUX1 PC1 -- NAS1 --- (GW1 MUX_GW GW1) --- NAT2 -- PC2 MUX2 USER2
+	                                                         CFG_2_1
+	                                                         CFG_2_2
+
+ PC2 boots and runs auto service MUX_d, USER2 is auto login but hands off
+ MUX2 auto loads its first config file CFG_2_1
+
+ 	CFG_2_1
+		ONE_myname_PC		PC2
+		ONE_myname_USER		UNSET
+		ONE_GW_IP4_ADDR		1.2.3.4
+		ONE_GW_IP4_PORT		99
+
+		ONE_pass_for_PORT	a_simple_well_known_pass
+		ONE_pass_for_PORT.b	or a pad of data to test bytes from
+
+		ONE_pass_for_CFG_2	secret_phrase_half
+		ONE_more_for_CFG_2	secret_phrase_half_from_MUX
+
+		RSA_GW_PUB		EXPECTED_RSA
+		RSA_PC_PUB		so that GW can send secret early
+
+ MUX2 calls MUX_GW to get a key to unlock its second config file CFG_2_2
+ MUX2 skips that as it already has the key to open CFG_2_2
+ MUX2 uses PORT_PASS to get past outer plain DOS filter, maybe QUERY BYTES SEQ
+
+ 	CFG_2_2
+		TWO_myname_PC		PC2_abc
+		TWO_myname_USER		UNSET
+		TWO_GW_IP4_ADDR		1.2.3.4
+		TWO_GW_IP4_PORT		99
+
+		RSA_GW_PUB		RSA_EXPECTED_pub
+
+		RSA_PC_PHRASE_HALF	PHRASE 
+		RSA_PC_FULL		RSA_of_PAIR plain or under phrase
+
+		RSA_USER_PHRASE_HALF
+		RSA_USER_FULL		RSA_TRIPLE PHRASE PUB PRIV
+	
+ If GW is not happy it can completely ignore PC, or demote it to a new start
+ That can rewrite CFG_2_1, possibly rerouting to a different GW, diff RSA
+ BUT better after AUTH_PC done, new settings are then more acceptable
+
+ MUX_PROTO_SIMPLE
+
+ 	need to boot-strap into preferred PROTO
+	start with simple PROTO
+	start with BYTE OPCODE simple addressing, more later
+
+	SIMPLE = entire PACKET under single CRYPT - no 
+	SIMPLE = TWO_HALVES_OF_PACKET under plain/crypt CRYPT
+	SIGNED CRC == METHOD[SHA1_256_b] crypted by KEY[k] .method SHA_256
+
+	LIST of stanzas
+	EACH OPCODE INFO KEYID NBYTES DATA[n]
+
+	OPCODE SET u8_type_var u8_var_idx u8_type value
+	
+		u8_var_idx		0 means dunno 
+		u8_var_type		0 means dunno expected USERNAME
+		u8_varname_strlen 	0 means NULL nb BYTES not utf8
+		bytes[n]
+
+		u8_val_idx		M1 means 0 means enum_val
+		u8_val_type		lex_word user_name base_64 rsa ...
+		u8_val_byte_len		0 means NULL
+
+			"VAR" = "VALUE"
+
+			"VAR" = (CAST) "VALUE"
+			"VAR" = (CAST_TO_FROM_VALUE) "VALUE"
+			"VAR" = /* VIEW_AS_FROM_VALUE */ "VALUE"
+	
+	OPCODE uses u8 or even u4
+
+	TYPE
+		u1 u8 u16 u24 u32 u48 u64
+		-signed of above-
+
+		bit8_str0
+		utf8_str0
+
+		u8	1 byte
+		u16	2 bytes
+		u32	4 bytes
+		u64	8 bytes
+		u128	16 bytes
+		u256	32 bytes of key or something
+		u512	64 bytes
+		u1024	128 bytes
+		u2048	256 bytes
+		u4096	512 bytes
+		u9192	1024 bytes
+
+		These are often binary KEYS or SIGNS or BLOBS of TYPE
+		They overlap with u16_WORD u16_BLOB, so immediate PUNS are OK
+		They use BIT counts
+
+		blk_256		used - for u8_item = lookup[ u8_key ]
+		blk_512		unused - for old disks or u16_item[u8_key]
+		blk_1024	1K block recommended for all IO down eth0
+	
+	these wont fit in a packet, but might be target frame
+
+	10	blk_1K
+	11	blk_2K
+	12	blk_4K		4K block for disk 
+	13	blk_8K		avail
+	14	blk_16K		avail # SSL block max
+	15	blk_32K		32K block for ISO disk 
+	16	blk_64K		avail
+	17	blk_128K	avail	u16_liho[u16_idx]
+	18	blk_256K	avail
+	19	blk_512K	avail 	u64[u16] useful x86 EIGHT_t[u16]
+	20	blk_1M		avail	
+	21	blk_16M		avail [u24]
+
+	TRAIT_COMMON
+
+		RSA_4096_except_nn_bits
+		DSA_4096_except_nn_bits
+		CRC_4096_except_nn_bits
+
+		WRAP_BASE64			// 4/3 *32 == 44 byes incl.
+		WRAP_BASE64_but_dialect 	// because / reserved
+
+		SCRUB_MEMORY_AFTER_USE		// 
+
+		WRAP_PPP_BYTE_PREFIX
+
+		NULL in wider packet		// hmmm VALUE not trait
+
+
+
+	TYPE_COMMON
+
+		RSA_1024
+		RSA_2048
+		RSA_4096
+		RSA_nnnn	16 bits of bits 12_of_16 needed for 4096
+
+		DSA_nnnn	16 bits of bits 12_of_16 needed for 4096
+
+		KEY_nnnn	need cypher name
+
+	OPCODE uses u16_AB
+
+		derived from simple types
+
+
+

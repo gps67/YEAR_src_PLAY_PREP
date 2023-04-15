@@ -1,0 +1,19 @@
+
+# ./M "$@" 2>&1 | less # but with less search for KEYWORD PTN
+# parameters are passwd to ./M "$@" 
+# so manually edit this script twice a day
+
+	T=obj_ref0.o
+	T=lots
+	# first one wins # caller wins
+	PTN=${PTN:-FAIL}
+	PTN=${PTN:-Error}
+	PTN=${PTN:-VNC}
+	PTN=${PTN:-error}
+
+	SRCH=+/$PTN
+	SRCH="-p $PTN"
+	SRCH=
+
+	set -x
+	./M "${@:-$T}" 2>&1 | less $SRCH

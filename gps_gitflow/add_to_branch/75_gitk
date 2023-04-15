@@ -1,0 +1,4 @@
+. ./.env
+
+#ask_do \
+gitk 

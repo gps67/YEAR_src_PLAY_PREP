@@ -1,0 +1,34 @@
+2023-01-27 Jan Fri 23:41 # 28 #  MUX_RELAY_API_ARGV.txt
+
+	MUX_RELAY_API_ARGV.txt
+
+API allows all sorts of UDEF API mostly STRUCT and BITFIELD
+
+	DIALECT FILTER splits all words by "_" occasionally PAIR lhs_rhs
+
+	DIALECT += BINARY
+	BINARY += COMPILED SCRIPT
+	SCRIPT += { VAR NAME } { INIT_VAL EXPR }
+
+	SPEC += DECL "TEXT" # PARSER #  GEN #
+
+Create extra types into LIBR_ONE 
+Create UDEF types into LIBR_TWO 
+Create SESS VARS into LIBR_THREE # LIBR_SESS == "LIBR_SESS" # KNOW ALIAS "_TWO"
+CT builds a TREE STEP { "_TWO" || "_" "TWO" || SEP TWO } # used after ONE
+CT LIBR _ TWO # series of CODE_POINT # EA("TWO") # EA_("LIBR_TWO") #
+TREE_of_CODE # XPOS_in_TREE # SEEK_in_FILE # XPOS_in_INDENTED_TEXT Y X
+ITEM_of_DIAG # XY_POS TIME_PHASE # TIME_PHASE += DECL_VAR CODE_POINT VAR_NAME
+
+CT LINES_OF_ARGV # INDENTED BLOCK #
+TREE is WASM HEAP of u64_WORD
+TREE is WASM HEAP of u64_BYTE
+
+CXX as ARGV # nb ARGV is now OBJV # NESTED_ARGV #
+XLISP CXX # not LISP LOOK more CXX ARGV
+Nyquist COMPAT
+Or even COMPILER of Nyquist - and it's sample code
+or DONT
+
+
+
