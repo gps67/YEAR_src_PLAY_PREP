@@ -1,0 +1,143 @@
+MMAP_HEAP_STO.txt
+
+	ITEM = RT_ITEM_from_ALLOC
+	ITEM = CT_ITEM_from_ROM
+
+	USE uns OFFS = EXPR
+	USE int OFFS = EXPR
+	USE ALIAS ITEM == "idx" // LEX triggers MK_VAR
+	LEX idx "idx" WELL_KNOWN_SPELLING" RECOGNISE_AS_LEX_NAME STR0 ANYSTR
+	VAR "idx" idx_%d" 
+	TYPE == SPEC == "idx_t" // LEX = COLLECT VAR_NAME "_t"
+
+	ROM += IDX // IDX_TECHNOLOGY is LEXICON
+	ROM += IDX // IDX_TECHNOLOGY is RT DATA
+
+	EXPR u8_u8 u16 U32 //  U32 is "{ i32 || u32 }" // NEAR_ALIAS //
+
+		BYTE_ONE == "u8_u8.BYTE_A"
+		BYTE_TWO == "u8_u8.BYTE_B"
+		u8_u8 == "u8_u8"
+
+		U16 == "{ += i16 u16 BITFIELD_16 }"
+		i16 == "(i16) VAL_u16"
+		u16 == "(u16) VAL_u16"
+
+		VAL_u16 == "VAL_u16"
+		VAL_u16 == "VAL_u16 BITFIELD("u16") // NAME_as_typename_macro
+
+		VAL_u16 == "VAL_i16 BITFIELD("i16_PAYLOAD") // NAME_as_typename_macro
+
+		u8_PAYLOAD = u5_BITFIELD // in u8 DATA_FITZ
+		u16_PAYLOAD = 
+		 WHEN MEM
+		  EIGHT_t
+		  u64_lohi_BITFIELDS
+			u32_PAYLOAD = EA_u32 = EXPR 
+			EXPR += BASE BASE = EA_U32 // ADDR = OFFS in SCROLL
+			EXPR += OFFS IDX * 8
+
+	
+	SCROLL == REPL
+
+		ONE LINE ONE ARGV
+		MULTI_LINE_ZONE
+		PARSED_XPOS4 // XPOS = lineno * 4 + LINE_QUART[4]
+
+			OFFS_in_PAGE = u24 // 16MB literal limt (ASSOC for ANY)
+			OFFS_in_PAGE = u32 // intent is DECODE_u64
+
+		PARSED XPOS
+
+			OFFS_in_PAGE = u48 // u48_PAYLOAD = u64_WORD >> 16;
+			ITEM_SPEC = lookup_u8_u8 // implicit lookup(ARGS) //
+			RT_KNOW = += ITEM // lookup into precompiled code
+			// TOKENISED means PRECOMPILED_CODE //
+			
+		only room for 4 fractions of a line
+
+			0 = use different OPCODE
+			1 = { u2 QUADRANT } // 0 1 2 3 //
+			2 = { u8 FRACTIONS } // FRACTIONS == "N" // of_UNIT
+			3 = { int FRACTIONS_var == "N" } //
+			// or let PARSER deduce from
+			// deduce N_var == "FRACTIONS"
+			// deduce FRACTIONS_t == "%s_t FRACTIONS" // printf ESQUE
+			u2_idx		// and SUBSET with M1 or WAHTEVER
+
+			u2_0_1_2_3
+			u2_0_1_2_M1
+			u2_0_1_M2_M1 
+
+			i2_0_1_M2_M1 
+
+		TABLE
+			EIGHT_t \
+			 TABLE_DECODE_u2
+			  [ u2_idx ] 
+
+		EIGHT_t & EXPR = TABLE[u2] // ARRAY [ idx_VAL ]  of EIGHT_t
+
+			get_IN_MEM_u8_u8
+			get_IN_SITU_u8_u8
+			get_BYTE_A
+			get_BYTE_B
+			get_u16
+			get_u22
+			get_u48
+			get_u64			as_VAL_of_BITFIELD as_EA_MEM
+
+		FUNCTION
+
+			KNOW is_M1
+			KNOW is_M2
+			KNOW is_M1_or_M2
+			KNOW isnt_M1_or_M2
+			KNOW is_ZERO 		// matters more for IDX || ZERO
+			KNOW_non_ZERO
+
+		STO_u24 
+		IDX_u24_or_M2
+
+			SINGLE BIT 
+			u2 BITS
+
+			WORD <<= nbits_above
+			SIGNED WORD >> nbits below
+
+			0 1 M2 M1
+
+			0 1 2 M1
+
+		DECR_ARITHMETIC
+
+
+
+
+
+
+
+
+
+	
+	XPOS = EIGHT_t DECODED
+	OFFS = u24_OFFS in SCRIPT_FILE // or u64
+	XPOS = { SCRIPT OFFS } //
+	ADDR = BASE + OFFS
+	XPOS_u24_OFFS
+
+	
+	printf ESQUE
+
+		"%s cident99" 
+		"%s_t IDENT" // VAR VAR FUNC LAZY CACHE VAR EXPR TASK
+	
+	EXPR
+
+		TUPLO of TWIG with own LEAF == "CODE_POINT" // BIND_VAR //
+
+
+
+	#
+		#
+			#

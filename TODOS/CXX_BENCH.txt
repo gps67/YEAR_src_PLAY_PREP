@@ -1,0 +1,463 @@
+
+	CXX_Bench
+
+	CXX += Parser 
+	CXX += GEN_CPP // CPP or C++ or .cxx or .c // CPP is also CPP //
+	CXX += INTERP // MINI_MACHINE
+
+		CXX delivered as TREE parsed by PSG
+
+		PSG_as_yacc
+		PSG_as_PSG_SUBLEX
+		PSG_as_CXX_PARSE
+
+		SUBLEX_as_LEX_SUBSET
+		SUBLEX_as_CXX_PARSE
+
+
+	CXX_PARSE_LEX_CSET
+
+		CSET += utf8
+		CSET += 
+		CSET += BYTE_cyrillic
+		CSET += BYTE_latin1
+		CSET += BYTE_udef 	// KNOW_CSET_646_abc // CONVEY_CSET //
+		CSET += PARSED_FROM_FILE // vi emacs filetype XML_says_latin1
+
+		LEX += cident99 // a1_a2_star a1 a2 // 
+		LEX += ARG_STR0_from_bash // ie bourne shell parse_lex //
+		LEX += CXX_PUNCT _from_PARSER _GEN _PARSE _GEN_YACC 
+
+		PARSE += PSG
+
+		PSG += SUBLEX
+		PSG += PHRASE
+		PSG += MODULE
+
+		CXX += PSG_PARSE
+		CXX += CXX_PARSE
+		CXX_PARSE += PSG
+		CXX += ITEM // route via PSG CXX_PARSE CXX via DECODER
+		CXX += BENCH // RULES APPLY in build up of DIALECT over MODULE
+
+	CXX_BENCH
+
+		CXX += BENCH 
+		// RULES APPLY in build up of DIALECT over MODULE
+	
+	CXX
+
+		LEX += CXX_SUBLEX += LEX // levels and layers //
+
+		PARSE += CXX_OUTER_SCRIPT_CMNT
+		PARSE += CMNT_ARGS_SCRIPT // _ARGSis_ARGV
+		PARSE += MMAP_SCRIPTED
+	
+	MMAP
+
+		lots of SEGMENTS
+
+			[STR0 NAME]
+
+			SEGMENT.P0P2
+			SEGMENT.P0_P2
+			SEGMENT.P0_NBYTES
+			SEGMENT.P0_PARSED
+
+		align_EIGHT
+
+			u64_WORD
+			u32_PAIR 
+			u64_LOHI
+			u64_LOHI_WORD
+			u64_LOHI_EIGHT
+			u64_HILO_EIGHT
+
+		align_4K
+
+			MMAP_Segment
+			MMAP_File
+			MMAP_STR0 // entire 4K for 24 bytes
+			MMAP_STR0_in_shared_MMAP_pages // ALIGEND_EIGHT //
+
+		MMAP_File _File _Segment _P0P2_in_ZONE 
+
+			SPEC as TREE of PHRASES
+
+				EIGHT_t TABLE[INT] as (EIGHT_t *) // BASE
+				// OFFS == sizeof(EIGHT-t) * idx_POS
+				// BASE == TABLE.P0
+				// ADDR = BASE + OFFS // TYPE_OFFS_BUILTINS
+				// CODE ASM u64_WORD ... ASM CODE ...
+				// R4 = { BASE R2 } + { OFFS R3 }
+
+		ASM
+
+			ADDR + BASE + OFFS
+
+			EIGHT_8 == sizeof(EIGHT_t) // STRESS from u64 to u128
+
+			// u256_EIGHT_WORD_32_BYE // _aligned_8 _8 _u64
+
+			u64_WORD * ADDR // _of_WORD
+
+			u8 * ADDR	// _of_BYTE
+
+			u32_PAIR * EA_EIGHT 
+			= TABLE + ( EIGHT_8 
+
+			STEP == sizeof(TABLE_ITEM_t) 
+			OFFS == IDX * STEP 
+			ITEM == EIGHT _t
+
+		REG
+
+			ACTUAL CPU has 32 register or 16 or 6 ABCD_PQ
+			ACTUAL CPU has PC FLAGS SP FP STO_in_MEM { THIS * this }
+			ACTUAL CPU uses RS_in_LAYOUT # rename remainders
+
+
+		MACRO
+
+			LIST of ASM one ASM two ASM three // CMNT // INFO
+			MACRO_INFO 
+
+		NAMED_MACRO( A R G S  ) { SCRIPT }
+
+			+= OPTION DETECT INDENT and drop ADDED initial GAP
+
+		NAMED_MACRO( A R G S  ) { // HERE is OUTER SCRIPT LAYER
+			// OPTION to PARSE and { OMIT EMIT } PRE_CMNT GAPS
+			SCRIPT // INNER SCIPT LAYER
+		}
+
+		PARSE_CMNT_TEXT
+
+			lay on layer provides a switch to LEX_layer
+			lay on layer provides a switch to PSG_layer
+
+			ASAP get to TREE_ARGV with SPEC and DECODER API
+
+			DOCS_WITHIN_DOCS
+			DOCS_WITHIN_CODE
+			CODE_WITHIN_CODE
+			CODE_WITHIN_DOCS
+
+			MUX happy to see it all MATCH // possible ambiguous
+
+		MATCH_TWO
+
+			second parser and BENCH over examples that CLICK
+
+			Bench PARSER constructs MATCH_TWO_BENCH
+
+				from PSG elements in both worlds
+
+				from TEST_DATA available as CANVAS
+
+				from DRAW_DIAG of PSG returns MODIFIED
+
+		MODIFIED
+
+			BIND VAR to STR0
+			BIND VAR to NUMERIC
+			BIND VAR to EA_EXPR
+
+		EA == EA_EXPR
+
+			allow CT to return CODE_EXPR that RT must follow
+
+			CT steps through it for RT to do later
+
+				STEP mimics EVAL but MULTI_VERSE
+
+					RET_VAL_FAIL_FIVE
+					RET_VAL_ONE
+					RET_VAL_TWO
+
+					RET_VAL_ZERO == CT_RT_RUNTIME_RET_VAL
+
+					CXX gets from it (auto assigns to it)
+
+					RET_VAL_ZERO == "RET_VAL"
+
+		WHY "LEX_DIRECT" // not " LEX "
+
+			allow plain CXX to print cident99 without PARSE_2
+			allow AS_IF RET_VAL = PARSE_2( VAL_VAL )
+			allow AS_IF RET_VAL = PARSE_2( VAR_VAR )
+
+			PARSE pre_lookup "VAR" == " VAR "
+
+				TOKENISED == VAR // _TOKEN_VAR // _VAR // 
+
+			allows GEN to quickly used unfiltered STR0
+			allows GEN to quickly used filtered STR0 // CTXT //
+
+			CT_RT passes TOKEN in front of FILTER 
+
+				AS_IF PRE_GEN PARSED " STR0 "
+				AS_IF PRE_GEN PARSED "{ STR0 }"
+				AS_IF PRE_GEN PARSED ALIAS
+
+	MMAP SPEC
+
+		SPEC uses CXX to declare STRUCT_abc // KNOW_TYPENAME_adds_idx
+		SPEC uses CXX to declare STRUCT_idx // KNOW_TYPENAME_adds_idx
+
+			KNOW idx == lookup abc
+	
+	NAME DIAG
+
+		any repeated SPELLING is upgraded to VAR or CONCEPT
+
+		CXX_IDENT abc 
+		CXX_IDENT idx
+
+		CXX_IDENT abc 
+
+			in above detect "abc" as not_well_known_cident
+
+			CXX_ident a1_a2 a1 a2
+			# a1 + [ A-Z a-z _ ]
+			# a2 = a1 + [ 0-9 ]
+			# WARN ABUSE a2 += "-" # ERROR_INTENSITY += NOT_C #
+			#
+
+		CXX_IDENT idx
+
+			is_IDX 
+			is_NUMERIC
+
+			often_u24
+			often_i24
+
+				idx_i8
+				idx_u8
+				idx_i16
+				idx_u16
+				idx_i32
+				idx_u32
+				idx_i64
+				idx_u64
+
+				idx_i4
+				idx_u4	_i4 _u4 _i3 _u3 _i2 _u2 _i1 _u1 _i0 _u0
+
+					I suppose _i0 == 0 ALWAYS
+					I suppose _u0 == 0 ALWAYS
+
+				idx_i12
+				idx_u12
+
+				idx_i24
+				idx_u24
+
+				idx_i48
+				idx_u48
+
+				idx_i32_PAIR // meaning tbs
+				idx_i64_PAIR // meaning tbs
+
+				STEP.STEP ETC
+
+			STEP.STEP 
+
+				DECODE(u32_PAIR)
+				DECODE(EIGHT_as_u32_PAIR)
+
+			DIALECT_RULE
+
+				shorted EIGHT == "EIGHT_t"
+
+					impossibility of the unequal STR0
+
+					 "EIGHT" != "EIGHT_t"
+
+					possibility of VARIABLE_NAME
+
+					EIGHT == "EIGHT_t"
+
+					CT_RT must convert to ASSIGN to MATCH
+
+					PARSER says STEP involved KNOWN(SPELLING)
+					PARSER says LIBR permits UNSET_VAR_KNOWN
+
+					PARSER AUTO_GEN "VAR_NAME == STR0"
+					PARSER AUTO_GEN "VAR_VALUE == STR0"
+					PARSER AUTO_GEN "VAR_SPEC == STR0 _t"
+					PARSE "%s _t" as OPTION AUTO EITHER BOTH
+
+				VAR_NAME = VAR_VALUE
+				VAR_VALUE = "VALUE_in_TEMPLATE"
+
+				ALIAS_ONE == "ALIAS_TWO"
+
+					possible MATCH PTR of SPELLING
+
+				ASM_XS
+
+					ALIAS_TWO = PARSE_TOKENISE("ALIAS_TWO")
+						CACHE fast tracks repeat CALL
+						CACHE fast tracks first CALL
+						CACHE GEN { CODE }
+					ALIAS_TWO = PARSE_TOKENISE(ALIAS_TWO)
+						CACHE detect that above code DID
+						CACHE detect NO_NEED_FOR_FILTER
+						CACHE detect    NEED_FOR_FILTER
+					ALIAS_ONE = PARSE_TOKENISE(ALIAS_ONE)
+						PRE_CHECK source makes sense
+						CACHE detect NO_NEED_FOR_FILTER
+						CACHE detect    NEED_FOR_FILTER
+
+					ASM 
+						ALIAS_TWO = PTR_to_STR0 _TOKEN
+						ALIAS_TWO = PTR_to_TOKEN
+ u8 * PTR_to_STR0
+ u8 * PTR_to_TOKEN
+
+ 	require 
+		PTR within P0P2 // TESTED
+		PTR within P0P2 // not PTR+1 // UNTESTED
+
+		STR0 already ends with NUL
+		STR0 says what is needed
+		STR0 already ends with NUL // PAD NUL to ALIGN
+
+		PARSER finds u64_WORD * P2 ; // NEXT_WORD // START_NEXT_WORD
+		PARSER finds u8_BYTE * P1 ; // within P0P2 // of NUL
+	
+	FIX_TRICK // resolved impossible SYNTAX with TRUSTED CAST // KNOWN SUB
+
+		STR0
+		PAD_to_ALIGN_FOUR
+		ABCD
+		 A == NUL
+		 BCD ==B_CD_LOHI BYTE_B CD_LOHI
+	
+	FIL_TRICK
+
+		0x00 NUL FIRST must exist and be a NUL
+		0x03 ETX // end of text // padding upto ALIGN
+		0x16 SYN // SYNC SKIP EMPTY IDLE FILLTER
+		0x1A SUB // like a NUL but not a new field
+		0x1B ESC // RISK of starting ESC[99m 
+	
+ ASCII
+ 	https://datatracker.ietf.org/doc/html/rfc20
+
+	
+	 SOH heading STX text ETX ... EOT
+		SOH == START of HEADER
+	 	heading == machine_sensible_address
+		STX == START TEXT
+		text
+		ETX == END TEXT
+	
+	 EOT end of FILE or SEGMENT (my word)
+
+	 	CTRL-D within TEXT file is good for MMAP
+		but might upset TTY FILTERS 
+		but therefore usable as unusable EOT
+	
+	 ENQ
+
+	 	request WRU who are you 
+		request station STATUS
+	
+	 ACK
+	 	affirmative response
+	
+	 BEL
+	 	seek help
+	
+	 BS
+	 	BACKSPACE is a PRINTING motion
+		that makes it ideal for BOLN
+		maybe ABSENT tails
+		maybe beware of damage to buffer
+		so FORECT OUTER FILTER APPLY REMOVE
+	
+	 HT	TAB TAB_eight
+	 LF 
+	 VT
+	 FF
+	 CR
+	 SO	switch CSET away from NORMAL ASCII
+	 SI	switch CSET back into NORMAL ASCII
+	 DLE
+
+	 EM	end medium
+	 DLE	(RTFM) changes meaning of following BYTES
+	 DC1	DEVICE ONE // ON
+	 DC2	DEVICE TWO // ON
+	 DC3	DEVICE THREE // ON
+	 DC4	STOP
+	 NAK
+	 SYN	Sync idle - EMPTY PADDING TO KEEP LINE UP
+
+
+	 BEL
+
+
+		That then uses NUL as a WORD_END_P2_NUL
+		and the following 1A bytes are SKIPPED by PARSER
+		because 1A is a stupid CTRL BYTE
+		0x03 ETX end of text // padding upto ALIGN
+	
+	FIL TRICK RTFM
+
+		ASCII
+		https://datatracker.ietf.org/doc/html/rfc20
+		5.2 Control Characters
+
+
+	
+	STRUCT
+
+
+		 EIGHT_t[]
+		 u64_WORD STR0_word[n_words_in_STR0] 
+
+ ASCII CTRL
+
+ 	skim off CRLF TAB FF SP as GAPS
+ 	skim off VT ESC BACKSPACE as DONT_EXPECT_TO_SEE_THESE
+
+		ie not usable in ASCII_PLUS_IDENT
+		ie not usable in ASCII_PLUS_IDENs_FORMATED
+	
+ ASCII CTRL LAYOUT FILTER
+
+ 	CRLF
+	UNDERLINE_BACKSPACE(me)
+	BACKSPACE_UNDERLINE(rest of world)
+	BACKSPACE_REPEAT(me)
+
+	ALL the rest in CTRL are PRESUMED to be TOXIC
+	and never happen in plain text
+
+	SO WE use them to inlerleave TEXT through MUX
+
+		PLAIN TEXT
+		 SO
+		 	LAYOUT_CONTROL_DATA_BYTES_PARSED
+		 SI
+		PLAIN TEXT
+
+	
+	eg SO SOH VARNAME STX STR0 ETX SI
+	LINENUMBER = LINENUMBER_in_BASE63
+	eg SOH TABLE_NAME SOH LINENUMBER SOH idx_field STX field_text  ETX
+	SOH TABLE_NAME
+	SOH LINENUMBER
+	SOH idx_field
+	STX field_text
+	ETX
+
+
+
+
+
+
+

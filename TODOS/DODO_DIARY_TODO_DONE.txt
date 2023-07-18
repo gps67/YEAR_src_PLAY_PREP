@@ -1,0 +1,61 @@
+DODO_DIARY_TODO_DONE.txt
+
+ DODO
+  DIARY
+   TODO
+    DONE
+    DOES
+    SESS
+   .txt
+
+   ADD REMINDER YEAR_MM_DD TODO BUY TIX GIG == KORA
+   
+   	ON MAY_09 tickets available from WHEN_WHERE_HOW_ETC
+	THIS == "THIS"
+	{ "ATTR" "VAL" } {
+		SCRIPT
+	}
+	WEBSITE { {"URL"} } {
+		SCRIPT
+	}
+	LOCN { A R G S } EXPRS CODE VAR_POOL SCRIPT_POOL SESS XPOS
+
+	URL { URL url } 
+https://mail.google.com/mail/u/0/#inbox/FMfcgzGsmNRJwzChjXXhGqlXjfPVtbzj
+	# LINE == "URL" { URL_t URL } // CODE_POINT //
+	# REQUESTED CODE_POINT = XPOS // SCRIPT_LINE // PARSED_SCRIPT_EXPR ??
+	# EXPR # PARSED SCRIPT_LINE # MULTI_LINE_PARSED # retro_detect #
+	# EXPR # TUPLO_INST_of_SPEC # typically SPEC # MATCH { LHS RHS }
+
+	THIS += { XPOS_t XPOS } // MERGE NAME_STEP // SUBLEX_API // MK_VAR //
+	MK_VAR += { NAME_t NAME } 
+	MK_VAR += { IDX_t IDX } // idx = N ++ // N == "N_ALLOC_SO_FAR" //
+	MK_VAR += { VAR_t VAR } // ALIAS "VAR" "%s" // TOKEN "VAR_NAME" //
+	MK_VAR += { on_INIT SCRIPT A R G S PLUS } // PLUS += ALL_REACHABLES
+	// NEARBY // IMPORT BENCH // SEGMENT == "SEGMENT" // MATCH_CIDENT
+	// MATCH CIDENT_near_SCRIPT_VAR_of_same_NAME "VAR" 
+
+	XPOS {
+	 { FILE file }
+	 { LINE {uns lineno } } // CODE_POINT // ... MORE ...
+	 { ITEM idx } // ITEM_t & item = ITEM_OF_ARRAY(array,item) //
+	 { HERE += ADD_ATTR ATTR }
+	 { ITEM += ADD_ATTR_ITEM } // but how decl api // layer time_step
+	 { STEP += ADD_ATTR LOCN } 
+
+ TIX KORA woodenroots sun 5pm £10 avail 2023-05-09 
+
+	 Suffolk 5pm Sun Aug 6 £10 add on to Wooden Roots
+	Seckou Keita and Suntou Susso
+	https://brittenpearsarts.org/events/seckou-keita-and-suntou-susso
+	18:35
+￼
+	Steve Southall
+	You wanna do it?
+	gps67
+	yep - but cant buy ticket until 9'th may.  Do like a bit of kora
+
+ TODAY # VELO PREP LATE #
+
+
+ 	

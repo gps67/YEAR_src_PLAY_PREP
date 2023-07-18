@@ -1,0 +1,87 @@
+
+	STR0 uses NUL to end str
+	ASCII_PLUS can MUX lots of STR0 provided PARSER can reconstruct STR0[i]
+	MINI_MACHINE
+		PREP BACKQUOTE_TCL_ONE _EVAL _PREP
+		prep_for_C_STR0
+		BACK_QUOTE_
+		_PREP_for_printf_fmt_percent
+		_PREP_for_printf_fmt_with_args
+		_EVAL_with_ARGS
+	
+	convert NUL to SYN 
+
+		SYN is line padding keepalive sync bits
+		it is only sent when there is not data to send
+		it marks end_STR end_WORD end_LEX_in_ARGV
+		// SUBLEX // uses a-n-other // uses "_" // uses ARGV // MPW
+
+	send ARGV as single STR0 that can be converted back to ARGV
+
+	send ARGV through FILTER to get OBJV
+
+		TOKENISE OBJ = STR0 // CTXT //
+
+		TREE_LIST_AS_WORD required { PARSE }
+	
+	send ENV through FILTER // SINGLE LAYER of WRAP only // FILTER CHECK
+
+			VAR_NAME
+		=
+			VAR_VALUE
+		SYN
+
+		NUL_or_SYN
+	
+	... FILTER CHECK ...
+
+		within above SCRIPTS
+		detect badly formed data
+		enable rewrite { A = #EMPTY } as { A } // absurd
+	
+     SEPARATOR
+
+	FS
+		FILE
+	GR
+		GROUP
+	RS
+		RECORD
+	US
+		UNIT
+	
+SO split TREE from ASCII_PLUS fields
+
+	CSET includes CTRL_CHARS for layout CRLF_ETC
+	CSET excludes CTRL_CHARS from sensible values
+	CSET includes CTRL_CHARS for UDEF ESCAPE 
+
+	CSET NESTED ZONES
+
+		PARSED TCL CURLIES
+		PARSED CXX STMTS
+		PARSED MUX FRAGMENTS
+
+			MUX'd MUX needs PARSED DIALECT2
+
+			ASCII_PLUS
+
+				layer does not use CSET_ITEMS
+				layer consumes CSET_ITEMS // with added interp
+				layer FILTERS CSET_ITEMS // PASS through MODS
+
+			MODS
+				troff BACKSLASH
+				C_STR_Q2
+				Q2_CSTR
+				Q2_BASH
+				Q2_TCL_ONE
+				Q2_TCL_TWO // allow for parsed args
+				FILTER CTRL_SOH_COMMANDS
+				FILTER CTRL_ESC_TTY_COMMANDS // VT100 subset
+
+			x
+	
+	aaa
+
+
