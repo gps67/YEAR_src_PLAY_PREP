@@ -456,6 +456,23 @@
 	ETX
 
 
+ CXX_BENCH
+
+ 	gen YACC from PSG
+	gen PARSE from PSG
+	view TEXT through PSG VIEW_one VIEW_two
+
+	edit PSG to handle TEXT
+	edit TEST to hold above as a few tests in one
+	edit TEST to signal and to know not yet working LAYERS
+
+		PREDICT not_yet_implemented
+		DETECT signals emerging from somewhere
+		DIAG per TEST with VIEW_LIST
+	
+
+
+
 
 
 
