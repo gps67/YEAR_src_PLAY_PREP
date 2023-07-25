@@ -1,139 +1,52 @@
-making libs
-[ -d ../SP_lib/. ] || mkdir ../SP_lib
-cd lib && \
+making SPIN_py
+cd SPIN_py && \
+env > /tmp/fa1 && \
 make \
-	VPATH=/lib \
-	srcdir='/libs' \
-	OPT_DEBUG='-g' OPT_OPTIM='' OPT_CSET='-DSP_MULTI_BYTE ' OPT_PIC='-fPIC' OPT_LIBNAME='osp' OPT_LIB_EXT='so' OPT_THREADS='-DSP_MUTEX_PTHREADS ' src_sp='' src_spin='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py' dir_SP_lib='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' LINKDIRS='-L/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' PYTHON_INCLUDE='-I/usr/include/python2.7' \
-	-f /lib/Makefile.sub \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile \
-	/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib/libosp.so
-make[1]: Entering directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make[1]: /lib/Makefile.sub: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile: No such file or directory
-make[1]: *** No rule to make target '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile'. Stop.
-make[1]: Leaving directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make: *** [../SPIN_Makefiles/MK_SPIN_top_2:130: libs] Error 2
-making libs
-[ -d ../SP_lib/. ] || mkdir ../SP_lib
-cd lib && \
-make \
-	VPATH=/lib \
-	srcdir='/libs' \
-	OPT_DEBUG='-g' OPT_OPTIM='' OPT_CSET='-DSP_MULTI_BYTE ' OPT_PIC='-fPIC' OPT_LIBNAME='osp' OPT_LIB_EXT='so' OPT_THREADS='-DSP_MUTEX_PTHREADS ' src_sp='' src_spin='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py' dir_SP_lib='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' LINKDIRS='-L/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' PYTHON_INCLUDE='-I/usr/include/python2.7' \
-	-f /lib/Makefile.sub \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile \
-	/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib/libosp.so
-make[1]: Entering directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make[1]: /lib/Makefile.sub: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile: No such file or directory
-make[1]: *** No rule to make target '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile'. Stop.
-make[1]: Leaving directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make: *** [../SPIN_Makefiles/MK_SPIN_top_2:130: libs] Error 2
-making libs
-[ -d ../SP_lib/. ] || mkdir ../SP_lib
-cd lib && \
-make \
-	VPATH=/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/lib \
-	srcdir='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/libs' \
-	OPT_DEBUG='-g' OPT_OPTIM='' OPT_CSET='-DSP_MULTI_BYTE ' OPT_PIC='-fPIC' OPT_LIBNAME='osp' OPT_LIB_EXT='so' OPT_THREADS='-DSP_MUTEX_PTHREADS ' src_sp='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py' src_spin='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py' dir_SP_lib='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' LINKDIRS='-L/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' PYTHON_INCLUDE='-I/usr/include/python2.7' \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/lib/Makefile.sub \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile \
-	/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib/libosp.so
-make[1]: Entering directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/lib/Makefile.sub: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile: No such file or directory
-make[1]: *** No rule to make target '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile'. Stop.
-make[1]: Leaving directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make: *** [../SPIN_Makefiles/MK_SPIN_top_2:130: libs] Error 2
-making libs
-[ -d ../SP_lib/. ] || mkdir ../SP_lib
-cd lib && \
-make \
-	VPATH=/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/lib \
-	srcdir='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/libs' \
-	OPT_DEBUG='-g' OPT_OPTIM='' OPT_CSET='-DSP_MULTI_BYTE ' OPT_PIC='-fPIC' OPT_LIBNAME='osp' OPT_LIB_EXT='so' OPT_THREADS='-DSP_MUTEX_PTHREADS ' src_sp='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py' src_spin='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py' dir_SP_lib='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' LINKDIRS='-L/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' PYTHON_INCLUDE='-I/usr/include/python2.7' \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/lib/Makefile.sub \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile \
-	/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib/libosp.so
-make[1]: Entering directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/lib/Makefile.sub: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile: No such file or directory
-make[1]: *** No rule to make target '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile'. Stop.
-make[1]: Leaving directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make: *** [../SPIN_Makefiles/MK_SPIN_top_2:130: libs] Error 2
-making libs
-[ -d ../SP_lib/. ] || mkdir ../SP_lib
-cd lib && \
-make \
-	VPATH=/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib \
-	srcdir='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/libs' \
-	OPT_DEBUG='-g' OPT_OPTIM='' OPT_CSET='-DSP_MULTI_BYTE ' OPT_PIC='-fPIC' OPT_LIBNAME='osp' OPT_LIB_EXT='so' OPT_THREADS='-DSP_MUTEX_PTHREADS ' src_sp='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1' src_spin='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py' dir_SP_lib='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' LINKDIRS='-L/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' PYTHON_INCLUDE='-I/usr/include/python2.7' \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Makefile.sub \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile \
-	/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib/libosp.so
-make[1]: Entering directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile: No such file or directory
-make[1]: *** No rule to make target '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile'. Stop.
-make[1]: Leaving directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make: *** [../SPIN_Makefiles/MK_SPIN_top_2:130: libs] Error 2
-making libs
-[ -d ../SP_lib/. ] || mkdir ../SP_lib
-cd lib && \
-make \
-	VPATH=/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib \
-	srcdir='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/libs' \
-	OPT_DEBUG='-g' OPT_OPTIM='' OPT_CSET='-DSP_MULTI_BYTE ' OPT_PIC='-fPIC' OPT_LIBNAME='osp' OPT_LIB_EXT='so' OPT_THREADS='-DSP_MUTEX_PTHREADS ' src_sp='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1' src_spin='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py' dir_SP_lib='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' LINKDIRS='-L/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib' PYTHON_INCLUDE='-I/usr/include/python2.7' \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Makefile.sub \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile \
-	/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SP_lib/libosp.so
-make[1]: Entering directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_site: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_lib: No such file or directory
-make[1]: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile: No such file or directory
-make[1]: *** No rule to make target '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_py/SPIN_Makefiles/MK_SPIN_compile'. Stop.
-make[1]: Leaving directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make: *** [../SPIN_Makefiles/MK_SPIN_top_2:130: libs] Error 2
-making libs
-[ -d ../SP_lib/. ] || mkdir ../SP_lib
-cd lib && \
-make \
-	VPATH=/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib \
-	srcdir='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/libs' \
-	OPT_DEBUG='-g' OPT_OPTIM='' OPT_CSET='-DSP_MULTI_BYTE ' OPT_PIC='-fPIC' OPT_LIBNAME='osp' OPT_LIB_EXT='so' OPT_THREADS='-DSP_MUTEX_PTHREADS ' src_sp='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1' src_spin='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/' dir_SP_lib='/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SP_lib' LINKDIRS='-L/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SP_lib' PYTHON_INCLUDE='-I/usr/include/python2.7' \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Makefile.sub \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_Makefiles/MK_SPIN_site \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_Makefiles/MK_SPIN_lib \
-	-f /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_Makefiles/MK_SPIN_compile \
-	/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SP_lib/libosp.so
-make[1]: Entering directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-g++ -shared -o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SP_lib/libosp.so /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Allocator.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Link.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/IListBase.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/TypeId.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/assert.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/CharsetInfo.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/EntityCatalog.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/EntityDecl.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/EntityManager.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Hash.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/InputSource.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Location.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Message.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/MessageArg.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/UnivCharsetDesc.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/entmgr_inst.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/LiteralStorage.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/URLStorage.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/RewindStorageObject.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ErrnoMessageArg.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/OffsetOrderedList.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/DescriptorManager.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ExtendEntityManager.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/PosixStorage.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/StdioStorage.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/NotationStorage.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/StorageManager.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/CodingSystem.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/IdentityCodingSystem.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/UTF8CodingSystem.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Fixed2CodingSystem.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/UnicodeCodingSystem.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/EUCJPCodingSystem.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/SJISCodingSystem.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/TranslateCodingSystem.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Big5CodingSystem.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/XMLCodingSystem.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/CodingSystemKit.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/SearchResultMessageArg.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/SOEntityCatalog.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/OutputByteStream.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/xentmgr_inst.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ContentState.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ParserState.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/parser_inst.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/parseSd.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Parser.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/parseInstance.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/parseMode.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/parseAttribute.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/LinkProcess.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Lpd.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/parseDecl.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ShortReferenceMap.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/parseParam.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/parseCommon.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/SgmlParser.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Entity.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Attribute.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/OpenElement.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Notation.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ParserOptions.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Dtd.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Undo.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Param.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/TokenMessageArg.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Group.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/CharsetDecl.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/CharsetRegistry.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ExternalId.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/TrieBuilder.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Sd.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Syntax.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Partition.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ModeInfo.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Recognizer.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Markup.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Text.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ContentToken.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ElementType.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Event.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/InternalInputSource.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/OutputState.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ParserMessages.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/SdText.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/NumericCharRefOrigin.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/Id.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/StringVectorMessageArg.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ErrorCountEventHandler.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/MessageEventHandler.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/MessageFormatter.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/MessageReporter.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/MessageTable.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/OutputCharStream.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ConsoleOutput.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/CmdLineApp.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/EntityApp.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ParserApp.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/app_inst.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ArcEngine.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/arc_inst.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/ParserEventGeneratorKit.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/SGMLApplication.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/EventGenerator.o /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/GenericEventHandler.o
-/usr/bin/ld: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/XMLCodingSystem.o: warning: relocation against `_ZTV10XMLDecoder' in read-only section `.text._ZN10XMLDecoderD0Ev[_ZN10XMLDecoderD5Ev]'
-/usr/bin/ld: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//jade-1.2.1/lib/EntityDecl.o: relocation R_X86_64_PC32 against symbol `_ZTV5Named' can not be used when making a shared object; recompile with -fPIC
-/usr/bin/ld: final link failed: bad value
-collect2: error: ld returned 1 exit status
-make[1]: *** [/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SPIN_Makefiles/MK_SPIN_lib:22: /home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade//SP_lib/libosp.so] Error 1
-make[1]: Leaving directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/lib'
-make: *** [../SPIN_Makefiles/MK_SPIN_top_2:130: libs] Error 2
+	xVPATH1=/home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py \
+	OPT_DEBUG='-g' OPT_OPTIM='' OPT_CSET='-DSP_MULTI_BYTE ' OPT_PIC='-fPIC' OPT_LIBNAME='osp' OPT_LIB_EXT='so' OPT_THREADS='-DSP_MUTEX_PTHREADS ' src_sp='/home/gps/YEAR/src_build/SP/OpenSP-1.5.1_gps_build' src_spin='/home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade' dir_SP_lib='/home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SP_lib' LINKDIRS='-L/home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SP_lib' PYTHON_INCLUDE='-I/tools/x86_64/py2/include/python2.7' \
+	-f /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/Makefile.app \
+	-f /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_Makefiles/MK_SPIN_site \
+	-f /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_Makefiles/MK_SPIN_prog \
+	-f /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_Makefiles/MK_SPIN_compile \
+	all
+make[1]: Entering directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/SPIN_py'
+cd /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/SP_App && make -f Makefile_src
+make[2]: Entering directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/SP_App'
+make[2]: 'SP_App.cxx' is up to date.
+make[2]: Leaving directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/SP_App'
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/spin_misc/spin_py_mod.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/spin_top/spin_top.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/spin_misc/sp_peg_kit.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/SP_App/SP_App.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/app_link/app_link.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/app_link/app_link2.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/spin_misc/argv_builder.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/spin_misc/text_collector.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/spin_misc/text_collector_utf.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/dtd_tables/dtd_tables.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/elem_info/elem_info.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/elem_obj/elem_obj.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/sdata_obj/sdata_obj.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/spin_misc/str_obj.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/spin_misc/stack1.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/spin_misc/write_buffer.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/Py_Wrap/P_ref.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/Py_Wrap/P_util.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/Py_Wrap/PY_Object_plain.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/Py_Wrap/PY_Static.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/Py_Wrap/PY_weak_link.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/Py_Wrap/PY_weak_base.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/Py_Wrap/PY_Object_base.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/Py_Wrap/enum_val.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/Py_Wrap/enum_cls.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/buffer/gdb_invoke.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/SPIN_tree_print/SPIN_tree_print.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/buffer/blk1.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/buffer/buffer1.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/buffer/str0.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/buffer/str1.cxx
+c++ -fno-implicit-templates -ansi -g -fPIC  -DSP_MULTI_BYTE  -DSP_MUTEX_PTHREADS  -DSP_HAVE_BOOL  -DSP_ANSI_CLASS_INST  -I/tools/x86_64/py2/include/python2.7 -I/home/gps/G/prefix/SP/include/OpenSP -I.   -c /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_py/buffer/e_print.cxx
+g++ -shared -o spin_py.so spin_py_mod.o spin_top.o sp_peg_kit.o SP_App.o app_link.o app_link2.o argv_builder.o text_collector.o text_collector_utf.o dtd_tables.o elem_info.o elem_obj.o sdata_obj.o str_obj.o stack1.o write_buffer.o P_ref.o P_util.o PY_Object_plain.o PY_Static.o PY_weak_link.o PY_weak_base.o PY_Object_base.o enum_val.o enum_cls.o gdb_invoke.o SPIN_tree_print.o blk1.o buffer1.o str0.o str1.o e_print.o -Wl,-rpath=/home/gps/G/prefix/SP/lib -L/home/gps/G/prefix/SP/lib -losp
+chmod 644 spin_py.so
+cp -p spin_py.so ../../SP_lib/
+make[1]: Leaving directory '/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_build_16_so/SPIN_py'
