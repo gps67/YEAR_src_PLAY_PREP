@@ -1,0 +1,7 @@
+. ./.env
+pwd
+echo "# AFTER # git add . # git reset undes that # so does git rm xxx"
+echo "# BEFORE # message and push #"
+echo "# WHEN # editing .gitignore to ignore .../'node_modules'/*"
+ask_do \
+git reset
