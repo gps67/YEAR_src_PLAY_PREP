@@ -5,6 +5,40 @@
 # branch 1
 B1=g_1
 B1=g1
+# INFER ARGV # API Mechanism CMD == as_CMD("ARGV[0]") # ".str0" # "ALIAS"
+# INFER VARIED("ALIAS") EA_as_STR0("Q2 .str0 ) // TOKEN_as_EA // TOKEN_as_SPELLING
+# API AUTO_VAR "{"  A R G S "}" // WORDS are PARSED to MATCH("token") or_EXPR
+# ABOVE is TEMPLATE LINE "{" parsed argv "}" # SPACING_SPELLED # INDENT_PARSED #
+# GEN ARGV LINE as a list of WORD or PUNCT # auto_plural _etc #
+# DECODE auto_plural # FILTER ITEM is avail as API # GEN plurals # USE plural #
+# GEN PLURAL NO_S # but almost plural #  asif # PHRASE LIBR API #
+# PHRASE is OPCODE A R G S #
+# PHRASE is CALL _CODE_POINT A R G S # USAGE CXX prototypes #
+# OPTION VIEW_AS CSR_HERE # used by all layers of classes "{ LIBR CODE_POINT }"
+# SINGLE_KEY_STR0 "{ Phrase }" // "SCRIPT" //
+# LHS STYLE spells out the punctuation "{ %s }" # PARSE MATCH "%s" DECODED
+# SCRIPT CALL FUNCTION from XPOS to XPOS via CALL_STACK #
+# { XPOS } #
+# { XPOS PAIR } # MATCH "%s_%s" # GEN reads that PSG as ... add_to_list ...
+# { Phrase } #
+# { SCRIPT } #
+# { XPOS } # UDEF += ALL_FEATURES_ADDED_TO_BENCH_SCRIPT TREE_POS GEN PARSE XPOS
+# { XPOS } # UDEF += NAMED_HERE # HERE += A_NAME_for_AVAR # BIND to AUTO #
+# CSR == "XPOS" # gravity tangled with self connects LHS("CSR") RHS("XPOS")
+# TUPLO # XPOS LOCN FILE LINE CPOS # this is a DECL of STRUCT_XPOS_STRUCT
+# OPCODE IMPL SPEC_DATA SPEC_GETTER DATA_GETTER # CT_GETTER inline KNOWN_DATA
+# OPCODE 
+#	IMPL
+#	SPEC_DATA
+#	SPEC_GETTER
+#	DATA_GETTER
+#	CT_GETTER
+#	inline
+#	KNOWN_DATA
+# 
+# # .api_GETTER RD
+# 
+# INFER ALIAS prev("g1") neaxt("g_1") # ALIAS #
 # branch some_bug_fix
 B2=g_some_bug_fix
 B2=reorganise-after-removing-react
