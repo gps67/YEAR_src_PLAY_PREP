@@ -1,0 +1,58 @@
+#!/bin/bash
+
+	. fns_EDIT
+	. fns_BASE
+
+    for PAGE in "${@:-PAGE}"
+    do
+	PAGE="${1:-MANPAGE}"
+
+	Echo "The manpage that gets invoked."
+	fn_BASE_edit - PAGE pagename
+	# fn_EDIT_var_prompt PAGE "The manpage that gets invoked."
+
+	echo "# TEST IT #"
+
+	ask_do \
+	man "${PAGE}"
+	#
+
+	echo "
+	If that worked, you now install the man_PAGE command link
+
+	man_ is a script the detects its own name
+	man_PAGE is the name of the link
+	man_ is the seed link, upgrade this script to link_to_nearest_same_vfs
+	// EG // ../../go_man/man_
+	// EG // D0=./same_mounted_fs_mount_point/. or /../.pwd
+	// otherwise create a new one with DATE
+
+# INSTALL IT #
+"
+
+	ask_do \
+	ln man_man "man_${PAGE}"
+	#
+
+    done
+
+exit
+	# this is what man_man look like
+
+	#!/bin/bash
+
+	# hardlink this file to "man_WHATEVER"
+	# its cheaper than a symb link (1 inode)
+	# add any MANPATH you think you might need
+
+	# set -x
+	name=$0
+	name=`basename $name`
+	if rhs=$(expr match "$name" 'man_k_\(.*\)')
+	then
+		name=$rhs
+		exec man -k $name
+	fi
+	name=$(expr match "$name" 'man_\(.*\)')
+	exec man $name
+
