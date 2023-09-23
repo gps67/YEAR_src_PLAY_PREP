@@ -114,7 +114,10 @@
 #	OBJS += e_print.o
 
 	HDRS += sel_pool.h
+	HDRS += sel_fd.h
+
 	OBJS += sel_pool.o
+	OBJS += sel_fd.o
 
 	PROG1=test1_sel_pool
 	PROG2=test2_sel_pool

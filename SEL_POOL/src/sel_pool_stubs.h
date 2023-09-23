@@ -4,7 +4,7 @@
 namespace BASE {
  namespace SEL_POOL {
 
-	class fd_sel;
+	class sel_fd;
  	class sel_pool_base;
 
  }; // namespace
