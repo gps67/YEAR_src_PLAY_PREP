@@ -3,18 +3,38 @@
 	. fns_EDIT
 	. fns_BASE
 
-    for PAGE in "${@:-PAGE}"
-    do
-	PAGE="${1:-MANPAGE}"
+	#!/bin/bash
 
-	Echo "The manpage that gets invoked."
-	fn_BASE_edit - PAGE pagename
-	# fn_EDIT_var_prompt PAGE "The manpage that gets invoked."
+	# hardlink this file to "man_WHATEVER"
+	# its cheaper than a symb link (1 inode)
+	# add any MANPATH you think you might need
 
+# set -x
+	 rhs=""
+	 mid=""
+	 opts=""
+	name=$1
+	if rhs=$(expr match "$name" '.*_\(.*\)')
+	then
+		mid=$(expr match "$name" '\(.*\)_.*')
+		opts=$mid
+		case "$mid"
+		in
+		 a|k) opts=-$mid
+		;; 
+		esac
+		mid="$mid"_
+	else
+		rhs=$name
+	fi
+	lhs=man_
+	name2="${lhs}${mid}${rhs}"
+
+	echo "WILL be $name2"
 	echo "# TEST IT #"
 
 	ask_do \
-	man "${PAGE}"
+	man $opts $rhs
 	#
 
 	echo "
@@ -31,28 +51,7 @@
 "
 
 	ask_do \
-	ln man_man "man_${PAGE}"
+	ln man_man "$name2"
 	#
 
-    done
-
 exit
-	# this is what man_man look like
-
-	#!/bin/bash
-
-	# hardlink this file to "man_WHATEVER"
-	# its cheaper than a symb link (1 inode)
-	# add any MANPATH you think you might need
-
-	# set -x
-	name=$0
-	name=`basename $name`
-	if rhs=$(expr match "$name" 'man_k_\(.*\)')
-	then
-		name=$rhs
-		exec man -k $name
-	fi
-	name=$(expr match "$name" 'man_\(.*\)')
-	exec man $name
-
