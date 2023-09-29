@@ -4,7 +4,7 @@
 # its cheaper than a symb link (1 inode)
 # add any MANPATH you think you might need
 
-set -x
+# set -x
 name=$0
 name=`basename $name`
 
@@ -22,7 +22,14 @@ then
 		;; a) mid="-a"
 		esac
 	fi
+else
+	if rhs=$(expr match "$name" 'man_\(.*\)')
+	then
+		: # PASS
+	else
+		FAIL
+		exit
+	fi
 fi
 
 exec man $mid $rhs
-exit

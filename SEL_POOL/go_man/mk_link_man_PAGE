@@ -3,17 +3,17 @@
 	. fns_EDIT
 	. fns_BASE
 
-	#!/bin/bash
-
-	# hardlink this file to "man_WHATEVER"
-	# its cheaper than a symb link (1 inode)
-	# add any MANPATH you think you might need
-
 # set -x
 	 rhs=""
 	 mid=""
 	 opts=""
-	name=$1
+	fn_BASE_rd - name
+	name=${1:-$name}
+	fn_BASE_wr - name
+#	fn_EDIT_prompt_var MAN_9_PAGE_NAME name
+	# actually this ignores $name just goes for varfile[name]
+	fn_BASE_edit - name
+
 	if rhs=$(expr match "$name" '.*_\(.*\)')
 	then
 		mid=$(expr match "$name" '\(.*\)_.*')

@@ -1,0 +1,10 @@
+#  Parallel_Arrays.txt
+
+	eg poll uses an array[N] of { fd, in, out )
+	so poll uses second B[N] of POINTER_TO_fd_hold_UDEF
+
+# 	OR GRID
+	is array [c] of COLUMN
+	is array [r] of DATA_per_COLUMN
+
+#	
