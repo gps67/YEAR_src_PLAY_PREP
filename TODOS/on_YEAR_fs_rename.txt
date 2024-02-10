@@ -1,0 +1,179 @@
+
+	on_YEAR_fs_rename.txt
+
+		SCRIPT_SCRIPTS
+
+			At the start of year I needed to do this
+
+		MATCH_SCRIPTS
+
+			IDENT_1999 // heuristic FILTER BLEX 
+
+			IDENT_xFFF // "_xFFF" "_xFFFF" "_xFF" "%03X" # etc
+
+				DEFAULT "_xFF" over_a_dozen_items
+				DEFAULT "_xFFF" ITEM_4096 finite_ROM_pool
+				DEFAULT "_xFFFF" u16_ITEM u48_item # ALLOC_IDX
+				OPTION "use "%s_xFF" of "%s_x02X"
+
+			IDENT_xFF // "_xFFF" "_xFFFF" "_xFF" "%03X" # etc
+
+				PICK 2 for items and fields
+				PICK 3 for items and data
+
+		MATCH ACTIONS
+
+			on_mkdir
+
+			on_read_name_via_view
+
+				PICK - open DIAG VIEW
+				PICK - read "%s_%s" { (STR0) "%04d" DATE.year }
+				PICK - read "%s_%04X" as "%s" LHS "%_04X"
+				MATCH EXPR "%s_%04X" 
+				 %s LHS
+				 _x
+				 %04X RHS 
+
+				  SPEC += u8_idx u16_idx u48_idx 
+				  // LANG substitutes int_IDX 
+				  // SOFT TYPES BIT_WIDTH BYTE_COUNT
+				  // i64_IDX // holding u24_IDX 
+				  // CT_pick u32 even on CPU_64 or u8
+
+
+			on_dir_list
+
+				ROM holds dir_list from CT_
+				RAM holds dir_list from RT_
+				ACT EXPR_POOL SCRIPTS
+
+				on_dir_list
+				 return cached value from ROM or RAM or UDEF
+
+				iterate over range [0[N as idx
+				group_item "NODE" "STEP = idx"
+
+		
+		MATCH WORKFLOW
+
+			MATCH on_mkdir
+			MATCH on_dir_list
+			MATCH on_FILE_TYPE_MIME_TYPE
+			MATCH on_ACTION
+
+			START SCRIPT
+			COPY SCRIPT FRAGMENTS
+
+		MATCH DIALECT
+
+			BENCH has prebuilt FAST_MATCH FSMS
+			iterating few 
+			iterating u8 u16 u24 u32 u48 u64
+			iterating i8 i16 i24 i32 i48 i64
+			iterating i7 i12 i15 i24 i32 i48 i64
+			iterating u4 BITFIELD
+
+			SPELLING "exact_match"
+			SPELLING "parse_match" // DECODE
+
+		FSM MACHINE
+
+			FIRST
+			REST
+			/* NEXT */
+
+			STEP = PUNCT_SINGLE_BYTE
+			STEP = PUNCT_MULTI_BYTE
+			STEP = DIGITS_DECIMAL_HEX_BITS
+			STEP = IDENT // cident97
+			STEP = SUB_MACHINE PARSE_FLOAT
+			STEP = SUB_MACHINE PARSE_CMNT_from_LEX
+
+			STEP STEP // LISTS PAIRS TUPLO_LIBR
+
+			STEP = BOOKEND_PAIR_ _start _end 
+			STEP = GAP in LAYOUT
+
+				SCRIPT provides INDENTED_BLOCKS_OF_TEXT
+				PARSER provides TABLES_of_LAYOUT
+				PARSER provides TABLES_of_CORE
+
+			XPOS is OFFS in SCRIPT
+
+				pointer to actual parsed node from XPOS
+
+				may help when XPOS is sorted
+				as it is in the SOURCE script in ROM
+
+			XPOS is EA_TREE_NODE _where_XPOS_is_OFFS_in_SCRIPT
+
+				merge 2 SCRIPTS eg OUTER uses MACRO
+
+				CALLER invokes MACRO
+				eg PARSE_FLOAT
+
+				COMPILER preps multi faceted FSM 
+				PARSE_VALUE => ONE OF
+				PARSE_VALUE _int
+				PARSE_VALUE _float
+				PARSE_VALUE _Q2_str
+				PARSE_VALUE _Q1_chr
+				PARSE_VALUE _CIDENT
+				PARSE_VALUE _FILENAME
+				PARSE_VALUE _COMMENT 
+				PARSE_VALUE _PUNCT
+
+				CSET_STEP char_group
+				STEP { GROUP ITEM }
+
+					GROUP is "[A-Z]" ITEM is "X"
+
+					goto a1_a2_star 
+					substep got A1 
+
+				 got_a1:
+				 	save P0_XPOS as IDENT_LEX_START
+					need zero from flags
+					add flag USES_UPPER
+
+					// MERGE MACRO for UTF8 //
+
+					get_first_byte_of_poss_UTF8
+					if( first_byte_is_a2_single_byte }
+						...
+
+				asm_continues as_ams
+
+					ARGV_SCRIPT to GCC_JIT
+
+					EA_MACRO A R G S 
+					 EXPRS PRE_CALL
+					 EXPRS 
+					  AVAR += EXPR
+					  EXPR GET_VAR
+					  EXPR SET_VAR
+					  EXPR GET_VAR_INCR
+					  EXPR ...
+
+
+
+
+				
+
+
+
+	on_YEA
+	fs_rename
+
+		~/YEAR/src/PLAY/DOCS_2023/
+		~/YEAR/src/PLAY/DOCS_2024/ # mkdir because of YEAR_START
+		DOCS -> DOCS_2024/ # fmt_ident "%s" or "%s_%s" DOCS_ "%04d"
+
+		MATCH existing F1 -> F2 
+
+		 F1 = "DOCS_2021" // F2 direct 
+		 F1 = "DOCS_2024" // F2 direct 
+
+		 F1 = "DOCS_YEAR"
+		 F1 = "DOCS"

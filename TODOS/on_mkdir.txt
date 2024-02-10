@@ -1,0 +1,177 @@
+	on_mkdir.txt
+
+this is on_mkdir from when this dir was created
+
+TEMPLATE
+
+	cd /home/gps/YEAR/DRUM_GIT/
+
+	mkdir Hands_Of_Rhythm_2024/ // etiquette complete with trailing / no SUBLEX
+
+	vi Hands_Of_Rhythm_2024/Hands_Of_Rhythm_2024.txt
+
+		!! echo %
+
+	
+	Offer TEMPLATE COPY_PASE api_elvis api_vi_in_TTY
+
+		option not in TTY
+		know variant of vi == vim
+		knew vim = "/usr/bin/vim/" || FROM_PATH_of_FILE
+		FROM_PATH_FILE
+		FROM_PATH_ARG0
+		FROM PATH_ALIAS 
+		CALL lookup OPTION_vim("vim") OVERRIDE with OPTION("vim_plus")
+
+	Offer TEMPLATE
+
+		printf_percent_s // DIALEX // AUTO_FEED formatting widths OPTS
+		// AUTO_FEED // MATCH "%2X" ALIAS "_xFF" // grows warns 8 digits
+		TEMPLATE parser locates LIST of %s 
+		EACH XPOS SPELLING ALIAS_PICK ALIAS_OPTS
+		EACH
+			XPOS
+			 FILE = SAME_FILE_as_fd0_STDIN
+			 FILE = SESS.CSR.CODE_POINT_var "CURR_FILE"
+			 FILE = "CURR_FILE" // NULL is mre reliable // faster match
+			 There is only one CURR_FILE so when ROM but RAM
+			 RAM is VAR and changed relayed back to FILTER
+			 OVERRIDE CACHE of ROM with FILE = "VALUE_for_CURR_FILE"
+
+			SPELLING
+			  "%X" "%4X" "%04X" 
+			  "%X" "%4X" "%02X" "%04X" "%03X"  "%04X" "
+			  "
+			ALIAS_PICK
+			  "_xFFFF" "_x%04X" // OPTION 4 3 2 1 // 1 reduces to %X
+
+			ALIAS_OPTS
+			  "_xFFFF" "_x%04X" // OPTION 4 3 2 1 // 1 reduces to %X
+			  explore a MINI world where NAME_xFF has OPTIONS
+			  OPTIONS include formatting 0xFFF 
+			  OPTIONS include placeholder name dialect 0xFFF 
+		
+##
+## SO when define a TOPIC give a directory by EDITED_NAME create a readme 
+## provide some header phrases PREP_HEADER
+## NOW here is the brand new ... ##
+
+	ARGV_DECODER - for interactive phrases
+
+	mkdir SOME_new_GROUP_or_TOPIC
+
+		TOPIC += all things within that TOPIC
+		GROUP += all things within that GROUP
+		
+	MATCH mkdir %s // 
+
+		check %s is a sensible dirname within DIALECT
+
+			DIALECT auto adds "_" for gaps 
+			DISPLAY auto uses " " for gaps
+
+			DIALECT MERGES WORDS
+			DIALECT REFUSES PUNCT
+			DIALECT MURGES PUNCT
+			DIALECT PREFERS ASCII_CIDENT 
+			 NOTICES UTF8_over_latin
+			 NOTICES BYTE_over_latin
+			 NOTICES SAME_as_MOST // as_expected utf8 got 8859
+			 NOTICES UTF8_over_GLYPHSET // CSET += glyph_in_CIDENT
+			CSET PROVIDES
+			 list of zones used by CSET
+			 fn is_inside_of_CSET( unicode )
+			 fn is_outside_of_CSET( unicode )
+			 fn is_plain_glyph_of_CSET( unicode )
+			 fn is_valid_glyph_of_IDENT_USE2( unicode )
+			 	USE2 is CIDENT_CSET FS_FILENAME_CSET DOCS Q2_
+	
+	MATCH mkdir NAME_ONE
+
+		open up LIST of TOPICS which are DIRS
+		open up LIST of NEIGHBOURS which are DIRS
+		open up LIST of RESERVED which are DIRS
+		open up TREE of ALL_AT_LOCN _in_NODE _at_LOCN
+
+			dirname is EXPR A R G S
+
+				ARGS are $AVAR "AVAR" CODE_POINT NEAR("AVAR")
+
+			dirname is "dirname_YEAR" ; YEAR is %04d of VAR("YEAR")
+			dirname is "%s" of AVAR("dirname")
+
+				lookup within this TEMPLATE 
+				bind to parameter
+				probably ends up as %s
+
+				reverse MATCH("%s") as ALIAS("dirname")
+				replace VALUE("dirname") 
+				replace VALUE(Q2_STR0_Q2) // "VAR_NAME" as AVAR
+
+		notice is a newname
+		offer to make a new ITEM in GROUP
+		offer to make a new TOPIC in DOT_DOT
+		offer a pre-filled TEMPLATE
+		offer a MISKEY CANCEL
+		offer a LIKEY PIN to BENCH add to STACK
+
+		invoke "{ on_mkdir { SCRIPT } }"
+		invoke (ARGV) "on_mkdir SCRIPT"
+
+			split command line into words for argv // OBJV // TREE //
+	
+	// ARGS // argv // OBJV // TREE //
+
+
+		PSG needs a much tighter CALL for new { PARSE STR0 }
+
+			PARSER already prepared with SUBLEX_PSG
+			PARSER already prepared with MULTI_LEX_PSG
+
+			 jump between LEXER 
+			 eg Comment TEXT_to_EOLN_or_SEMICOLON
+			 eg PUNCT("//") TEXT_to_EOLN_or_SEMICOLON
+			 allow PUNCT within CMNT_ASIS
+			 parse_SEMICOLON_EOLN_and_WARN_BAD_BRACING
+
+		PSG PARSE_WORDS_of_ARGV_from_STR0
+
+			expect EOLN means EOLN or more TEXT required 
+			NEXT_LINE _LATER so MID_WAY_PROGRESS_STEP
+
+				add LINE_TAIL to NEXT_LINE until happy
+				more NEXT_LINE until happy
+				stop at PUNCT keep TAIL_LINE from XPOS
+
+		XPOS within STR0 
+
+			ARG[i] has XPOS_of_ARG[i]
+
+				FILE == STR0 _wherever that came from
+				OFFS == u16_OFFS // LIMIT // REGROW to u64
+				LINE == STR0 // ZERO OFFS within FILE
+				P0P2 == [0[N within FILE
+				MODE == PARSE_ARG_i // NOT ARG0 // CAN ALIAS //
+
+			CPOS == recalc from BOLN or CSR or KEEP in NEED
+
+				OFFS ++ at every parsed BYTE // in multibyte
+				CPOS ++ at every parsed UTF8 // or other //
+
+				CPOS_start = CSR.CPOS
+				OFFS_start = CSR.OFFS
+
+				PARSER
+					OFFS ++
+					CPOS ++
+
+				CPOS_start_next
+				OFFS_start_next
+					available when CSR already at P2
+					P2 of A_CHAR in UTF8 or OTHER
+
+
+
+
+
+
