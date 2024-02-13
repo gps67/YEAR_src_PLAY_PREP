@@ -1,0 +1,37 @@
+NAME_default=Found
+
+PROG_NAME="$0"
+PROG_NAME="${PWD}"
+PROG_NAME=`basename "${PROG_NAME}"`
+# mk_file_found.sh
+
+NAME_default=$PROG_NAME
+
+# RE name_1999-12-31 anything_after_matching_part # no $
+# RE name_anything_after_matching_part
+# RE will match better if there is a DIGIT # maych past _ ABC_DEF _2022
+RE='\(.*\)_[0-9\-\.]*'
+PROG_NAME=`expr match "${PROG_NAME}" "${RE}" `
+
+NAME_default="${PROG_NAME:-$NAME_default}"
+
+# echo "${NAME_default}"
+# exit
+
+year_mm_dd=`date "+%Y-%m-%d"`
+namepart=.namepart
+[ -f $namepart ] || echo $NAME_default >> $namepart
+NAME=`cat $namepart` 
+NAME=${NAME:-$NAME_default}
+
+
+echo "# CTRL-C to exit # Edit the NAME part of filename"
+read -r -p "# NAME-YEAR-MM-DD.txt # NAME = " -e -i "$NAME" NAME
+echo $NAME > $namepart
+
+
+filename=${year_mm_dd}_${NAME}.txt
+
+[ -f $filename ] || D $filename >> $filename
+vi -c 'set fileformat=dos' ${filename}
+# xless $filename

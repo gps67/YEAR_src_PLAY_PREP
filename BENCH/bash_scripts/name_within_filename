@@ -1,0 +1,118 @@
+# name_within_filename # bash # maybe ash #
+
+fn_reduce_VAR_RE()
+{
+	local VAR_NAME="$1"
+	local RE="$2"
+ eval	local VAR_VALUE="\$$VAR_NAME"
+	local VALUE2=UNSET
+
+	# local in following line made it PASS
+	if VALUE2=`expr match "${VAR_VALUE}" "${RE1}" `
+	then
+		echo "YES VAR_VALUE '$VAR_VALUE' RE '$RE' VALUE2 '$VALUE2'"
+		eval export \$$VAR_NAME="$VALUE2"
+		return 0
+	else
+		echo "NO  VAR_VALUE '$VAR_VALUE' RE '$RE'"
+		return 1
+	fi
+}
+
+fn_name_within_dirame()
+{
+	local NAME_default=NAME_DEFAULT
+	local NAME_ONE=`basename "${PWD}"`
+
+	# mk_file_found.sh
+
+	NAME_default=${NAME_ONE}
+
+	# RE name_1999-12-31 anything_after_matching_part # no $
+	# RE name_anything_after_matching_part
+	# RE will match better if there is a DIGIT # maych past _ ABC_DEF _2022
+
+	# cant get \. that doesnt act like .
+
+	local RE1='^\(.*\)_[0-9-]*$'
+	local RE2='^[0-9-]*_\(.*\)'
+	
+	for NAME_ONE in $NAME_ONE DOCS_1234 2024-01-02_NAME2 
+	do
+		local KEPT="$NAME_ONE"
+		echo ""
+		NAME_ONE="$KEPT"
+		fn_reduce_VAR_RE NAME_ONE "$RE2" || : # echo NO
+		NAME_ONE="$KEPT"
+		fn_reduce_VAR_RE NAME_ONE "$RE1" || : # echo NO
+	done
+
+	echo "
+TODO	REG_EXP lib_re2 API KNOWN_EXPR /* PRE_COMPILED EXPR LIBR */
+	"
+
+# CALL EXPR # AUTO WRITE EXPR ARGS OPTS VARS SPEC LIBR Module Item Field OPCODE ARGS
+TODO	REG_EXP lib_re2 API KNOWN_EXPR /* PRE_COMPILED EXPR LIBR */
+TODO	CALL EXPR AUTO WRITE EXPR ARGS OPTS VARS SPEC LIBR Module Item Field OPCODE ARGS
+# SCRIPT session SESS lexicon VAR_POOL("NAME") POOL_VAR["POOL"] VAR["VAR"] 
+# BIND VAR ident spec code expr libr # import libr #
+# AVAR ident A R G S EXPRS ITEMS "{ Module ITEM FIELD ETC }" // import ETC
+# AVAR "ETC" # AUTO import ETC/* -MERGE LEXICON of NOUNS and LANG ITEM IDX EXPR
+# CODE "ETC.UDEF" += UDEF_from_USER_via_BENCH_as_SESS.ETC_UDEF()"
+# TOKEN "_UDEF" as AUTO_VAR the instance of a_SESS_in_LIBR
+# AVAR += LIBR.AVAR.load as RETOKENISE_PARSED_TOKEN_TREE_with_LANG
+# AVAR += LIBR.vars_in_SCROPE_bind_VAR_api 
+# # LANG name functions "LIBR.vars" "AVAR" "LIBR" "STR0" // STR0 == "%s" //
+# # LANG name rambling list of EXPR and CMNT and DATA in CMNT
+# # LANG name rambling list of EXPR and CMNT and DATA in CMNT and LANG
+# # LANG LANG MK_VAR("LANG") type SPEC LANG SESS ARGS CMNT // CODE in CMNT
+# AVAR += MENTION # simply by mentioning AVAR it exists with EA_EXPR
+# EA += "{ SEGMENT OFFS }" # CT_ SEGMENT == "SEGMENT" // BIND API VAR SEG_xFFFF
+# ie a world of u16 i16_IDX u15_idx # u15 pulls in MATCH "u15" OUT_OF "i16"
+# "{ VIA SCRIPT }" # MENTION with intent of IDENT # 
+# DECODE_(i16) # ACCENTED_ %s "{ DECODE i16 u15 i15
+# TECHNICALLY i15 MUST BE i16 just labelled for i15 # ACT AS i16 in SIGNED
+# EG # {
+#	IDX = "i16_BITFIELD" // ALSO "u8_u12_u12_BITFIELDS" // ALSO "u8_u8_u16"
+#	ALIAS u16 i16 SIGNED_WORD u8_u8 "{ u8 LHS ; u8 RHS }" // AUTO_PUNCT_SC
+#	ITEM is NAMED VAR in MINI_MACHINE i8_i24
+# EG # }
+
+# # LANG adds AUTO_ALIAS my_ref_your_ref
+#
+	
+	# exit
+
+	echo "NAME is $NAME_ONE"
+	NAME_ONE=`expr match "${NAME_ONE}" "${RE1}" `
+	echo "NAME is $NAME_ONE"
+	NAME_ONE=`expr match "${NAME_ONE}" "${RE2}" `
+	echo "NAME is $NAME_ONE"
+}
+fn_name_within_dirame
+echo "The above results are WRONG - EXPECTED %s CODE_POINT %s A_FIELD(%s) %s"
+TODO
+exit
+
+	NAME_default="${NAME_ONE:-$NAME_default}"
+
+	# echo "${NAME_default}"
+	# exit
+
+	year_mm_dd=`date "+%Y-%m-%d"`
+	namepart=.namepart
+	[ -f $namepart ] || echo $NAME_default >> $namepart
+	NAME=`cat $namepart` 
+	NAME=${NAME:-$NAME_default}
+
+
+	echo "# CTRL-C to exit # Edit the NAME part of filename"
+	read -r -p "# NAME-YEAR-MM-DD.txt # NAME = " -e -i "$NAME" NAME
+	echo $NAME > $namepart
+
+
+	filename=${year_mm_dd}_${NAME}.txt
+
+	[ -f $filename ] || D $filename >> $filename
+	vi -c 'set fileformat=dos' ${filename}
+	# xless $filename

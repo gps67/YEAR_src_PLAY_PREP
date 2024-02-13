@@ -1,0 +1,15 @@
+
+search=+/warning
+search= # stay at top
+search=+/lex_name_lex
+search=+/../obj/gen_e1
+search='-L +/#'
+search=+/error
+search=+/FAIL
+search= # stay at top
+search=+/START
+
+search=+/warning
+search=+/CTOR
+
+./M "$@" 2>&1 | less $search

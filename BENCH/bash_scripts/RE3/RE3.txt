@@ -1,0 +1,155 @@
+RE3/RE3.txt
+
+	RE3 is REGULAR EXPR API // UDEF
+
+	BASH says PATH += 
+var_add PATH $HOME/G/G_2021_2T/G_PRE_PLAY/NODE_WEB/node_modules/http-server/bin
+
+	JS_RE_is_ ... TBS ...
+
+	PCRE2 is ...
+
+	GREP is ...
+
+	GATHER \( \) \9
+
+	[a-z] [:alias:] PSG of RE USAGE
+
+	GEN DIALECT==PCRE2_from_foreach _curr
+
+
+	JS => CXX => C
+	CXX => JS => CXX => C
+	CXX => CXX => ARGV_CXX // => C
+	CXX => JS => NODE_JS
+
+		Laptop += NODE_JS
+		USBTOP += ARGV_CXX
+	
+	ARGV_CXX 
+	 gets called like BASH or TCL or C ARGV
+	 runs as CXX into JS // first form along with C
+	 runs as CXX into C // first form along with JS
+	 the range of available COMPILER phrases is limited
+	 use daft data layouts for simplicity consistency
+	 get .elf segment data
+
+	SEGMENT ELF
+	 struct entire_segment {
+	 };
+
+	 SPEC_of_entire_segment = get_SPEC_after_SWEEP // COMPILER PASS UDEF
+	 TREE_of_SPEC
+	  SPEC of_segment
+	  // build up during SWEEP of text and tree
+	 FREEZE_SPEC for ROM
+
+	 CONST_STR0_UTF8_used_in_PROG // Latin1 subset of UTF8 // STR0_8859 //
+
+	 PARSE TYPE TYPE DECL vi says it is CSET_BYTE
+
+	 PARSE PSG via GEN YACC
+	 PARSE PSG via GEN CXX merge_peeks_fsm_logic
+	 PARSE PSG via GEN CXX merged_peeks_fsm_logic
+	 PARSE PSG via GEN CXX try all paths, entire file in mem, alternatives
+	 PARSE PSG via GEN CXX try all paths, CUT at EOF // first complete
+
+	 SWEEP FILTER SWEEP
+	 SEEEP TREE bind vars MENTION 
+	 SEEEP TREE ARGV is a wierd declaration language // active // ANIM //
+	 SEEEP TREE GEN TREE_TWO // and or list of ROOT files in VFS
+	 SEEEP TREE GEN MMAP DATA defragmented compacted TOKENISED
+	 SLEEP TREE to ROM
+
+	HEAP MMAP OBJS
+
+	 EA = ZONE + OFFS
+	 EA = ZERO + OFFS
+	 OFFS = u24_OFFS
+	 BASE = ZERO
+	 BASE = ZERO + OFFS // ZERO disappears
+	 BASE = BASE + OFFS
+
+	 OFFS = BASE - ZERO // ZERO disappears
+
+	 OFFS = offs_of_FIELD // in_STRUCT _in_TYPE _by_NAME
+	 ADDR = BASE + OFFS // BASE of STRUCT OFFS_of_FIELD // _in_STRUCT
+
+	 IDX = u15_IDX // u16 allowed, u15 from SIGNED OPCODES in LIBR, i32_LIMIT
+	 OFFS = array_item_size * IDX
+	 ADDR = BASE + OFFS // BASE of ARRAY OFFS_of_ITEM // _in_ARRAY
+
+
+	bool_ok, N_in_ARRAY = get_N( ARY )
+	bool_ok, IDX_in_ARRAY = get_IDX( ARY, i24_PAYLOAD )
+		ARY = ARY_from_BYTE(i8_PAYLOAD)
+		// DEVISE OPTION // i32 = i32_from_i8_PAYLOAD() 
+		// DEVISE OPTION // i32 = i8_PAYLOAD_as_i32()
+		if( i8_PAYLOAD == 0 ) { // GOTO SAME_AS_GT0
+			// HERE_ZERO
+			// GOTO SAME_AS_GT0
+		if( i8_PAYLOAD > 0 ) { // ALSO_EQU
+			// HERE SAME_AS_GT0 // GE
+			// HERE_PLUS
+			u32 u7_IDX = - i8_PAYLOAD // CT_RT TRACKS finds CT_
+		if( i8_PAYLOAD < 0 ) { // SIGNED
+			// HERE_MINUS 
+			// HERE_SIGNED
+			i32 i7_IDX = i8_PAYLOAD // ALIAS or tracable origin
+			u32 u7_IDX = - i7_IDX // VALUE folded to +ve // not 0
+		}
+		
+
+	PATTERN
+
+		V2 = V1 - (V1_of_ZERO) // V2_is_V_above_ZERO
+		V1 = V1_of_ZERO + V2
+	
+		CALC V2
+		KNOW ZERO
+		KNOW PLUS	// if( MERGE_ZERO_PLUS ) ...
+		KNOW MINUS
+
+		ALLOC -ve from M1 down
+		RESERVE ZERO
+		RESERVE M1
+		RESERVE M2
+		UDEF M3_UNDER
+		ALLOC ...
+		ALLOC LAST
+		ALLOC NEXT // below LAST
+
+			so then see an array [0] is [LAST] 
+			maybe have page of 64 items
+			maybe have page of 128 items
+			maybe have page of 128 items
+
+			add_u16_to_idx1_to_get_idx
+
+			CPU might be able to use -ve IDX
+			CPU might need SLIDE to ZERO using +u16 
+			TABLE2_ITEM[ u16_TABLE2_NNNN ]
+			TABLE2_ITEM[ i15_arg + u16_TABLE2_NNNN ]
+
+RE3 is a grep RE
+
+PYTHON RE
+	re_cache.py
+
+
+CXX
+	CXX provides a STR0 and a VAR
+	STR0 is C ROM STR0 - no added STR_BASE
+
+	MMAP stores OBJ_BASE then STR0_TAIL
+
+		well known STR0_as_SPELLING
+
+		u32_HASH_ONE = 0x0; // recalc
+		u8 CSET; // 0x0 means USER DEFAULT for NEAR
+		u8 BLEN; // BYTE len or 0 is > 255
+		u8 BLEN; // BYTE len or M1 is > 255
+		i8 BLEN; // BYTE len or 0 or ADAPT_i7
+
+		i7 = i8 + 128 // full table is OK
+
