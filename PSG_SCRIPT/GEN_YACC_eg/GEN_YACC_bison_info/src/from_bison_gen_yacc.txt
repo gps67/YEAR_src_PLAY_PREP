@@ -1,0 +1,149 @@
+/*
+	not sure I think CODE_HERE == UDEF // AUTO_CAST_via_POOL_ONE _TWO 
+	merged vars %s.field for TYPE_CAST "{ XPOS_t & XPOS }"
+	AUTO_API treats OBJ * PTR }" as "{ OBJ & PTR }" // COIN_SIDE //
+	// COIN_SIDE is simply A_or_B _xor_maybe "{ ONE TWO }"
+	// COIN_SIDE is simply A_or_B _xor_maybe "{ NAME STR0 }"
+	// COIN_SIDE is simply A_or_B _xor_maybe "{ NAME DATA }"
+	// COIN_SIDE is simply A_or_B _xor_maybe "{ NAME EXPR }"
+	// COIN_SIDE is simply A_or_B _xor_maybe "{ IDX "IDX" }" // VAR_int_IDX
+	// SCOPE wraps all invocations as REPEATED_MACRO_PHRASE _and_EXPR_API
+	
+	something for you to sort out over winter puzzles
+	MINI_MACHINE works via making CACHE run
+	CACHE_of_MINI_MACHINE API_RELAY _API_FILTER _API_ACTION _API_DECL
+	API_uses a shared TABLE_of_OBJ_LOCN[idx_obj] // ALIAS "obj.get_LOCN()"
+	// ALIAS "obj.get_LOCN()"
+	// ALIAS "obj.get_%s(STR0)"
+	// ALIAS "obj.get_EA_%s(STR0)"
+	// GCC and probably LLVM check fmt strings // this helps
+	// we apply our own FILTER # check percent USAGE #
+	// PSG reports percent usage with its custom counter flags
+	// set COUNTER.subfield("%s").plus_plus("%s.field++")
+	// BASH_LINE is not bash it is a single LINE called from BASH # ARGV
+	// BASH_LINE_PARSE uses CIDENT_a1_a2_star_SPELLING // of_ITEM
+
+	HOME_WORK_TASK
+
+	find the C demo code in the bison.info file
+	make it compile from Makefile
+	run build a tree of PARSED SCRIPT LINES and WORDS
+	run sweep over TREE # possibly at runtime via CALL_on_EVENT ARGV # api
+	load PSG from handwritten CXX code that builds PSG tree
+
+		ARGV looks like BASH with heavy use of "VAR_NAME" Q2
+		GEN Q1 quoted code 
+		GEN Q2 quoted code 
+		GEN Q8 parsed CSET_DESC # words for ASCII through BASH 
+		# ASCII MATCH [ ] { } ( ) << >> += %s LEX MATCH ASCII
+		# ASCII MATCH ASCII [ ] { } ( ) << >> += %s LEX MATCH ASCII
+		# ASCII MATCH UTF { sweep_font_segments_and_pick_out_items "a2"
+		# MATCH ("a2_of_a1_a2_star") # AUTO OPTION :-) # PARSE "VAR_NAME")
+		# PARSE "VAR_NAME")
+		# PARSE "EXPR")
+		# PARSE "PHRASE")
+	
+	PRE_RUN with DATA_SET_ NONE CODE_POINT_AVAIL_from_API // THERE UNFETCHED
+	PRE_RUN with DATA_SET_ _ONE DATA_SET_ _TWO
+
+	API_FETCHED_VAR # on_USE run CODE A AR G S # return AS RET_VAR("WA_VAR")
+	API_EA # we are using STR0 * EA_CODE_POINT = "EA_VAR_OBJ" // "CSR_ONE"
+	API_EA # we are using STR0 * EA_CODE_POINT = "EA_EXPR_VAR_OBJ" // "CSR_ONE"
+	API_EA_EXPR # CT_RT cas compiled SCRIPT into ARGV CALLS to CXX funs
+	API_EA_EXPR # CT_RT CT_RET_VAL_KNOWN_xFFFF EA_obj_in_MINI_MACHINE_ROM
+
+	# i16 32K is plenty for most MINI_MACHINES # hand written ones #
+	# i16_i32 # u8_u8_u16_u32_WORD_from_lohi
+	API_FETCHED_VAR
+	API_UN_FETCHED_VAR #
+		# have CODE_THAT_WOULD_HAVE_BEEN_USED #
+		# have_CACHE_ASIF_PRE_USED
+		# have_CACHE_UNREF_PREFETCH # do_STO # do_not_STO #
+		# using u8_u8_u16_u32 # SIGNED # DECODE_EA_EXPR #
+		# RETVAL_can_be_any_of { i64_IDX i8_IDX i8_EXPR i8_i8_EXPR }
+		# RETVAL applies CXX_AUTO_TYPE_CONV AUTO_TYPE_t RETVAL
+		# RETVAL is MULTIVAL "{ OK VALUE }" "{ FAIL TAIL }"
+		# VALUE is idx_IDX # "{ ALLOC idx = N ++ }" //
+		# VARIABLE is BIND_SCRIPT_to_SESS_VARS
+
+		API_get_EA_of_RETVAL_when VALUE is OBJECT_TYPE_ONE_t _TWO_t
+		MENTION cause AUTO IMPORT 
+		 CACHE OPTIMISER SNOOPS HERE
+		  what's in your pre-fetched ROM
+		  oh OK the TOC VFS
+
+	make it compile from Makefile
+
+	WE ARE DOING THIS ** RSN **
+
+		GEN C minimal_CPLUSPLUS
+
+		It includes code to reload the SQL_DB cache STO_later_CACHE
+		only sweeps every hour
+		only writes every day
+		CACHE buffers REMOTE for you as an API
+
+		SEND_ENQ_ACK_BACK _SOON
+
+			each thread has a LOCK on SESS_NOW
+			on exit LOCK_COUNT DECR INCR DECL
+
+			avoid REF_COUNTING by not REF_INCR when CALL_FUNC
+			expect REF_COUNT_PROVIDED_BY_CALLER
+			# and keep until next REPL EDGE # 
+			# not all HEAP DATA is tracked like that
+			# use an inline function to pick that though
+			# and switch over as if NOT NULL use PTR
+
+		Q_CACHE - how we want REMOTE to behave
+		Q_CACHE - what we offer to  REMOTE as our API
+
+			if Q_CACHE is trusted_CODE_for_this_sort_of_use
+
+				runs very quick
+
+				OPTION SKIP_on_NULL
+				OPTION_STEP_is_CODE "NULL_means_BUILTIN"
+
+			EA_VAR = lookup("VAR_NAME") // STR0 // utf8_L1
+
+			EA_VAL = fetch_EA_ITEM // "VAR_NAME" 
+
+			LIBR += CLAIM_EA_VAR CLAIM_EA_VAL
+			LIBR += ITEM_POOL[u16] // hand written mini_machine
+			ITEM += GET_ITEM_AT_EXPR("u16") // i15 // on_MINUS _HIGH
+
+		CACHE_VAR 
+		 MATCH READ VAR at NOW within TIME_STEP_CLICK_ZONE
+
+		 	at end_of_ERA we list all USED asif locked
+		 CLICK_ZONE LHS_EDGE
+		 CLICK_ZONE DATA_STEP_HELD += READ_USED_OLD_DATA 
+		 CLICK_ZONE DATA_STEP_HELD += READ_USED_NEW_DATA # our write
+		 CLICK_ZONE RHS_EDGE
+		 MATCH WRITE VAR at NOW within TIME_STEP_CLICK_ZONE
+
+		 	at end of ERA we demand CONFIRM _ONE _TWO _USED
+		 	at end of ERA we report CONFIRM _ONE _TWO _MODIFIED
+
+		 OPTIMIST
+
+
+LOOK_as_if_LOCKED
+USED_as_if_LOCKED
+
+KEEP_list_of_USERS_of_OLD_DATA_that_need_
+
+WAIT_for_LIST_of_ACTUALLY_CHANGED_VARS VARS {
+	# LIKE when USED_OLD_VAL # OLD_VAL_is_CORRECT
+	list_of_typed_VARS_via_NAME "AVAR"
+	LIST += PAIR "{ NAME VALUE }"
+	# DETECT "Q2 %s Q2"
+	# DETECT "Q2 SP %s SP Q2"
+	# DETECT "Q2 GAP %s GAP Q2"
+	# DETECT "Q2 GAP %s GAP %s GAP Q2" "{ LHS RHS }"  // AUTO_in_DIALECT
+	# DETECT "Q2 GAP %s GAP %s GAP Q2" // AUTO_in_DIALECT // VARS LHS RHS //
+}
+
+*/
+

@@ -11,5 +11,6 @@ search=+/START
 
 search=+/warning
 search=+/CTOR
+search=+/FAIL
 
 ./M "$@" 2>&1 | less $search
