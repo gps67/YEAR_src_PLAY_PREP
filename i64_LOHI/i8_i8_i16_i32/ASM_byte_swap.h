@@ -1,6 +1,9 @@
 #ifndef ASM_byte_swap_H
 #define ASM_byte_swap_H
 
+#include <byteswap.h> //
+
+
 // INLINE // bswap edx // 0F CA // on i486
 
 	// if in doubt use ntohl, it uses _byte_swap_
@@ -12,6 +15,8 @@
 
 	// needs CALLER CODE to already know to SWAP_BYTES of NOT
 	// needs COMPILER CODE to already know on_LOHI CPU or one that can
+
+	// tcc cant handle "&" // it is C++ not C //
 
 inline void ASM_byte_swap_in_situ_32( u32 & situ ) {
 	// receiving "{ u32 & situ }" works with GCC G++

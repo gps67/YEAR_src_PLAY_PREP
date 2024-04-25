@@ -27,9 +27,16 @@ void show_byte( const u8 val )
 	printf("%c", val & 0xFF );
 }
 
+#define USE_ASM 0 // 1
+
 int show_word( u32 val )
 {
-	ASM_byte_swap_in_situ(val);
+	printf("show_word_32 0x%016X ", val ); // u32 is default on linux
+#if USE_ASM
+	ASM_byte_swap_in_situ_32(val);
+#else
+	val = bswap_32(val);
+#endif
 	show_byte( val >> 24 );
 	show_byte( val >> 16 );
 	show_byte( val >> 8 );
@@ -40,8 +47,12 @@ int show_word( u32 val )
 
 int show_word_64( u64 val )
 {
-	// ASM_byte_swap_in_situ_64(val);
+	printf("show_word_64 0x%016LX ", val ); // u64 needs % l
+#if USE_ASM
+	ASM_byte_swap_in_situ_64(val);
+#else
 	val = bswap_64(val);
+#endif
 	show_byte( val >> (8*7) );
 	show_byte( val >> (8*6) );
 	show_byte( val >> (8*5) );

@@ -1,9 +1,17 @@
 
 E=.exec
 F=test_align
+
+# GCC=gcc
+GCC=tcc -xc 
+# tcc does not work because it cant handle "int & areg"
+
 test: $F.exec
 	./$F.exec
 
 $F.exec: $F.cxx
-	g++ -o $F.s -S -g $<
-	g++ -o $@ -g $<
+	# $(GCC) -o $F.s -S -g $<
+	$(GCC) -o $@ -g $<
+
+clean:
+	rm -f $F.exec *.o
