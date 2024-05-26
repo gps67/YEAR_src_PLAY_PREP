@@ -1,0 +1,168 @@
+
+	MOJO_ASM_ARGV/
+	MOJO_ASM_ARGV.txt
+
+	MOJO_
+
+		ASM LLVM output
+		ASM MLIR output
+		CPU WORD output
+		VAR EXPR avail
+		VAR_ARGV 
+		 AVAR
+		 MENTION
+		 CONST TYPE VAR FUNC SPEC OBJ FIELD EXPR IDX API EXPLAIN
+
+		 Module A_Module {
+		  AVAR each of these {
+		  	CONST
+			TYPE
+			VAR
+			FUNC
+			SPEC
+			OBJ
+			FIELD
+			EXPR
+			IDX
+			API
+			EXPLAIN
+		 }
+		 }
+	
+	PYTHON -VS-
+	JAVA_SCRIPT -VS-
+	C++ -VS-
+	CXX -VS-
+	TCL -VS-
+	ARGV -VS-
+	SCRIPT -VS
+	PSG_UDEF -vs += BASED_on_PSG_from_LIBR _comes_with_API
+	ASM_ARGV 
+	ASM_DIAG a working MINI_MACHINE SAMPLE_VALUES DOCS_TODO CSR_HELP
+	CSR_HELP a TREE_CSR moves through the document in PAGE order
+	CSR_TREE receives TREE_BRANCH as one PRE_LOADED_TREE
+	CSR_STEP starts from XPOS_and_TIME // TIME is XPOS in VERSION_TREE
+	CSR_STEP PARSES EACH LEX and PUNCT and PHRASE
+	LEX_and_PHRASE {
+
+	 PSG
+	  LEX
+	  	lexicon
+	  PSG
+	  	phrase book
+	  DIAG
+	  	view OPTS DATA VARS STATE_TRAY
+	  TRAY
+	  	save state to a tray of objects and containers
+	  VIEW
+	  	each STREAM has own pallette to interpret FILTERED_BATCHED_TREE
+		TREE_as_STREAM can be with TABLES PRE_BUILT PRE_LOADED
+
+	}
+
+	DRAW XY of each XPOS FILE LINE XPOS { XPOS = CPOS } {
+
+		CPOS is both CSR in STR0 and X_pos on screen 
+
+		UTF8 presumes every GLYPH is fixed width
+
+		XPOS of WORD is first letter // MUST_KNOW_PARSE CIDENT99
+
+		CIDENT99 around here is usually cident97
+		CIDENT99
+		cident99 unused by me probably means CIDENT99 which is AVAR
+		cident98 ASCII_GLYPHS [ A-Z a-z _ $ ] [ 0-9 ] etc
+		cident98 UNUSED OPTION DIALECT SPARSE_SUBSET
+		cident97 USED OPTION DIALECT SPARSE_SUBSET
+		cident97 USED OPTION DIALECT EXTRA_LATIN_in_CIDENT
+		cident97 VFS likes PUNCT in filename KEEP . '.' '[' ']'
+		cident96 is_97_switched_eg_BASE64_CIDENT_EXACT_SPELLING
+	
+		WORD is at XPOS
+		 XPOS_as_CPOS_in_LINE
+		 XPOS_as_OFFS_in_FILE // calc LINE.CPOS from FILE_DATA and OFFS
+		 STREAM DATA as FILE META N_BYTES // completely PRE_SENT
+		 STREAM XPOS of CSR, which actually JUMPS to outer wrap
+
+		 // trying to make CSR flow nicely left to right
+
+	}
+
+	ELF.so
+	.text 	- compiled C++ code into BINARY ASM OPCODES in .text
+	.bss	- N_BYTES init_ZERO overlaying SPEC_of_bss // global static vars
+	.data_RO STR0 in C source becomes .ROM STR0 or P0P2
+	.data_RW DATA in SESS comes from .ROM_DATA cloned N_BYTES_RW
+
+	size from_bison_gen_yacc.exec
+
+	.    text    data     bss     dec     hex filename
+	    79530    2168      40   81738   13f4a from_bison_gen_yacc.exec
+	
+	VIEW lib_BENCH_view_diag_ELF_FILE_on_WORK_BENCH
+	VIEW lib_BENCH_view_diag
+
+		_ELF_FILE_on_WORK_BENCH
+
+		ELF
+		FILE name DATA 
+		_on_
+		WORK_BENCH
+
+			run obj_dump over file
+			goto EA_ITEM
+			view SPEC DATA TREE STREAM
+	
+		WORK_BENCH
+
+			run OBJ_DUMP_2 
+			over FILE
+			and adjacent NEAR files
+			goto XPOS
+			view DIAG OPTS
+
+		WORK_BENCH
+
+			run TEST_DATA_309
+
+			PASS
+			 STEP debug how it is seen as correct
+
+			FAIL
+			 STEP debug how it is not seen as correct
+
+			STEP
+			 STEP is mostly OK, done ASIF in sequence
+			 DRAW opts available
+			 FLIP_BEFORE_AFTER
+			 FLIP_PREV_HERE_NEXT // switch FGBG and redraw
+
+			STOP
+			 FAIL was intentional, clear error ready for NEXT STEP
+
+		WORK_WORK_BENCH
+
+			BENCH on SCRIPT dgb PSG AST MMAP_TREE
+
+		WORK_BENCH
+
+			NODE is a CSR on PSG_TREE - a_PARSED_SCRIPT _as_TREE
+			TREE is PSG as AST // enable AST to be any PSG_TREE
+			TREE_loaded_from_CLANGS_MAD_TREE
+
+				a lot of simplification
+				pretty printer
+				in_GEN_out FILTER
+
+					convert CODE("%s") to ("_DITTO_")
+
+		FILTER of STREAM as XFER_TREE_BATCH then STEP_STEP_EDIT
+
+			XFER_TREE as TREE_STREAM
+
+				BATCH so after delay, happens in an instant
+
+
+	
+
+

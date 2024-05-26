@@ -1,3 +1,4 @@
 
-T info -f /tools/x86_64_src/ccs/bison-3.8/doc/bison.info 
+ T info -f bison/doc/bison.info 
+#T info -f /tools/x86_64_src/ccs/bison-3.8/doc/bison.info 
 

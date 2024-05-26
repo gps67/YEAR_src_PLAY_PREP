@@ -1,0 +1,73 @@
+
+	L -> ES6
+	L -> ES6_for_JIT
+	L -> ES6_JIT_WASM_BROWSER_NODE
+	L -> CXX_with_LIBR
+	L -> CXX_with_TCL_and_LIBR
+	L -> CXX_ASM with API_mux
+
+	We have to do this on a web browser
+	We can ask for 2023+,
+	We can ask for ES6, or ARM32 or CXX of even C99
+	Maybe even Turbo Pascal Modula2 objc
+
+	L is CXX subset, maybe some closeure_capture
+
+	FEATRURE LIST
+
+		AVAR -> "{ SPEC_t SPEC }"
+		AVAR -> A_STRUCT_t
+
+		Numeric ints floats bitfields
+		bitfields_u32_u32
+
+		closure
+		numbered_anon_funcs
+		named_expr
+		pre_calc_pre_load
+	
+		RET_VAL
+		RET_VAL when "{ ARG_t & arg }"
+
+		CLASS_TREE
+
+		MMAP BYTE_ARRAY webgl
+		MUX UDP transport 
+	
+	WANT
+		UDP from WEB-2
+		ZLIP and CRYPTO 
+		sqlite
+	
+	BUILD
+		MUX within browser client
+		MUX within node server
+	
+	L_interp_as_ES6
+
+		Parse ES6 or CXX or L or TCL or ARGV or ...
+	
+	transpiling L to ES6_browser_api makes it useful
+	transpiling L to CXX_LIBR_api makes it useful ans fast
+
+	TASK LIST
+
+		serve band tracks
+
+			VPS relay 
+				double bandwidth useage of VPS
+
+		RPC ove WEB
+
+			IDX SPEC DATA 
+
+			limited capabilities (JSON_PLUS)
+			infinite uses
+
+		graph plots
+
+			PIOMAS
+			annual curves
+			midline experiments L-M-RL-M-R
+	
+

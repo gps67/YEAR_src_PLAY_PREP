@@ -1,6 +1,20 @@
 /*
 	ARMv6 required for unaligned access LDR
 	otherwise it rotates within the word!
+
+	This loads a 32 bit word from aligned and from odd address
+	prints out the u32_WORDS as ABCD or as DCBA
+
+	IT also tests the SWAPB _32 and _64
+	by printing out FILE_TEXT_BYTES "@abcdefghijklm" more than 8 shifted
+	
+./test_align.exec
+show_word_32         0x64636261 abcd
+show_word_32         0x65646362 bcde
+show_word_64 0x6867666564636261 abcdefgh
+show_word_64 0x6968676665646362 bcdefghi
+(END)
+
 */
 
 #include <stdio.h>
@@ -31,7 +45,7 @@ void show_byte( const u8 val )
 
 int show_word( u32 val )
 {
-	printf("show_word_32 0x%016X ", val ); // u32 is default on linux
+	printf("show_word_32         0x%08X ", val ); // u32 is default on linux
 #if USE_ASM
 	ASM_byte_swap_in_situ_32(val);
 #else

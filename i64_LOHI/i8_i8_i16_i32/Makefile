@@ -2,9 +2,12 @@
 E=.exec
 F=test_align
 
-# GCC=gcc
-GCC=tcc -xc 
+GCC=gcc
+
+# GCC=tcc -xc 
 # tcc does not work because it cant handle "int & areg"
+
+# GCC=gcc
 
 test: $F.exec
 	./$F.exec

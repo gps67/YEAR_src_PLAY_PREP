@@ -1,0 +1,160 @@
+2024-05-16_DIALECT_SPECS.txt
+2024-04-28_Goggles4u.txt
+
+Whilst writing HW_DB item for SPECS - to remember which is which
+
+AUTO_TWIG is manually prepared to MATCH each TWIG from ASCII UTF8 or BYTE_LATIN1
+AUTO_TWIG CT_RT creates _TWIG from parsed PHRASE for _TWIG.PHRASE("_TWIG")
+
+EDIT_TWIG_ARGS // TEST_DATA // UDEF_DATA // SESS_DATA // CODE_DATA //
+
+HERE += BENCH TWIG 
+SESS += BENCH TWIG // MERGE ALIAS REPEATS
+
+https://www.goggles4u.co.uk/uk/customer/account/login/
+
+	2024-04-28
+
+	rimless
+	 tad deep
+	
+
+	--
+
+	flextride 
+		
+		flextride	// PSG AUTO_REPEATS SAME SPELLING FROM ONE DECL
+				// DECL += IDENT "%s" "flextride" // GEN //
+				// %s // sample value this_DATA_for_SPECS //
+				// FMT "%s" "flextride"
+				// FMT "flextride"
+				//
+				// GEN FMT // first mention enables use as STRUCT
+				// GEN KNOWS "FMT" is imediately known to Module_SESS
+				// well known to API
+
+					LEXICON says ... based on EG 
+					// HERE is between EG and ARGS
+					EG fprintf(fmt,a,r,g,s)
+					// fmt = "%04X" a // ABCD_ARGS_V_ETC
+					// ABCD_ARGV_ITEM_STR0 // STR0 // TEXT
+					ROM uses STR0 to hold name EXPR a r g s e t c
+					DIALECT use ABCD as VAR_NAMES
+					DIALECT use NAME as VAR_NAMES
+					DIALECT use ANYSTR as VAR_NAMES {
+						if MATCH says so
+						if PSG says so
+						if SESS says so
+						// SESS is running as USER
+						if USER says so
+						if PERM says_OK // ZERO_VOTE
+						// ZERO_VOTE means OK either way
+						// used in a COUNTER 
+						DECL COUNTER
+					DECL COUNTER {
+						ITEM_NAME: "A_COUNTER" 
+						HERE_PLUS: "client_data_t * client_data"
+						EXPR_HERE: "HERE_EXPR"
+						HERE_EXPR: "LOCN_t * HERE"
+						HERE_EXPR: "ITEM_t * HERE"
+						HERE_EXPR: "ITEM_t * HERE_as_DATA_VALUE = _from(EXPR)" // UDEF COMPILER MACRO STEP EVAL // STEP EXPR // 
+
+						LIST_
+						STEP_EXPR {
+							// BASE_CLASS gets CT
+							// SESS_STO gets RT
+							// CACHE is OPTIMISED INTO CODE
+							// CACHE_is_SWITCHED_to_ROM
+						}
+
+						STEP_EXPR { // _t OFF STEP_EXPR
+							struct STEP_EXPR : ITEM_t
+							{
+								// UDEF const_type_var_lists
+								// lists is ALIAS for VAR_POOL_of_type_LIST
+							}
+						}
+
+					}
+					}
+
+			plastic blue stipe 
+			rectangular frame
+			lens surface 1mm infront of lens edge frame (proud)
+
+
+		55[]19-140
+
+			on inside left arm
+			flextride on right arm
+
+
+		glasses
+
+	 		wear OK
+			varifocus is all over the place
+
+/* This is an aside, it is needed to process NEAR HERE (ABOVE "glasses")
+
+	There was a need for a new SUB_HEADING_AND_TEXT
+
+		HEADING "glasses"
+		TEXT GAP_BLOCK P _PRE bullet_point_list
+		ALIAS TEXT = bullet_point_list
+		AVAR TEXT = bullet_point_list
+
+		SCOPE entire TREE immersed in ROOT_TYPE_isnt_MMAP
+		SCOPE entire TREE immersed in ROOT_TYPE_uses_MMAP
+
+		MMAP brings API_VAR_POOLS
+		MMAP brings API_Module _SESS = API_SESS_over_SESSION_THREAD
+
+		 DIALECT NOARGS provided but can be supplied later
+		 DIALECT NOARGS is a simplified VIEW of PHRASE as a_NOUN
+		 // SOFT MIX PHRASE as NOUN // 
+		 // SOFT MIX PHRASE as NOUN // NOUN is SIMPLIFIED ARGV
+		 // ALIAS EXPR for EXPR // MATCH TRIG1 TRIG2 // CODE_POINT
+		 // CODE_POINT is LIST += where "ALIAS" is_DECL is_USED
+		 // ALIAS can be a PHRASE or PARSED_TREE
+		 // TREE can be expected to be in ADJACENT_STO or HERE_STO
+
+	With that need to place the TEXT using this TEMPLATE
+
+		HEADING "glasses" // use STR0 as TRACKER
+
+		ALIAS u64 u8_u8_u48
+		ALIAS u16_EA_of_STR0
+			INSIDE THIS_MODULE_ROM
+		ALIAS u16_EA_of_STR0
+			OUTSIDE THIS_MODULE_ROM
+
+		OPTION MERGE those 2 HEAP_u16_of_EA_EXPR
+
+			That is an absolute limit of 64K per intention
+
+			If you need more, take PTR out of u48 and use u48
+
+				SUGGEST u8_u8_u16_u32
+
+API MERGE UNIT
+ SUGGEST
+ 	u8_u8_u16_u32_xFFFF
+
+		array[ u16] of u64	// VIEW as "u64" // lookup CT_RT "u64"
+
+		%s use_of_generic_name_glasses_as_ALIAS_for_SELF_SPELLING_flextride
+
+			PICK: "glasses"
+			OPTS: "SPECS"
+			OPTS: "%s" UDEF _NAME
+
+				UDEF_NAME = UDEF.NAME // 
+				_NAME = UDEF_NAME
+
+			OPTS: "%s" UDEF _NAME
+			______"%s"_____ _NAME
+			OPTS: "%s" UDEF _NAME
+			__________ ____ _NAME
+
+
+

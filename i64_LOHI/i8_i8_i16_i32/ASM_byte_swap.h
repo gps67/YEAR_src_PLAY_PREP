@@ -17,6 +17,8 @@
 	// needs COMPILER CODE to already know on_LOHI CPU or one that can
 
 	// tcc cant handle "&" // it is C++ not C //
+	// tcc says ASM_byte_swap.h:21: error: ',' expected (got "&")
+
 
 inline void ASM_byte_swap_in_situ_32( u32 & situ ) {
 	// receiving "{ u32 & situ }" works with GCC G++
