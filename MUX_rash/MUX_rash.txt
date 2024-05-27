@@ -1,0 +1,54 @@
+
+	RASH is a program to place on a M-BED unit
+	eg on NAS320
+	eg on Pi next to NAT_ROUTER
+	eg on any server as a probe
+	eg on esp32 running dgb on 
+
+	It has unfettered access to the BOX it is sitting on
+	OPTION USER -not- ROOT
+	OPTION chroot (within VPS)
+	OPTION coded_in_throttle - custom PROG in CODE or in CONFIG
+
+	Invoke outgoing control to SCREEN_KEYBOARD_CTRL
+	Accept incoming connection over PORT
+	OPTION already have STDIN and STDOUT as same socket INETD style
+	OPTION have shell STDIN and STDOUT as remote link over tricky TTY line
+	OPTION do like PPP does or base64 or ...
+	OPTION MUX_to_MUX _via_TTY use base64_adj
+
+	PERMIT CHECKING
+	OPTION connect from IP ADDR, using daft key, RSA key of host
+	OPTION login as USER PASS FILE # FILE contains RSA protected with MORE
+	OPTION sudo capability requested
+
+	MUX protocol
+	establishes a connection, before login
+	UDP - listen on "{ ADDR PORT }"
+	TCP - send UDP frame over TCP be happy
+	TTY - send FRAME over PPP - adjust SRC_IP
+
+	PORT 1234
+	PKT_IN from ongoing connection
+	PKT_IN from brand new connection
+	PKT_IN from weekly user
+
+	PKT_IN from ongoing connection
+
+		FAST outer check that the SIGN is OK
+		PROB multiple things to check with it, incl outer
+
+		DECRYPT DECOMPRESS DECODE - possibly in parts
+		DEMUX - channels tasks MUX_ADMIN( repeats ) PAGE_of_FILE
+		SPLIT_JOIN FRAGMENTS - and under different KEYS
+
+		ACTION - split frame to frames - many ACK sort of META
+		ACTION - relay frame to ...  
+		ACTION - 
+
+	PKT_IN from brand new connection
+	PKT_IN from weekly user
+
+	PKT_IN used LINE_PASS
+
+	
