@@ -1,0 +1,166 @@
+
+	dgb_invokes_gdb_in_XTERM_at_break_point.txt
+	
+        INGDB=1 					\
+	$(gdb)						\
+	-tui						\
+	--command ../.gdb_init_$(PROG1)			\
+	--args ./$(EXEC1)				\
+#
+
+	create a scripted breakpoint
+	which invokes python during set break point
+	which invokes python during hit break point
+
+		both merge to common SCRIPT
+		both test some condition
+
+		dgb can change a on_event_PTR to FUNCTION # ARGS_SPEC
+
+			choose to keep running 
+			choose to stop via break point _on_SCRIPT
+
+			change of state, the INIT code can take a lot
+			tracking fast to LINE_1234 then 
+			logging more about API
+			list of steps N N S S B = XPOS C_t_B
+
+				advanced C++ can use "{ B = XPOS }" as CTOR
+				plainer CXX can use B = "XPOS" as CT_RT OCODE
+				CT_RT knows this, and knows "XPOS" is VAR_NAME
+				CT_RT knows that, and optimises GETTER(AVAR)
+
+			eg provide a few answers to FORM fields
+
+				that requires the FORM_LIBR to give API
+				we ask it to provide ASIF filled out with THIS
+				we can ask for individual fields or EXPR
+				CT_RT allows the reply to be _on_EVAL_ASIF()
+
+			CT_RT on_EVENT = CALL EVAL_ASIF() SPEC ARGS
+
+				SPEC is also available as
+				CODE_POINT within DECL
+				"SPEC" matches to DECL.CODE_POINT_XPOS.ARGV_SPEC
+				DECL.CODE_POINT_XPOS.%s("ARGV_SPEC") # TOKEN
+				
+				on_EVENT is a vital python vector
+				it is always NULL, and caller simply returns
+
+				When dgb BENCH switches on_EVENT = TRACE_CALL
+
+					on_EVENT is a PY_CALLABLE_with_ARGV
+					on_EVENT is an ELF CODE ADDR
+					ARGV is passed using on_EVENT_ARGS_DECL
+					CT_RT builds complex holder of ARGV
+					ARGV follows DIALOG STYLE GUIDE
+					ARGV must be CXX_FUNC_ARGS
+					ARGV could be LIST of NAMED ARG
+	 /* NAME KNOWN */		ARGV could be LIST of KNOWN ARG #
+
+	 dgb_SCRIPT
+
+	 	SCRIPT emits CXX emits C++ under gdb
+
+			probably viewing the C++ optionally SCRIPT
+
+			FILE and LINE of SCRIPT # GEN into CXX # into C++ #
+
+			switch REGEN to view C++ or view SCRIPT
+			do with own VIEW
+
+		gdb -tui
+
+			export_ENV_VAR INGDB=1
+			gdb
+			-tui
+			--command ../.gdb_init_$(PROG1)
+			--args 
+				./$(EXEC1)
+				A
+				AR
+				ARG
+				ARGV
+				ARGV_TAIL
+
+		T gdb -tui
+
+			T runs "$@" inside a new XTERM
+
+				48x80 tall window
+				TTY is XTERMS TTY
+
+		T TTY_PIPE -run gdb -tui
+
+			WRAP knows what commands to send to gdb -tui
+			WRAP knows what displays to parse from 
+			WRAP gets a lot of code prebuilt
+			WRAP gets to struggle with TTY and curses
+
+			TTY_TERM "$@"
+			TTY_TERM ARGV
+		
+	API gdb /* without -tui */
+
+		TTY_PIPE that expects gdb_plain_tty
+
+		expect some ERROUT STDOUT DEBUG_PRINT ALOG
+	
+	API curses /* with -tui */
+
+		gdb -tui ...
+		vi myfile ...
+		mc ${DIR1} ${DIR2} // SHELL=RASH //
+
+		RASH_SHELL must accept ARGV as ONE_LINER
+		RASH_SHELL must accept TTY as LINE_SHELL_TTY
+		RASH_SHELL must accept TTY as LINE_SHELL_SCRIPT
+
+		we inevitably invoke bash, which is not secure YET
+	
+	API gdb LINE
+
+		NEXT
+		STEP
+		PRINT_EXPR
+		BACKTRACK BACK_STACK
+		LEVEL - impossible
+		BREAKPOINT SET LIST CLEAR SET_CONDITIONAL
+		BREAKPOINT GOTO
+
+	RASH is ZX
+
+		https://github.com/google/zx
+
+		await $`cat package.json | grep name`
+
+		let VALUE = 'NOT_QUITE_ANYSTR' // RESONATE WANT FS_SUITABLE
+		await $`mkdir /tmp/${VALUE}`// AVAR_VALUE must be IDENT_C99
+		# IDENT_VFS # compiled into ROM should be ASCII or CSET //
+		// ASCII is our universal subset // OPTION idx_FFFF
+
+		await SP DOLLAR QB ARGV_TEXT QB
+		# QB alias Q_BACK alias Q_BACK_QUOTE alias Q_B
+
+		ZX offers coroutines and captures and callable ARGVS
+
+			just because it is possible
+			we use a SUBSET
+			and achieve what we achieve
+	
+	TROPE behind the TROPE
+
+		hidden in plain sight
+		cognitive disonance
+		cognitive preset # loaded bias # running vibe #
+		there is the place it directly denied
+		that is one of the formulae
+		OPTION FORBID the PROJECTED in advance # best place to hide it #
+	
+	#
+
+	
+
+
+
+

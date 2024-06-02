@@ -1,0 +1,35 @@
+
+	LIBR_ssh.txt
+
+libssh-0.10.6/build/
+
+    # mk_1b # one clean run # make with debug opts # dgb demos too #
+    # LIBR_WRAP_libssh
+    # LIBR_WRAP_ssh _using libssh TODO other
+    # LIBR_WRAP_dgb WRAP_LIBR_gdb # annoying text api # so simplified # TTY_LINE
+    # LIBR_WRAP_tty += edit_line_pre_send += ptm_pts_tty_fork _keep_fork_exec_api
+    # LIBR_WRAP_fork # += 
+    # SILENT %s before += RHS_TAIL # LHS_XPOS_RHS # P0P2 # _in_SCOPE # NIDO #
+    # SILENT is SELF THIS $0 (maybe OPCODE maybe DECL maybe MUX_OTHER)
+    # DIALOG_MUX_OTHER # create for PRE_LOAD or ready to ALLOC_INIT_api #
+    # CT_RT SESS PRE_LOAD_DATA_and_INIT_to_PICK # sql_like_substate_of_CT
+
+    cmake \
+    -DUNIT_TESTING=ON \
+    -DCMAKE_INSTALL_PREFIX=$HOME/G/prefix/ \
+    -DCMAKE_BUILD_TYPE=Debug \
+    .. \
+    | tee -a $0_cmake_opts.log
+    #
+    make 2>&1 | tee -a $0_make.log
+    make install 2>&1 | tee -a $0_make_install.log
+
+dgb build//YEAR/src/GITS/YEAR_src_PLAY_PREP_pre/ssh2_libs/libssh-0.10.6
+
+	libssh-0.10.6/build2/examples/
+
+	libssh-0.10.6/examples/
+
+
+
+
