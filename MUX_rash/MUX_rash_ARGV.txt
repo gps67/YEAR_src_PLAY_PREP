@@ -1,0 +1,89 @@
+
+	MUX_rash_ARGV.txt
+
+	Tcl had an originating idea,
+	to remote control a remote SOCKET TEXT_API
+	sending tclsh command lines, optionally multi_line
+	CALL ARGV # with all escapes required to reproduce ARGV at remote
+
+	safe more TCL provides an api where we can DIRECTLY CALL TCL ARGV
+	we can also use tclsh SCRIPT language
+	within a "safe_interpreter"
+
+	we can also do our own PARSE and SCAN of ARGV to EVAL
+	build ARGV from TEXT_STREAM
+
+	on remote STREAM appears as STREAM
+	it is our subset, we can refuse illegal CHAR in CIDENT or STR0
+	we can transfer SCRIPT_BLOCKS 
+	we can request PRE_LOAD_modules # on_REQ("%s") #
+	
+	This is the safest way for a ES6 local to call an ES6 remote via ARGV
+
+		this is a way out of WASM // _api //
+
+		this is a way over WLAN // PERMIT_RSA //
+
+			PERMIT_RSA
+			 caller has proof of very_recent_use_of_RSA_PRIV
+			 we are doing LOGIN style and USER_HAT_SWITCHING _MODE
+			 so the LOGIN_ID gives us all we need for PERMIT
+
+			 PERMIT expires after renewal // UDP overlap //
+			 PERMIT_PEER prefer newer one, accept old one
+			 PERMIT_TELL ENQ_ACK remote surrenders _old pening ACK
+			 PERMIT_DELAYS ENQ_ACK still to_and_fro
+
+
+			 	MACHINE allows loose SYNC_EDGE
+				so that remote machines have a chance
+				to catch up
+
+				MACHINE can pro_actively REQ from all
+				CACHE_of_REMOTE might accept DROP_CACHED_VAL
+				CACHE_of_REMOTE might prefer KEEP_CACHED_VAL
+
+					KNOW that a new value is coming
+					KNOW that it will take time
+					KNOW that PAUSE_PERMIT will happen
+
+					basically the remote can go very quiet
+					we take a long time on the old PERMIT
+					but we ask for a SYNC and it times out
+					so we DROP CACHED VAR VALUE // keep VAR
+
+					we design for a lumpy network
+					we design for 10 minute delays // SPOOL
+					we design for demand immediate // OPTION
+					we design for intentional 1 week outage
+					we design for tell me in advance
+
+			PERMIT
+
+				DONT // GET 
+				GET CHROOT ...
+				GET UID_CURR GID_CURR GROUPS 
+				GET PID SOCKET SESS_STO _keep_AVAR
+
+				GOT PERMIT PERMIT from {
+					remote is holder of RSA RSA_ONE_PRIV
+					RSA conveys PERMIT += USER == "gps67"
+
+					RENEW_PERMIT_PROOF every hour
+
+						expect patient operator
+						away from desk
+						vital batch must run by itself
+
+						so in advance BENCH holds RSA
+						(actually held _by_BENCH)
+						(actually held _by_BENCH_AGENT
+
+						so we dont trust BENCH too much
+
+					REQUEST PERMIT lasts until LOGOUT
+
+						OPTION indefinite 
+
+				}
+

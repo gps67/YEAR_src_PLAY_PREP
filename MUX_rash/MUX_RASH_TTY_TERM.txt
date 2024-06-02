@@ -1,0 +1,16 @@
+MUX_RASH_TTY_TERM.txt -- HERE
+MUX_RASH_TTY.txt
+
+
+struct MUX_RASH_TTY_TERM : public MUX_RASH_TTY {
+	mode_edit_line
+	mode_curses
+	mode_curses_field
+	mode_curses_app_key
+	mode_curses_goxy_csi // CSI name predates CSI // means "ESC [" //
+	mode_app_key
+	mode_app_scn
+	mode_app_line
+	mode_app_line_SYNTAX
+
+};
