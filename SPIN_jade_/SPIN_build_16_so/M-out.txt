@@ -1,0 +1,2 @@
+../SPIN_Makefiles/MK_SPIN_site:21: /home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_Makefiles/MK_SPIN_site_osp: No such file or directory
+make: *** No rule to make target '/home/gps/YEAR/src/YEAR_src_PLAY_PREP/SPIN_jade/SPIN_Makefiles/MK_SPIN_site_osp'. Stop.

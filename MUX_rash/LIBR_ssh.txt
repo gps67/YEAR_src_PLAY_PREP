@@ -28,6 +28,30 @@ dgb build//YEAR/src/GITS/YEAR_src_PLAY_PREP_pre/ssh2_libs/libssh-0.10.6
 
 	libssh-0.10.6/build2/examples/
 
+		cmake_install.cmake
+		Makefile
+
+		# all the rest are # VIEW VIA dgb 
+
+		exec*
+		keygen*
+		keygen2*
+		libsshpp*
+		libsshpp_noexcept*
+		libssh_scp*
+		samplesftp*
+		samplesshd-cb*
+		samplesshd-kbdint*
+		scp_download*
+		senddata*
+		ssh-client*
+		sshnetcat*
+		ssh_server_fork*
+		ssh_server_pthread*
+		ssh-X11-client*
+
+
+
 	libssh-0.10.6/examples/
 
 

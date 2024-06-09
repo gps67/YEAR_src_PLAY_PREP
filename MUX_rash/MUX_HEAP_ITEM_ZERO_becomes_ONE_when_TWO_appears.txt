@@ -1,0 +1,129 @@
+
+	MUX_HEAP_ITEM.txt
+
+	idx_i65	[M [0 [N 
+	 -u64 <= idx < N
+	 -u64 <= N_val < u64 <= (u64+1)
+	 // strange DIALECT takes "u64_FF" to mean largest u64xFFFF
+	 // strange DIALECT takes "u64_FF_plus_1" to mean B_1000_ZERO
+	 // where the 1 digit is stored OUTSIDE the WORD, 
+	 // where the WORD == 0000 // not know not empty // else GET_VAL // RT_
+
+	 CT SCRIPT {
+
+	 	arrange to call RT SCRIPT_from_SCRIPT // GEN_FILTERED_SCRIPT
+	 }
+
+	 RT SCRIPT {
+	 	SCRIPT = FILTERED SCRIPT // CT_can do this AOT
+		// that skips CT // even though CT is a NULLED FAST_SKIP_CALL
+		// might also do various pre_calc work
+		// compromise on CT { if NOT on_PTR set on_PTR to AVAR_CALL _or_DATA
+		// AVAR_CALL_OR_DATA // might even be NULL // why_NULL 
+		// DATA is VALUE that CODE_POINT sees as DATA
+		// CODE is VALUE that CODE_POINT sees as CODE CALL CLOSURE etc
+		// CALL may be CPU_CODE from before // possibly wrapped token
+	 }
+
+	 CT_RT SCRIPT {
+		 CT { SCRIPT }
+		 RT { SCRIPT }
+	 }, 
+
+ BENCH create  new DOCS file
+ BENCH add name of file - as above in text
+ SCRIPT split into words {
+	MUX_HEAP_ITEM
+	MUX {
+
+	}
+	HEAP {
+		LOCN.HEAP_of_ITEM "HEAP" {
+			... TBS ...
+		}
+	}
+	ITEM {
+		SPEC = ITEM.SPEC // BASE is u8_u8_PICK_SPEC from LIBR_ONE
+		// _ONE is _ZERO // unnamed SPLIT when own clone peer formed
+		// _TWO // rewrote history, with _ONE as [0] without PEER
+		// _TWO // rewrote history, with _ONE as [1] with    PEER
+		// when _ONE was [0] it was NEVER pronounced %s_ONE just %s
+		// on_SPLIT // move VAR to [1] create [2] think about new [0]
+		// an_AXIOM //
+	}
+ i65 {
+
+ 	It is possible to have an entirely PLUS u64 // ZERO_is_PLUS
+ 	It is possible to have an entirely MINUS i64 // ZERO_is_ABSENT
+ 	It is possible to have an entirely MINUS i64 // ZERO_is_ADDED
+ 	It is possible to have an entirely MINUS i64 // ZERO_is_SPECIAL
+	// ZERO_menas_N_FULL
+	// ZERO_menas_M_EMPTY // of MININT or something
+
+	i65_N {
+		KNOW "{ M_u64_1_ZERO as_SIGNED_i64 }"
+
+		CPU LIMIT of MINUS_u63
+		CPU LIMIT of MINUS_UNS // beyond MINUS_MIN_INT_
+		CPU LIMIT of MINUS_MAX_INT // MINUS_FF // MINUS_127
+		CPU LIMIT of MINUS_MAX_INT_plus_ONE // MINUS_100 // MINUS_256
+
+		PLUS_MAXINT
+		MAX_INT_127
+		MAX_INT_128_EDGE # _EDGE_OVER OVER like P2 is outside is N
+		MIN_INT_128_EDGE # _EDGE inside like P0 is inside
+		MIN_INT_127
+
+		In all cases we add a bit to the requirement
+		we add a KNOW that word is ZERO CARRY ZERO
+		eg u11 fits in i12, N_of_u11_is_1000_ZERO 
+		// 0000 1111 1111 1111 # MAX_PLUS _of_u12
+		// 0000 0000 0000 0000 # MIN_PLUS # _of_i12 ## of ANY PLUS WORD
+		// 0000 1111 1111 1111 # MINUS # M1 # BITFIELD pinched by 0000
+		// 1111 1111 1111 1111 # MINUS # M1 # extened to SIGNED word
+		// 1111 1111 1111 1110 # MINUS # M2 # ...
+		// 1111 1000 0000 0000 # MINUS # M_CARRY_ZERO # MIN_MINUS
+		// 1111 0111 1111 1111 # MIN_MINUS_minus_1 # looks unsigned
+		// 1111 1000 0000 0000 # MINUS # M_CARRY_ZERO
+
+		// 0000 0111 1111 1111 # MAX_PLUS _of_i12
+		// 0000 1000 0000 0000 # MAX_PLUS_1 # needs_i13 # has i16
+
+		// 0000 0111 1111 1111 # MAX_PLUS _of_u12
+
+		WE REQUIRE that GET_BITFIELD returns UNSIGNED_WORD
+		WE REQUIRE that GET_BITFIELD returns SIGNED_WORD
+
+			That fails at i64 and also at i32
+
+			on CPU64 we need i64
+			on CPU32 we need i32
+
+			on CPU32 i9 appears as i32 SIMPLE JOB DONE
+			on CPU64 i9 appears as i32 SIMPLE JOB DONE
+			on CPU64 i9 appears as i64 common CEILING
+
+			we KNOW that i33 and i65 are NOT needed
+			except for N and when NBITS == 32 or 64
+			with some CODE to handle WORD64 on CPU32
+
+				we currently live in a limit of u31 
+				we currently live in a limit of u31 u47 u63
+
+			FULL PAGE can have bool_bit
+
+				can_be_EMPTY
+				is_EMPTY
+				can_be_FULL
+				is_FULL
+
+				is_over_MINUS_HALF_needs_1bit_more
+				is_that_1bit_MINUS // 1 is M1 // there is no +1
+				is_that_1bit_PLUS
+				is_that_1bit_ZERO // ZERO is PLUS
+
+				get_NBITS_for_idx 
+				get_NBITS_for_idx _plus_1_makes_N
+	}
+ }
+ }

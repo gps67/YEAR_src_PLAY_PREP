@@ -1,0 +1,80 @@
+	2024-06-08
+
+	2024_06_Jun
+	2024-06-08_BENCH_ITEM_FOUND_is_ATTR.txt
+
+	operator was doing a new task, but maybe template candidate
+	checking BIOS versions of FIRMWARE on DEVICE # possible EDITS #
+
+	during the BENCH_SESS
+	operator remembered to use the ADMIN_FIRMWARE tag
+
+		ALIAS _BIOS_ 
+
+		place this marker near any FIRMWARE or BIOS
+		downloaded and maybe installed
+
+		NOTES.txt for "this is for the other hardware - so unused"
+		NOTES.txt for "this worked a treat"
+		NOTES.txt for "this worked a treat - until ..."
+	
+	BENCH += TASK // is echo implied in following line // AUTO_GROW_PRE_DONE
+	BENCH TASK TEMPLATE += FEATURE
+
+		FEATURE += WEB_LINK URL notes etc
+		FEATURE += WEB_DATA FILE DOWNLOAD virus_scan_
+
+	
+	BENCH DOWNLOAD += virus scan # PEER that demands ALL DONE or NOTES
+
+		NOTED
+		NOTES
+		annotations
+		ANOTE // ALIAS ANNOTE
+
+	BENCH DOWNLOAD += KEEP COPY // business records and useful for ...
+
+		SUMD += sha_md_sum _of_file_in_archive // _of_META
+
+		META += requires a lot of fragments fields at different times
+		META += uses GIT sequential edits over TIME marked checkpoints
+		META += uses guess DATE from filename or text in NOTES
+	
+	BENCH PACKAGE
+
+		PACKAGE += FILE
+		FILE += AVAIL_in_ARCHIVE_as_URL2 // URL2 is SITE KEY STR
+
+ DROP ATTR as a FILE in VFS or as an FIELD in XML file
+
+ 	XML as GEN_XML for TREE_WALKERS to find
+
+		ROM includes it's own DISASEMBLE with LISTINGS and XML notes
+	
+	ATTR is "ALIAS" // reflexively only defined by own mention and peer_load
+
+		PEER_LOAD is how a PEER becomes a SURROUNDING WRAP
+		WRAP_LOAD is how a PEER becomes a WRAP
+		WRAP_LOAD is how a PEER becomes a FILTER
+		WRAP_LOAD is how a PEER becomes a on_EVENT
+
+			The WRAP_LOAD is enforced by LOADER
+			When later modules are added to earlier CODE
+			They can create features that did not exist before
+			Those appear in the WRAP
+
+			PERMIT to do this is also an issue
+			PERMIT to edit this is also an issue
+
+			SAFE_MODE may permit UDEF_FILTERS over DATA_STREAM
+			Because SAFE_MODE has already PRE_FILTERED POST_
+
+	ATTR is a zero size _BIOS_.txt filename
+
+		PLUS non_zero TEXT contents 
+		which may even invert the polarity of the option
+		but BENCH should inform you of that # VIEW_RED # GREEN_VIEW
+	
+
+
+

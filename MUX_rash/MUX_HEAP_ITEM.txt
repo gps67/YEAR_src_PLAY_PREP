@@ -1,0 +1,48 @@
+
+	MUX_HEAP_ITEM.txt
+
+ BENCH create  new DOCS file
+ BENCH add name of file - as above in text
+ SCRIPT split into words {
+	MUX_HEAP_ITEM
+	MUX {
+
+	}
+	HEAP {
+		LOCN.HEAP_of_ITEM "HEAP" {
+			... TBS ...
+		}
+	}
+	ITEM {
+		SPEC = ITEM.SPEC // BASE is u8_u8_PICK_SPEC from LIBR_ONE
+		// _ONE is _ZERO // unnamed SPLIT when own clone peer formed
+		// _TWO // rewrote history, with _ONE as [0] without PEER
+		// _TWO // rewrote history, with _ONE as [1] with    PEER
+		// when _ONE was [0] it was NEVER pronounced %s_ONE just %s
+		// on_SPLIT // move VAR to [1] create [2] think about new [0]
+		// an_AXIOM //
+	}
+ }
+
+ LOCN_HEAP == LOCN.HEAP("HEAP") // CT_KNOWN_FIRST_ALIAS
+ LOCN_ITEM == HEAP[ idx_ITEM ]
+
+ -or- ONE_TWO_ZEE %s becomes %s_ONE %s now free to be the array NAME[0] [1]
+
+ LOCN_HEAP == LOCN.HEAP("HEAP_ONE") // first called _OWN second _TWO ZEE
+ LOCN_ITEM == HEAP[ idx_ITEM ]
+ LOCN_ITEM == HEAP[ idx_ITEM ]
+
+ -also - M_idx_N
+
+ 	HEAP recognises DEFAULT_COMPLETE SIGNED boundaries
+	HEAP recognises MINUS_ZERO_PLUS
+	HEAP recognises MINUS_ZERO_PLUS_in_i33_i65
+
+ LOCN has a HEAP called "HEAP"
+ ITEM is a LOCN_HEAP[idx_ITEM]
+ It uses u11_IDX // from u8_u12_LO_u12_HI //
+ // NOT NETWORK BYTE ORDER unless you use VIEW RHS LHS because want LOHI
+ // LOHI VIEW_as_LOHI
+ // LOHI VIEW_as_HILO
+ // TEXT_TEX_XML // convert HTML to TEX via FILTER_SCRIPTS // own CSS //

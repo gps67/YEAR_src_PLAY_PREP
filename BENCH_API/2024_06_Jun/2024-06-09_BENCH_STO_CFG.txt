@@ -1,0 +1,200 @@
+	2024-06-09
+
+	2024_06_Jun
+	2024-06-09_BENCH_STO_CFG.txt
+
+
+	PARSE %s GEN %s
+
+		same %s // modifies _asif_XXX %s //
+	
+	_XFER_
+
+
+		JSON
+		XML
+		CXX // carrying CODE // carrying STO_CFG_DATA carrying DOCS
+		MMAP
+		SQLITE // matches_JSON_api for VARS amd VALUES
+
+
+	_DATA_OPTS_
+
+		INT UNS TOKEN HEAP_FF_ITEM_FFFF _FF _FFFF _FFFFFF  _F _FFF
+
+			BITFIELDS are 100% retained in NUMBERICS
+
+				caveat "floats require explains"
+				caveat "BITFIELDS require DECL"
+				lexer pluralBITFIELD BITFIELDS // ACCENT //
+
+			ENUM
+
+				PICK from LIST of TOKEN_SPELLING_as_idx
+
+			TOKEN
+
+				LARGE ENUM // with USAGE // XPOS //
+				explain ADDR using XPOS
+				"explain ADDR using XPOS" is TOKEN
+				XPOS is CODE_POINT_reference_to_ALEX_at_XPOS
+				TOKEN is ALEX found at XPOS // as STR0 //
+	// as_OFFS_in_FILE //
+	// ie is not NUL terminated word, STR0 is the FILE or STREAM
+
+
+
+		ARRAY [PARSED] of JSON_ITEM
+
+			N = PARSED_N // now available CT_RT phase flag //
+
+			ARRAY = PAIR SPEC DATA
+			ARRAY = PAIR JSON_SPEC JSON_DATA
+			// MATCH LHS_NAME
+			// MATCH     NAME_RHS
+			// TEMPLATE ... LHS ... RHS ...
+			// NOTICE single use of %s in sequential order // ANON
+			// SUBST %1 %2 %3 for ... ... .. 
+			// EXPECT COMMON is_NULL %1
+			// EXPECT COMMON is_NULL %2 // or fixed "GAP SP" // AUTO
+			// EXPECT COMMON is_NULL %3
+			// %2 == "_" // CT_RT_ sees as CT_CONST ASIS_Q2_SPELLING
+
+		STRUCT TYPE_NAME XARNAME_one DECL {
+
+			PSG uses SCRIPT names for TYPES and VARS and EXPRS
+			PSG must be able to read output from GEN
+			API CSR_to_DECL_STRUCT_FIELD _decl_field_of_struct
+
+			TREE _WALKER iterates over all LEX steps ARGV
+			TREE _WALKER keep BRANCH_of_TREE // STO_HEAP_ITEM_TWIG
+
+			get_%s /* CTXT SESS PLUS provide CT_RT environment */
+			get_FIELD
+			get_BITFIELD
+			get_EA_ITEM
+			get_EA_ITEM_as_EA_EXPR
+			get_ARRAY_ITEM // ARRAY[IDX_t] of EIGHT_t ITEM;
+			get_ARRAY_WRAP
+
+			EIGHT_t // is ARRAY_IDX M_z_N IDX_i32_idx_t
+			EIGHT_t // is ARRAY_IDX_of_EIGHT_BYTES 
+
+		}
+	
+	DIALECT COMPONENT is a BRANDING MARKER
+
+		it is an extra stream ITEM
+		it is an ITEM_t item // in HEAP of ITEM // EXPR_POOL LEXICON
+		as an OBJ in TEXT_STREAM_SCRIPT_LINE_OBJ_ _as_TEXT _as_NAME 
+
+		OBJ.SPEC += AT_LEAST ITEM_t("ITEM_t")
+
+			CTOR for AVAR is "AVAR"
+
+			AVAR_two = lookup_AVAR "%s" CTOR_STR is "AVAR" at XPOS
+
+				ONLY pass STR0
+
+					we are merging two threads of code
+					we start at STR0
+
+					PSG calls LEXER which uses VAR_POOL
+
+						SPELLING // SCRIPT reserves LEX
+
+						DIALECT LEXICON claims "%s"
+						DIALECT claims "SPELLING"
+						PSG allocates two usages
+						DECL_AVAR "AVAR"
+						DECL_SPEC_SPELLING "SPELLING"
+
+							CXX is in english, soz
+
+						VIEW recognises LEXICON
+						VIEW adds UDEF LEXICON_NOTES
+
+					SPELLING retained as STR0 in VAR_POOL
+
+						KEYS_to_IDX
+
+						 CT_RT expand ARRAY_of_ARGV
+						 CT_RT expand ARRAY_of_WORD
+						 CT_RT expand ARRAY_of_AVAR
+						 CT_RT expand ARRAY_of_EXPR
+						 CT_RT expand ARRAY_of_EIGHT
+
+					EXPAND STR0 via EIGHT_t
+
+						u8_u8 OPCODE
+						u16_ITEM_one
+						u8_on_LOAD_OPCODE 
+						u24_ITEM_two
+
+					LIMIT u24 words in ROM
+
+						except NOT
+						we intentionally
+						steal a VALID idx
+						to use as a MARKER
+						NULL_idx_needs_REGISTER_u4
+
+						 BENCH_ITEM_t * LIST[ IDX_t ]
+						 BENCH_ITEM_t & LIST[ IDX_t ]
+						 BENCH USED[u1_PICK] of above
+						 SWITCH_CASE_ZERO
+						 SWITCH_CASE_ONE 
+						 BENCH USE on_EVENT_PAIR_PICK[u1]
+
+						clutch of 16 named registers
+						any more and switch to [u8_u8]
+						WRAP FILTER u8_u8
+						WRAP FILTER u8_u8_u48
+
+						_u48 is OPAQUE POINTER or INDEX
+						GETTER.GET += return u48_PAYLOAD
+						i48_PAYLOAD = i64_WORD >> 16
+						u48_PAYLOAD = u64_WORD >> 16
+						
+						PICK which is used with [u1]
+						CT_ says is_SIGNED == u1
+						_RT sees is_SIGNED == u1
+						CXX folds simplifies chain_expr
+						SCRIPT uses side DECL 
+						LIBR uses SCRIPT MUX gather all
+
+						u8_u8_u16_u8_u24
+						_u8_u8_u16 {
+						 _u8_u8 OPCODE
+						 _i16_from_u16 // BITFIELD EXPR
+						 _i16 i16_idx // EXPR // CAST
+						}
+						_u8_u24 {
+						_i8 HEAP
+							127 HEAPS is plenty
+							mostly for PAGES
+							PAGES_of_ITEM
+						_i24_ITEM
+						 M_z_N // with added L_R gaps
+						 MINUS_ZERO_PLUS
+						}
+						u32_u32 += _u8_u8_u16 += _u8_u24
+
+
+
+
+				ONLY pass XPOS
+
+
+					one for STR0 - efficient tokenisation
+					one for XPOS - possibly as
+
+					DECL SPELLING XPOS of DECL STR0
+
+				BOTH pass XPOS
+				BOTH pass STR0
+
+					we have to write this code
+					or GEN PAIR += ONLY += BOTH
+
+

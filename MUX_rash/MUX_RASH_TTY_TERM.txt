@@ -13,4 +13,27 @@ struct MUX_RASH_TTY_TERM : public MUX_RASH_TTY {
 	mode_app_line
 	mode_app_line_SYNTAX
 
+	PSG_ARGV_parser
+	PSG_RASH_parser
+	PSG_TEXT_parser
+	PSG_STR0_parser 
+	PSG_PKT_parser 
+
 };
+
+
+	So when NOT _TERM, might be _BINARY_PACKETS over _SOCK over _TTY
+	ASCIIFIED binary packets BASE64 or BASE16 or HEX_FF as VAR_NAME
+
+
+MUX_RASH_BINARY_TTY
+
+	PPP_CSET protection
+	EOLN_8859_or_UTF8_WORDS_in_Q2_CSETS
+
+		MUX_LINE_CTRL set CSET latin1_in_UTF8
+		MUX_LINE_CTRL set CSET cyrillic_in_BYTE_8859
+		MUX_LINE_WORD_BLOB nbytes_as_HEX_BYTES
+
+		MUX_PFX_ARG0_LINE 
+		ARG0_LINE 

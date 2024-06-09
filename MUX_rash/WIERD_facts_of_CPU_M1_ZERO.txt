@@ -1,0 +1,24 @@
+
+	WIERD_facts_of_CPU_M1_ZERO.txt
+
+	u1 means 0 1
+	i1 means 0 M1 // ofter VIEW i1_idx [M1 [0 [1 // 1 is outside
+
+	M_Z_N 
+
+		M == M1
+		Z == 0
+		N == 1 // [0] is a PLUS idx // 0 is ZERO too //
+
+		ZERO_is_NULL // not stored in ARRAY // what is there is [0]
+		ZERO_is_PLUS // [0] is allocated in ARRAY
+
+	
+	ARRAY[i1] {
+
+		creates ARRAY_MINUS_IDX(M1]) 
+		creates ARRAY_ZERO_IDX(0]) // as ARRAY_PLUS
+		cXreates ARRAY_PLUS(N]) // idx_MAX is 0 idx_N_is_idx_MAX_plus_1
+	
+	}
+	
