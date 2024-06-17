@@ -1,0 +1,56 @@
+	2024-06-17
+
+	2024_06_Jun
+	2024-06-17_360_Rotating_Head.txt
+
+	Obviously, this is a theatrical trick,
+	but it is also a genuine hack.
+
+	When you are sitting at your 360 curved screen *
+
+		* LINK to £150 27" curved 2560 x 1440 
+	
+	You can rotate the ring of machines to work on,
+	and work on any machine
+
+	When you move to a different screen,
+
+	eg laptop at home
+	eg laptop on road
+	eg laptop at work with MONITOR_24 and SOUND_LINKS and WIFI_LINKS
+	eg desktop at home
+	eg desktop at work
+	eg desktop at library # if you trust that provider # no spy ware #
+	eg 3 monitors 24-27-24 # 4 monitors with 3 physical # BENCH PANELS
+
+	WHen you move to a different LAN
+
+	eg LAN is ZERO localhost
+	eg LAN is VLAN only
+	eg LAN is WIFI and all
+	eg LAN is FIBER
+	eg LAN is FIBER at a friends, or G2p5 or G1 or M100 or M10 or K56
+	eg LAN is FIBER at a frienda, a coffe_shop, a_work_place, a_spy_zone
+	eg LAN is_FIBER or is_G1 or M10 or K56 or K1 or K4_PAGE_ITEM
+	array[ 256 ] of EIGHT is 4096_bytes
+	// use of %d_%s breaks CIDENT99 rules, but is OK with a _ prefix
+	// use of %d_%s is one of group "_%04X" // enough to work, ALIAS for
+	// "%04X" // "_%04X" // enough to work, ALIAS for UDEF_from_ORIG
+	// invoking MACRO brings its PARAMETER VARS //
+
+	FLIP panels - especially on laptop
+
+	eg 5 PANEL BROWSER
+	eg TAB_WIDGET
+	eg TREE_of_PANEL 
+	eg BENCH TREE VIEW CSR EXPR
+	eg widget furniture, incl other simple widets, around PANEL
+	eg all X11_WIDGET and CXX_CLASS but could be Tk_Frame and EXPECATION
+	eg VFS_of_DIRS_FILES_LIST_OF_MEDIA_FILES_NAMES
+	eg PANEL_GOTO_SCENE_URL
+	eg 
+
+	different DPI and number
+
+
+

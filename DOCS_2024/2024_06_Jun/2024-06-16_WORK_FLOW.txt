@@ -115,15 +115,70 @@
 	// LIST // { K &K E &E Y &Y S &S } // 
 	// LIST // { K *K E *E Y *Y S *S } // 
 	// LIST // { "K" K "E" E "Y" Y "S" S } // COMPILER builds TABLE of idx
+	// LIST // OPCODE "{ OPCODE { K E Y S }" { K E Y S } } // OPCODE from 
+	// OPCODE from CODE_POINT // ie CT_RT can drop it //
+	// CALC_KNOW_DEPENDENCIES
+	// ZONE // gets CODE_POINT from invokation
+
+	ARGV_Template can contain all sorts of structures
+
+		--IDENT IDENT --DATA DATA
+
+		parser uss CACHE '{ PARSE "--%s" }'
+
+			You have to get the Q1 and Q2 correct
+			but we set a simple standard for simple declarations
+			Q1 Q2 rules - mostly like C but Q1 on the outside
+			Q2 Q1 rules - Q1 appears inside the STR, Q2 is outside
+
+			Q1_str - this is not proper C nor CXX - is Tcl
+			Q2_str - this is proper C++ STR0 - almost
+
+			COMPILER GEN has to overquote the generated CXX text
+			RTFM and find a happy subset
+
+		parser uss CACHE '{ PARSE "--%s" }'
+
+			CIDENT99 %s // CT_RT applies '{ cident_97 %s }'
+
+
+ 360 Rotating Head
+
+
+			
+
 
 --- and on TV --- o
 
 https://www.itv.com/watch/emmerdale/Ya0524/1a8694a10018
 
-Personally I minimise, "it will be OK, it's not that bad. -etc- "and genuine attempts to fix the situation. It's a tina bit annoying, all that useless helpful suggestions, but if you zone out it becomes delightful, a friend making chit-chat. from what-ever's available.
-On the other hand, that helpful search for an answer to your predicament, is also a unit of gaslight, being played out, in some phase or stage found in of scene. It diminishes your struggles, your core, meh-what-problem, and it smudges them away. Oh , and you.
-If you want the original "Gaslight" the Movie is available on ebay DVD, and delinquent download. So what does the word mean? Who knows, nut maybe: A stage was then lit by gaslight. The house lights flickered down, when he was in the attic, proving that someone was there, somewhere near the house.
-People often misquote that, as him playing with the lights, to instill flicking doubt, but it is him trying to be silent, but failing. It's kind of close. He did some of the other things intentionally.
+	Personally I minimise, "it will be OK, it's not that bad. -etc-"
+	and genuine attempts to fix the situation. It's a tina bit
+	annoying, all that useless helpful suggestions, but if you
+	zone out it becomes delightful, a friend making chit-chat. from
+	what-ever's available.
+
+	On the other hand, that helpful search for an answer to your
+	predicament, is also a unit of gaslight, being played out, in some
+	phase or stage found in of scene. It diminishes your struggles,
+	your core, meh-what-problem, and it smudges them away. Oh ,
+	and you.
+
+	It also positions you as helpless, needing splinters of advice,
+	when maybe you are letting on, about some texture in your life.
+	It still needs eliminating, diminishing. It's gaslighting,
+	but from social norms, as some sort of undertow.
+
+	If you want the original "Gaslight" the Movie is available on ebay
+	DVD, and delinquent download. So what does the word mean? Who
+	knows, nut maybe: A stage was then lit by gaslight. The house
+	lights flickered down, when he was in the attic, proving that
+	someone was there, somewhere near the house.
+
+	People often misquote that, as him playing with the lights,
+	to instill flicking doubt, but it is him trying to be silent,
+	but failing. It's kind of close. He did some of the other things
+	intentionally.
 
 
 
