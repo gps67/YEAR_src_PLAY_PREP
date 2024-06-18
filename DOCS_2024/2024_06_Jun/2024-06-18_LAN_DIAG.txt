@@ -1,0 +1,38 @@
+	2024-06-18
+
+	2024_06_Jun
+	2024-06-18_LAN_DIAG.txt
+
+	FIBER -->
+	 + PSU to wall
+	 + PSU to MAINS
+	 + CAT_X to nearby router
+
+	ROUTER ->
+	 + PHONE
+	 + UPDTREAM
+	 + PORT[4]
+
+	 + <-- UPSTREAM PORT_8_2p5G
+	 + PORT[0] <-- NAS1
+	 + PORT[+] <-- NAS3
+	 + PORT[+] <-- NAS3
+	 + PORT[+] <---NAS4
+
+	 PORT_8_2p5_1G
+	 + port[0]
+	 + port[+]
+	 + port[+]
+	 + port[+]
+
+	 + port[+] <-- x79 gw_firewall 
+	 + port[+] <-- x99 plain
+	 + port[+] <-- ROUTER and WIFI Kitchen
+	 + port[+] <-- ROUTER and NAS4 with 2 networks
+
+	SPF[+] <-- ROUTER and WIFI Kitchen and Garden
+	SPF[+] <-- x99 wants a lot of parallel NAS
+
+	SPF[+] <-- x89 does a lot of QEMU sandbox
+
+

@@ -1,0 +1,77 @@
+	2024-06-17
+
+	2024_06_Jun
+	2024-06-17_BLOCKS_CACHE.txt
+
+	ROOT is G128 # initially G_60 more than G_32 less than G_1024
+
+	BLOCK CACHE G256 for G32_OS over G_128_DISK_BACK
+
+		HAVE G_64 MEM on DISK_G_4096 and SSD_G_256
+
+		AIM for G32, but overflow with lazy occasional use files
+		RESOLVE with CACHE of actually used blocks, eg K4 pages T4 file
+		o
+	
+
+	T4 DIAK is K4 * M
+
+		T256 is 2^^48 // MUXED loads of T into i48 space u48 space
+		T is 2^^40
+		g is 2^^30
+		M is 2^^20
+	
+	i48 + u48 == 3/4 of i49
+	i47 + u47 == 3/4 of i48 # BREAK rules on one side not BOTH # require ...
+
+	The project is to project a disk of G32 maaybe G128
+	The project is to remain within a disk of T4 maybe G_4096 // G_128
+	The budget is to remain within a disk of G_256 // G_4096 // G_128
+
+	The real diak is G128, that is an absolute ALLOC
+	The FAST disk is G3750, that is weighed for use_count
+	The SSD disk is USE_COUNT_balanced, according to some alorithm
+
+		fails reported - avoid disk areas ...
+		fails reported - avoid specific blocks areas ... SILICON FLAW
+		fails reported - DUST block errors - adjacent block fails
+		fails reported - THIN block errors - near block thinness 
+	
+	EVEN wearing
+
+		burning holes in the carpet
+		various approaches
+		when comitted, alloc T1 for G128_plus and G128_cache
+		and G_256_SPARE # on_fail_ pick better blocks
+		fine grain CODE alloc, course grain ADMIN switch
+		remote fix until replace // VG1 never replace // SKIP //
+	
+	DISK over G128
+
+		WE use DISK as the many over written media
+		WE use MMAP as the fast MEMORY cache // FLAG FILE of MMAP
+		WE use SSD1 as the weekly daily backups // written WHEN //
+
+		NB update MEM first, DISK second, SSD third
+
+			eg MEM2 10_seconds_ish, DISK hourly, SSD weekly
+
+			MEM2 means a virtual device built from memory
+			MEM2 is based on RECOVERY therefore not modified
+			LOCK says no modification until CHECKPOINT_NEXT
+			LOCK save old block copied, calc new block, write_2
+
+	This is a project for you
+
+		I'd love to do this,
+		but maybe YOU have a better way of doing it
+		Here is a framework where it might be used.
+	
+
+
+
+
+
+
+
+

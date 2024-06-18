@@ -1,0 +1,19 @@
+	2024-06-18
+
+	2024_06_Jun
+	2024-06-18_BENCH.txt
+
+	EVERY MONTH create ADIR for DIARY_PAGE_ZOOM_GROUP
+	EVERY DAY offer YEAR_MM_DD and other phrases
+	find SEED that says to_grow_a_DOCS_file - call SCRIPT {
+
+		YEAR MM DD Feb Tue HH:MM HH:MM:SS TZ0 DST TWO UDEF
+
+		 Jan is reserved for finding the ZERO of teh array
+		 Mon is reserved for finding the ZERO of teh array
+		 Sun is reserved as actually IS EA_ZERO
+		 Feb is clearly a sample value, and unique
+		 Tue is clearly a sample value, and unique
+	}
+
+
