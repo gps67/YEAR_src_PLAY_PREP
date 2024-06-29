@@ -1,0 +1,26 @@
+	2024-06-22
+
+	2024_06_Jun
+	2024-06-22_BENCH_create_LOCN_as_XML_node_BUTTON.txt
+
+	BUTTON ALIASes 
+
+		mkdir %s
+		describe %s in NEAR
+
+		create a NOTE near here
+
+			NOTE_TYPE {
+			 HEADER { TEXT } // TEXT == TWIG // same var
+			 P_LIST { LIST } // each tagged for P_INTO // LINE
+			 BIND { LIST_of_AVAR_and_ }
+			}
+	
+	eg in SPEC drop a NODE which CT_RT becomes A_NOTE
+
+		when in_SPEC is processed EDIT / GEN / VIEW / EXPLORE
+	
+
+
+
+

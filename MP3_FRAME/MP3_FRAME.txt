@@ -1,0 +1,9 @@
+
+	MP3_FRAME/
+	MP3_FRAME
+	.txt
+
+	mpg123
+	https://www.mpg123.de/api/mpglib_8c.shtml
+
+	lame

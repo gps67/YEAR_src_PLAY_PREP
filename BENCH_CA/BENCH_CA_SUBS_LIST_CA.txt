@@ -1,0 +1,56 @@
+
+	BENCH_CA/
+	BENCH_CA_SUBS_LIST_CA.txt
+
+	BENCH
+	CA
+	SUBS_LIST
+		CA = CA left with local owner of ALLOC ITEMS_to_LISTS
+
+		NB WEIGHT = LOG every DATA item ACION ARGS
+	
+	BENCH += DIAG {
+		
+		DIAG
+	}
+
+	CA_ZERO		- in an undeground bunker
+	CA_ONE		- the one for an entire company
+	CA_TWO		- unused
+	CA_ZONE		- a ZONE within the company
+	CA_SUBS		- a SUBS_ZINE_USER_PC_FETCHER
+	C_GROUP		- a user with a GROUP STYLE COMMON_NAME
+	C_USER		- a user with a common_name
+	C_PC		- a users current TTY or LAPTOP or HOT_SWAP
+	C_SERVICE	- a service not a user, run by the house or LOCAL
+
+
+	Basically we will need to find a way to consisely wrap a signed TEXT
+
+		SECRET has been passed under KEY_SECRET
+
+		in plain_clear_text - because that is our internal API
+		in plain_clear_text_slightly_hazed 
+		- because that is our internal API - our IN
+
+
+	CLIENT proves RSA_KEY of CERT HOLDER
+		CLIENT = 
+		RSA_KEY = _PRIV _PUBLIC
+		CERT = _CERT
+		HOLDER = MITM is a feature
+
+			MITM takes SECRET away and refers to it by VAR_NAME
+
+			MUX_MITM proves by
+			use RSA_USER.PRIV
+
+		DATA API allows extra DECL as in Module_DECL
+
+			DESIGN invokes MENTION MK_AVAR %s`
+			DESIGN invokes ALLOC _MINUS _ZERO _PLUS
+
+
+		it appears in VFS as $FD_VFS _and_adjacent VARS
+
+
