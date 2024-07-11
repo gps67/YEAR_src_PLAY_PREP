@@ -1,0 +1,182 @@
+	2024-07-04
+
+	2024_07_Jul
+	2024-07-04_BENCH_Tcl_Tk_tkinter_MMAP_HEAP_ITEM_ARGV_Module.txt
+
+
+	2024-07-04
+	BENCH
+	Tcl_Tk
+	tkinter
+	MMAP
+	HEAP_ITEM_ARGV_Module
+	Module
+
+	2024-07-04 // DOES is a time log // DAILY NOTES //
+	BENCH 
+		VIEW
+		STEP
+		DOCS
+	Tcl_Tk
+		TclObj_LIST_is_ARGV
+		ARGV_ADDR is array of OBJ_PTR 
+		ARGV_ITEM can be of type ARGV_of_ARGV
+
+		USAGE: pure Tcl9 no module.so
+		USAGE: pure MODULE with Tcl9 API
+		USAGE: ARGV and Tcl_CALL and Python_CALL use OBJV
+		USAGE: P0P2 of segment within ARGV // GEN // PARSED // 
+
+	tkinter
+		Python tkinter - is ideal for this fusion
+	MMAP
+		This is where we start, MINI_MACHINE HEAP HASH LISTS TABLES
+		STRETCH capability, starts with u8_idx then i9_M_N
+		SPARSE can be folded u8_idx_B = BYTE_from_BYTE
+
+		We are saving MMAP pages in PAGE_FILES
+		So MMAP cannot hold a Tcl_Object directly
+		on LOAD create Tcl_WRAP[i] over PAGE_ITEM[i]
+		SPARSE i = idx - M ; // AXIOM // IDIOM // MATCH(M_N)
+
+		MINI_HEAP has LIMIT 2048_items, 300 typical
+
+		HEAP_PAGE has LIMIT 4096_items 4096 typical
+
+			expect u31_idx LIMIT
+			accept u12_idx PAGE_SIZE
+			accept i12_idx ITEM_EXPR
+
+	HEAP_ITEM_ARGV_Module
+
+		u4_u4 HEAP_ITEM # via TABLE to PAGE_ITEM[u8] 
+		i4_i4 HEAP_ITEM # via UNS via TABLE to PAGE_ITEM[u8] 
+		u4_u12 HEAP_ITEM # HEAP_ITEM_u16
+		u8_u8 HEAP_ITEM # HEAP_ITEM_u16
+		_u32 HEAP_ITEM # HEAP_ITEM_u32
+		_u32_u32 HEAP_ITEM # HEAP_ITEM_u64
+		_u32_u32 HEAP_ITEM # HEAP_ITEM_u48 # check ALLOC # check INPUT
+
+	HEAP_ITEM_ARGV_Module
+	Module
+
+		Module
+			Everything is a module, just not using all facilities
+			CODE_VIEW removes all punctuation to fade out minimum
+			CODE_TEXT is CXX_precise
+			CODE_VIEW is ARGV - like
+		Module
+			The usual pascal declarations, but in C
+			const type var expr func 
+			sample_data mid_steps
+		Module
+			ATTACHMENT CONNECTION 
+			SCRIPT claims to work everywhere
+			but each ATTACHMENT CONNECTION USAGE is elusive
+
+		HEAP_ITEM
+		HEAP
+		ITEM
+		ARGV
+		PSG_of_ARGV_incl_areas_of_DATA align_64 align_4K
+		PSG_of_ARGV_incl_areas_of_DATA align_32 align_256 // bit byte page
+
+		The idea is to maximise the CACHE HEAT 
+		glows on GETTER_COUNT per GETTER_REQUEST
+		merge same request - already provided at START // by now //
+		Module
+
+		Module is the universal SCRIPT model
+		Module.VIEW is BENCH stepping through SCRIPT on a ROLL_BACK_BASIS
+		ie a search explores all avenues, parks all variables,
+		brings them out and back into scope
+		PRE_LOAD PRE_TEST proved that calls (always) match
+
+		LEXICON already includes SPELLING used in BENCH of SCRIPT
+
+			EA_LEX is DECODE( u8_u8_u16_u8_u24 )
+			EA_LEX is DECODE( u8_u8_OPCODE SIX_TAIL_within_EIGHT_WORD )
+
+			on u32_u32 
+			using u8_u8_OPCODE u16 u32_TWO
+			using u4_u12 for HEAP_ITEM
+			using u8_u8 for HEAP_ITEM
+
+			# KNOW #    u12_u4 # HEAP_is_SUB_UNIT_ZERO_ZONE
+			# KNOW # u4_u12_u4 # BITFIELD from WORD_16 # plus CP
+			# KNOW # u4_u12 # BIT_ORDER_u4_hi u12_low
+			# PICK # SHIFT_BITFIELD_AROUND # PRESCRIPT # GET_NOW #
+			# we often get i12 from u32_u32_BITFIELDS 
+			# manually written EXPRS for CPU32 CPU64 i
+			# u32_u32 # u64 is the WORD UNIT #
+			# u32_u32 # u32 is the WORD UNIT #
+			# u32_u32 # u48 is the WORD LIMIT # u8_u8_u48
+
+			# as well as using u32_u32 in nearby SESS MMAP
+			# as well as asking for u32_u32 in register PAIR
+
+			// in_MINI_MACHINE // 
+			MINI_MACHINE has
+
+				i4_idx HEAP
+				i12_idx ITEM
+
+				PLUS are ASIS DATA
+				MINUS are FILTERED DATA via CODE
+
+				IS_MINUS( i12_idx )
+# SPELLING "IS_MINUS(" # MATCH %s%s CIDENT99 CXX_PUNCT #
+# PSG matches the "{ %s %s }" # IS_MINUS # "(" # ")" # detect TIDY SCRIPT
+# PSG reaches into LEXICON "IS_MINUS("
+# PSG reaches into LEXICON "{ IS_MINUS( }"
+# PSG reaches into LEXICON "{ IS_MINUS( %s ) }" PHRASE in ARGV SPELLINGS
+# PSG recognises CIDENT FILENAME_IDENT PHRASE_USING_ITEMS ARGV stntax PSG_SYNTAX
+# CT_RT recognises unaligned access # u4_excess_
+
+	# BYTE_EXCESS # EIGHT is alligned 32 when u4_BYTES_EXCESS == 0
+	# [01234567[8 # ALIGN u3 fits in u3 when FULL never happens
+	# [0 [8 # There are 8 alignments, for 8 byte words, 
+	# 0 is ALIGNED # 1 is 1 BYTE off # 7 is 1 BYTE off # 8 is ZERO
+	# DIGIT_COUNTER EIGHT_is_ZERO is PAGE technology [IDX]
+
+	# FULL_PAGE_ARRAYS
+	#
+	# 4096 items # each u32_u32 # EA_ITEM in HEAP # and some CODE #
+	#
+	# M_N for this PAGE happen to be well below i12 MINUS_2048
+	# IMPLEMENTATION
+	# if M and N are below SIGNED_HALF keep ASIS # i16 for i12 #
+	# if M and N are beyond own SIGNED_HALF keep ASIS and strays appear odd
+	# if M and N are beyond own SIGNED_HALF STAB_ZERO WRAP_HIGH KNOW_GAP
+	# gap is under 16K # now we can cache by ARRAY[ STEPS ] #
+	# 
+
+	# M_N # interpretations
+
+			M_N technology, 
+			PAGE technology,
+			N_ITEMS = N - M
+			WORDS EIGHT_t EIGHT[ N_ITEMS ]
+
+			// in_MINI_MACHINE // 
+			MINI_MACHINE has
+
+				u4_idx HEAP
+				u12_idx ITEM
+
+			 HEAP_16_of_4096_EIGHT
+			 u4_HEAP = BYTE_get_u4_HEAP // AND 0x0F MASK < BYTE
+			 u12_ITEM = BYTE_get_u12_PAYLOAD
+			 -PAGE-THEORY- says PAGE[u12] // u12_from_u16
+			 -PAGE-THEORY- says PAGE[u12] of EIGHT_t
+				HEAP[ u4_idx ] // idx_of_HEAP // ALLOC // KEEP
+
+				MINI_MACHINE initialises itself to SCRIPT
+				MINI_CACHE_ _preload_ALL 
+				MINI_MACHINE saves_its state as DATA + SCRIPT
+
+			INIT ARRAY[4096] of EA_EXPR_ _EIGHT_WORD
+
+				u32_u32 is align u64 // usually // transit_alignment
+
+
