@@ -1,0 +1,92 @@
+
+	EACH DIAG has its own PANEL
+	EACH PANEL has a PANEL_HANDLER
+
+		BASE_CLASS of THIS
+	or	NEAR_ITEM which has BASE_CLASS PANEL PANEL_345_triangle
+
+	NEAR_ITEM has a single import point of OBJEXT
+
+		it creates small list of imports
+
+		each creates AVAR("%s") for that PANEL_COMPONENT
+
+			that may create lots of AVAR_FIELD_NAME
+			in the global namespace
+			in the local SCOPE // function_SCOPE += SCOPE
+
+		That component is not SCRIPTED 
+		They are VFS_DIR/FILES 
+
+			FILE == NEW_FILE XPOS_DECL_
+
+			.DECL.XPOS_DECL
+			.DECL.XPOS_INST
+			.DECL.XPOS_STO == ALIAS XPOS_INST
+
+		GLOBAL_AVAR in SCOPE // _round_HERE
+
+			Need a way to tell SCRIPT to create AVAR without DECL
+			DECL AVAR // but done AUTO INVISIBLE
+
+			DECL_AVAR calls API 
+
+			SCRIPT_SESS_API provides API_DECL_ABAR
+
+	BENCH
+	 LIST of DIAG // each a BENCH of it's own to merge into this bench (!)
+	 LIBR of DIAG - not yet with SESS - PICK EVAL_STO_DATA
+	 DIAG _FFFF has own_shared_HEAP
+
+	 	HEAP_one[u5]
+		HEAP_two[u12_i64]
+
+		u8_idx
+		u16_idx
+		i32_idx
+
+		# i64_over_u32
+		i64_CPU_WORD
+
+		OPCOCDE might have space for u5 local ALIAS to u8_IDX
+		u8_idx is also supported
+		i8_idx is also supported
+		u7_idx is also supported
+		i8_idx_MINUS if KNOW is_MINUS
+
+		ASM CPU BIT_BYTE_PAIR_FOUR_EIGHT // _ONE _TWO 
+	
+		we know that most CPU's have a [u8] or [u16] or [u32] or [64]
+
+			there might be SIGNED limits ...
+
+		[u8] is a PAGE of 256 ITEM # 1 2 4 8 # ITEM_BYTES #
+
+			Not too much to allocate all in 1
+			Optional int_idx_t idx2 = idx2_from_idx1( u8 ) FUNC
+			Optional int_idx_t idx2 = idx2_from_idx1[ u8 ] TABLE
+			EIGHT_t u32_u32 = smaller_TABLE[ u8_idx_N ]
+	
+	TWO sides of BITFIELD_WIDTH_GROW
+
+		OPCODE contains smaller nbits eg u5
+		OPCODE contains range of nbits 8 12 16 24 32 48 64
+		OPCODE gets full use of u32 and also i32 // via LUCK + CODING
+		SOURCE of the nbits, even from STO not OPCODE
+
+		ARRAY uses [u8] as opcode or FUNC expectation
+		ARRAY uses [u32] over [u12]
+
+		u8 offers double step decode
+		u5 offers double step decode
+		u8 offers SPARSE REDUCED
+
+		so does [m[z[n inside [l[r ## RESOLVE different XPOS_ZERO
+		so does [m[z[n inside [l[m[z[n[r added m-a r-n
+		so does [m[z[n inside [l[z[r l == m ; n == r ;
+
+
+
+
+	MENTION
+

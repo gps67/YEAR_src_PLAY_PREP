@@ -1,0 +1,29 @@
+LOOB.txt
+
+ M1_from_sys_call
+
+	-1 || ZERO	// VOID
+	-1 || VALUE	// idx_of_fd
+	-1 || VALUE	// N_of_NBYTES_WRITTEN
+	-1 || VALUE	// PTR_of_something
+
+ NULL from LIBR when expecting PTR // "{ ITEM_t * PTR }"
+
+ 	NULL || PTR_STR // is _OBJ because need better STR0 than STR as P0P2
+ 	NULL || PTR_OBJ // OBJ holds P0P2 along with VTBL and INFO
+
+ bool true == OK
+ bool false == FAIL
+
+ TCL
+ enum return_codes {
+
+0	TCL_OK
+1	TCL_ERROR
+2	TCL_RETURN
+ 3	TCL_BREAK
+ 4	TCL_CONTINUE
+
+ "tclDTrace.d"
+
+

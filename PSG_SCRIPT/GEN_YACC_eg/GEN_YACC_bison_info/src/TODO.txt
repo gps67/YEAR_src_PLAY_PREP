@@ -1,0 +1,50 @@
+2024-08-28 Aug Wed 01:25 # 30 #  TODO.txt
+
+	rename the MAIN filename, they were leftovers from a differnt PROJECT
+
+		from_bison_gen_yacc.cxx
+		from_bison_gen_yacc.txt
+		min_main_2024.cxx
+		TODO.txt
+
+		see 
+		~/YEAR/src/GITS /
+		 / YEAR_src_PLAY /
+		 / PSG_SCRIPT /
+		 / GEN_YACC /
+		 / Tuplo  /
+		 / src obj MK docs ... /
+		 / %s /
+		 / %s [PRIV /]
+		 / %s
+
+	recreate the list of examples in the bison .info tutorial.doc
+
+		parse SCRIPT out of TUTORIAL 
+
+			DTD provides META DECL
+
+		build VERSION 
+
+			make CXX link call pick DATA
+
+		run TEST SET
+
+			repeat RUN with OPTION 
+			repeat RUN with VERSION
+			repeat RUN with SAMPLE_DATA
+
+			compare RUN_one with RUN_two
+
+		build CT_RT PRE_LOAD_PREPARER run it
+		build CT_RT PRE_LOAD from PRE_LOAD_PREPARER
+	
+	BUILD DOCS from TREE of TWIG LEAF NUTS FRUIT FLOWER BUDS 
+
+		DTD += DOCS_TREE
+
+		DTD += DB_XML_JSON_ARGV
+
+		DTD += SAMPLE_CODE_PANELS_or_LINES
+	
+

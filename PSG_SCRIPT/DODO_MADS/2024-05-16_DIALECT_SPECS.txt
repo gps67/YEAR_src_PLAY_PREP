@@ -1,5 +1,4 @@
 2024-05-16_DIALECT_SPECS.txt
-2024-04-28_Goggles4u.txt
 
 Whilst writing HW_DB item for SPECS - to remember which is which
 
@@ -51,6 +50,51 @@ https://www.goggles4u.co.uk/uk/customer/account/login/
 						// ZERO_VOTE means OK either way
 						// used in a COUNTER 
 						DECL COUNTER
+					DIALECT use PSG_DECL_and_TREE_STO
+						if_PSG_MATCH says so
+						if PSG says so
+						ADD_VARS MINUS ZERO PLUS 
+						ADD_VARS PSG SESS USER PERM_ZERO
+						ADD_LEXS M1 M2 M3 M4 _u16 _i16
+						ADD_LEX _u64_CPU_WORD ALIAS ...
+						FIND_PHRASE MATCHING_P0P2_
+						_with_PSG PSG PHRASE
+					  MODULE_TEMPLATE
+					  	PHRASE_BOOK
+						// prefer SP as goes to ARGV
+						// prefer "_" as SUB_LEX_JOIN
+						// option report on
+						// MULT_ADJACENT_TO_EDGE //
+
+						// ie compare and contrast
+						// " " //
+						// "_" //
+
+						// MONITOR for "__" //
+
+						LEXICON += VOCAB
+						NOUN_LIST += SPELLING // _in_font
+						PAIR_LINK LHS RHS CODE_POINT CMNT
+# MK_LIST_of_SPELLING of_TOKEN
+# PAIR_LINK LHS RHS CODE_POINT CMNT # MORE ...
+# MORE becomes a SILENT VAR bool MORE_ARGS 
+# PSG does the MATCH and builds a DATA_TREE from the imput STREAM or FILES
+# VFS # VFS permits CSET in FILENAME_CSET # COMPILED ANYSTR COPY_one_P0P2
+# CIDENT99 # filenames can contain almost anything # ALERT_if_SPACE_or_BELOW
+# CIDENT99 # filenames can contain almost anything # ALERT_if_SPACE
+# CIDENT99 # filenames can contain almost anything # ALERT_if_BELOW
+# DIALECT # filenames can contain almost anything # ALERT_if_MISMATCH
+# PARSER builds TREE from TEXT # multithreaded PARSER # HEAP_LOCK_on_ALLOC
+# PARSER builds TREE from TEXT # multithreaded PARSER # HEAP_LOCK_SPIN_LOCK
+# SPIN_LOCK is sizzling loop until obtained_LOCK # CPU locks a WORD and EDIT
+# label try_again: if NOT test_and_set goto try_again # RTFM SPIN_LOCK
+# ATOMIC test_and_set # returns TRUE {was_fasle_now_true _changed _action_time} 
+# ATOMIC test_and_set # returns FALSE {was_already_true unchanged retry_time } 
+# LOOP goto retry
+# LOOP CALL try_again # deduce ARGV from SCRIPT and BENCH # KEPT_VALS_LISTS
+
+
+
 					DECL COUNTER {
 						ITEM_NAME: "A_COUNTER" 
 						HERE_PLUS: "client_data_t * client_data"

@@ -1,0 +1,38 @@
+
+	u8_u8_i16.txt
+
+	u8 BYTE_A() { ASM_GETTER_UNSIGNED }
+	u8 BYTE_B
+
+	i16 i16_PAYLOAD() = WORD_32 >> 16 // SIGNED //
+
+
+	DOUBLE DECODE
+
+		u32_OFFS = CACHED_u32_OFFS[ u8_idx = BYTE_A ]
+		if(!u32_OFFS) {
+			u32_OFFS = RECALC_u32_OFFS( u8_idx )
+			CACHED_u32_OFFS[ u8_idx ] = u32_OFFS
+		}
+
+		MACRO xFFFF {
+			MACRO ARGS += BYTE_A
+			MACRO ARGS += CACHED_u32_OFFS
+			MACRO ARGS += RECALC_u32_OFFS
+
+			MACRO VARS += u8_idx // possibly ALIAS // u8_idx = BYTE_A //
+
+			MACRO IMPORTS += LEXICON += IMPORTS += BYTE_A // unless converted to C arg ffi
+		}
+
+	EIGHT = DECODE_BYTE_A[A]
+
+		u8_u8_u16_one
+		u8_u8_u16_two
+	
+		STRUCT_A = STRUCT_from_EIGHT_from_A
+		INDEX_A = PAGE_A is the STRUCT that A PICKS
+
+
+
+

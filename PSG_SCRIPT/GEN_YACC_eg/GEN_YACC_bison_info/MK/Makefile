@@ -1,5 +1,13 @@
 #!/usr/bin/env make
 
+	# HERE=../..   PREP/PSG_SCRIPT/GEN_YACC_eg/GEN_YACC_bison_info/MK/
+	# TUPLO=../../../../PLAY/PSG_SCRIPT/GEN_YACC/Tuplo
+
+	# the idea is lots of PSG's GEN and RUN
+	# but a common TUPLO 
+	# but looking at the Makefile
+	# some rework is rsn
+
 	# S=../src
 
 
@@ -52,10 +60,10 @@
 
 	PKGS += libs_apps_base2
 
-	PROG0=from_bison_gen_yacc
-	PROG1=from_bison_use_yacc_on_$(G1)
-	PROG2=from_bison_use_yacc_on_$(G2)
-	PROG3=from_bison_use_yacc_on_$(G3)
+	PROG0=gen_yacc
+	PROG1=use_yacc_on_$(G1)
+	PROG2=use_yacc_on_$(G2)
+	PROG3=use_yacc_on_$(G3)
 
 	PROG0_exec=$(PROG0).exec
 	PROG1_exec=$(PROG1).exec

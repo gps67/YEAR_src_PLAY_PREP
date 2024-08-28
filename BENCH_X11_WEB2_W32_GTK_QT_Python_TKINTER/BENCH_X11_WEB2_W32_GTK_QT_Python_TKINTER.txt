@@ -1,0 +1,242 @@
+2024-08-13 Aug Tue 21:14 # 30 #
+BENCH_X11_WEB2_W32_GTK_QT_Python_TKINTER/
+BENCH_X11_WEB2_W32_GTK_QT_Python_TKINTER.txt
+
+	BENCH
+	X11
+	WEB2
+	W32
+	GTK
+	QT
+	Python
+	TKINTER
+
+	ARGV OBJV P0P2
+
+		SCRIPT = P0P2_SCRIPT // possibly within a wider stream of segments
+		// no NUL at P2, although most do REQUIRE_STRONG_LEX_EDGE_STR0_NUL 
+		// because // STR0 requires a complex HEAP of data // P0P2 is better
+		// P0P2 does not take a copy of STR // it annotates the original STREAM
+		// STR 
+		// STREAM
+	
+	Everyone loves Python, so we shift our top level scripts to Python
+
+		SCRIPT += LINE
+		LINE += ARGV as_OBJV // OBJECT is a PyObject
+
+	And call them from ARGV
+
+		ARGV += ARGV_as_WORD_LIST_maybe_vars_and_filters
+
+		ARGV is an ITEM and can be treated
+		as WORD as ALEX as_PHRASE as_MERGE_from_PHRASE_to_PHRASE _to_STREAM
+		or ALIAS_from_HINTS 
+
+	MODULE_ROOT_OBJECT
+
+		BASE CLASS
+
+		SCRIPT will need to ANIMATE USER_CLASS_ITEM
+		so we require a ROOT_BASE_CLASS
+
+			PyObject * self
+
+		FAILURE of PYTHON
+
+			PyObject is a STRUCT not a VTBL_LIBR_OBJ
+			It does not have a VTBL, but you could recompile Python
+			and have OBJ->VTBL available
+			and have OBJ->VTBL available for TCC
+	
+	DECODE_u32_u32 - this has CASES for WORD_64 and CPU_64_REG // u32_tricks 
+
+		EA_EXPR u8_u8_u16 _one, _two; // LOHI order // u32_tricks u64_CPU
+
+		EA_EXPR u8_u8_u16_one; u8_u24_two; // LOHI order // u32_tricks u64_CPU
+	
+	MMAP requires EA_EXPR as VTBL 
+
+		so no Python Object can appear in MMAP # PTR must be MEM not STO
+
+		ditto	 PyObject* TclObj*  JAVA ECMA SM_ITEM* JNI_ITEM*
+
+		so we have to use whatever HEAP has coded
+	
+	HEAP
+
+		HEAP_of_HEAP has multiple API panels
+		 
+		 	DESIGN for a MINI_MACHINE in SINGLE FILE or SEGMENT
+			DESIGN for several FILE ZONES split and merged
+			DESIGN is for i32_idx  #  idx_i32
+			DESIGN is for i32_OFFS  #  offs_i32
+
+				OUTER container uses [u32] of PAGES of 4096
+
+					CPU's with 1024 PAGES will allocate 4 at once
+
+				u8_u8_u16_u32 for allocated ITEMS
+				u8_u8_u48 for PAGE_aligned_PAGES
+
+			DESIGN uses a growing sequence of
+
+				u8 u16 u24 u32
+				i8 i16 i24 i32
+
+			DESIGN uses i12_BITFIELD_three
+				u8_i12_i12_i12
+
+			
+
+
+		struct in MMAP
+		
+			// HIDDEN ALLOC FIELDS from LIBC //
+
+			// Python_Header
+	
+	MUX_LANG_OBJ_BASE_CLASS
+	MUX_LANG_Tcl_OBJ_BASE_CLASS
+	MUX_LANG_Python_OBJ_BASE_CLASS
+	MUX_LANG_V8_OBJ_BASE_CLASS
+	MUX_LANG_DENO_OBJ_BASE_CLASS
+	MUX_LANG_WASM_OBJ_BASE_CLASS
+	MUX_LANG_CXX_OBJ_BASE_CLASS
+	MUX_LANG_GCC_OBJ_BASE_CLASS // LIBC PLUS //
+
+
+	
+	CACHE first_edit
+
+		obtain a lock until DONE // or FAIL 
+		plan to release lock on DONE
+	
+	GEN
+		TCC
+		GCC
+		GXX
+		ASM in TCC 
+		LIBR += index of API LIBR
+
+	
+	VTBL_TCC
+
+		C copy of a C++ design
+
+		nb a bad design was placing the VTBL_PTR at OFFS_ZERO
+		as that did not enable a well formed class, to add VTBL_PTR at HALF_WAY
+
+		we always provide the VTBL_EIGHT as u32_u32 for ARM32 layout
+		it appears as PAGE[u32] HORIZON_of_BYTES
+
+		C copy of my C++ design 
+
+		XPOS { TREE LOCN LEAF } // ALIAS HEAP = TREE
+		XPOS { HEAP TREE LOCN LEAF } // ALIAS ITEM = LEAF
+
+		struct EIGHT_t : public u32_u32 {
+		 // GEN_FLAG no_more_fields_without_EXCEED_BITFIELD
+		}
+
+		// XPOS2 can point to TWIG as LEAF // so same IDX_POOL
+
+		PAGE = PAGE[u32_idx_PAGE] // TEMPLATE grows name in CC order
+		TREE = u32_idx_TREE
+		LEAF = ITEM
+		LEAF = LOCN
+		XPOS = TREE LEAF
+
+BENCH_X11_WEB2_W32_GTK_QT_Python_TKINTER.txt
+
+	Python_TKINTER
+
+		It is tcl_tk Tcl_Object wrapped up in PyObject* and SCRIPTS
+
+		It converts all STRING parameters to TCL_OBJ_STRING // NULL TYPE or // CSET_UTF8_PLUS //
+
+		It calls Tcl_Tk_API
+
+			LIBR adds some VARS
+			UDEF adds some VARS
+
+			LIBR adds some CODE
+			UDEF adds some CODE // require FILTER or CLICK_KNOW_UDEF_is_active_NEAR
+			// ie SAFE -vs- SHARP //
+			// ie FILTERED -vs- DIRECT // direct is GEN CXX that calls dlopen after JIT
+			// JIT_RELOAD //
+
+
+// JIT_RELOAD //
+
+	SEGMENT = MMAP layout_from_elf ELF_SEGMENT_PAGE_one as { PAGE_ZERO PAGE_NEXT() }
+
+		let DLOPEN do the MMAP of the CODE
+		let STO do the MMAP of the DATA
+
+		recompile the ELF.so file
+		unload and load the new ELF file
+	
+		ROM gets PRE_LOAD 
+		STO same
+			edit filter to convert _OLD to _NEW within STO _old _new
+
+// STO_MMAP //
+
+	MINI_MACHINE - for a day
+	MINI_MACHINE - for ever
+	MINI_MACHINE - VFS_as_HEAP
+
+	P0P2_is_nbytes_in_AVAR _SPEC == AVAR_SPEC_of_BYTES
+	P0P2_is_nbytes_in_SEGMENT _SPEC == SEGMENT.SPEC
+
+	FILE_is_MMAP_aligned
+
+		PAGE[0]	PAGE_ZERO_LAYOUT
+		PAGE[1] PAGE_NEXT
+		PAGE[2] PAGE_NEXT
+
+		PAGE[i] PAGE_LAST _FULL _PART _EMPTY_is_quite_RARE
+	
+	Each HEAP within FILE is 4KPAGE aligned 
+
+		this enable FILTERED ACCESS
+		this enable MASKED ACCESS - list PAGES used in sweep
+
+		load list # or at least MMAP as part of entire MMAP
+
+	REGEN HEAP
+	GROW HEAP
+
+		reallocate at a different OFFS 
+		(all 1 block, contiguous PAGES)
+		(because we dont want to split lists of pages)
+
+	GROW_ZONE
+
+		ZONE_ZERO
+		ZONE_one
+		ZONE_two
+
+		COMPILE builds the Layout
+		REGEN moves ZONE_two to tail of ZONE_ZERO 
+		REGEN gives SPACE for edits and for 2 months data
+
+		I sort of think this might be a FILE_PAGE_16MB
+		that the data centre moves from NODE to NODE
+		then back to STO // LOCK from COPY_SENT to EDIT_BACK
+		Possible second JOURNAL of EDITS // this is what we build
+
+
+
+
+
+			is ELF writable segment already MMAP write
+
+	call PAGE_NEXT to step through PAGE_LIST expected from elf_info about SEGMENT
+	PAGE_NEXT == PAGE_NEXT_all_contiguous_in_MEM nbytes as PAGES PAD_with_NUL,
+	PAGE_LAST == PARTIAL_PAGE_from_nbytes _PAD_with_NUL
+	PAGE[XPOS] { XPOS.P0P2 } // SUB_ZONE in SCRIPT with BLOBS
+
+
+

@@ -1,0 +1,2 @@
+gcc -S c1.c -fverbose-asm -Os -o - | less
+

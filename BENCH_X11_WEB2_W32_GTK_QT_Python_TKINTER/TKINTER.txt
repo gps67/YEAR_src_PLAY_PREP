@@ -1,0 +1,26 @@
+
+repeat Tcl_Tk luck 
+with Python event loop
+with Python calling script
+
+	build parallel systems
+	build Tcl systems that Python can call
+
+tricky bits
+
+	refcounting from bind statements
+	refcounting - TODO_DOCS
+	callbacks from
+
+easy bits
+
+	how TKINTER is designed to repeat the patterns
+	how TKINTER is designed to channel the patterns
+
+repeat bits
+
+	rework as Tcl then call from Python
+
+	but first do it in Python
+	to understand callables that hold data
+	(not quite closures)
