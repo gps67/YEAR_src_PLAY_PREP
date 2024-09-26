@@ -1,0 +1,37 @@
+TODO_STO_LIMITS.txt
+
+	MINUS_ZERO_PLUS
+
+	i8_BYTE_B
+	u7_PLUS		// [0[1 ... [N ... 127[128 // hint actually i64
+	i8_ZERO		// [0 // u8_ZERO // see_also _ZERO_asif_PLUS_
+	i8_MINUS	// [-128 ... -1[0 // 
+
+	GROW i8 to i16 to i24 to i32 
+	GROW to i8 in an i16 in_i32 _in_i64
+
+	GROW u7 to u15 to u23 to u32 to BITFIELD
+
+		NBITS == 8 plus SIGN_ZERO
+		// ZERO_means_FULL except when SIGN_ZERO (from) on_ZERO
+	
+	LOGIC to figure out if array can AUTO_GROW 
+
+		at_EXCEED_u7_STEP_GROW_POINT
+		 ONCE
+		  AGAIN at 7 15 23 31 47 63
+		  AGAIN at 8 16 24 32 48 64
+
+		for each of the above GEN via this TEMPALTE
+
+		SCRIPT DSL is a PER_LOCK_HANDLE
+
+			INTERP_COMPILE_PRE_LOAD_ON_CHANGE_AVAR_FUNC_ETC
+
+			SYNTAX is either ARGV or CXX // or BOTH //
+
+				PARSER can create ARGV from PHRASE
+				PHRASE could be Python ES6 C++ TROFF
+
+	FILTER TROFF MATCH "BOLN DOT LETTER_one LETTER2"
+	PARSED_PARSER has FSM that works

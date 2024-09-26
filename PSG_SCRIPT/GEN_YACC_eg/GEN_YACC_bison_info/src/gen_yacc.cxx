@@ -31,16 +31,26 @@ bool lex_yaxx_UDEF_ONE_t:: build_tree_lex()
 
 bool lex_yaxx_UDEF_ONE_t:: build_tree_yacc()
 {
-	return WARN("TODO");
+	return FAIL("TODO");
 }
 
 
 
-int main() {
+bool bool_main( int argc, char ** argv ) {
 	lex_yaxx_UDEF_ONE_t UDEF_ONE;
-	UDEF_ONE.build_tree();
+	if(! UDEF_ONE.build_tree() ) return FAIL_FAILED();
 
 	FAIL("TODO - unwritten");
 	// FAIL("ENOENT_is_2 == %d TODO", ENOENT);
 	return ENOENT;
+}
+
+int main( int argc, char ** argv ) {
+	if( bool_main( argc, argv ) ) {
+		return 0;
+	}
+	FAIL_FAILED();
+	INFO("errno %d", (int) errno );
+	if(errno) return errno;
+	return 1;
 }

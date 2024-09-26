@@ -1,0 +1,117 @@
+	2024-09-23
+
+	2024_09_Sep
+	2024-09-23_PSG_TREE.txt
+
+	Parse_CXX {
+
+		STREAM_in 
+		SESSION_errout_api // not an actual fd // messgage Q // dev_null
+
+			api_log_message
+			api_log_value
+			api_log_usage
+			api_log_CODE_POINT
+
+			api_log_var_val_idx	// debug printf ON_OFF
+
+	}
+
+	build_TREE {
+	}
+
+	RUN_CXX {
+
+		MINI_MACHINE running in COMPILE_MODE CT_RT CT
+		MINI_MACHINE running in RUNTIME_MODE CT_RT RT
+
+		LAZY_MODE with MOST_EVAL_FILTER
+
+			CT_COMPILE 
+
+		POINT IS
+
+			the inline function and ARGS
+			expands the same to all callers
+			then some more because KNOW "VALUE"
+			then some more because CACHED_REPEAT const_ITEM
+
+			so when MACRO is called with STR0 avar expr VALUE
+			we can attempt to resolve CACHE or DIRECT or KNOW_SAME
+
+			TEST_SAME LHS RHS
+			FIND_SAME LHS RHS
+			KNOW_SAME LHS RHS
+			KNOW_LHS_NULL
+			KNOW_RHS_NULL
+			KNOW_LHS_RHS_NULL_NULL
+			KNOW_NOT_NULL LHS
+			KNOW_NOT_NULL RHS
+
+			TREAT XPOS is CODE_POINT as NULL
+
+				CODE_POINT says "{ LHS }"
+				CODE_POINT says    LHS   // C_VAR == "LHS"
+
+				// turns out LHS is a valid local var_name
+				// because MACRO EXPR is an inline function
+				// with added CT_RT PRE_LOAD_CACHE
+
+			PRE_LOAD
+			PRE_GEN_CODE
+
+				CT_RT of above 
+				 as_ITEM ITEM
+				 as_OBJ OBJ_var 
+				 EA += RO_RW  RO_RW_permission
+	_t 
+		AUTO get_ITEM_t() { return FMT "%s_t" STR0 } _one="ITEM" _two="UDEF"
+		AUTO get_ITEM_EA() { return this /* not STR0 */ } 
+
+
+			MENTION %s becomes %s_t 
+			OPTION WITHOUT_t WITH_t
+			OPTION ALIAS LOCAL REMOTE_EXPR
+			OPTION ALIAS ALIAS ORIGINAL {
+				CODE_POINT = HERE // THIS FRAG
+				lhs == ALIAS	// LOCAL
+				rhs == ORIGINAL	// REMOTE
+			}
+
+		LHS_MID_RHS
+		LHS_RHS PLUS_VAR(%s) {
+			PLUS_VAR = "PLUS_VAR"
+			P0P2_t CMNT = PARSED_P0P2_from_P0
+			P0P2_t ATTR = PARSED_P0P2_from_P0
+		}
+
+	}
+
+	40,000 US troops in med
+
+
+	PSG_CXX 
+	PSG_ARGV
+	PSG_ARGV_CXX
+	PSG_TREE
+
+		percent_s
+
+		ALIAS "STR0"
+
+	Cuídese mucho
+
+		take good care of yourself 
+
+
+	Never mention it
+
+	C++ unroll
+
+	friend VecBase operator+(const VecBase &a, const VecBase &b)
+	{
+	    VecBase result;
+	    unroll<Size>([&](auto i) { result[i] = a[i] + b[i]; });
+	    return result;
+	}
+

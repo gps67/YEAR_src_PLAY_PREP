@@ -1,0 +1,39 @@
+TODO_po4a.txt
+
+	calling gettext is a part of that
+	re_generate the original file using translated view within source
+	use_tables for native lang English
+	set_flag on each lex - translate in BORDER panel - use google - cached
+
+	po4a - MUX for translated text // parses man pos sgml texinfo
+
+		a system for gettext translation
+
+		a workflow explained in
+		https://po4a.org/man/man7/po4a.7.php
+
+		FSM letter PQRS 
+
+	po4a - MUX 
+
+	TODO
+
+	https://www.debian.org/international/l10n/po4a/rank
+	Percentage translated message count
+
+		97% ...
+		2% ...
+	
+	pick up some of those documents and see what REALLY MUST be translated
+
+		so offer OPTION translate PHRASE COMPONENT
+		si_non from yes_no
+
+		figure out layouts
+		eg translate the mini words, leave the nouns, adjectives
+		dictionary of "translate" online (API)
+	
+** po4a **
+
+
+

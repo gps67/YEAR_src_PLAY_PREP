@@ -1,0 +1,150 @@
+	2024-09-23
+
+	2024_09_Sep
+	2024-09-23_MUX_VIEW.txt
+
+	GIT provides a DIFF
+
+	GIT.pick_CSR_one == NEAREST_to_CSR_in_GIT_LIST_of_STEPS DIFF.P0P2.P0
+	GIT.pick_CSR_two == NEAREST_to_CSR_in_GIT_LIST_of_STEPS DIFF.P0P2.P2
+
+	MUX VIEW FLIP between BEFORE and AFTER patch
+
+		simply highlight the +zone+
+
+		CODE_VIEW over plain CXX 
+		PSG must handle all CODE it is subjected to
+		manual patch for sed scripts edlin or FILTER_SCRIPT
+
+	USAGE .P2() { call_P2_GETTER_GET() } // DIALECT += GETTER_PHRASE_BOOK
+
+		PHRASE
+		BOOK of PHRASES
+		VIEW as DIAG // SUB_SEL here has spelling ("PHRASE") yes_is_t()
+		C++ inline removed uncalled strcmp SPELLING_PHRASE SPELLING_FOUND
+
+		P0P2_P2
+		expand inline GETTER via CACHE idx // small local token
+
+			putting (REMOTE) VAL P0P2 behind (LOCAL) idx_EXPR
+			eg MINI_MACHINE[i8] 
+
+	LEXICON NOUN NAME // TUPLO is MATCHING ARGV // Proud Mary //
+
+		"P0P2" // MACROD like to translate down to this AVAR or EXPR += AVAR
+		P2 = P0P2.P2
+
+		 CT_RT
+		 	THIS == P0P2 // WHY == PTR_t == "P0P2" + "_" // CT_FIX
+			P0P2 is P0P2_t // AUTO this line appears WHY NEXT
+			P0P2 is P0P2_t MACRO THIS == P0P2 // projects above AUTO
+			
+		 	THIS == P0P2 // WHY == PTR_t == "P0P2" + "_" // CT_FIX
+			P0P2 is P0P2_t // AUTO this line appears WHY NEXT
+			P0P2 is P0P2_t // AUTO this line appears WHY NEXT
+
+		EVAL SCRIPT
+
+			AVAR P0P2 = %s
+			AVAR P0P2 = "%s"
+			AVAR P0P2 == %s
+			AVAR P0P2 == "%s"
+
+		CONST_WATCH %s // MATCH("%s") // FILTER to_Q2_in_C // _in_JS
+
+			MATCH "%s" 
+			MATCH "\"%s\"" // DETECT EXACTISM ++ 
+
+			MATCH SPELLING("%s") // mixed ARGV and SCRIPT PSG TREE
+			DATA EA SPELLING "SPELLING"
+			DATA EA SPELLING "%s"
+			DATA EA SPELLING "\"%s\"" // DETECT EXACTISM ++ 
+
+
+	Each INST of a MENTION
+
+		ALIAS idx_ONE idx_TWO // ALIAS == "ALIAS" // AVAIL CONST EXPR USE
+
+		/* AUTO */
+		/* AUTO A R G V */
+		/* AUTO A_R_G_V */
+		/* AUTO ARGV */
+		/* AUTO ARGV CMNT */
+		/* AUTO ARGV CMNT PSG CODE_POINT */ // STRUCT of A_R_G_V_plus
+		// _plus adds _ONE _TWO CT_lhs_rhs
+		// _plus adds _ONE _TWO CT_lhs_mid_rhs ...
+
+		... // asif_avar // asif_field // asif_TYPE // TYPE_MATCH //
+
+		MENTION += "%s_%s" // "TYPE" "MATCH"// TYPE_MATCH == "TYPE_MATCH"
+
+		CT_RT runs compiler over SCRIPT_FILE
+		CT_RT runs compiler over SCRIPT_DECL
+		CT_RT runs compiler over SCRIPT_LINE
+		CT_RT runs compiler over SCRIPT_WORD
+		CT_RT runs compiler past SCRIPT_PUNCT
+
+		PRINT EVAL of SCRIPT by running it once and printing each LINE
+
+			{ OUTPUT }
+			{ COMPILED_SCRIPT }
+			{ TOKENISED_SCRIPT }
+			{ TOKEN_DECL_SCRIPT }
+
+		The value of every variable is the "VARNAME" itself
+		The value of every variable == "VARNAME"
+		// COMPILER CAN KNOW MATCH "==" // 
+		Running the script moves that STR0 around
+		Running the script using SET VAR VAL // VAL is IDX or PTR or EXPR
+		BIND VAR VAL
+
+			This creates an entry in SESS.UDEF.AVAR.CIDENT99
+
+			VARNAME == CIDENT
+
+			We can GEN C++ code knowing gcc or clang will OMIT
+			EMIT
+				STRCMP LHS RHS
+				// LHS is what gcc will create in its parse tree
+				// RHS is gcc parse tree STR0 or const_STR0
+				// STRCMP can simplest_clib CALL
+				// gcc can pre-run list of FILTER_TOKEN_MAP
+				// VTBL[TOKEN] .attr .field .func .const .spec
+				// STRCMP can be run down to it's ASM_STEPS
+
+				CT_RT {
+				 CT LAZY STATE {
+				 	LHS_1 "LHS"
+				 	RHS_1 "RHS"
+				 }
+				 RT LAZY STATE
+				}
+			OMIT
+			KNOW
+				LHS == RHS
+				 // because VAR_NAME_LHS == VAR_NAME_RHS
+				because CODE_POINT ALIAS MATCH
+
+				CODE_POINT {
+					VAL = P0P2_parsed_from_P0
+					P0_from_SCRIPT_CSR_XPOS
+
+				MACRO SCRIPT_CSR_XPOS(SCRIPT,CSR,XPOS) ... {
+					SCRIPT is available as varname("SCRIPT")
+					SCRIPT is available as varname("CSR")
+					SCRIPT is available as varname("XPOS")
+				}
+					// DECL and CALL // DECL_and_READ //
+					SCRIPT_CSR_XPOS // call it here
+					// BENCH requires those args
+					// GCC plain C permits out of order
+					// using struct CTORS
+				}
+ template_untolling
+
+ 	https://www.cppstories.com/2024/unroll-templates-lambdas-and-fold/
+
+
+
+
+

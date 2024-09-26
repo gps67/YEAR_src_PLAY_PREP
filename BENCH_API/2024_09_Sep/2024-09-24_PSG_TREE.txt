@@ -1,0 +1,69 @@
+	2024-09-24
+
+	2024_09_Sep
+	2024-09-24_PSG_TREE.txt
+
+	HEAP holds any number of TREE ROOTS
+	GC is available 
+	SYNC is available
+	EDGE is available // EDGE pushes all available updates along 
+
+		PSG_TREE has two parallel trees, PSG and DOC_TEXT as_TREE
+		VFS is retains for sanity, and XPOS is FILE.LINE.CPOS
+		VFS is retains for sanity, and P0P2 is Parsed nbytes of TEXT
+
+			ZONE_nn	put first to keep P0P2 adjacent
+			ZONE_P0P2
+
+			 ZONE_P0
+			 ZONE_P2
+
+			XPOS_P0 = ZONE_P0
+	OPTON		n_bytes_in_P0P2 = ZONE_nn 
+	OPTON		n_bytes_in_P0P2 = P2 - P0
+			XPOS_P2 = XPOS_P0 + n_bytes_in_P0P2
+	INLINE		XPOS_P2 = XPOS_P0 + ZONE_nn
+
+
+
+	EDGE = run to nothing left to eval ; sync xfer result as queue acts
+	PLAY_LIST = PLAY_LIST_of_PATCH_STEPS_in_DIFF // VFS editing for TEXT
+
+	SYNC_FLUSH is recommended at high tide 
+	SYNC_EDGE is recommended at high tide 
+
+		place a marker on all queues CSR_EDGE_PLACE_HOLDER
+		place a marker P0P2 when N==0 PHRASE_TEXT_as_P0P2 // _FILE
+
+
+		KEEP the XPOS of the STREAM
+		as it flows through Parser_CXX
+		TOKENISER uses idx = OFFS ++
+
+		MATCH ALLOC idx = N ++
+		MATCH ALLOC { p0 = N; N += nbytes_n; } 
+		MATCH ALLOC P2 = P0 + nbytes_n
+		MATCH ALLOC idx = P2
+	
+	SYNC STEP on_DONE release pre step
+
+		TICK_TOCK
+
+			whilst current ERA is incomplete or unacknowledged
+
+			cannot rely on ERA
+			can expect more changes within ERA
+			so must remain in previous ERA_PRE_STEP
+			until ENQ_ACK and COORDINATED STEP
+			but since we known OLD_STEP is done
+			we TICK_TOCK into new STEP_core_STEPPING
+			database_version_git_era_daily_sort_of_stuff
+	
+	SYNC every FILE and wait for ALL_ACK but continue ERA upto then
+	SYNC every ITEM streamed over GEN VFS
+	SYNC_CLICK every Module imported over VFS
+	EDGE_CLICK
+
+		require MAKE_TARGET for modified VFS_LAYER_ON_OFF_STEP_DIFF
+
+

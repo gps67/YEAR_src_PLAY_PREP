@@ -1,0 +1,89 @@
+	2024-09-23
+
+	2024_09_Sep
+	2024-09-23_PSG_TREE_rpc.txt
+
+	u8_u8 {
+		HEAP[u8]
+		ITEM[u8]
+	}
+	u4_u12 {
+		HEAP[u4]
+		ITEM[u12]
+	}
+	u8_u24 {
+		HEAP[u8]
+		ITEM[u24]
+	}
+
+	HEAP_ITEM
+	 u8_u8 
+	 u4_u12 
+	 u8_u24 
+
+			
+
+	SCRIPT is transmitted from REMOTE (untrusted) to LOCAL (dmz) CACHE
+
+		FAST shortcut is request a ROM start_pos list of Modules
+		FAST request a ROM start_pos list of Modules
+
+		LOCAL sees a ROM avail in LIBR and FAST_LOADS from ROM_API
+
+			PERMIT call FN as part of API
+			CHECK argv[i] which came from DODGE_REMOTE
+
+			agree to run ROM CODE because we wrote it to suit API
+
+		API CALL func_name(a,r,g,s) // named parameters // C_tcc
+	
+	RPC_SCRIPT_LINES are sent over STREAM as ARGV TEXT P0P2 PRE_PARSED
+
+		ARGV PARSED is simplistic, with SPELLING used for effect
+		TOKENISER of ARGV can actually save as OUTPUT as STREAM
+
+	Parse_PSG of SCRIPT produces tables of XPOS mappings TREE_to_XPOS
+
+		XPOS	{ FILE } // ZPOS = ZERO in FILE
+		XPOS	{ FILE LINE CPOS } // no ZPOS this an XPOS
+		XPOS	{ FILE LINE } // ZPOS = ZERO in LINE
+		XPOS	{ FILE OFFS } // ZPOS = ZERO_in_FILE
+
+		[GAP[LEX[GAP[NEXT optional [PUNCT
+
+			PUNCT are glyphs other than a1 a2
+			usually with specific meaning to C or other
+
+			PUNCT around WORDS in ARGV trigger a modified ARGV
+			PUNCT inside WORDS may even be nested_parsable_script
+	
+	PARSE_PSG produces a TREE of ARGV SCRIPT VFS ...
+
+		RPC negociates a bunch of TUPLOS and ATOMS over RPC
+		RPC sends JVM ASM or WASM or u64_DECODED_LIST
+		RPC serialises and de-serialises VIA C_API
+
+	XPOS_in_TREE
+
+
+
+
+
+
+	XPOS_in_TREE
+	TREE_over_STREAM_CUNCKS
+
+		LAYERED IFS
+		ROM
+		LIBR_util
+		LIBR_apps
+		SITE_libr
+		SITE_ASIS
+		SITE_GIT_POS
+
+	EA_GIT_POS
+
+		editable_alias_or_TOKEN_eg_NOW_LATEST_REASONABLY_STABLE
+		ie not STABLE as that is moon phases old
+
+

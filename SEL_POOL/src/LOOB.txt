@@ -18,12 +18,13 @@ LOOB.txt
  TCL
  enum return_codes {
 
-0	TCL_OK
-1	TCL_ERROR
-2	TCL_RETURN
- 3	TCL_BREAK
- 4	TCL_CONTINUE
+0	TCL_OK		TCL_RET_VAL contains RET_VAL ; # and STAY #
+1	TCL_ERROR	TCL_RET_VAL_contains_ERROR_DIAG
+2	TCL_RETURN	TCL_RET_VAL contains RET_VAL ; # and RET #
+ 3	TCL_BREAK	TCL_LOOP_break
+ 4	TCL_CONTINUE	TCL_LOOP_continue
 
+  tcl.h
  "tclDTrace.d"
 
 

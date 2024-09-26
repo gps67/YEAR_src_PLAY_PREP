@@ -1,0 +1,14 @@
+TODO_rename_GEN_YACC_one.txt
+
+	GEN_YACC test_idx
+	GEN_YACC test_name
+	GEN_YACC test_ARGS
+	GEN_YACC test_SCRIPT
+
+	SET "AVAR" "VALUE"	// bash removes Q2 to deliver STR0 or P0P2
+
+	XPOS = new XPOS(FILE,OFFS)}
+	XPOS = new XPOS(FILE,LINE,CPOS,BPOS) // set ABSENT to ZERO // to M1
+	// XPOS = BOLN_XPOS + bytes_offs_in_stream BPOS // in_line // usually
+	// i8_BPOS // MINUS creates AVAR to hold i32
+	STR = CTOR {P0 XPOS} {XPOS XPOS(FILE,OFFS)} {NBYTES 5}

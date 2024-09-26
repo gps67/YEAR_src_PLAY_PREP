@@ -1,6 +1,89 @@
 /*
 	not sure I think CODE_HERE == UDEF // AUTO_CAST_via_POOL_ONE _TWO 
 	merged vars %s.field for TYPE_CAST "{ XPOS_t & XPOS }"
+
+ SEE: already need for multiple parameters to BASE_CLASS
+
+ 	THe OOP thing keeps the THIS as a local centre XPOS_ZERO_PLUS_i32_OFFS
+	// small file limit 2G 
+	// OFFS_i32_MINUS 
+	// OFFS_i32_ZER0
+	// OFFS_i32_PLUS
+	//
+	// or SORT by L_to_R MINUS_to_PLUS _LIMITS_i32
+	// or SORT by TOP_to_BOTTOM 
+	// or SORT by BOTTOM _to_TOP // HEAP += ITEMS "{ BOTTOM TOP L M R }"
+	// or SORT by BOTTOM _to_TOP // HEAP += ITEMS "{ idx i32 i32_idx_t TOP L M R }"
+	// typedef %s %s_t; // not using "_t" is using "%s" as TYPE_NAME
+	// MATCH INVERT mention maybe sarcastic or aside
+	// EXPECTED_USAGE if_MINUS( AVAR_numeric ) // provides usable BASE_CLASS
+	// EXPECTED_USAGE AVAR_numeric   AVAR_numeric_t %s
+	// ARGV is PHRASE is SEGMENT of ARGV_from_STREAM or BRANCH_of_TREE
+	// STO is HEAP.ITEM.STO_API
+	// PROGRAMMABLE behaviour, with AUTO_CTOR NULL then VALUE and CONST
+	// it permits CACHE to boot_strap without strange behaviour
+	// LIBR provides ITEM.STO.API = ITEM_STO_API //  MERGED to 1 SPELLING
+	// THEME_ THEME = CTOR "SCRIPT" // COMPILE AND KEEP as EXPR for CELL
+	// THIS.VALUE // is AVAR is CGI_FUNC_GETTER_and_CT_RT_info
+	// CT_RT THIS += upgrade TYPE_INFO for CACHE_ITEM to NEW_TYPE_INFO
+	// NEED archive OLD_VAL // COMPILER exports this to ALREADY DONE CACHE
+	// NEED archive NEW_VAL // CT_RT provides NEW_VAL = NEW_TYPE_INFO
+	// EXTRA
+	// DROP_or_ignore_if_there_or_LOOK_if_there
+	// PERMIT_RW_ACCESS_of_SESS_SELF // add_field rewrite_own_SPEC
+	// EXPECTED_USAGE AVAR_numeric_t _value = INIT_VAL -or- CTOR_ARGS
+	// CTOR is a WELL_KNOWN "CTOR" or possibly "CTOR_two"
+	// ELF allows any C_FUNC addr, but we MATCH FUNC_prototype _and_ARGS
+	// DIALECT allowed SP _and_ARGS EOLN // in SCRIPT EOLN matches CMNT_EOLN
+	// DIALECT MATCH STRENGTH // EOLN or OTHER // ";# CMNT EOLN"
+	// DIALECT MATCH STRENGTH // EOLN or OTHER // "// CMNT EOLN"
+	// DIALECT MATCH STRENGTH // EOLN or OTHER // "/* CMNT    EOLN" // FLAG
+	// DIALECT MATCH STRENGTH // EOLN or OTHER // "/* CMNT */ EOLN"
+	// FLAG // depth_in_comment_ = FSM.STATE // FSM = FSM_COMMENTS_EOLN
+	// EOLN // auto triggered by CALLER, on_EOLN(), LIMIT_call_once_then
+	// ONCE // a flag that counts how many times called // ROM can OK_AS_IS
+	// CTOR // if CT_RT_ahead_of_time_asif_run, but not yet called
+	// STATE UNSET -> ZERO_from_INIT_MEM_to_ZERO // OPTION WHAT IF NOT
+	// STATE UNSET -> ZERO -> INIT_VAL -> VALUE_one // CALC EXPR in advance
+	// RET_VAL VALUE_one
+	// STATE ZERO -> _one from INIT_ROM_to_VALUE_one
+	// STATE ZERO -> _two from INIT_ROM_to_VALUE_two
+	// ALIAS _ZERO _NULL // VALUE_NULL // MERGE M1 // PLUS NBIT
+	// PLUS u7 u15 u31 u63 // can use i8 to hold u7
+	// PLUS u8 u16 u32 u64 // can KNOW MINUS_ZERO_PLUS and BITFIELD_16
+	// KNOW i16 is u15 PLUS WITH i16_MINUS 
+	// OPTION MINUS_256 is MINUS_100_is_ZERO // when in BYTE 
+	// BYTE_PAIR /* print as 4 bit lex */ 1111 1111 0000 0000 // HIGH LOW !!
+	// BYTE_PAIR // LOHI //  0000 0000 1111 1111 // asif MINUS upto infinty
+	// BYTE_one // LOHI // 0000 0000 // appears same as ZERO == 256 == -256
+	// PICK -256 ZERO +256 // 
+	// PICK -128 ZERO +128 // +127 is MAX_u7 // +128 is on_EVENT // or ARP
+	// PAGE_LINE after [256] is next PAGE // some real_world_model here
+	// PAGE_ITEM //
+	// PAGE_ITEM_EXPR // might be in CODE_POINT // and be PRE_COMPILED
+	// SAFE ACTION is BENCH POPUP HELPFUL MENU += DECODE( PAGE ITEM EXPR )
+	// DECODE == COMPILE == EXEC == PRE_LOAD == CACHE_COUNT
+	// CACHE += USAGE n_reads per minutes as f32
+	// CACHE += USAGE most_recently_read_at_time_as_f64
+	// TIME uses BC1 GAP AD1 // GAP == ZERO // M1 == BC1 // _one == [1]
+	// _two == [2]
+	// _idx == [idx] // u16_idx but LIBR switches early to u31
+	// u15_idx == [idx] // u15_idx from OPCODE and ARGS // u31_to_ARRAY
+	// u31_idx == i32_from_u16_idx // _PLUS but CORRECTLY SIGNED // 
+	// u32_idx == u32_from_u15_idx // KNOW ZERO SIGNED // ZERO_or_PLUS
+	// but LIBR switches early to u31 // eg for u23 and u24 and u16 and u15
+	// OPCODE of the INPUT ARG might have already found MINUS_ZERO_PLUS
+	// MINUS // i32_MINUS // i15_MINUS //
+
+
+	// so no need for PARSER to DEMAND EOLN
+
+
+	//
+	// OFFS_i32_PLUS
+	// OFFS_i32_ZER0
+	// OFFS_i32_MINUS 
+
 	AUTO_API treats OBJ * PTR }" as "{ OBJ & PTR }" // COIN_SIDE //
 	// COIN_SIDE is simply A_or_B _xor_maybe "{ ONE TWO }"
 	// COIN_SIDE is simply A_or_B _xor_maybe "{ NAME STR0 }"
