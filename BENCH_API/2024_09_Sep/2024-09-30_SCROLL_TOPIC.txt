@@ -1,0 +1,10 @@
+	2024-09-30
+
+	2024_09_Sep
+	2024-09-30_SCROLL_TOPIC.txt
+
+	STORED TOPIC = worked on += DIARY_EVENT
+	DIARY EVENT = worked on TOPIC
+
+	EG src/PREP/${TOPIC}/some_thing
+	DIARY_EVENT += WRAP_some_thing

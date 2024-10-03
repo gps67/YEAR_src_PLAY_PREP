@@ -1,0 +1,94 @@
+	2024-09-30
+
+	2024_09_Sep
+	2024-09-30_BENCH_sort_less_pre_view.txt
+
+	You can VIEW anything until SORT is complete at EOF
+
+	PRE_VIEW shows lines as soon as they become available
+
+		currently upto sender to not buffer longer than 2 seconds
+
+		expect most API's to have already nudged flush on idle IO
+	
+	locate gps | grep '\.js$' | less
+	locate gps | grep '\.js$' | BENCH_less
+
+		actually all of it in BENCH
+		the GREP comes from the GREP department LIBR
+		the SORT comes from the LIBC department
+		the LESS comes from GUI_LIBR which uses TCL_TEXT
+
+	TCL += Module_gps67
+	TCL += Module_gps67_CXX
+	TCL += Module_cxx_without VTBL // although other classes might use VTBL
+	TCL += Module_cxx_without LIST HERE // ARGV or A R G V or BOTH
+
+	PURE_TCL
+
+		this is not a preferred build
+		but uses some kludges to make it work against API
+		eg DB_OBJ_by_KEY_in_giant_hash_TABLE
+
+			this is not much worse
+			
+			the optimisation is lookup done earlier to SPELLING
+			the optimisation is not need a STRING_VALUE_KEY
+			but OBJ_%2X is available (that looks good upto _FF)
+			and Module then jumps to _FMT_04X
+			there is always a conv to %02X (or SOMETHING ELSE)
+			that is done at EDIT_CT PICK_DEFAULT
+			that is done at EDIT_CT DECL_SEVERAL
+
+			there is some loss of functionality
+			so those functions are NOT in the CORE API
+			and can be replaced with TRUE_NULL_functions
+			# LOG_USED - flag already set so SKIP
+			# RET_VAL_TRUE # most are plain bool
+			# RET_VAL_TRUE_NULL_STRUCT # please dont use this PTR much
+
+			It may even be that clever derived operations take root
+
+		TCL_TREES
+
+			using OBJ pointers
+			but still managing TREE PURE_SCRIPT style
+
+		ASSOC LOOKUP
+
+			adds fields you forgot earlier
+
+			costs 24 bytes per OBJ with a FIELD
+
+				DECL absent means ????
+
+				lookup(STR0) // or PTR or INT_EIGHT or INT_FOUR
+
+	
+	LIBR_SITE_gps67
+
+		SITE INIT SCRIPTS
+
+			a useful search path and PICK from versions
+
+				_DEMO
+				_LIVE
+				_MMAP
+
+		TCL_PTR_IS_LIBR_ITEM
+
+			allow TCL to alloc the memory for the TCL_Object
+
+			allow SPELLING to also use PTR_one PTR_two
+
+				TCL_32 means only one u32_u32
+
+				TCL_64 means CACHE_not_DATA
+
+					or other PER_ITEM feature
+					that TCL_32 has to do some other way
+					eg ASSOC lookup
+
+
+
+		SPELLING 

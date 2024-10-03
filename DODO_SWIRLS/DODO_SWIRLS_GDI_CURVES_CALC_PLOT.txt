@@ -1,0 +1,9 @@
+.txt
+
+	DODO_SWIRLS_GDI_CURVES_CALC_PLOT
+
+	With_OpenGL
+
+	https://www.khronos.org/opengl/wiki/Common_Mistakes
+
+	CALC

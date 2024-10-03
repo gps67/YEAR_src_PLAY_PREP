@@ -1,0 +1,85 @@
+API
+RAII
+	DEFERRED_RAII_API
+
+		CT_RT 
+			creates a var
+			ALWAYS INIT NULL
+
+			PRE_LOAD KNOWN VALUE SCRIPT DATA
+
+
+
+	resource 
+	aquisition
+	IS
+	initialisation
+
+
+		ie CTOR must do open( FILENAME )
+		ie CTOR must know FILENAME or DONOR_OBJECT or AN_ARG
+	
+	ALTERNATIVE
+
+	"YOU_DONT_EXIST_x_GO_AWAY"
+
+		ALLOC NULL as some sort of "YOU DONT EXIST - GO AWAY"
+	
+	NULL 
+
+		indication above
+	
+	NULL_with_IDEAS
+
+		still NULL
+
+		but now SPEC for how to obtain it
+		when XYZ becomes available
+
+		CT_RT lays its eggs here
+	
+	ITEM_t * ITEM = NOT_NULL_PTR
+	ITEM_t * ITEM = NOT_NULL_PTR__EXPR
+
+		option to return an EXPR for CT_RT eval
+
+		 option i64_DECODED
+		 option i64_PTR
+		 option i32_i32_ENCODED
+		 option i32_DECODED
+		 option i32_PTR
+
+		option for FAIL_CTOR to return NULL
+	
+	DEFERRED_RAII
+
+		deals with the UNSET ERA
+		deals with CTOR_FAIL
+	
+	RECYCLED_RAII
+
+		preallocated cache vars
+		reused each loop
+		is better SCOPE converted to C decl at top 
+		or decl at block
+	
+		saves MALLOC
+
+	DEFINITE_ZERO_OVER
+
+		DTOR does ZERO_OVER
+		SCOPE_END_does ZERO_OVER
+
+		want to reduce the SCOPE_END task
+		loops reuse BYTES
+		FSM STATES {
+			RANDOM
+			ZERO
+		}
+
+		ZONE_BYTES_START
+		LOOP_SCOPE_START
+		LOOP_SCOPE_END
+		LOOP_SCOPE_CYCLE
+		ZONE_SCOPE_END
+	

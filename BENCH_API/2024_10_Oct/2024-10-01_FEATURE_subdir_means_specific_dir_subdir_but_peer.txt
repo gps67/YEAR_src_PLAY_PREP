@@ -1,0 +1,62 @@
+	2024-10-01
+
+	2024_10_Oct
+	2024-10-01_FEATURE_subdir_means_specific_dir_subdir_but_peer.txt
+
+	OVER/
+	OVER/various
+	OVER/specific // -> feature_specific // CT_RT OPTION EVAL EXPR LINE
+	OVER/feature_specific
+	OVER/feature_other
+	OVER/feature_options
+	// CODE += MERGE //o
+	EG
+		some_thing =>
+		TOPIC/some_thing
+
+		It started out as a TOPDIR,
+		and it wants to stay as one
+
+		It wants to be organised,
+		as part of some code_group 
+		// FEATURE is part of code_group_API
+		// FEATURE is name of code_group_API
+		// FEATURE is old_name of code_group_API
+
+	VFS_MAGIC_PEER
+
+	VFS_file contains well known MIME_type.ext
+	VFS_file_stat preserves mtime uid gid mod ... most with sane fake values
+	// ie atime == mtime == ctime // default for XFER create file copy data
+
+	VFS_STREAM does not do much with stat_time
+	VFS_STREAM marks STREAM_IDLE at time
+	VFS_STREAM marks STREAM_BLOCKED at time
+	VFS_STREAM marks STREAM_BLOCKED_AGAIN_DETECT at time_average
+	VFS_STREAM marks STREAM_FLUSHED_SEND at time
+	VFS_STREAM marks STREAM_FLUSHED_ACK_from_REMOTE at time
+
+		time is a magic number
+		to be unique it should be after received was sent
+		to be sensible it should be NOW checking for unexpected
+		to be predictive it should be SOON // sleep_to_T2_flush( T2 )
+		on_CALL( SELF, SESS )
+		// SESS is a global variable anyway
+		// CXX SCOPE assigns it to parameter of global
+		// C API wasting 4 registers - so use those only (at these fns)
+		on_CALL_SELF_SESS( SCRIPT_gets_SELF_SESS_and_others_CT_RT )
+		{
+			your 
+			code
+			here
+		}
+
+ BENCH
+ BUILD
+
+ 	mkdir OVER/1999_12_Dec/
+ 	mkdir OVER/YEAM_MM_Jan/ // see tm_parts.h for function names using MM
+	
+
+
+

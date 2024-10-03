@@ -1,0 +1,122 @@
+// .js //
+// JS_UNPACK.js_ARGV //
+
+BOOK_MARK https://www.facebook.com/reel/3990199217893893 "folklorico/IDX_%s" IDX_ALLOC
+IDX_ALLOC {
+ CMNT {
+ 	ALLOC "{ idx = N++ }" // where N is idx_N // eg u12_idx 
+
+	DECL i16_idx _t // ARGV PHRASE STYLE is VARIED
+	DECL i13_idx _t // _t retro re-declares _t reasons
+	DECL u12_idx _t // _t retro re-declares _t reasonst
+	DECL u11_idx _t // SIGNED i12 MINUS ZERO PLUS // default ZERO is PLUS
+
+		WE actually insist that the FUNC accepts NULL or M1 as EA
+		FUNC( OFFS = EA_EXPR_of_DATA ) 
+
+			if( OFFS == NULL ) {
+				// maybe set RET_VAL = DEFAULT_WHEN_NULL
+				// maybe check OMIT_EMIT OPTS
+				goto_exit_done // apply C++ DTOR rules UNWIND
+				// unwind all CTOR'd so far
+				// pre-unwind FOREACH_DTOR 
+			}
+
+	TRUE DTOR of OOP ITEM should really be the outer shell where CTOR done
+
+			CTOR_INIT_ZERO() {
+			 if(ZERO_FILL_DONE) {
+			 	// DONE
+			 } else {
+			 	// DO_IT_SCRIPT
+			 }
+			}
+
+			DTOR_INIT_ZERO() {
+			 if(ZERO_WILL_BE_DONE) { // ie memset_zero // free_api
+			 	// BOOKED //
+			 } else {
+			 	// BOOK_IT_SCRIPT
+			 }
+			}
+
+ }
+ ATOMIC { XPOS
+  // MORE_NESTING { WRAP_AGAIN }
+
+	idx = N
+	N++
+	return idx
+
+  /*
+  	COMPILE HINTS FOCUS CALC TEST TIME PICK
+
+	XPOS == CODE_POINT_ZERO_in_TEMPLATE
+	usually OFFS in BYTES
+	usually LINE_no LINES
+	usually LINE_no LINES with XPOS = cpos = STREAM_in.LEXER_CSET_CPOS_in_LINE
+	usually LINE_no LINES with LINE = line = STREAM_in.LEXER_line_no_of_CSR
+	BIND XPOS FILE_LINE_CPOS_DATA_HOLDER
+
+		DATA_HOLDER is an associate array,
+		reverse lookup builtin
+
+		SPEC_DECL is
+		DECL_SPEC is TYPE_NAME_in_SESS_DIALECT
+		DECL_SPEC of CODE_POINT.eval(EXPR)
+
+		EXPR = CT_RT
+
+	OPTION \
+	CONNECT int RET_VAL = idx 
+  */
+ }
+}
+
+
+ARGV_of_u32_u32
+CPU_32 TCL_DATA_PTR1_PTR2
+CPU_64 TCL_DATA_PTR1_PLUS {
+	PTR1 is i64 is i32_i32
+	PTR2 is UNUSED // and probably not ZERO on TCL_ALLOC ?? 
+	// EMIT PTR2 = NULL //
+	// KNOW PTR2 = NULL //
+	// OMIT PTR2 = NULL //
+
+	Then tree of subclasses can add PTR2
+
+	This is something that CPU_32 cannot do, because PTR1_PTR2 was needed
+
+	 which ?
+
+	 	PTR1_PTR2
+	 	PTR2_PTR1
+	
+	INIT_NULL is usually done by STO_ALLOC MEM_ALLOC
+
+	when NOT, CT_RT gen_calls  PTR2 = NULL // PTR1 = PTR1_set_by_CTOR
+}
+
+		PTR1 = i64_from_i32_i32_ALREADY_SET_when_THIS_FUNC_started 
+		PTR2 = i64_UNUSED ;# FEATURE HERE NOT AVAIL ON CPU32
+
+		maybe the second PTR could be monitoring stats or SPEC_Cached
+		PTR2 == CACHED_VARIABLE_or_BENCH_that_outputs_CACHED_VARIABLE
+
+			The optimiser that CPU_64 brings (unused PTR2)
+			does not add to the functionality
+
+		PTR1 
+			i8_i8_OPCODE
+			i16_MAIN_ITEM
+			i32_WORD_TWO
+
+			i24_ITEM_in_i8_HEAP
+
+			i24_i8_ITEM_in_HEAP
+			i24_WORD_TWO_ITEM
+			i8_WORD_TWO_HEAP
+
+		You could FILTER PTR1 
+
+"
