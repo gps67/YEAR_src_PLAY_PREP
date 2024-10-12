@@ -1,0 +1,105 @@
+
+	BENCH_SCRIPT is the propername, but it is (not) in an adjacent folder
+
+		we need a BASE_CLASS_BENCH_SCRIPT
+		with NAME "BASE_CLASS"
+
+			STR0 as a TOKEN is LANGUAGE ITEM LEX
+
+			STR0_at_XPOS
+			P0P2_as_XPOS
+	
+	STR0_at_XPOS
+
+	 REQUIRE_FILTER 
+
+	 	use P0P2
+		instead of STR0
+
+	use NBYTES over P0P2 at XPOS.P0
+
+		LANG defines MENTION
+		LANG outlines RULES for MENTION and USAGE
+		LANG predicts USAGE with LIBR_API // HTH // FUNC AVAR 
+
+	MENTION is AVAR
+	MENTION is FUNC // GETTER // SETTER // BEHAVIOUR // eg PROVIDES_COPY_MEM
+
+		AVAR might be ambiguous NOUNT or FUNCTION
+		FUNCTION might gather ARGS from SCOPE around XPOS
+
+		COPY of nbytes available unchanged ... HERE ...
+		COPY of SPELLING ... HERE ... normalise( i64_EA_SPELLING )
+
+			EA is ACCESS to CACHED COPY
+			EA is ACCESS to ADJUSTED COPY
+			EA is ACCESS to WRITE_BACK COPY
+
+				OK compiler semantics are all CT_RT stuff
+				EA is probably an OBJ with EA as a field
+				OBJ brings i64_BITFIELDS
+
+					i8_i8
+					i16
+					i32
+
+				I think that most CPU_32's
+				have at least one register 
+				that can bitshift i64
+				
+				But instead I have a base class
+
+					i32_i32
+					it has
+					i8_i8_i16_i32 getters
+
+						implementation BITFIELD_WORD
+						implementation WORD_PAIR
+
+						WORD_in_MEM
+						WORD_in_CPU
+						HALF_WORD_in_TRANSIT
+
+						you use HALF where you find it
+						NEAR if you CALL it from there
+						ASIF ROM asif RAM to EDIT but unchanged
+
+	ASIF ROM asif RAM to EDIT but unchanged
+
+	!!	LANG harvests from nearby available LEX
+
+		at the moment I have to live within a SUBSET
+
+ !!! === > 	in this SUBSET I make use of things that do not exist
+ eg MENTION
+ eg IMPORT ABSENT
+
+		API defined, but noone implements it
+	
+	WANT AUTO_GEN_ABSENT
+
+		DIALECT adds IMPLIED
+
+	IMPLIED NO means OK # simply an OPTION not being PICK'd
+
+		IMPLIED NO means OK # simply an OPTION not being PICK'd
+		IMPLIED NO means UNSET # so default behaviour, is to do nothing
+		IMPLIED NO means ALARM # crown jewels expected
+		IMPLIED NO means FAST_MATCH ITEM_NULL # so default behaviour
+
+			CODE thinks it can implement FEATURE
+			CODE thinks it cant implement FEATURE # but needs it
+			PICK know CODE has OPTIONS
+			PICK know CODE is PICK of OPTIONS
+
+		IMPLIED NO means INIT_NULL # crown jewels expected
+
+		when ABSENT is is_ABSENT detecting NULL_ABSENT and other ALIAS
+		behave as if OPTION # current choice is NULL # NULL_MEANS_OK_NO
+	OPTION
+
+
+
+	
+
+

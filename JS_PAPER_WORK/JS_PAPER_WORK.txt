@@ -1,0 +1,49 @@
+
+	JS_PAPER_WORK/
+	JS_PAPER_WORK.txt
+
+	JS_PAPER_WORK
+
+	uses HTML forms to fill in
+	send HTML form data to server as ENQ_ACK
+	
+	uses postgres 17 ? requires NODE to do the SQL_RELAY RELAY_SQL
+	uses sqlite // RPC_RELAY_SQL // run SCRIPT on REMOTE
+
+	SCRIPT is almost entirely ROM:LIBR and SITE:ROM:LIBR
+	ARGV invoking script line CALL_ARGV // or call_FILTER_over_ARGV
+
+	FILTERS generally send stuff onwards,
+	we dont have to do much,
+	other than loads of switch/case on_ERROR or CONTINUE on_BREAK 
+	TCL definitely has it here, so we COPY
+
+	PRINT_PAGE_FORM_PAPER_WORK
+
+		BLANK
+
+		PRE_FILLED
+		PART_FILLED
+
+		DATA_SENT
+	
+	PRINT PAGE
+
+		GDI_SVG 
+		GDI_CANVAS 
+		GDI_WEB_GL
+		GDI_GEN_JS_to_CALL_GDI
+		GDI_GEN_CXX_to_CALL_GDI
+		GDI_GEN_DATA_to_foreach_CALL_GDI // with MACROS etc
+	
+	MICRO_STEP
+
+		GLYPH_TEXT // mixed with CRLF_SP_TAB // or tighter rules
+		MULTI_LEX_with_EDGE_info ...
+
+		MACRO ARGS 
+		TREE ...
+		VIEW PRINT MINI_MACHINE ITEM 
+
+
+
