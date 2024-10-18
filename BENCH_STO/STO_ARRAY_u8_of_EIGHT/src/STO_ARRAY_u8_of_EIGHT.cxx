@@ -3,7 +3,8 @@
 
 //	#include "dgb.h"
 
-	bool bool_main_test1( int argc, char * argv ) { // envp
+ extern
+	bool bool_main_test1( int argc, char ** argv ) { // envp
 
 		return FAIL("TODO");
 
