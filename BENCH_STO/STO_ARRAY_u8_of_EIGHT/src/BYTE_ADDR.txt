@@ -1,0 +1,23 @@
+
+	BYTE_ADDR.txt
+
+	i8_EXPR
+	u8_ITEM // returned by i8_EXPR
+	u7_ITEM // already _PLUS even union carried in i8
+	
+	CODE gets BOTH u8 and i8
+	i8_MINUS returns EA_EXPR or EA_ITEM
+
+		lookup of i8_i8_OPCODE
+		adds CT_RT_INFO
+		know TYPE_NAME from CODE_POINT // from_SCRIPT
+
+	
+	ARRAY[ u8 ] of EIGHT_t
+
+		// C_USAGE function inside function
+		// enables access to parameters and locals
+		// wraps up stray code with DIALECT and ASIS
+		// AUTO check all incoming // named_parameters
+
+		u8_idx = process_i8_idx();
