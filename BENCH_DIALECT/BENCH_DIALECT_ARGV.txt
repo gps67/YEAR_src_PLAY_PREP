@@ -101,5 +101,60 @@
 
 
 	
+SCRIPT DIALECT HASH comment must be complete WORD or Parsed_PUNCT
+
+	PARSED_PUNCT
+
+		HASH got moved around by DTP mashing up our ARGV
+		ALEX got moved around by LANG mashing up our ARG_POOL
+		CODE for ARG_POOL from ARGV # decode filter run DATA into SESS
+
+		CODE DETECT
+
+			SESS has everything you can possibly need (!)
+			but you only need a few specific details
+			most of those go into SCRIPT, some SPEC info, bitfields
+
+			import LIST of FEATURE DETAIL # DETAILs MENTION AUTO_S
+
+			eg run over ARGV using info in the FUNC DECL
+
+			ARGV.Parse_ARGV = LEX_ARGV merge with LEX_SCRIPT
+
+				the difference is the added CODE
+				the difference is DROP_GAP_SPLICE
+
+					(A) (A B)
+
+					BASIC LEX_EDGE_is_GAP
+					BASIC LEX_EDGE_is_PUNCT
+
+
+					So HOST_LANG of DIALECT sees "(A"
+					as ARGV[i]
+
+					Our PSG notices PUNCT_in_PSG "("
+					Our PSG notices PUNCT_LEX in_PSG "(A"
+					or more generally SUB_LEX_EDGE
+	LEX_EDGE
+	SUB_LEX_EDGE
+
+		LHS PUNCT RHS
+
+		PUNCT takes limited responsibility for AMBIGUOUS PUNCT
+
+			you dont have to take ANY responsibility
+			provided you follow all the rules
+			do _nothing is an option if you use it
+
+		 AMBIGUOUS PUNCT
+			parallel universe tracking
+
+		 UNAMBIGUOUS PUNCT
+
+		 	PUNCT += all ASCII glyphs EXCEPT LETTER DIGIT
+
+				# LANG 
+
 
 

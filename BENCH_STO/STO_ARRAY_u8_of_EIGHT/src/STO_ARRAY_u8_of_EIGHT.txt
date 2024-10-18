@@ -1,0 +1,98 @@
+{
+
+// typedef i64 u32_u32_EIGHT_t; // UNION of 2 DECL_CPU_WORD
+// DECL_CPU_WORD // is an attachment point for a Module component in heap
+// DECL_CPU_WORD i32_i32 
+// DECL_CPU_WORD_PAIR i32_i32 // replace SP with _ // adjusts // emergent // +
+// LANG_MUX_LANG_CPP LIBR_Module // everything is a module // so is a Module
+// CAP1 used but ambig is_VAR is_SPEC is_BOTH is_OTHER  _AUTO_SPLIT_JOIN
+// _SPLIT_JOIN _AUTO { PICK { %s %s%s %s_%s EA } { EA %02X } }
+// HEAP_ITEM // ALLOC_IDX {} { return FILTER("idx = N ++ ;") }
+// FILTER // LOCAL REMOTE UNTRUSTED //
+/*
+	FILTER "SCRIPT_EXPR" 
+	return STR0 or buffer1 or AVAR_with_API
+
+	// HEAP_ITEM // ALLOC_IDX {} { return FILTER("idx = N ++ ;") }
+
+	MATCH %s
+	MATCH("idx = N ++ ;") // ";" parsed as C_99_PUNCT MATCH(";")
+	MATCH("idx = N ++") // "++ parsed as C_99_PUNCT MATCH("++")
+	WELL_KNOWN_PHRASE("idx = N ++") // ASSOC ALLOC "idx = N_%s ++ ; CMNT"
+	WELL_KNOWN_PHRASE("CMNT") // ASSOC USAGE LIBR EDGE_NEXT_EDGE ALLOC IDX OFFS
+	LEXICON groups CMNT EXPR LINE EOLN and IMPORTS
+
+	MATCH("idx = N ++") // "++ parsed as C_99_PUNCT MATCH("++")
+	MATCH("idx = N ++ ;// %s") // tagged with %s probably N == N_%s
+
+	THIS SCRIPT is from REMOTE - we dont trust it, but it looks amok
+	It does not command us to WRITE and RUN CT_RT_PASS CT_RT_TEST CT_RT_
+	It inspires us to do exactly that, which we have SCRIPT for.
+	LIMIT QUOTA to same as watching TV
+	LIMIT MEMORY QUOTA to QUOTA.memory_limit_QUOTA
+
+	MATCH("idx = N ++ ;// %s") // tagged with %s probably N == N_%s
+	SUBST N = "N_%s VALUE" "{ VALUE AVAR.NAME }" // PUZZLE MENTION //
+	// MENION AVAR.NAME // So AVAR comes from somewhere, maybe HERE
+	// HERE == CODE_POINT // MODULE of many CODE_POINTS one RANGE
+	// RANGE LIST picks ADDR in RANGE RANGE RANGE
+	// RANGE [P0         [P2 known as _XPOS_CODE_POINT_P0P2_in_SCRIPT
+	// XPOS.ZONE += XPOS_FILE_OFFS //
+	// FILE is i8_i8 VFS_FILE_for_THIS_SCRIPT_TEXT //
+	// HEAP used with u32_u32 is u15_idx // 32K items per BLOB
+	// HEAP used with u32_u32 is u12_idx //  2K items per HEAP
+	// HEAP used with u32_u32 is u4_idx //  16 HEAP of 2K ITEM
+	// HEAP u7_HEAP_u23_ITEM u23_IDX u23_OFFS // 128 HEAPS of 8M ITEM
+	// SIGN [-128   [-64   [-8  [0      [64 [128 // SIGN 127 not 128
+	// GROW // u7 to u15 to u31 to u63 to i64
+	// PAGE REMAP MINUS to PLUS as HIGH_HALF // onmy M8 used 
+	// PAGE REMAP MINUS to PLUS as HIGH_HALF // as_FILTER_STEP xFF
+	// FILTER_STEP xFF // picks up its own AVAR from LINE DIALECT
+	//
+	// ALLOC_MINUS "idx = -- M ; // %s"
+	// ALLOC_ZERO
+	// ALLOC_PLUS "idx = N ++ ; // %s"
+	///
+	// ALLOC_MINUS check idx_underflow "L <= M"
+	// ALLOC_ZERO
+	// ALLOC_PLUS  check  idx_overflow "N < R"
+	// LIMIT_EDGE L_R
+	// LIMIT_EDGE M_N
+	// ALLOC_ZERO at L_M_z_N_r in PAGE
+	// DECODER  L_M_z_N_r 
+	// get_OFFS_in_PAGE XPOS
+	// get_XPOS_for_PAGE OFFS
+	// DIAG of ARRAY using i3 as MINI_MACHINE [-4 [0 [+4   [+64K
+	// DIAG of ARRAY using i4 as MINI_MACHINE [-8 [0 [+8   [+16
+
+  u5	// -4 -3 -2 -1  0  1  2  3  4  5  6  7  8  9
+  u5	// -4 -3 -2 -1  0  1  2  3  4  5  6  7  8  9
+	// -4 -3 -2 -1  0  1  2  3  4  5  6  7  //
+	                        // -4 -3 -2 -1  0  1  2  3  4  
+  i3	// -4 -3 -2 -1  0  1  2  3  4  
+  u3	//              0  1  2  3  4  5  6  7    
+  	// if VALUE_is_MINUS VALUE += 8 // u3_idx_N_needs_u4 // N_LIMIT_plus_1
+	// ZOOM u15 // or record WHEN for each BIT claimed
+  u3	//  0  1  2  3  4  5  6  7  
+  u3	//                          0  1  2  3  4  5  6  7    
+  u3	//  0  1  2  3  4  5  6  7  0  1  2  3  4  5  6  7    
+	//
+	// [-8 [0 [+8   [+16
+	//
+
+	// XPOS += VFS_ZONE DIR_FILE OFFS
+	// XPOS += VFS_ZONE DIR_FILE LINE CPOS BPOS
+	//
+	// CSET BPOS is byte POS
+	// CSET CPOS is char glyph POS // multibyte 
+	// SKIP XPOS looks too much like XPOS //
+
+
+
+*/
+// CPU32
+// CPU64
+// C uses u64 // even when u32_u32 //
+
+}
+

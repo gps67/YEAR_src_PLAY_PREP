@@ -8,6 +8,9 @@ RAII
 
 			PRE_LOAD KNOWN VALUE SCRIPT DATA
 
+		initialise as part of alloc
+		initialise in PRE_LOAD alloc deferred
+
 
 
 	resource 

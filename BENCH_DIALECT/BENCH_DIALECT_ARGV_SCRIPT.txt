@@ -1,0 +1,39 @@
+
+	BENCH_DIALECT_ARGV_SCRIPT.txt
+
+		ARGV_SCRIPT
+
+		SEE
+
+			locate ARGV_SCRIPT
+
+		USES
+
+			HEAP
+			SPEC
+			LIBR
+			AVAR
+			STEP
+			STEP_LIST_TREE
+
+
+	
+	USE innermost "locate" 
+	FOR outermost
+
+ 	  locate_BENCH
+	  BENCH_locate
+	
+	NEED to mention both, because
+	API is called and
+	API is provided by
+
+	One OPTION is to modify spelling, with
+
+		prefix
+		suffix
+		lhs
+		mid
+		rhs
+	
+		They NEED extra ITEMS or CONCEPTS to MIXIN
