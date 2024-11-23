@@ -1,0 +1,54 @@
+
+	BENCH_IO/
+	BENCH_IO.txt
+
+	From within a container, what we want to be fd is not available
+	We are spoon-fed packets, stream of data
+
+	Outside does prioritise SIGNALS and EVENTS
+	then writes when space available
+	then reads when data available
+
+	inside WASM tries to talk to outside WASM goes through API
+
+	write a buffers stack frame of vars and pass it back to caller
+	write a buffers stack frame of vars and pass it to within WASM
+
+	select_says_read() read in plenty, decrypt, decompress plenty,
+
+		detech_lines_longer_than_80
+		detech_lines_longer_than_125
+		detech_lines_longer_than_250
+		detech_lines_longer_than_1K
+		detech_lines_longer_than_1M
+
+		detect_decmpress_excess // 1K goes to 70K
+
+			obviously SPARSE files full of NULL_BYTE_PAGES
+			will react differently to this
+			maybe influencing _detect_ as loop repeats
+
+		parse multiple EOLN
+		ie using LF and not using NUL 
+		test_for_eof_on_LF
+
+			if then force 1.5 lines unfed
+			can GUARANTEE NOT_EOF
+
+			then on the last line it will match PAUSE
+			particularly useful when files end with #endif
+			or comment or blank_line
+
+		m
+
+
+
+		rejoin_split_lines
+		push_back_last_broken_line
+		# multi line must be OK with BREAK within lines
+		# it can complain for multi-lines over 100 lines
+		# and average tokens per line less than 3
+		# categorise LINE type # STATS against peer group
+
+
+

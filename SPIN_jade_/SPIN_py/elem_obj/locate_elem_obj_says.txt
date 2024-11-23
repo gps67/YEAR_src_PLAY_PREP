@@ -1,0 +1,20 @@
+/home/gps/G_laptop/G_2T/G_HOME_2021/tmp_tmp/t_git/YEAR_src_PLAY/SCRATCH_ZONE_20/in_Py2_OLD/SPIN_py/SPIN_py/elem_obj/elem_obj.cxx
+/home/gps/G_laptop/G_2T/G_HOME_2021/tmp_tmp/t_git/YEAR_src_PLAY_PREP/SPIN_jade_/SPIN_py/elem_obj/elem_obj.cxx
+
+	TODO - check if the above is an ARCHIVE old HOME_BACK_KEPT_COPY // DUPLICATE or simply DROP //
+	TODO - check if the above is an ACTIVE new HOME_BACK_KEPT_COPY
+
+	2021/
+
+/home/gps/YEAR/src/GITS/YEAR_src_PLAY/SCRATCH_ZONE_20/in_Py2_OLD/SPIN_py/SPIN_py/elem_obj/elem_obj.cxx
+
+	I dont support Py2 any more
+	I guess it is Py3 or salvage what used to compile and run creating reports CPU_MEM_NET_QUOTA_USED
+	TODO: check that
+
+L /home/gps/YEAR/src/GITS/YEAR_src_PLAY/SCRATCH_ZONE_20/in_Py2_OLD/SPIN_py/SPIN_py/elem_obj/
+
+/home/gps/YEAR/src/GITS/YEAR_src_PLAY_PREP/SPIN_jade_/SPIN_py/elem_obj/elem_obj.cxx
+
+/home/gps/YEAR/src/TEMP/_DIFF_/SPIN_py/SPIN_py/elem_obj/elem_obj.cxx
+/home/gps/YEAR/src/TEMP/_DIFF_/SPIN_py-2011-10-30/SPIN_py/elem_obj/elem_obj.cxx

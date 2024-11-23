@@ -1,0 +1,36 @@
+2024-10-19 Oct Sat 22:19 # 08 #  _TODAY_.txt
+
+
+	YEAR_src_PLAY_PREP/
+	 BENCH_STO/
+	  STO_ARRAY_u8_of_EIGHT/
+
+	  	NEED a HEAP for STO
+
+			i8_i8
+	
+	 		L_R
+			M_N
+			_z_
+
+				z appears at z-L of L
+				z appears at z-M of M # ie EA_M + OFFS
+				z appears at z-x of x # ie EA_x + OFFS
+	
+	SEGMENTED ADDRESSING
+
+		SEGMENTS can move
+		SEGMENTS start _from_SEGMENT_PAGE_ZERO
+	
+	EXPR that recomputes another EXPR
+
+		should retain SEGMENT_BASE_ZERO is i16_EA_EXPR
+
+			i0_KNOW_CODE_POINT
+
+			i16_lohi
+
+
+	pwd
+	$HOME/YEAR/src/PREP/TODOS
+#	  _TODAY_.txt

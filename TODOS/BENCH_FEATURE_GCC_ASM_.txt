@@ -1,0 +1,67 @@
+
+	BENCH_FEATURE_GCC_ASM_.txt
+
+	GCC ASM is messed up
+	BENCH FEATURE is to edit a chunk of ASM to make it look like ASM
+
+	GNU   ASM is MOV src dst (copy_LHS_to_RHS)
+	INTEL ASM is MOV dst src (load_dst_with_src) "LD" "LDA"
+
+	SET dst src
+	GET src ;# INTO ;# DEFAULT if NULL etc ;#
+
+		have more than 1 general purpose accumulator
+		adds that parameter [i4]
+
+			8 registers
+			8 functions
+
+
+	INTEL ASM is MOV dst src # and it is their CPU (LOAD_dst_with_src)
+
+	AT+T ASM is MOV src dst # from previous CPU work (SEND_src_to_dest)
+	GNU ASM is MOV src  dst (save_REG_to_MEM)
+	GNU ASM is MOV src  dst (load_MEM_to_REG)
+	GCC over ASM needs BENCH to do all the work
+
+
+	https://gcc.gnu.org/onlinedocs/gcc/Extended-Asm.html#AssemblerTemplate
+
+		The compiler replaces tokens in the template
+		that refer to inputs, outputs, and goto labels,
+		and then outputs the resulting string to the assembler.
+	
+	%% 	literal %
+	%{	literal otherwise 
+	%|	literal otherwise 
+	%}	literal otherwise 
+	%=	XPOS_%= 
+
+https://gcc.gnu.org/onlinedocs/gcc/Extended-Asm.html#AssemblerTemplate
+
+	bool old;
+
+	__asm__ ("btsl %2,%1\n\t" // Turn on zero-based bit #Offset in Base.
+		 "sbb %0,%0"      // Use the CF to calculate old.
+	   : "=r" (old), "+rm" (*Base)
+	   : "Ir" (Offset)
+	   : "cc");
+
+	return old;
+
+	%0	old
+	%1	*Base
+	%2	Offset
+
+	 :	Outputs
+	 :	Inputs
+	 :	Clobbers
+	 :	GOTO_Labels
+
+
+	__asm__ ("btsl %2,%1\n\t" // Turn on zero-based bit #Offset in Base.
+		 "sbb %0,%0"      // Use the CF to calculate old.
+	   : "=r" (old), "+rm" (*Base)
+	   : "Ir" (Offset)
+	   : "cc");
+
