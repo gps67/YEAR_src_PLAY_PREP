@@ -1,0 +1,60 @@
+
+	HEAP_ITEM/
+	HEAP_ITEM.txt
+
+	u4_i12_lohi
+	i4_i12_lohi
+
+	BITFIELD
+	 u1 is_SIGNED // i1 M1 is NON_ZERO is_TRUE is_ZERO is_FALSE
+	 nbits
+	 bits_below_bitfield
+
+	 OPTION_bits_in_word
+	 OPTION_rotated_instead_of_shifted
+	
+
+------
+
+THREAD_SESS
+
+	PTR is a CPU_WORD // a reserved register
+	It is a i48_PTR in i64_CPU_WORD
+	It points to DATA expected to be of type SPEC
+
+	It can jump occasioanlly (once per second)
+	and each thread can be updated seperately
+
+	basically each thread has a YIELD_MOMENT_FAST_SLOW_LOCK_EDGE_STEP
+
+		// OPTION notify CACHE here
+		// no part of Module is currently holdsing PTR in_USE
+
+		// DONE // LOCK // LOCK PTR //
+
+		fetch old value
+
+			check it was what we were using from CACHE
+
+		place new value 
+
+			primary position 
+			bounce point relay point
+
+		// OPTION notify CACHE here
+
+		// DONE // LOCK DROP // LOCK DROP PTR //
+	
+	PTR -> per_THREAD_PTR // _to_SPEC_of
+
+	We are sharing PTR with GCC and probably POSIX or somebody
+	We demand better support for creating thread_local_var_pools
+	We demand nbyes ALLOC in main struct found at per_thread_PTR
+	We get 1 i64 word //
+	We get 16 i64 words //
+	We get 256 i64 words //
+	We get 4096 i64 words //
+
+
+		
+		

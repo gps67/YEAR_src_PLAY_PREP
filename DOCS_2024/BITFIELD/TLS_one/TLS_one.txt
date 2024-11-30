@@ -1,0 +1,9 @@
+	TLS_one/
+	TLS_one.txt
+
+	Thread Local Storage
+
+	WANT CPU REG reserved for TLS
+	WANT to merge its behaviour (eg copied calls) with UDEF
+
+

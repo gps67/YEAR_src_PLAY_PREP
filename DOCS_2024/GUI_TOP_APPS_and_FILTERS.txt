@@ -1,0 +1,225 @@
+
+	GUI_TOP_APPS_and_FILTERS
+
+	class TOPAPP_Task : public obj_ref_js
+
+	        TOPAPP_Holder * m_a_h; // weak up-link
+		TOPAPP_Holder * holder() { return m_a_h; }
+
+		+= LIBR_has_some_for_this_CODE_POINT TREE_GRAFT_NODE
+	
+	class TOPAPP_Task_glib : public TOPAPP_Task
+	{
+	 public:
+		/*!
+			a GTK_Main_app is the main app,
+			it can have several windows, or one.
+		*/
+		TOPAPP_Task_glib( TOPAPP_Holder * _m_a_h );
+		~TOPAPP_Task_glib();
+		void window_attach( w_win_top * win );
+		void window_detach( w_win_top * win );
+	};
+
+
+namespace APPS {
+class TOPAPP_Holder: public GRP_lib_base // obj_ref_js
+{
+ public:
+        virtual ~TOPAPP_Holder();	// BASIC BOILERPLATE CLASS CXX CSET EA
+
+        //! hold the main_app (baseclass) and its data
+        obj_hold<TOPAPP_Task> main_app;				// DATA //
+
+        virtual bool call_gtk_or_glib_init(int * p_argc, char *** p_argv); // or
+        virtual bool call_gtk_init(int * p_argc, char *** p_argv); // or your ma
+        virtual bool call_glib_init(int * p_argc, char *** p_argv); // or your m
+
+        virtual bool call_gtk_or_glib_quit(); // or your main loop owner ...
+        virtual bool call_gtk_quit(); // or your main loop owner ...
+        virtual bool call_glib_quit(); // or your main loop owner ...
+
+        virtual bool window_attach( w_win_top * window );
+        virtual bool window_detach( w_win_top * window );
+
+        void tell_main_app_to_forget_link_to_here();
+
+};
+}; // NS
+
+class TOPAPP_Holder_glib  : public TOPAPP_Holder
+{ public:
+
+        //! track this list of windows
+        obj_list<w_win_top> win_list;
+
+        //! track this list of ... sessions ... connections ... things
+        obj_list<obj_ref0> OBJ_list;
+
+        //! track this list of ... extra things that noone else holds
+        obj_list<obj_ref0> OBJ_keep_list;
+
+        //! only call quit once!
+        bool gtk_closed;
+
+        //! this is/not a non gui app, so use g_main_loop instead
+        bool g_not_gtk;
+
+        //! non gui main loop has some stuff
+        GMainLoop *  loop;
+
+        TOPAPP_Holder_glib( int * p_argc, char *** p_argv, bool is_non_gui = fal
+        ~TOPAPP_Holder_glib();
+        void app_register( TOPAPP_Task * app );
+        void app_destroyed();				// TODO // STORY // SEQ //
+        // void call_gtk_main_quit();
+// VIRTUAL
+
+        virtual bool call_gtk_or_glib_init(int * p_argc, char *** p_argv); // or
+
+ //     virtual bool call_gtk_init(int * p_argc, char *** p_argv); // or your ma
+        virtual bool call_glib_init(int * p_argc, char *** p_argv); // or your m
+ 
+        virtual bool call_gtk_or_glib_quit(); // or your main loop owner ...
+ //     virtual bool call_gtk_quit(); // or your main loop owner ...
+        virtual bool call_glib_quit(); // or your main loop owner ...
+
+// THEN FUNCS For alternatives to Gtk /// Task // FILTER //
+
+        int call_gx_main_and_exit(); // or return int
+        virtual bool call_glib_main();
+        virtual bool Call_gtk_main();
+
+        virtual bool window_attach( w_win_top * window );
+        virtual bool window_detach( w_win_top * window );
+
+
+        void task_attach( TOPAPP_Task * task );
+        void task_detach( TOPAPP_Task * task );
+        void wait_more_for( obj_ref0 * obj );
+        void wait_less_for( obj_ref0 * obj );
+        void keep_that( obj_ref0 * obj );
+        void drop_that( obj_ref0 * obj );
+        void debug_show_lists();
+//      bool call_gtk_init( int * p_argc, char *** p_argv);
+        int call_gtk_main();
+};
+}; // NS
+
+TOPAPP_Holder_glib.CTOR( ARHV_ANOPT ) {
+
+	TOPAPP_holder_glib
+	is the expected CLASS for all users
+	so it provides a bunch of variables
+	and we dont use them all
+	like empty fields in a form
+
+	It is going to need an API to access those
+	and CTOR from MODULE_SETUP
+
+	TODO:
+		ADD named OBJ in VAR_POOL, with FAST_REPEAT_USE
+
+			FAST_CACHE matches PTR1 == PTR2
+			so all subsequence MATCH EXACT because SAME OBJECT
+
+		SESS = TOPAPP_holder_glib // even when _glib not loaded
+		CTOR(ARGV,OPTS)
+
+	TODO:
+	SAMPLES for
+		wait_more_for( OBJ )
+		wait_less_for( OBJ )
+
+		check_LISTS_if_empty_call_EXIT_NOW(); // more controlled WHEN
+
+		holder holds a list of windows
+		holder holds a list of REMOTE_clients
+		holder lets go of SAVED_OBJECT
+		holder calls EXIT when last one closes
+	
+	TODO:
+		TASK is asking to be told to SYNC_FILE
+		TASK is asking to be told to SYNC_FILE write to MMAP
+		Becasue the Linux kernel write MMAP after prog exit
+		But if powerfail, option to do something quick, do more later
+		That requires a second CALL from a system of DTOR loops
+
+		eg when PID does exit, all memory will be recycled
+		It is a waste of time to run around calling free
+		on every cache tree data etc. So dont. Just exit
+
+		A few special classes, INSIST on getting a signal
+
+			on_FAST_EXIT() {
+				{
+					import VAR_POOL into GLOBAL
+				}
+				close_sql_connection_with_ABRUPT_ROLL_BACK
+				close api_connection with CHECK_POINT_RECENT
+				// recovery from anywhere, evan back at start //
+				scrub_secret_keys_held()
+
+			}
+			on_scrub_secret_keys_held() {
+				key11.scrub();
+			}
+	TODO:
+		i32_i32
+		_i32_i32( OPCODE, heap_item_16, heap_item_32 )
+
+			i8_i8 OPCODE
+
+		multiple CTOR pick from supplied ARGS
+
+
+TOPAPP_Holder_glib.CTOR( ARHV_ANOPT ) {
+	// CTOR() is called in main into SESS.SESS_glib
+	// CTOR() is called in main into SESS.SESS_WAX
+	// CTOR() is called in main into SESS.SESS_Python
+	// CTOR() is called in main into SESS.SESS_Tcl_Obj
+	// CTOR() is called in main into SESS.SESS_REMOTE_Obj
+	// THEN
+	// TASK_CTOR() WHO IS THE CALLER
+	// CALLER WAS TTY and CTRL-C // and others
+	// CALLER WAS TEXT_STREAM, FILE, or REPL
+	// CALLER WAS NO_USER_SESS BATCH AUTO_TASK
+	// CALLER WAS GUI following some SCRIPT
+	// CALLER WAS GUI following some GESTURE REPL
+
+	
+		gdb_sigaction( ** p_argv ); // sets progname_argv0 and ...
+		setlocale(LC_ALL,"");
+		sets UNIX signals
+		gets ARGV0 ARGV ENVP KNOW
+		gets TASK from ARGV // maybe some plumbing
+
+		CALL 
+		 call_gtk_or_glib_init( ARGV )<F5>
+
+		return to caller 
+		require deferred safe exit and restore as found
+		lazy is close X11 link, LIBR will erase the windows resources
+
+		mid way points
+
+		STEP_EDGE // SYNC to EDGE // multi_step_step //
+		TASK_EDGE // START STEPS STOP
+
+
+
+	//
+}
+
+
+// SPOUT // DOCUMENT_BLOCK_INSERT //
+
+// GEN REPORT ASSETS xFF xFFFF "backup_search_text" // "backup_two" //
+// GEN RENUMBER POOL // HEAP_ITEM // GC COMPACT SNAPSHOT 
+// STO HEAP_ITEM // RENAME monthly
+// GEN // load it all each day from ASCII_plus_CSET
+
+
+
+
+
