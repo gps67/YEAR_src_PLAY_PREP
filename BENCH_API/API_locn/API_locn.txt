@@ -1,0 +1,59 @@
+
+	LOCN_API_ITEM_t 
+	LOCN_API_ITEM ;	// LOCN_API is a ZONE in a Module of its own and ANY
+
+	LOCN_API_t
+	LOCN_API ;
+
+		var_pool[ P0P2_STR ] as VALUE
+
+			ITEM_NAME = XPOS NLEN
+			P0P2 {
+				get_P0() return SELF.P0 // SELF_CLASS_P0P2_STR
+				get_N() return SELF.i12_nbytes ; 
+				// OMIT { and } // SAME_LINE required
+				get_P2() { return P0 + N ; } // AUTO_SUB_EXPR
+
+					AUTO cache_updated P0
+					AUTO cache_updated N
+					AUTO pre_date CALL_START
+
+				COMPILE moves to LINE_ABV
+				CT_RT spreadsheet_recalc_cell( CSR_CELL )
+
+					recalc P0
+					recalc N
+					recalc P2
+
+				FSM_TABLE_GROW_ZONE hold_FSM_TABLE_here
+
+					26_nodes_in_shared_FSM_WORKSPACE
+					CODE_POINT has some dgb sense
+
+				get_CSET() {
+					SELF = P0P2_STR = STR_P0P2
+					SELF = CIDENT at XPOS parsed as N bytes
+				}
+				get_XPOS_N() {
+					XPOS = P0
+					N = N
+					//
+					// interface // LHS = RHS //
+					// LHS is XPOS_N
+					// RHS is P0_N
+					// if RHS is P0P2 // N = P2 - P0 //
+					// precalc the core cache from AVAL
+					// promise lock ROM
+					// promise lock OWN
+					// promise lock STO // PRE_LOAD //
+					// CACHE local remote // explain before
+					// 
+					return "{ XPOS N }"
+					// which CT_RT binds to RET_VAL TUPLO
+					
+				}
+
+			}
+
+
+
