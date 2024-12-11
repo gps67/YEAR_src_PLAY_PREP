@@ -1,0 +1,49 @@
+
+	LOCN_API_t
+	LOCN_API ;
+
+		// SELF IDX identity
+
+		var_pool[ P0P2_STR ] as VALUE
+
+		// added for easy life // simply uses REQUIRE and PROVIDE
+
+		get_SELF_SPELLING_as_TOKEN()
+
+		// we need to figure what is  a TOKEN a SPELING and MMAP it
+
+		get_HEAP_as_ITEM
+		get_HEAP_as_ITEM_in_higher_ZONE
+		get_HEAP_as_ITEM_in_own_HEAP ## by special TOKEN SELF_as_ITEM
+	
+	VFS chooses some sort of sqlite storage 
+
+		bunch of cacheable EXPR is QUERY
+
+		tree as PARENT_NODE_LOCN
+		tree as CHILD_NODE_LIST
+		tree as CHILD_NODE_LIST used in TEMPLATE
+
+		DIAG shows a multi-faced MINI_MACHINE DATA_STO 
+
+			all the components for carious types of GRID TREE fns
+	
+		DIAG shows one OPTION in ACTION over DATA_STO in SESS
+
+			log all changes (for now)
+			option to simply STO new_val
+			and let observer figuee out what old_val was
+			and how old_val becomes new_val
+
+			log all changes
+			option to use specific list of EDITS
+
+			log all changes
+			PROVIDE list-sort-move-item
+			PROVIDE list-item-delete
+			PROVIDE list-item-create
+			PROVIDE item_rename // in var_pool
+			PROVIDE item_group_tuplo  // add attr to avar // 
+
+
+
