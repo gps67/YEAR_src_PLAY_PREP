@@ -16,13 +16,12 @@ extern "C" bool bool_main( int argc, char ** argv );
 #include <sys/syscall.h>     /* Definition of SYS_* constants */
 
 
-
 struct user_desc_MGR {
 
 	user_desc _user_desc;
 
 	void memset_ZERO() {
-		INFO("memset ZERO");
+	//	INFO("memset ZERO");
 		memset( & _user_desc, 0x0, sizeof( _user_desc ));
 		_user_desc.entry_number = -1;
 	}
@@ -45,7 +44,7 @@ struct user_desc_MGR {
 
 	//	int t = syscall(SYS_get_thread_area, struct user_desc *u_info);
 		int t = syscall(SYS_set_thread_area, & _user_desc);
-		if( t == -1 ) { return FAIL("SYSCALL"); }
+		if( t == -1 ) { return FAIL("SYSCALL %m"); } // didnt print ERRNO
 		print_entry_number();
 		return true;
 

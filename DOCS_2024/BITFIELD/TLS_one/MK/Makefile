@@ -171,7 +171,7 @@
 	# then Module infrastructure code zones
 	# order matters - maybe put into .a to mix it up
 
-	OBJS0 += min_main_2024.o
+	OBJS0 += main_calls_bool_main_2024.o
 #	OBJS0 += lex_yacc_LEX_TOKEN.o
 #	OBJS0 += lex_yacc_LEX_TOKEN_precedence.o
 #	OBJS0 += lex_yacc_UNION.o

@@ -1,0 +1,57 @@
+	HEAP_ITEM-2024-12-16.txt
+
+	TEMPLATE _one
+
+		i4_HEAP
+		i12_ITEM
+	
+	TEMPLATE _two
+
+		i64 WORD_one;
+		i64 WORD_two;
+	
+	DECODE i64_LOHI
+
+		i8_i8
+			BYTE_A
+			BYTE_B
+		i4_i12
+			BITFIELD_i4
+			BITFIELD_i12
+			// BYTES_C_and_D of i32 // HALF_HALF // LOHI
+			// BYTES E F G H // HIGH_HALF // LOHI
+		i32_LOHI
+		i8_i24 { { i8 i8 } { i24 i24 } } {
+		 	// ...
+		}
+		i8_i12_i12 {
+		 i8 as u7_PLUS_i8_MINUS {
+		 // CT_RT decorates GEN with burden of extra code
+		 // but it does then lock into place as OOP animates what CT_RT
+		 // DIAG needed // PC_CSR STEPS through these scripts via API
+		 // INTERP SCRIPT // CXX_ARGV over TCL engine 
+
+			 PRE_COND += JUST_DONE_a_TEST_or_OTHER_giving_SIGN_flags
+
+			 switch_i8_TEST {
+			  case is_ZERO {
+			  }
+			  case is_PLUS {
+			 }
+			  case is_MINUS {
+			  }
+			  case is_PLUS {
+			  }
+			 i8 as u7_PLUS_() {
+			 	return i8
+			 }
+			 i8 as i8_MINUS() {
+			 	return i8
+			 }
+			}
+		}
+		 i8 as i4_i4 
+		 i8 as i3_i5 
+		}
+
+		

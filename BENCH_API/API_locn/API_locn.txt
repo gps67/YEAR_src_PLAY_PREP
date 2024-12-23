@@ -1,3 +1,86 @@
+ // API LOCN // PAIR // CODE_POINT // HERE in this SCRIPT //
+ // API_ITEM
+ // API_HEAP_ITEM
+ // API_HEAP_ITEM_EXPR // each of this start as a MENTION // RUN AWAILE // DROP STO in _WHEN_ // 2024-12-10_Boiler LOCN
+
+ 		LOCN
+		ITEM
+		API
+		EXPR
+		CACHE
+		ARGS
+		LOOKUP
+		VAR_POOL_EXPR
+		CODE_POINT SCRIPT XPOS BIAS_BALLAST_SELF PSG_TREE_t A_DOC = STO;
+
+		// STO is SESS a PROVIDER via API of DATA_STO_for_SESS
+		// WEAVE the PSG_ITEM_and_CODE_POINT_and_DATA_in_DOCUMENT //
+		DATA_on_DOCUMENT {
+
+			this needs to be a PSG DIALECT with LIBR_PRE_LOAD
+
+				DIALECT += PHRASE // self name and MENTION 
+				// AUTO_VAR %s MENTION // ALIAS and AVAR
+				// AUTO AVAR A_VAR // PICK PAIR A_VAR // as_IDENT
+EXPLAIN as_IDENT {
+		DECL ALLOC ALLOC_ITEM _ITEM_SPEC _ITEM_DATA _NAME_idx_FFFF \
+		NAME_idx_FFFF \
+		NAME_idx_FFFF_SPELLING \
+		NAME_idx_FFFF_STR \
+		NAME_idx_FFFF_STR0 \
+		NAME_idx_FFFF_STR_P0_N \
+		NAME_idx_FFFF_STR_P0P2 \	// ALIAS P0P2 // ALIAS SELF //
+		// on_set_INIT_VAL( TO_VAL, SENDER, CALLER, SESSION, TPOS
+		// ALIAS TPOS "see mtime of file" // use that as TPOS as XPOS
+		// ALIAS XPOS "SYNC CLOCK EDGE at TPOS"
+		// SCRIPT LIBR TPOS == TPOS_of_FILE_mtime // as i64 // as_i32
+		// ADD DETECT use of 1970_UNIX_CLOCK
+		NAME_YEAR_MM_DD_%s .ext .ext_seq_xombination _nested .tar.gz
+		MIME_ACTUAL ZIP_FILE_2000 LZO_FILE_2020 LZO_USED_bz2 // PICK
+		// ZIP_FILE_2000 is the FOLDER_NAME that holds one  MAIN ZIP_FILE
+		// FOLDER_ITEM // HEAP_ITEM_UDEF API_SPEC 
+
+
+			somehow a FOLDER gets created
+			somehow a CSR arrives at FOLDER is HEAP_ITEM
+
+			builtin HEAP_ITEM // luminol on mentioning the obviouos
+			// LIBR provides a NULL_LIBR_EXPLAIN_via_CT_RT_NOW
+			// CT_RT NOW // SYNC_EDGE_upto_horizon //
+			// every word is NLP LANG TEXT WORD in PHRASE with PUNCT
+			// PARSE { ... += ... }
+			// PARSE { $1 += $2 }
+			// PARSE { lhs += rhs } // TEMPLATE ARGV and AVAR "lhs"
+			// EXACT_MATACH ARGV[idx_ITEM] WORD
+			// WORD "rhs" ALIAS "AVAR" see_also "lhs" "mid" "rhs"
+			// UNUSED "mid" // THROW on LINT_as_SEGV // not yours
+
+
+			 builtin _HEAP	IMPORT_BUNDLE_API
+			 builtin _ITEM	IMPORT_BUNDLE_API
+
+
+	BUNDLE_API += BUNDLE_ITEM_one  for AUTO system, eg over ALIAS
+
+
+		BUNDLE_THREAD
+		one CONNECTION of a BUNDLE
+		MUX STREAM_PHRASES
+	
+	STREAM_ITEM_is_a_PRE_LOAD_LIST
+
+		REQUEST PROVIDER
+		PROVIDE_REQUEST MATCH PROVIDE REQUEST - RESSPONSE 
+		PARSE "-" in ARGV ie a bit like COMMA in PUNCT
+		PARSE - in ARGV as wider_GAP_possibly_from_NESTED_API
+		PARSE lhs_TEXT - rhs_TEXT
+		PARSE lhs_ARGV - rhs_ARGV
+		PARSE lhs - rhs // ARGV both // ALIAS TAIL etc // builtin LIBR
+
+
+} // EXPLAIN %s //
+
+		}
 
 	LOCN_API_ITEM_t 
 	LOCN_API_ITEM ;	// LOCN_API is a ZONE in a Module of its own and ANY

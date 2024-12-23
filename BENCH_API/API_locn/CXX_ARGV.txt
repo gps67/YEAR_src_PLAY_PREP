@@ -1,0 +1,33 @@
+
+	ARGV is of i32_i32
+	ITEM is of lhs_rhs
+	STEP is i8_i8 i16 i8_i24
+
+	UNION PAIR i16 i4_i12
+	UNION PAIR i8 i4_i4
+
+		8	- this does not exist - is TAIL of LHS PREV
+			- "does not exist" in i4 world, does in i32
+			- WANT for N == 8 
+
+		7	- item_%d u3_idx // limit that fits in this OPCODE 
+		6	-item_%d  
+		5
+		4
+		3
+		2
+		1	-item_%d  
+		0	-item_%d  
+
+			idx_item = u3_idx_item 
+			ITEM & ITEM[idx_item]
+
+		M1	(1) call A_FUNC with i4_MINUS
+		-2	(2) ret_val is CXX_BASED // and uses MEM_REGISTERS
+		-3	(3) depending on CALL_RET_VAL_STATUS_AND_RET_VAL
+		-4		lookup i4_MINUS in SECOND_FUNCTION
+		-5	    depending on CALL_RET_VAL call FAIL FIRST_HERE
+		-6	    or simply return NULL false no_fault_no
+		-7	    for DEFAULT when NULL as that is FASTER_builtin
+		-8	    CACHE of WASM is an option // or own reports
+

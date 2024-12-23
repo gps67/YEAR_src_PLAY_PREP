@@ -6,4 +6,118 @@
 	WANT CPU REG reserved for TLS
 	WANT to merge its behaviour (eg copied calls) with UDEF
 
+	RTFM SAID // for STO use Postgres with only two keys and the fields in JSON or DIALECT
+
+		POSTGRES as a persistent store of SESS_CTXT // AUTO SESS.CTXT --by_rhyme common_alias
+
+	https://electric-sql.com/docs/guides/shapes
+
+		postgres over key_val PAIR[IDX]
+
+			table_%s[IDX} == PAIRS(KEY,VAL)
+
+				all in one i64
+				HOW
+
+		WHY - OPCODE_is in CPU_SPACE SESS_SCRIPT 
+		QUOTA 90% of 2 seconds CPU_TIME per REPL_CYCLE
+		QUOTA 90% of 1 G of DISK to ARCHIVE MONTHLY ZONED_DUPLICATES
+		QUOTA 90% of 1 G of MMAP over DISK from ARCHIVE MONTHLY ZONED_DUPLICATES
+		QUOTA 90% of 1 G of MMAP over DISK using QUOTA REQUESTS # AUTO #
+		AUTO KEEP 8 copies in different stages 
+		WHY - OPCODE_QUOTA "get a QUOTA of CPU every 5 Hz"
+		WHY - SYNC 5 Hz -
+
+			SYNC
+				WORK EDGE PAUSE EDGE WORK
+
+			5 Hz -
+				5 Hz is a humans reaction time
+				so multiples of it are a UNIT STEP 5 Hz
+	
+	RTFM SAYS
+
+		TLS ...
+
+	What I want
+
+		two CPU registers permanently loaded into these registers
+		three CPU registers permanently loaded into these registers
+		one CPU registers permanently loaded into these registers
+
+AND		OPTION only during allocated RUN TIME // EXIST and only when it is RUN TIME //
+OR		OPTION also all the time
+
+
+		one CHAPTER of DATA and TEMP and MMAP and VFS
+		one 1GB of VFS_STO billed to QUOTA
+		usable as DATA and TEMP and MMAP and VFS
+
+
+	What I want
+
+		one CPU registers permanently loaded into some register
+
+		can share this with others higher up the food chain
+		get P0P2 in SEGMENT_one as P0P2_of_parsed_FILE_NAME
+
+		I can switch a different BASE_ADDR for each invoke // 5Hz // SLA_5Hz // 
+
+		Alternate cycles, want to complete all processing,
+
+			CPU burn writing BUFF for OUTPUT or LINK_STO as transfer
+			CPU STOP - ALL DONE
+			RECOMPUTE OPTION - ADJUST for recent QUOTA USE - as measured by QUOTA
+
+				METRIC is ONE CPU 100% with 4_of_16_G_as_MMAP_no_file
+				METRIC is ONE CPU 100% with 12_of_16_G_as_MMAP_on_FILE // occasional GROW PAST 100% to 1.2 x UNIT // UNIT == "1GB"
+
+				ie 1GB cannot be dropped, the rest can be recomputed from a handful of argumens INIT_SETUP_PREP_LOAD
+				so 1GB is what APP needs, and we give it 16GB for CODE TABLES UDEF AI ARCHIVE
+
+					ARCHIVE is an issue, you can only use these facilities if you have an ANRCHIVE
+					LIBR complies by SYNC_DONE and closes all NEED_LIST as UNUSED 
+					CACHE keeps as much as it can (OPTION MUST BE ALL) 
+					CACHE relaxes unused pages as MMAP pages
+					CACHE moves 1GB CACHE # less 8MB of TABLE_DATA 
+
+	THREAD CLAIM 0.2 SEC of 1 CPU
+	THREAD CLAIM 5 x 0.2 SEC of 1 CPU each SEC 
+	THREAD CLAIM 80% of 1 CPU 
+	THREAD CLAIM 12 CPU 64 GB for ALL with SCHEDULER_5Hz
+
+		SYNC happens
+		SLA says lots of STEPS were taken in less than that 0.2 TIME_SLICE or T_POS 
+		// is TPOS the START or END ?
+		// is_P0_N TPOS N BYTES //
+			P0_N 
+			XPOS N
+
+		// T_POS is an OFFS that can grow to N_BYTES needing N_BITS in IDX.N_BITS
+
+		// implement [i8] as OFFS MATH and BITFIELD_to_BYTE_FIELD_REGISTER_IDX_AVAR_IDX 
+		// ALLOC // AVAR_idx = N ++ // ALLOC //
+
+	
+
+		CURRENTLY_in_
+
+		except WAIT for 5 minutes then let me have
+		CONFIG += 12_CPU_
+
+
+		and pass that on at end of the 5Hz, BUT not so
+		because 
+
+AND		OPTION only during allocated RUN TIME // EXIST and only when it is RUN TIME //
+OR		OPTION also all the time
+
+
+		one CHAPTER of DATA and TEMP and MMAP and VFS
+		one 1GB of VFS_STO billed to QUOTA
+		usable as DATA and TEMP and MMAP and VFS
+
+
+
+
 
