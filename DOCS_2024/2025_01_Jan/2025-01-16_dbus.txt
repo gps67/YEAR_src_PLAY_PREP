@@ -1,0 +1,89 @@
+	2025-01-16
+	2025-01-16_dbus.txt
+
+	locate freedesktop | less
+	locate dbus | less
+
+/usr/share/polkit-1/actions/org.freedesktop.policykit.policy
+
+	polkit-1
+
+		houses all he freedesktop stuff
+		looks like a categorising system
+
+
+/usr/share/polkit-1/actions/org.freedesktop.NetworkManager.policy
+/usr/share/polkit-1/actions/org.freedesktop.RealtimeKit1.policy
+/usr/share/polkit-1/actions/org.freedesktop.UDisks2.policy
+/usr/share/polkit-1/actions/org.freedesktop.accounts.policy
+/usr/share/polkit-1/actions/org.freedesktop.bolt.policy
+/usr/share/polkit-1/actions/org.freedesktop.color.policy
+/usr/share/polkit-1/actions/org.freedesktop.fwupd.policy
+/usr/share/polkit-1/actions/org.freedesktop.hostname1.policy
+/usr/share/polkit-1/actions/org.freedesktop.import1.policy
+/usr/share/polkit-1/actions/org.freedesktop.locale1.policy
+/usr/share/polkit-1/actions/org.freedesktop.login1.policy
+/usr/share/polkit-1/actions/org.freedesktop.machine1.policy
+/usr/share/polkit-1/actions/org.freedesktop.network1.policy
+/usr/share/polkit-1/actions/org.freedesktop.packagekit.policy
+/usr/share/polkit-1/actions/org.freedesktop.policykit.policy
+/usr/share/polkit-1/actions/org.freedesktop.portable1.policy
+/usr/share/polkit-1/actions/org.freedesktop.resolve1.policy
+/usr/share/polkit-1/actions/org.freedesktop.systemd1.policy
+/usr/share/polkit-1/actions/org.freedesktop.timedate1.policy
+
+/usr/share/polkit-1/rules.d/org.freedesktop.NetworkManager.rules
+/usr/share/polkit-1/rules.d/org.freedesktop.bolt.rules
+/usr/share/polkit-1/rules.d/org.freedesktop.fwupd.rules
+/usr/share/polkit-1/rules.d/org.freedesktop.packagekit.rules
+
+
+	sleep_hibernate
+
+# am I login1 ?
+
+echo "# $0 #"
+sudo \
+        dbus-send \
+        --system \
+        --print-reply \
+        --dest="org.freedesktop.login1" \
+        /org/freedesktop/login1 \
+         org.freedesktop.login1.Manager.Suspend boolean:true
+
+exit
+
+
+and the reply was:
+YES: ASK_DO: /home/gps/bin/bin_two/sleep_hibernate
+# /home/gps/bin/bin_two/sleep_hibernate #
+
+and the reply was:
+
+method return time=1736993981.935515 sender=:1.4 -> destination=:1.768 serial=14992 reply_serial=2
+
+	method
+	return
+	time=1736993981.935515
+	sender=:1.4
+	->
+	destination=:1.768
+	serial=14992
+	reply_serial=2
+
+	EDIT_GAP_SOME_STRANGE_GLYPH --OMIT --EDIT_OMIT
+	OMIT_GAP_SOME_STRANGE_GLYPH --on_MATCH SCRIPT  --EDIT_OMIT OMIT
+
+	" P "
+0000000  \t   "       P       "  \r  \n
+           2209    5020    2220    0a0d
+0000010
+
+~
+PARSE_TOKEN
+	all of DBUS has an IMPORT_TREE
+	lists of reserved_values labels tokens
+	lists of TABLES each ITEM SPELLING as TOKEN
+
+		This feature comes wih list of IDENT LEXICON
+
