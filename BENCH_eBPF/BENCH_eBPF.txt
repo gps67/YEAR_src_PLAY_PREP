@@ -1,0 +1,49 @@
+
+	BENCH_eBPF/
+	BENCH_eBPF.txt
+
+	now a complete qemu world ?
+
+	https://ebpf.io/what-is-ebpf/
+	https://en.wikipedia.org/wiki/EBPF
+	https://thenewstack.io/ebpf-finds-a-home-with-a-new-foundation/
+
+	ISP VPS provider cannot permit module but maybe can with eBPF
+
+	USAGE netfilter // probably an old subset
+	USAGE netfilter // incl sudeways open SOCKET to DB TLS etc
+
+	USAGE MODULE_API // MMAP and FD_to_somewhere and TLS and ENQ_ACK
+
+	ENQ_ACK sandbox
+
+		can we live with single BYTE_A TYPE_TABLE
+		can we live with single BYTE_A_BYTE_B PAIR_i16 TYPE_TABLE
+	
+	KERNEL has DATA that APP should not
+
+		my_ref_as_data( myref, retval data )
+		data_from_my_ref
+		my_ref_as_data
+	
+	https://docs.cilium.io/en/stable/reference-guides/bpf/index.html
+
+		DIARY style file grows page by page
+		revisit requires specific date management (dir_pick_file_move)
+
+	https://docs.cilium.io/en/stable/reference-guides/bpf/architecture/
+
+		LLVM compiles C to B to eBPF then JIT to ASM_AMD
+	
+		ASM 11 i64 registers PC B_SP 
+		r0 r1 ... r10
+		r10 == FP 
+		512 byte stack
+
+		u32 zero_extend to u64 when written to
+	
+	USE kubernetes
+
+	https://en.wikipedia.org/wiki/Fedora_Linux#CoreOS
+	https://en.wikipedia.org/wiki/Xfce
+	https://en.wikipedia.org/wiki/Docker_(software)

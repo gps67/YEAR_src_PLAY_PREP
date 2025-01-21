@@ -1,0 +1,41 @@
+
+	JS_i3_i5.txt
+
+	We are matching CXX and JS at some point.
+
+		We can enumerate over i3 and i5 to get 256 SOMETHINGS
+
+			GOTO CODE_POINT 
+			EXEC ARGV
+			CALL ARGV // ARGV[0] gets XPOS of CODE_POINT
+
+		We can build a PRE_LOAD 
+
+		KEY
+		 	i3_i5
+
+		VAL
+			+= OBJ_ITEM_INST _THIS _THAT _SELF _NEAR 
+			+= OBJ_FIELD "." "fieldname" // ARGV RULES OKAY //
+
+		BYTE_per_BYTE
+
+			i8 = TABLE[ i8 ]
+			i8 = TABLE[ i3_i5 ]
+
+		SPARSE_RENUMBER_then_ARGV_LIST
+
+			i8_IN = _IN
+			TABLE = TABLE_one
+			i8_OUT = TABLE[ i8_IN ]
+			
+			OPTION check i8_OUT <= 0
+			OPTION check i8_OUT <= N
+
+			EIGHT_t & i64_out = TABLE_two[ i8_OUT ]
+
+			RET_VAL i64_out // KNOW IDX == i8_IN i8_OUT i64_out
+
+
+
+

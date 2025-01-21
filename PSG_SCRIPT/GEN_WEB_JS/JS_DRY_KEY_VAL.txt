@@ -1,0 +1,55 @@
+
+	JS_DRY_KEY_VAL.txt
+
+	DICTIONARY 
+
+	 += PAIR KEY VALUE
+	 SELF += PAIR KEY VALUE
+	 SELF.dry_one += PAIR KEY VALUE
+	 SELF.dry_two += PAIR KEY VALUE
+	 SELF.dry_alias += PAIR KEY VALUE
+	 DRY = SELF.DRY // MENTION into existabce, as if TYPE known ATM
+	 DRY_t : DRY_dictionary_t {
+	 }
+
+	 DRY_dictionary_t { // PERSONALITY types have no parent base type
+
+	 // PERSONALITY types 
+	 // no parent base type
+	 // but does get the SPEC of each FIELD described in SCRIPT
+	 // MENTIONED == described in SCRIPT
+
+	 // obj_ref_t // but might be Py_Object BASED
+	 // If so as a module or as MAIN_TASK // gets loaded // API_Python_3
+	 // ifdef API_Python_3 // no need as KNOW already SET by T_API_Python_3
+
+	 // Tcl_Obj _TEXT _TOKEN _NUMERIC WORD_LIST_SEGMENT_or_SPLICE
+	 // GEN writes the claim to use type NAME {WORD_LIST_SEGMENT_or_SPLICE}
+	 // There as ARGV[0] within a LIST of ONE // ITEM_ZERO :-)
+
+	 HT_ _WOW_ {
+	 	PAIR KEY VALUE // NO CMNT // ZERO_ADD_WRAP so no CMNT //
+	 _API_
+	 	GET EA VAL as_PTR _of_SPEC {
+		/*
+			SPEC is DATA VALUE from SCRIPT
+			SPEC is HEAP_ITEM_DECL_EXPR
+
+			// LIBR PROVIDES .i8_byte_B() as INLINE _CODE
+			// _CODE in GEN s FILTER as XPOS_in_ROM_or_STO
+			// LIBR_STO // no more than the files already there
+			// PLUS_STO // UDEF_SCRIPTS running in a MINI_MACHINE
+
+				i8_i8 OPCODE // .i8_byte_A()
+				i8_i8 OPCODE // .i8_byte_B()
+
+		API BASE CLASS obj_ref0 // VTBL DTOR get_SPEC HEAP_ITEM
+		// actual CXX_CLASS is COMPILED now invoked // PROVIDE API
+
+	_API_PROVIDE_
+
+		EIGHT_t _i64; DECODE_i64( %s ); // LIBR_API_TOOLS_DOCS
+
+		*/
+		}
+	 }

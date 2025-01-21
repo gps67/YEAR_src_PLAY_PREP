@@ -1,0 +1,160 @@
+
+	GEN_HTML
+
+		DIARY of DONE
+
+		PSG_TEXT
+
+		INDEX
+
+		WRAP_as_PAIR
+
+		LOCK_and_CRYPT
+
+		KEY_ID = ABBR_ALIAS_EXPR_MULTI_WRAPPED
+
+			HEAP ATTR ITEMxFFFF
+
+			SPEC = get_SPEC( ITEM )
+			SPEC = ITEM . SPEC
+
+			Second was PRESUMED into existance
+			Mention makes it REAL and already a bit obvious
+			CONVERSELY LHS = EXPR1 RHS = EXPR2 
+
+				LHS = EXPR1
+				RHS = EXPR2
+
+				LHS = ITEM 
+				so now LHS carries ITEM
+				and acts on its behalf
+
+					so when ITEM needs QUOTA
+					LHS can choose to provide
+					LHS can negociate TERMS
+
+						am_BATCH
+						treat_as_such
+						RULESET=CODE_POINT_in_ROM
+
+							am_BATCH {
+							 PRE_START
+							 POST_END
+							 DONE // EOF NULL
+	 DONE // EOF EOT OVER NUL NULL P2 P0P2
+							}
+
+	GLOBALS
+		TREE_builder GEN_XPOS "GEN.XPOS" 
+
+			PARSE AVAR.AFIELD
+
+			MATCH DECL AVAR 
+			MATCH DECL AVAR _of_TYPE_SPEC
+
+
+			PARSE AVAR_AFIELD == "GEN.XPOS"
+
+			// IMAGINE // SUPPOSE // TOKENISED "GEN.XPOS"
+			// BIND AVAR GEN += SCRIPT += AVAR "STDOUT" of XPOS_t
+
+			GEN_CC_GEN_RUN
+			AVAR %s
+
+
+		DECL_TREE DECL // GLOBAL DECL AVAR "DECL" // to hold A_DECL_EXPR
+		// EXPR is a PSG of EXPR and AVAL TWIG_of_LEAF //
+		// DECL avar ...
+		// DECL ITEM SPEC HEAP ITEM
+		// DECL ITEM
+
+	PRT_ELEM( TWIG )
+
+		STD_IN = TWIG via PARSER and CT_RT
+		STD_OUT = XPOS above
+	
+		PRT_OPTS
+			bunch of PICK_MACRO
+			using standard MODULE DECL CT_RT
+
+			TABLE + SQL_CXX
+			enum {
+				idx_ZERO = 0
+				idx_one
+				idx_two
+				idx_EXPR
+
+				idx_FOUR
+				idx_FIVE
+				idx_SIX
+				idx_SEVEN
+				idx_EIGHT
+
+				idx_0 = 0
+				idx_%d = %d IDX IDX 
+
+				CT_RT 
+			}
+
+			ENUM GROUP ITEM ITEM ITEM {
+				ITEM
+			}
+
+			AVAR NESTED_INDENTED_TEXT_MACHINE
+			AVAR NESTED PARSED( TWIG ) // RETVAL asif always was
+			// GEN means that it always will be // RETVAL ASWAS
+			// ASWAS means already_was // BIT_DETECT FILTER
+			NESTED {
+				STACK[ DEPTH ] // idx_DEPTH --LIMIT N == DEPTH == N
+				// idx_DEPTH --vs-- DEPTH
+				// idx_DEPTH --LIMIT N 
+				// "{idx_DEPTH N }" // ALLOC idx = N ++
+				DEPTH is i8_idx and u8_idx and u15_idx and GROW
+				GROW BITFIELD DEPTH // 7_8 15_16 23_24 
+				GROW 0 1 2 3 4 4 6 7 8 9 10 11 12 13 14 15 16
+				GROW 4 8 12 16 24 32 48 64
+				GROW 3 7 11 15 23 31 47 63 
+				LIMIT u31 + 1 // USES -128 == +127
+				MATCH EXPR // USES A == B // AVAL AVAL DIFFER
+				LINT USES CLAIM as often nonsense claim
+				ASIF makes it as though it always was
+
+			}
+
+		HEAP_ITEM_TWIG
+
+			i8_i8 OPCODE
+			i16_as_i4_i12 // or _u4_u12  u12_u4 lhs rhs LO_HI
+			i32_as_i8_i24 // i32_two_as_u8_HEAP_i24_ITEM
+
+		CPU slightly favours u8 over i8 particularly in arrays
+		optional in OFFS within N_BYTES // PERMIT N_0 mean FULL_PAGE i12
+		not so much in OFFS
+
+	TEXT MODE ARGV_SCRIPT NESTED BRACES ARGV OBJV _PLUS
+	_PLUS CT_RT can compile modified _SPEC into _JIT
+	create API_FUNC GETTER_via_CACHE_of_EXPR
+	create API_CACHE ARGS into EXPR 
+
+		grated cheese drops to CODE_SEGMENT
+		running test data took most paths
+		so blessed them with CT optimisers and RT weights
+		many ENUM tokens can pass through ASIS or ASIF_via_FILTER
+		TUPLO creates a bunch of useful data_sto SPEC_DECL
+		MODULE provides a clothes dryer, to load scripts for test data
+		MODULE sweeps all used funcs, to already in DECL_ZONE
+		MODULE knows simple elf C_API CXX_API WASM_API 
+		MODULE provides arrays of callable 
+		MODULE helps connect callable ARGS named listed in table
+
+		CACHE is a thing, and it isn't ELF (could be if we can write )
+		AVER_PARAMETISE_ARGS_in_MMAP_FILE 
+		AVER_LOAD_SEGMENT_from_MMAP_FILE // only monthly PAUSE
+		firstly we avoid speculation
+		already unaware of external changes since T0_PKT_in_arrived
+		BATCH does a lot of work here, pre-loaded segments etc
+		LOADER_INIT
+			thread has DATA_in_thread that MMAP_FILE does not keep
+
+
+

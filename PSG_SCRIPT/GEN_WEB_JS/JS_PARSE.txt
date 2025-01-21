@@ -1,0 +1,113 @@
+
+	JS_PARSE.txt
+
+	ARGV_SUBLEX is_not_Tcl_Object // maybe it should be
+
+	// permit CMNT DECODER to run in this JS_CALL_FRAME
+	// match can continue with CMNT but supposedly not used
+
+	JS has regex builtin so that is probably what will be used
+
+	JS has FSM int state = state_2_goto_via_STEP_1 _IF_MATCH
+
+		OPTION level meh // cost less
+		OPTION level active // log_most_things
+
+		GEN FSM as JS_SCRIPT
+		state = state2  
+		switch( state ) {
+		 case F321 : { SCRIPT } ; break ;
+		 case F321 : { SCRIPT } ; break ;
+		 case F321 : { SCRIPT } ; break ;
+		 case F321 : { SCRIPT } ; break ;
+		 case F321 : { SCRIPT } ; break ;
+		}
+
+		SCRIPT can DECL a few things and RUN and RETVAL
+
+		SCRIPT is the one that picks the STEP that is taken.
+		We can play a search sweep over our Module and this DATA
+		FSM is a PARSER and SUB_LEX and INTERP and CT_RT prediction
+
+		STEP
+			match IDENT C99_ident "CIDENT97" a1 a2 rare_use
+
+				a1_a2_star a1 a2 rare_use
+
+			match NUMERIC PSG_LEX_NUMERIC
+
+				numerics may be multi word with SP 
+
+					rare_use
+
+				numerics reflect STYLE of SCRIPT
+
+					REGEX_4X_
+
+					MORE DETAILS 
+					 MORE ADJACENT DIALECT EXPRS
+					  SOME LOGIC
+
+					  	NUMERIC says SWITCH_CASE_ASKER
+
+			MINI_MACHINE runs tokenised SCRIPTS as ARGV_PLUS
+
+				ARGV = ARGV_prepared_for_CALL_ARGV
+
+					lots of data
+
+					one OPCODE 
+
+						CT_RT SCOPE OPCODE_one
+
+							early CT_RT
+
+								AVAR_by_MENTION
+		
+		LIBR = i3_i5_SUITE_LIBR
+
+			i3_SUITE //-AKA- // PAGE of ITEM //
+			i5_LIBE
+
+	So we might use something like BISON to GEN_JS
+	We scratch up a DSL as a list of MACROS
+
+	ALIAS NAME_HERE = ORIGINAL_or_NEAREST
+
+HEAP_ITEM
+ BYTE	i3_i5
+ BYTE	i4_i4 // KNOW will fit so use everywhere
+ PAIR	i4_i12 // LIBR_ITEM _one // EA_EXPR returns EIGHT
+ FOUR	i8_i24 // LIBR_ITEM _two // EA_EXPR returns EIGHT or IN_SITU(EIGHT)
+
+ FOUR	i0_i32 // i0 becomes CODE_POINT
+ FOUR	___i32 // i0 became CODE_POINT
+ FOUR	i16_i16
+ EIGHT	i32_i32
+ FOUR	i8_i8_i16
+
+ 	USAGE DECODE_i16_CD_lohi
+
+		DECL_hi_bits_on_left // LIKE DIAG of BITS in BITFIELD
+		 DECL i4_i12 {
+		  DECL_hi_bits_as_last // UNITS first then PAGE LOHI
+		  B2B0 12  0 _i12 SIGNED
+		  B2B0 16 12 _i4 SIGNED
+		 }
+	
+	ASM for machine can look at the need to sign extend i16
+	ASM for machine can look ACTIVE MATH in i16 HALF_of_HALF in CPU_WORD
+	ASM can mention when value outside i16 gets zapped
+	ASM is doing this all the time
+	ASM counts clock cycles
+	ASM uses fastest when expecting use OPTION wait for used 3 times
+	ASM uses fastest when expecting use OPTION COMPILE AOT ready for use
+
+	ASM remains with list of MATCH PICK BEST or NEXT
+
+
+
+
+
+
+
