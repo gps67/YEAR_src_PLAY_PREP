@@ -1,0 +1,55 @@
+
+	TokenisedScriptData.txt
+	Tokenised_Script_Data
+			LEX_VIEW_EACH_CAP1 _or_RULE
+			LEX_VIEW_EACH_CAP1 
+				is the base class
+				it is named after a sample "Cap1"
+				and the default is the end of code
+				there is no PICK
+				alternatively WE PROVIDE PICK
+
+				_or_RULE
+
+				ITEM = PICK_ZERO(PICK)
+
+					PICK is still provided == 0
+					PICK may be NON_ZERO and get ignored
+
+					This is because the ACT_LIKE_TEMPLATE
+					has reached it's resolution 
+					some text might describe
+					WEIGHTED_OPTIONS PICK WHEN
+
+					WHEN = trail of rules to DECODE i64_WORD
+
+				WHEN = PICK = OPTIONS_LIST idx_this idx_that
+				idx_PICK = FROM_UI_pick_from_list_AVAR_VERB_ITEM
+				VERB = /* uplevel VERB which is : $1 
+				"/* { THIS_LOCN.THIS_VERB } */" 
+				THIS_VERB(ARGS += "{ THIS LOCN THIS_LOCN }"
+				// the ATOM happens to be its own CMD0 
+				// $0 == $1 // this might happen WHEN LIGHT_idx
+				// IMPL MINUS M1 ZERO PLUS
+				// BUILTIN L-M-R 
+				// BUILTIN L-M-R // M = $1 // ALIAS L_%s_R //
+				// BUILTIN L-R // PROV M = $1 // ALIAS L_%s_R //
+
+				// BUILTIN M_z_N // NEED OFFS += OFFS_of_z //
+				// BUILTIN M_z_N 
+				// BUILTIN L_M_z_N_R // base_class
+
+				) return 
+
+					of good guesses
+				ITEM = PICK(PICK)
+					
+				ITEM = PICK_LIST[ idx_PICK ]
+
+				FORM %s {
+				}
+
+			// DECL L_M_z_N_R // base_class // AS OFFS or IDX //
+			// IMPL MINUS M1 ZERO PLUS
+
+

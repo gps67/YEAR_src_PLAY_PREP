@@ -34,15 +34,28 @@ bool lex_yaxx_UDEF_ONE_t:: build_tree_yacc()
 	return FAIL("TODO");
 }
 
+// TODO // OBJV // how to tell if WORD == PTR == STR0 // WEIGHT
+// TODO // WRAP ARGV into OBJV
 
+// TODO // PARSE_SCRIPT _into_TREE // CALL ARGV or CALL SCRIPT as_SESS
+// TODO // STO SESS_STO // STO = SESS_STO // local ABBR for ITEM AVAR
 
-bool bool_main( int argc, char ** argv ) {
+// TODO // PSG SUB_LEX // 
+
+bool parse_ARGV_bool_main( int argc, char ** argv ) {
 	lex_yaxx_UDEF_ONE_t UDEF_ONE;
 	if(! UDEF_ONE.build_tree() ) return FAIL_FAILED();
 
 	FAIL("TODO - unwritten");
 	// FAIL("ENOENT_is_2 == %d TODO", ENOENT);
 	return ENOENT;
+}
+
+bool bool_main( int argc, char ** argv ) {
+	/*
+		every mini app provides %s_bool_main(argc, argv
+	*/
+	return parse_ARGV_bool_main( argc, argv );
 }
 
 int main( int argc, char ** argv ) {

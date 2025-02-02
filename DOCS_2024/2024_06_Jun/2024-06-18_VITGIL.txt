@@ -1,8 +1,0 @@
-	2024-06-18
-
-	2024_06_Jun
-	2024-06-18_VITGIL.txt
-
-	http://compilers.cs.ucla.edu/virgil/overview.html
-	https://github.com/titzer/virgil`
-
