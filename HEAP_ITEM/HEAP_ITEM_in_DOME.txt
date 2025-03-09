@@ -1,0 +1,44 @@
+	HEAP_ITEM_in_DOME.txt
+
+	DOME is the sum of all the SUB_ZONES
+	HEAP_ITEM is dome_tech with SCRIPTED_UDEF
+	EXEC_ARGV goes via UDEF_EXEC - a SAFE_WRAP_SCRIPT
+
+		SAFE_WRAP_SCRIPT
+
+		EXEC is allowed to call PARSE_ARGV to validate it
+		EXEC recognises ARGV layouts like find or ssh
+		ie simples ones like configure or complex ssh
+
+		EXEC then does the FORK_LOAD_but_not_EXEC
+		EXEC then does the FORK_EXEC inot LOAD but with PIPE etc
+
+			ie chdir chroot suid
+			or EXEC_on_REMOTE_via_LOCAL_CACHE
+			it does chroot (started in one anyway) (ASIF)
+
+https://www.admin-magazine.com/Archive/2024/83/Hardening-SSH-authentication-to-the-max/(offset)/3#article_i1
+
+${NAME_two}=~/.ssh/ecdsa_${DATE_YEAR}_${DATE_MM}
+${FILE_two}=${NAME_two}.pub
+USER_at_HOST=${USER_two}@${HOST_two}
+
+ssh-keygen -t ecdsa -b 384 -f ${NAME_two}
+ssh-copy-id -i ${NAME_two}.pub ${USER_at_HOST}}
+ssh -i ${NAME_two} ${USER_at_HOST}
+
+		WE are calling ssh on behalf of the caller
+		we procide UDEF_EXEC that uses PARSE_ARGV and act_ASIF
+		ie it calls ssh or some other tool just like a shell
+	
+https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03111/BSI-TR-03111_V-2-1_pdf.pdf?__blob=publicationFile&v=1
+
+
+https://fidoalliance.org/specifications/	FIDO2
+https://www.w3.org/TR/webauthn-1/
+
+
+
+	
+
+	

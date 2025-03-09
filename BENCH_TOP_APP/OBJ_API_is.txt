@@ -1,0 +1,16 @@
+OBJ_API_is.txt
+
+	OBJ_HOLD< obj_ref_js > ITEM = EXPR || INIT_ZERO
+
+	CXX_OBJ and JS_ITEM are not the same thing, cross linked
+
+	OBJ_HOLDER -> PAIR {
+		CXX_OBJ
+		JS ITEM
+	}
+
+	CODE_POINT += two named fields of predictable type
+
+		CXX_OBJ is obj_ref_0
+		JS_ITEM is JSObject * // C_API or CXX_API or ... //
+

@@ -1,0 +1,155 @@
+
+	copy_iso_tree 
+
+		WHAT and WHERE
+		TO and FROM
+
+	HOW	use INFO WARN FAIL under TTY
+		AVAR name "value_as_word_from_expr" // future OBJ ANY
+		SPEC name ...
+		DECL name ...
+		DATA name SPEC DATA
+		DATA name /* SPEC is known from DECL DEFAULT ANY */ D A T A
+		ARGV ...
+	
+	TEMPLATE
+
+		a direct COPY
+		then edited
+		PLACED invoked ARGV API
+
+		then SPLICED UP into ARGV and multi layer TEMPLATE
+	
+	FRONT_END as
+	ITEM on PANEL # STATE # DIAG _one _two #
+
+		SEQUENCE PARSER match TEMPLATE ARGV from near CODE_POINT
+
+			CODE_POINT the SCRIPT_XPOS
+			SCRIPT XPOS == SCRIPT . XPOS
+	
+	TODO C LOCK_OPEN EXCL
+
+		OPEN_FLAGS += ... EXCL ... 
+
+		open( 2 )
+		fopen( table of alias ) // HEAP of ITEM // API_ITEM even AVAR
+
+	AVAR is 
+	AVAR can be
+	AVAR
+
+		VALUE = PICK with its ARGS
+		VALUE = HEAP ITEM in SESS
+		VALUE = AVAR as EA_HEAP_ITEM
+
+		allowing an AVAR to be a UDEF item in SESS somewhere
+
+			enables UDEF to PROVIDE AVAR
+
+		upgrading AVAR by editing i64 AVAR
+
+		UDEF_SPEC_PLUS
+
+			UDEF += BASE // AUTO
+			BASE += AVAR_BASE
+			PLUS += UDEF
+			SPEC += UDEF.SPEC
+
+		BYTE_A BYTE_B _i16 _i32
+
+			BYTE_A
+			BYTE_B
+			_i16
+			_i32
+
+			A_WORD_TYPE
+			B_ITEM_TYPE BA_BITFIELDS // loaded LOHI DRAH as BITFIELDS
+
+	BITS bitfield
+
+		DRAW
+	
+	DECL SPEC // Module components via API
+
+		BITFIELDS
+		BITFIELD
+
+		BYTE_FIELDS i8 i16 i32 i64 i8_B // int_MINUS
+		BYTE_FIELDS u8 u16 u32 u64 u8_B // uns or INT_PLUS
+		BYTE_FIELDS u7 u15 u31 u63 u7_B // SUBTYPE ALIAS // UNS INT_PLUS
+
+		WORD += BYTE_FIELD _from_ BITFIELD
+
+			_i4_t  _i4 = get_14_bitfield_4_0
+			_i12_t _i12 = get_i16_bitfield_16_4
+
+			Compiler uses
+
+			 i8 char
+			 i16 short
+			 i32 int
+			 i64 int64 // whatever 
+
+			 i16 to hold i12
+			 i8 to hold i4 // or NOT if that slow things down
+	
+		BYTE_FIELD from BITFIELD
+
+			COMPILER can keep CODE_POINT which brings ...
+
+			i16 i16_WORD = (i16) BITFIELDS.SIGNED_16_4
+
+				i16_WORD >> 4 // dome within i16
+				i32_from_WORD_16 // SX converts UNS to INT
+
+			ALIAS CPU_REG_alloc WORD i8_BYTE_A i16_WORD i32_WORD
+			i32_two = i32_from_i16 i16_WORD // SX IN_SITU // ZX
+			i32 >> 4
+
+	CORE PAIR
+
+		_one
+		_two
+
+		  i8_i8
+		 i16_i16
+		 i32_i32
+		 i64_i64
+		i128_i128
+
+		CPU_WORD is a register in the CPU
+		 it can have BYTE_FIELDS ...  signed independence FLIPS FLAGS
+		 it can have BIT_FIELDS ... rotate shift bit all cpus have 
+		 it can be used in OPCODE
+
+		 	A = B[ C ]
+		 	A = B+ADJ[ C ] // ADJ = offset of array in B_struct
+			// 1_2_4_8 // in above OPCODE // guess from USAGE
+
+		it can be MMX register
+		it can be R8_from_ALLOC
+		it can be PC_SP_SF_TLS
+		it can be PC_SP_SF_TLS
+
+
+
+		OPTION it can be defaults
+
+			eg A is retval
+			eg C is counter for loops
+			eg P Q are SI DI
+			eg D_A is i64 as i32_i32 // from ARITH UNIT
+			eg MMX0 + as RETVAL or ARGS
+			eg A as RETVAL and ARG1 .. ARG9
+			eg A SI DI ... as ARGS
+			eg R is PTR to (SPEC)
+
+
+
+
+	Ms Poynter
+
+
+
+

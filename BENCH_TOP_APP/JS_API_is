@@ -1,0 +1,100 @@
+JS_API_is
+	quite basic - we do REF_INCR because we would
+
+		uses C_LIBR_API
+
+			TODO move from JS_ to JS__
+			TODO LIBR wrap around ref_hold_to_T
+
+			base class ref_hold // or PTR to obj_ref0_t
+			plus class UDEF_one_t // ITEM
+			plus class UDEF_two_t // LIBR CSR STEP XPOS ACTION ARGV
+
+		I use C++ VTBL	- obj_ref_0_t has VTBL FLAGS and CODE
+
+			but I also use MMAP TREE of ITEM_TYPE
+
+			VTBL is almost C LIKE CXX ITEM_is_ARGV_STEP
+			// ARGV_STEP_holding_ITEM //
+			base class ARGV_STEP
+			base class ITEM_DECL // AUTO_DECL as STR == "STR" //
+			STR0 -or- STR_P0P2 // usually nstr
+
+			i64 EA_EXPR = i8_i8_i4_i12_i8_i8_i16
+			i64 EA_EXPR = i8_i8_i4_i12_i32 // derive others from 
+			operator i16_HG() {
+			// top 16 bits are SINGLE shift from i64
+			// on i32_i32 single_shift_of_i32_two
+
+				i64 RET_VAL = SIGNED_WORD_64();
+				RET_VAL >>= 48;
+
+			/*
+				i32 RET_VAL = SIGNED_WORD_64_HIGH_HALF();
+				RET_VAL >>= 16;
+			*/
+
+			}
+
+		gain Module_API
+
+			Everything is a Module with static list of
+
+			XPOS TEXT
+			DECL ...
+			CONST ...
+			TYPE ...
+			VAR ...
+			FUNC ...
+			Module ...
+			LIBR ...
+
+			SESS {
+				// TEXT explains itself to SCOPE SESS
+				// _GLOBAL_ACTIVE
+				// TREE uses everything is its own module
+				// LIBR const type var func API DOCS
+				// type must be OK in SCRIPT not in CXX _type
+			}
+			SESS DECL {
+				// SESS.DECL[idx] += XPOS DECL ARGV
+				// Parsed_ARGV // adds extra flags fields wrap
+				// holds up_link ARGV_t & ARGV = ARGV_STO_init;
+				// SESS.DECL += XPOS DECL Parsed_ARGV
+
+				// SESS_MERGE_MIX
+				// SESS += SESS_one // VIA FILTER
+				// SWEEP over SESS_two SESS_one XPOS ARGV VARS
+				// VARS += SESS.VAR_POOL // PROVIDER //
+				// MERGE PROVIDER has BENCH_EXPR_BPF
+				// SCRIPT 
+				//
+				// SCRIPT is presumed a list of DECL
+				// ALONG WITH ANY SCRIPT at this SCOPE 
+				// eg DECL AVAR
+				// eg DECL FUNC
+			}
+			SESS DECL Module {
+				// DECODE func name - to obey the wording LEX
+				// DECODE_SUB_LEX_IN_PHRASE //
+				// Phrase provides the DECODER // PSG finds it
+				// DECODE("SESS_DECL_Module", "_") // ANCHOR MATCH
+				// ANCHOR MATCH "_" //
+				// ANCHOR MATCH "SPELLING" // lookup_in_SCOPE //
+
+				// CT_RT // PAIR each WORD with AVAR in ARGV
+				// CT_RT // ALLOW EDIT AVAR PERMIT //
+				// CT_RT PERMIT (pick) says "DENY" (explain)
+				// CT_RT explain += report recently used fields
+				// is += "+=" // add_string is amgic invocation
+				// SESS SESS //
+				// DECL DECL_FFFF in LIBR_FF == M1 // see HEAP
+				// Module "Module_%s" // KNOW %S means IDENT
+				// DIALECT added to IDENT // as_seen_by DIALECT
+				// DIALECT FILTER uses SCOPE to use plain IDENT
+				// for always uses "i" as idx // rules ijk pqr
+				// for always uses PICK as idx // "i" ijk pqr
+				//
+				// Parse Match well known prefix
+				// Module == "IDENT" // from "Module_IDENT"
+			}

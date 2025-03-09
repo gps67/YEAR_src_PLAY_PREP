@@ -1,0 +1,30 @@
+	VFS_PROTECT		PROTECT_VFS
+	VFS_TEAM 		TEAM_VFS
+	VFS_ARCHIVE_DRIVE	
+
+		need ISO standard for A_FILE is HEAD_KEY_ONE_NBYTES
+
+			ie KEY_ONE has to be decrypted using HEAD_info
+
+				HEAD.info.key_two_over_key1.method .key_two_id
+
+			ie KEY_TWO_id is how to obtain KEY_TWO
+
+		GIT over those files, when KEYFILE is not under git
+
+			here lies madness
+
+o			but GIT zone under VFS for fast distribution of COPY_ALL
+
+		VFS for TEAM moves ADIR over the CACHE horizon
+
+			users volunteer early to drop access
+			users fetch on demand - via FILTER ONLINE
+
+			ADIR itself moves over horizon
+
+		VFS moves ADIR away from WLAN to ARCHIVE_DRIVE
+
+			#
+
+	

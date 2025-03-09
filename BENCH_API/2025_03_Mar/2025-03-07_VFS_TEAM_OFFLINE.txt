@@ -1,0 +1,10 @@
+	2025-03-07
+	2025-03-07_VFS_TEAM_OFFLINE.txt
+
+	TEAM_OFFLINE each has a VFS of CRYPTED files
+	API provides KEY per profile
+	COW on VM provides VFS un encrypted - if it can
+
+	VFS from SCRIPT
+
+
