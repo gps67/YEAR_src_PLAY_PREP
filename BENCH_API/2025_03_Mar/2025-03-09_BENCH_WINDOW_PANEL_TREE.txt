@@ -1,0 +1,135 @@
+	2025-03-09
+	2025-03-09_BENCH_WINDOW_PANEL_TREE.txt
+
+	BENCH is a TOP_APP with
+
+		APP_one
+		APP_two
+		APP_API
+
+		MENU
+		MAIN_AREA
+		Message Line
+	
+	BENCH DRUM_GIT
+
+		VFS_TREE	// from now on the real thing is called VFS
+
+		 DIR "YEAR_MM_DD_Event"
+		 DIR "YEAR_MM_DD_%s"
+		 DIR "YEAR_MM_%s"
+		 DIR "YEAR_%s"
+		 DIR "%s"
+		 DIR "DRUM_GIT"
+
+		 DIR_TREE/
+		  --root $HOME/DRUM_GIT/ -> ...
+		  %s/ # GROUP_NAME
+		   %s/ # YEAR-MM-DD_%s
+		   %s/ # song name
+
+			2025-01-15_Sunu.png
+			2025-01-15_Sunu.txt
+			2025-01-29_Sunu.png
+			2025-01-29_Sunu.txt
+			2025-01-29_Sunu_V2.png
+			2025-02-05_Sunu.png
+			2025-02-05_Sunu.txt
+			2025-03-05_sunu_notes.png
+			2025-03-05_sunu_notes.txt
+
+			make_pngs.tcl
+			../txt_2_png/%s  # SCRIPT in DIR_one
+			to_png
+
+			../txt_2_png/ # used by make_pngs
+
+		LIST_ALL_FILES_LINKS_NEARBYS
+
+			mention ../txt_2_png/%s # for LIST of %s on same disk
+
+			make_pngs.tcl # a bit like make -k ALL
+
+			Parse_Filename
+
+				YEAR-MM-DD
+				YEAR_MM_DD # OPTION to expect as origin dash
+				.ext
+				ext
+				dot_ext // ALIAS MACRO for EXPR .ext
+
+				IDENT IDENT
+				IDENT SONG_NAME
+				IDENT LOCN_NAME
+				IDENT ACTION
+				IDENT GENRE
+				IDENT ACTION
+				IDENT GENRE
+
+
+			Parse_EXT_and_MIME
+
+				.ext
+				.txt INPUT
+				.png OUTPUT # MAKE STYLE
+				.ext OTEHR
+
+			YEAR-MM-DD_%s%s
+
+				%s == .%s // SPELLING TOKENISATION ROUTE EXPR
+
+					CODE_POINT adds OMIT_EMIT DOT EXT
+
+					MATCH ...
+					MATCH .ext
+					MATCH...
+
+BENCH DRUM_GIT
+
+	parse .txt
+	edit .txt
+	edit LNR 
+
+		convert to PNG
+		upload to FB
+
+
+BENCH MEDIA_in
+
+	BATCH NOW
+
+	COLLECT from CAMERA
+	COLLECT from WHATSAPP
+	COLLECT from APP
+
+	NOTICE DATE OK_ISH
+
+	Parse_FILENAME
+	START_PROCESSING_add_to_QUEUE
+
+	BATCH or MULTI_BATCH
+
+		use DATE from media
+		use DATE from filename
+		add EDIT into DATE
+		group [T0[T2 # or SOLO
+
+	MANAGE each MINE_FILE_ITEM in VFS via TRAY in BATCH
+
+		Some files will get binned
+		Some BACKUPS require all tracked from ORIGIN
+
+BENCH DRUM_GIT
+BENCH MEDIA_in
+BENCH PVR
+BENCH RIPS
+BENCH ACCTS
+BENCH PIOMAS
+BENCH CO2
+
+
+
+Crew Nine and the hydra express "X"
+
+	all hail a taxt
+	more uber than a taxi
