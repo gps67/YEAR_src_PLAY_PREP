@@ -1,0 +1,219 @@
+
+	CTRL_C/
+	CTRL_C.txt
+
+	The control language is SCRIPT compiled into C then WASM
+	CTRL_C is direct to AMD64 or ARM64 or ARM32 
+	CTRL_C might be your LLVM or gcc_jni_api
+
+		Currently Module is manually written C++
+
+			ASIF
+
+			GEN stitches TREE into FILE
+
+		BPF will invent their own
+
+			PARSE SCRIPT
+			FILTER TREE
+			GEN Module_CXX
+			GEN Module_CXX_ARGV
+			GEN Module_ARGV_SCRIPT
+
+			RECOGNISE SCRIPT as LIBR.SPELLING _in_SCOPE _in_SESS
+	
+	CTRL_C loads Module.so
+
+		loads Module_LIBR.so
+		call elf_init_alreasy_called
+		call init_module_LIBR( SESS, LIBR, LIBR_STO )
+
+			LIBR is UDEF_struct_about_LIBR
+			LIBR_STO is nbytes and holder // poss NULL for INIT_SESS
+			SESS is caller, with LIBR already added
+
+			init_module_%s( ARGS ) { UDEF code }
+
+			CT_RT init any values that need it in SESS_LIBR_STO
+
+			Call CTOR on the SESS_LIBR_STO
+
+
+		it then calls SCRIPT
+
+			AUTO_on_LOAD connect to HUB
+			AUTO_on_LOAD prepare BATCHES of ENQ # send AFTER login
+	
+	CTRL_C runs ARGV
+
+		first load USER profile,
+		first parse ARGV
+
+		then make a plan to run ARGV with PANEL
+
+			TOP
+			PROGRESS
+			STDERR RPC
+			thread_stats MEM used
+			dgb
+			CTRL_C
+
+			FILTER RPC
+			BATCH IN -> OUT // RPC ERR
+
+			log EXIT_CODE // POPUP
+
+		You can press CTRL_C 
+
+			you can recognise USAGE and require CONFIRM
+			or even DENY based on PERMIT or make REQUEST
+			EXPLAIN adds sense and PERMIT and REQUEST but PREVIEW
+
+		CTRL_C in an UNDO_REDO world
+
+			REDO optional
+			RESUME from mid point
+			restart with CACHE already half set
+
+	CTRL_C is a binary that loads a Module _one and _two and _API
+
+		ARGV is STR0 on the way in and out # require simple filenamesoARGV is LIST_of_ TREE_STEPS // ie ARGV_STEP plus require LOCN to PROVIDE API
+		Things that TREE_API provides // PROVIDER as CODE TABLES ETC
+
+	FFMPEG would be a great trarget for CTRL_C
+
+		ARGV build for API ffmpeg // API_ARGV FD PID TASK_ID //
+	
+	FILE_ARCHIVE 
+
+		maintain a TREE of files using DATE in dir and file 
+
+			queue some files for deletion - REQUIREMENT TAGGED
+
+		VFS_TREE of potential VFS_EXPR
+
+			${AVAR} # KNOW AVAR used as NAME_STEP in FILE_NAME
+
+		snapshot # TIMESTAMP # of timestamp from DCIM
+
+		VFS_ITEM
+
+		VFS_DIR
+		VFS_FILE # FILE_INFO _META #
+		VFS_SPECIAL { includes all following } # SARCASM went near
+		VFS_FD #_FD_SPECIAL # eg STDIN STDOUT STDERR # TTY TTY RPC 
+		VFS_FIFO # named PIPE
+		VFS_CDEV # named device driver vfs_device idx_major idx_minor
+		VFS_BDEV # named device driver vfs_device idx_major idx_minor
+	
+	CTRL_C is a bit absent ATM, refine these
+
+		RTFM
+		locale
+		signal handlers
+		debug connectors
+		desktop connectors
+		setup_LIBR CT_RT PRE_LOAD on_LOAD # future SESS #
+		setup_fork_exec_threads
+
+		setup SESS
+		connect to LIBR as SESS
+		connect to LIBR as LOCAL
+		connect to LIBR on REMOTE
+	
+	// PENDING MAGIC MANAGED CODE IN A BOX // JVM WASM etc
+
+		compile LIBR
+		pre_compile SCRIPT into CACHE
+
+			CACHE is BENCH over all ITEMS used in SCRIPT
+			CACHE is MACRO or two
+			CACHE is AVAR in STO
+			CACHE is on_EVENT signal MINI_MACHINE FSM VAR_POOL atc
+			CACHE is Module on every ITEM !!
+
+		COMPILE C_SCRIPT
+
+			FILTER from LOCAL_to_REMOTE
+			PARSE CXX
+			BUILD CXX_TREE
+			GEN C_SCRIPT // using specific list of words // ARGV
+			GEN_ARGV_THREAD // using "VAR_NAME" as "EA_ITEM"
+			PARSE_ARGV += FINE_DETAIL EA _of_DATA _GETTER _VAR_NAME
+
+		_VAR_NAME is reserved for UDEF SCRIPT
+
+			supposed to be the nearest to VAR_NAME
+			systematic GEN_C_IDENT _%s // or ALIAS %s // %s //
+
+		EXPR
+			CODE_POINT += "{ ALIAS %s }" // like a script line
+			CODE_POINT += "{ %s }" // WELL_KNOWN OPT NO_SP SP1 BRACED
+			OPTION "Q2" on "%s" is '"Q2"' // '"%s"' //
+			// REQUIRE FILTER %s from LHS to RHS
+			// REQUIRE FILTER %s into LHS from RHS // DIALECT OPT
+
+
+	The control language is C or CXX or LLVM
+
+		GEN C
+		GEN C_PLUS_PLUS // almost no stdlib
+		GEN CXX
+		GEN LLVM
+		GEN ARGV SCRIPT // DIALECT avoids "_" being needed // but there
+		GEN_ARGV_SCRIPT // DIALECT AUTO "_" SUB_LEX to SP1 // IDENT_two
+		// ie ITEM to ARGV
+		// ie ARGV from SUBLEX_of_compound_VAR_NAME 
+
+	
+	CACHE detects
+
+		VAR_NAME is VAR NAME
+		VAR_NAME is VAR.NAME
+
+			VAR = VAR_from_VAR_POOL( POOL_NAME, VAR_NAME )
+			VAR = VAR_from_VAR_POOL( POOL, VAR ) // POOL["VAR"]
+			// POOL = POOL_POOL_LOOKUP( pool ) //
+			// VAR = POOL.LOOKUP( name ) //
+			// CT_RT TOKENISE token { return token } // OMIT_EMIT
+
+		VAR_NAME only ever found in POOL LIST _one _two
+
+			AUTO_VAR _one _two // costs a PTR
+
+		AVAR is a REF_HOLDER
+
+			make this an ATTR of AVAR
+			make this the usual ref_hold(to_TYPE)
+			also fast_exit_flag # do not request on_REF_ZERO
+			 instead on_REF_ZERO
+			 instead on_REF_ZERO_do_least
+
+			move list to release later
+			eg GUI widgets will AUTO SHUT on EXIT
+			eg GUI widgets were AUTO SHUT calling on_EXIT
+
+				APP must register an FAST_EXIT_ROUTE
+
+				it requests a sync flush sync flush sync close
+
+				basically we queue a send packet
+				basically we exit before any reply
+				usually we do get a reply, confirming close
+
+				if FD-2-way has actually closed
+				can still send list of ENQ
+				the reply goes to QUEUE
+
+					eg list of SCRIPT_LINE
+					SCRIPT LINE set_VAR_FIELD_VALUE
+					eg TOKENISED
+					eg COMPILE MODULE into LIBR
+
+
+
+
+
+		
+
+
