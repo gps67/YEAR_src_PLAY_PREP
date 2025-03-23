@@ -1,0 +1,66 @@
+	BENCH_MAKE_TREE/
+	BENCH_MAKE_TREE.txt
+
+	EG // explain absent FUNC bench_top_app::bench_top_app
+	read in libs_apps_Makefile and SUBSYSTEM and INFO
+
+../run/
+	
+
+_one.cxx:24:
+undefined reference to 
+bench_top_app::bench_top_app(APPS::TOPAPP_Holder_gtk*, char const*)'
+
+/usr/bin/ld: bench_one.o: in function
+`APPS::TOPAPP_Holder_gtk::~TOPAPP_Holder_gtk()' 
+
+../MK/
+
+	grep grep TOPAPP_Holder_gtk *
+	grep OBJS_base2_gtk *
+
+
+VAR_OBJS_base2_gtk:     OBJS_base2_gtk += TOPAPP_Holder_gtk.o
+
+../MK/VAR_OBJS_base2_gtk
+
+	OBJS_base2_gtk += TOPAPP_Task_gtk.o
+
+../MK/Makefile
+
+	makes += $M/VAR_OBJS_base2_gtk
+	:OBJS_lib23 += $(OBJS_base2_gtk)
+
+ps@E6320:~/YEAR/src/PLAY/libs_apps/MK$ grep OBJS_lib23 *
+
+	grep: _FROM_ELSEWHERE_: Is a directory
+
+	grep: Makefile_X_LGX: No such file or directory
+	grep: _MK_UNIX_: Is a directory
+	grep: _MK_WIN32: Is a directory
+	grep: pkgconfig: Is a directory
+
+	Makefile:       OBJS_lib23 += $(OBJS_base2_gtk)
+	Make_Targets2:$(LAR23): $(OBJS_lib23)
+	Make_Targets2:$(DLL23): $(OBJS_lib23)
+	Make_Targets2:  $(LINK_SO_FROM) $(OBJS_lib23) $(LINKLIB23) $(LINK_SO_TAIL) # BASE2_gtk
+	Make_Targets2:  $(RM_rf)  $(OBJS_lib23)
+
+-------------
+
+
+	OK the point of the BENCH is to track VALUE through AVAR into LIST
+
+	STEP has a DIAG and some annotations
+	or input data
+	or VIEW_LIBR
+
+		A_B permits us (on B side)
+		to declare B as a named component A.B
+
+		_A_B permits a name space UDEF around CORE
+
+	EACH STEP has a DIAG
+	STEP LIST is move items within DIAG
+
+

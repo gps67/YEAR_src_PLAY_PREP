@@ -1,0 +1,7 @@
+PTN=FAIL
+PTN=EVENT
+PTN=PASS
+SRCH=+/$PTN
+SRCH=
+
+./M "$@" 2>&1 | less $SRCH
