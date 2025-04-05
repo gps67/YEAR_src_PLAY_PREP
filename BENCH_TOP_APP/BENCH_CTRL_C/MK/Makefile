@@ -25,6 +25,8 @@
 
 	PKGS += libs_apps_base1
 	PKGS += libs_apps_base2
+	PKGS += libs_apps_base2_gtk
+	PKGS += libs_apps_bench
 
 #	HDRS += $S/A_point_plus.h
 #	HDRS += $S/X_Colours.h
@@ -58,6 +60,8 @@
 	EXEC1=$(PROG1)$(dot_EXE)
 	EXEC2=$(PROG2)$(dot_EXE)
 
+	ARGV_GDB = INGDB=1 T gdb -tui --cd $(PWD)
+
 all: run_test1
 
 ifeq (0,1)
@@ -82,6 +86,10 @@ run_test1: $(EXEC1)
 
 run_test2: $(EXEC2)
 	./$(EXEC2) # "GEN_DOC GEN_PS GEN_SVG"
+
+dgb: $(EXEC1)
+	# TODO # Tcl errout when INGDB # the universal main() #
+	$(ARGV_GDB) ./$(EXEC1)
 
 ifeq (1,0)
 # we no-longer link it - the MK_SUFFIXES .o.exec does

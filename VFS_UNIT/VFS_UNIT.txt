@@ -1,0 +1,534 @@
+
+	VFS_UNIT/
+	VFS_UNIT.txt
+
+	VFS is ephemeral cache
+	VFS is original STO // STO holds SUBSET of cache too // snapshot 
+	SEC requires ALLOC_always_NUL_filled_then_ADJUST // INIT_VAL //
+	INIT_VAL AVAR AVAL
+	INIT_VAL_EXPR AVAR EXPR cached AVAR_AVAL AVAL = UNSET // with added NUL
+	CT_RT can KNOW stuff, and be reprogrammed to RECALC more often
+	EDGE flushes all OUTBOUND ENQ buffers because of the BATCH LIMIT EDGE
+	SYNC INIT_ZERO INIT_AVAL PRE_SAVE PRE_LOAD EDGE BATCH EDGE_P0P2_SEGMENT as LIST
+	LIST like ARGV in a HEAP or _two or_MORE 
+	ITEM like ARGV in a HEAP or _two or_MORE ALLOC ITEM_idx += _.
+	// ALLOW use of "_" as AVAR_NAME //
+	// OPTION: IT MEANS: PAIR.LHS
+	// OPTION: IT MEANS: PAIR.RHS
+	// OPTION: XPOS_near_code_point // FSM is a landscape AUTO_DRAW //
+	// AUTO_DRAW // DECODE_LIBR MATCH_DIALECT LHS = TREE {;} RHS = TREE //
+	// {;} is TOKEN AUTO_TOKEN is SEP between PSG_PHRASES is_PUNCT is_EOLN
+	// as_if_EOLN += "{;}" // is_SEP // leaves NULL marker as EOLN //
+	// ARGV_from_TEXT // uses_TREE_FOLD BRANCH TWIG LOCN ITEM PART EXPR
+	// ARGV_from_TEXT // 
+	// uses_
+
+	VFS_UNIT
+	 TREE_FOLD
+	  ARENA
+
+	  	ARENA is a HEAP or two and a LIBR of reachable items
+
+			OPTION smudge bounds to one massive SEGMENT
+			OPTION create lots of MINI_HEAPS i8_idx i16_offs
+
+
+	VFS_UNIT
+	 TREE_FOLD
+	  ZONE
+
+	  	ZONE is the container for STO // MUX in multiple ZONES
+		ZONE_HERE is a CSR in a sharable ARENA of ZONES of ARENAS
+		MINI_MACHINE loads CSR = ZONE_LOCN_is_a_ZONE
+
+		HEAP = IDX + OFFS INDEX and STO_nbytes
+		P0P2 = P0 + P2 ; P2 = P0 + n_byes ; nbytes = P2 - P0
+
+	VFS_UNIT
+	 COMPONENT
+	  HEAP	// comes with STO amd IDX
+
+	VFS_UNIT
+	 COMPONENT
+	  HEAP	// HEAP is AVAR in HEAP that OPCODE says
+	  ITEM	// ITEM is idx_grow _SIGNED
+
+	VFS_UNIT
+	 COMPONENT
+	  CODE_POINT += XPOS and EXPR(XPOS) PSG_XPOS_in_TREE
+	  DIR
+	  FILE
+	  HEAP	// HEAP is AVAR in HEAP that OPCODE says
+	  ITEM	// ITEM is idx_grow _SIGNED
+	
+	VFS_STREAM_of_DIR_ITEM_INFO_XPOS
+
+		XPOS is CODE_POINT in ROM_one
+		XPOS is CODE_POINT in ROM_two
+		BOTH += PAIR XPOS_one XPOS_two // AUTO_ALIAS TEMPLATE PATTERN
+		BOTH += PAIR LHS RHS // _one _two // ALIAS %s_one %s_two // XPOS
+		// LHS and RHS are provided by PAIR // HERE near LINK BOTH LHS RHS
+		// MATCH prolog phrase // PSG MATCH = FOUND = Parse_Phrase 
+		// PSG Parse_Phrase // ALIAS %s // OPTION ASIF ORIGINAL_ALIAS
+		// CODE_POINT is a CSR in the Parser in the TREE in the TEXT
+		// CSR in TEXT get_FILE_name() get_file_DATA() // MIME_LOAD_SCRIPT
+		// CSR get_FILE_OFFS() // RELY on COMPLETE MMAP of ROM available
+		// MMAP needs a VFS // something like tar_header_MIME_header
+		// MMAP uses cpio as VFS load from stream // BATCH starts after EOF
+		// send entire BATCH request SERIES of CALL_BACKS
+		// immediate reply requested as am_WAIT // need_notify // LINK
+		// immediate replay is locally cached in debugging BENCH LOADER
+		// this BATCH plays out locally until DONE
+		// until DONE
+		// until QUOTA_one tick_tock_times_up 
+		// I always let it complete its BATCH 
+		// I always let it early send PRIMER_MATERIAL // load LIBR
+
+
+		XPOS += ALIAS LHS %s_one 
+		XPOS += ALIAS RHS %s_two 
+		XPOS -is- { FILE_OFFS FILE_LINE_CPOS FILE_LINE_BPOS }
+		XPOS -is- idx_ZONE idx_HEAP idx_ITEM offs_OFFS
+		FILE -is- idx_ZONE idx_HEAP idx_ITEM nbytes inode_sample DATA
+		DATA -is- nbytes P0P2 // entire FILE // P0 is OFFS in SEGMENT
+		BASE = SEGMENT_BASE // VIRTUAL_MEMORY_ZERO_PLUS //
+		P0P2 = BASE .nbytes // BASE is WRT MMAP SEGMENT
+		MMAP = mmap in ELF segment as relocatable mergable Module
+		HEAP = loaded_HEAP_ITEM_CACHE // lock_and_load // BIND // LINK //
+		HEAP += PAGE_POOL ALLOC
+		SYNC += OPTION: MUST RELOAD ZERO_BASE_PTR
+		BASE == SEGMENT_BASE from elf_FILE_NAME and elf_SEGMENT_NAME
+		NAME += My_LIBR 
+		NAME = SEGMENT_TYPE_and_NAME
+		NAME = HEAP_one in SEGMENT_one // LEXICON AUTO_NAME _one _two
+		NAME = HEAP_two in SEGMENT_two // SCRIPTS live in footprint
+
+		SIMPLER ALTERNATIVE to ELF
+		SEGMENT is an entire FILE MMAP in and occasionally relocate
+		RELOCATE uses a single PTR /* and CACHE REPEATS */ BASE_ZERO
+		SEGMENT_BASE = P0P2 // already loaded or in ROM
+
+		AVAILABLE ALTERNATIVE is ELF
+		SEGMENT is an entire FILE MMAP in and occasionally relocate
+		SEGMENT is a SEGMENT MMAP in and occasionally relocate
+
+		RELOCATE uses a single PTR /* and CACHE REPEATS */ BASE_ZERO
+		RELOCATE uses a between BATCH_STEPS lock out RELOCATE
+		STREAM from ALLOC grows MMAP_FILE upto LIMIT
+		RELOCATE LIMIT so no need to relocate ALLOC SEGMENT BASE
+		RELOCATE LIMIT HIT so need to relocate ALLOC SEGMENT BASE
+
+			BASE is in CPU_REGISTER GPR_base_PTR_to_SEGMENT
+
+				we use this PTR like crazy
+				we wait for IDLE here then REQUEST RELOCATE
+
+				it updates the CPU_REGISTER[idx_CPU_REGISTER_base] = SEGMENT_base
+				TEMPLATE += set_CPU_VAL idx_REG_EXPR BASE_PTR
+
+				USAGE EA_one = EA_ZERO + EA_OFFS_from_EXPR
+				USAGE EA _one = BASE + OFFS // from EXPR
+				USAGE EA _one = BASE + EXPR // CODE_POINT
+
+			ZONE is any CPU_REGISTER also a PTR to P0P2 or P0
+
+				All of this module is in this ZONE_two
+				zone_one = BASE + OFFS
+				zone_two = BASE_two + OFFS_two
+
+				The variable that holds the MEMORY or REGISTER
+				can register itself in the list to get updated
+				turns out there are only 4 copies of this var
+				turns out there are only 2 copies of this var
+				in STO_alloc_WORD and in CPU_WORD
+				compiler simply adds all events in time seq
+				OBTAIN_STACK_COPY is a ref_USED action
+				 PTR_item = STACK_ALLOC_nbytes_aligned_8
+				 PTR_item = STACK_ALLOC_8bytes_aligned_8
+				 ITEM_t = OBJ_t * ITEM = EXPR //
+				 // EXPR = TREE
+				 // EXPR = LOCN
+				 // EXPR = ITEM
+				 // OPCODE COPY || MOVE || JOIN || EVAL || LIST
+				 // LIST EDIT STEP // TREE_as_ARGV_STEP //
+
+			HEAP is 100 items
+			HEAP is 100 joins and links and expr
+			HEAP LIMIT AUTO_GROW u7 u15 u31 u47 u63 i64
+			HEAP LIMIT MINUS AUTO_GROW i4 i8 i12 i16 i24 i32 i48 i64
+			BITFIELD i4 exists in PACKED BITFIELD not at zero etc
+			BITFIELD i8 exists in PACKED BYTE_FIELD BYTE_B - copy as
+			i32_one = BYTE_B from i32_WORD_one
+			i32_two = BITFIELD_32_08_i24 // fixed lists of 
+			// BITFIELD_B2_B0_name // LEXICON += instance
+			
+			ZONE being RELOCATED
+
+				align with STEP_EDGE NO_STEP_ACTIVE
+
+				list all MEMORY where COPY_was_KEPT
+				// EA is BASE + OFFS EXPR to eval after relocate
+				// EA_BASE is zone_two_EA_BASE_ZERO
+				// EA_BASE is zone_two_EA_BASE_one
+				// EA_BASE is zone_two_EA_BASE_two
+
+				list all CPU_REG (use cloakroom raffle tickets)
+				SCOPE_0 // whilst CPU_REG is avail and set
+				ARG_BASE_ZERO // COPY whilst func in action
+				VAR_BASE_EDGE_LIMIT // P2 or NN // API promises PROVIDE
+
+				set each AVAR to new updated VALUE
+
+				job done UNLOCK END_TASK
+
+				the COPIES on the stack are updated
+				the compiler detects write to MEM_VAR
+				the GEN_CT_RT sets a CPU_REG and updates it
+				the STEP_mini_machine notices DTOR of SESS_DATA
+				SESS_STEP_WORK_DATA all threads idle, CALL UPDATE
+				write NULL over CPU register
+				write VALUE onto CPU register
+
+
+
+				implied by BATCH_OVER 
+				the COPIES on the stack are gone
+				this might be IMPLIED by use of BATCH
+
+	TOKEN
+	 PUNCT
+	  +||-
+
+	  	+ or_else -
+
+			OPENS_the_DOOR for opposites and AUTO_PICK
+
+			OPPOSITES + - // the whole concepts of opposites vars
+
+			OPPOSITES VALUE and NAME PICK domaon 
+
+		L_M_z_N_R
+
+			CT_RT knows when L==M
+			CT_RT knows when N==R
+
+			L_z_R // L is actually MINUS 
+			L_z_R // R is actually PLUS
+
+			M_z_N // M is actually MINUS 
+			M_z_N // N is actually PLUS
+
+			CT_RT knows when M == 0
+
+				array[ N ] of UNIT_BYTES // eg EIGHT_BYTES
+
+ARGUMENT AGAINST "_t"
+
+	It looks naff
+	PLURAL means GENRE
+
+	AUTO_NAME IDENT1 _IDENT1 = EXPR
+
+		_underline means AVAR of AUTO_NAME
+		OPTION RENAME %s_AVR or UDEF %s
+		encourages pick some better LABELS for DIALECT LEXICON ALIAS_POOL
+	
+		ITEMS item = VAR_POOL .lookup AKEY // STICKY PUNCT via VIEW
+
+		PARSE rolls over . and lookup finds .lookup
+		TOKENISE picks STICKY_PUNCT as ALIAS MACRO
+		CODE_POINT keeps both but uses shorted multi-step
+		CODE_POINT knows to run FUNC = FUNC_lookup = GET_ON_DEMAND
+	
+	GET_ON_DEMAND
+
+		CT_RT hopes that it will OMIT itself when uncalled
+		CT_RT hopes that it will EMIT FASTEST_STEP when called
+		CT_RT hopes that it will DONE FASTEST_STEP when called
+
+		CT_RT has a second lever which must EMIT but might not be called
+		CT_RT GEN creates a CACHED_AVAL or AVAR // same with flags
+		_RT - might never be called leave CACHE in its ALLOC_EMPTY state
+		_RT i64_STEP runs STEP
+			i64_DECODE
+			i64_DECODE_and_EVAL
+			i64_DECODE_and_EXEC // same as EXEC
+
+	SAFE MODE CODE
+
+		we are providing a bunch of safe AXIOMS AVAR FUNC LIBR 
+		we compile dowm to those i64_MACROS with ARGS in SCOPE in SESS
+		in_SESS is what CT_RT attaches things to, future step actions
+
+		MINI_MACHINE is built from safe AXIOMS // QUOTA // CHECKS //
+
+			allow a few code errors
+			detect stack smashing - even own
+			switch on check every angle for trickery
+			switch of decode simply as NULL as ...
+
+		LIBR has compiled SCRIPT into TREE of STEPS
+		LIBR has compiled SCRIPT into ASM_STEPS // or RT does //
+
+			PRE_LOAD += PRE_TEST
+
+				run some sample data and scripts
+				drop the cached data keeping all XPOS in ROM
+				keep TOKEN and SPELLING || HIDDEN_SPELLING
+
+				REMOTE can be HIDDEN and we use AVAR_NAME
+
+			PRE_LOAD += TEMPLATE USAGE i8_i8_OPCODE i16_ARG i32_EXPR
+
+			EXPR_i4_i12_HEAP_ITEM // loaded from _LOHI i4_HIGH
+			EXPR_i24_i8_ITEM_HEAP // from_LOHI i8_LOW
+
+				R0 = ALLOC _REGISTER _GPR
+				A = ALLOC _REGISTER _GPR
+
+					we also use registeres called A B C D
+					we also use BYTES labelled A B C D
+					do not conflate the two 
+
+				A = CPU_WORD.BYTE_A
+
+				b = ALLOC _REGISTER _GPR
+				A = CPU_WORD.BYTE_B
+
+					SCRIPT PARSER bridges the = SIGN
+					and rewrites a GETTER_IR with OPTIONS
+					PROLOG search AVAILABLE MACRO STEPS
+					FIND any shortcuts guess costs etc
+
+					WELL_KNWON_BYTE_B_SHIMS
+
+						treat as BITFIELD_16_8_SIGNED
+
+					COMPILER is also allocating REGS
+
+						options for B = EXPR R3
+
+						PROLOG MATCH ARRAY[idx]
+						in form GET_BYTE of TEXT
+						in form GET_BITFIELD of BYTE
+						in form GET_BITFIELD of PAIR
+						in form GET_BITFIELD of FOURT
+						in form GET_BITFIELD of EIGHT
+						in form GET_BITFIELD of SIMD_512
+						in form GET_BITFIELD of SIMD_256
+						in form GET_BITFIELD of SIMD_128
+
+					OPTION LIBR
+
+						LOAD SIMD_512[10] from EA_MEM
+						SPEC SIMD_512[10] as GETTERS
+
+						GET FIELD from SIMD
+						PREP_SIMD_from_STEPS
+						SET FIELD into SIMD
+						SET SIMDD into SIMD
+
+					MINI_MACHINE
+
+						SCRIPT uses AVAR
+						AVAR is within MEM in SIMD[10]
+						SIMD is not SIMD just BITFIELDS
+
+						T(GET) = 4 cycles // nn bytes
+						S2 = s1
+						S2 <<
+						S2 >>
+						R2 = S2 .low_nn_bits signed
+
+						JSR RET = 6 cycles // 
+
+					THREAD REGISTER SET 
+
+						GPR	A B C D  // P Q // 
+						GPRX	8 9 10 11 12 13 14 15
+						GPRX	16 .. 31
+						CPU	flags SP IP
+						SIMD	full set per thread Y
+						GPU	only per GPU thread 
+
+						STACK
+
+
+					SIMD_WORDS
+
+						MULTIPLE AVAR as SIMD as SIMD
+
+
+
+						
+
+
+				i32_CPU_WORD = CPU_WORD_two
+					i32_CPU_WORD = CPU_WORD ASR 32
+					int
+				B = CPU_WORD_ >> 8
+
+CACHE
+	REMOTE can be HIDDEN and we use AVAR_NAME
+
+VFS_UNIT
+
+	TEMPLATE of ADIR
+
+		OPTION ADIR += ADIR_this_layer
+		OPTION ADIR += ADIR_that_layer
+
+		TEMPLATE += SUBDIR
+		TEMPLATE += SUBDIR/SUBDIR
+		TEMPLATE += SUBDIR/FILE
+		TEMPLATE += FILE
+
+
+
+
+
+	VFS_UNIT
+	 TREE_FOLD
+	  ARENA
+
+	  	OPTION import ROM VALUES
+	  	OPTION import STO VAR_VAL_in_SEGMENT
+		OPTION import STO_LIBR_and_PSG_LOAD_INFO
+
+		API connects to XML
+		API connects to SQL
+		API connects to ARGV
+		API connects to SESS
+		API connects to HEAP
+		API connects to ITEM
+
+		ITEM	is_ARENA is_available from
+
+	DECODE_i64 i32_i32
+
+		ZONE
+		HEAP
+		ITEM	is_ARENA is_available from DECODE_i64
+
+	i64 is a STEP with the STEP encoded within the i64
+	i64 is a STEP with the STEP SCRIPTED by XPOS from i64
+
+		BINARY STEP 
+		SOURCE STEP
+
+			BITFIELD_i24_i8_i16_i8_i8 
+
+				we are drawing the bytes where they are BITS
+				BITS draw left from zero
+				BITS draw right from zero
+		LOHI_ASM
+
+		STRUCT i32_i32 {
+			i32 i32_lo	// LOHI all the way
+			i32_i32_hi	// LOHI all the way
+		};
+		// LOHI all the way but it is BYTE_A in all CPU first 
+		// sort of HI LO style // DECODE i8_i8 
+		// sort of HI LO style // DECODE i16_i8_i8 BITFIELD_BYTE_B
+		// BITFIELD_BYTE_A
+		// BITFIELD_BYTE_B
+		// BITFIELD_PAIR_BA
+		// BITFIELD_FOUR_DCBA
+		// BITFIELD_FOUR_DCBA_HGFE
+		// BITFIELD_EIGHT_DCBA_HGFE # WORD_WORD LOHI_HIGH
+		// BITFIELD_EIGHT_HGFE_DCBA # i64_WORD # from_LOHI_MEM
+		// BITFIELD_64_48 // i16 // HIGH_HALF_BITFIELD // SHIFT_TWICE
+		// BITFIELD_64_40 // i24
+		// BITFIELD_64_32 // i32
+
+		// BITFIELD_32_00 // i32
+		// BITFIELD_32_08 // i24
+		// BITFIELD_32_16 // i16
+		// BITFIELD_32_24 // i8_at_TOP_of_CPU_HALF_WORD
+		// BITFIELD_24_16 // i8
+		// BITFIELD_16_00 // i16 // HALF_HALF_BITFIELD
+		// BITFIELD_16_08 // i8 BYTE_B // of HALF_HALF
+		// BITFIELD_08_00 // i8 BYTE_A // of HALF_HALF
+		// BITFIELD_BYTE_B
+		LOHI_ASM
+		 i32_one:
+			 i32	// label = varname = "_one"
+		 i32_two:
+			 i32	// label = varname = "_two"
+
+		 i32_one: // ALIAS run over same BYTES // ALIAS BYTES REPEAT
+		 i16_one::	// also the type of the LABEL local to SCOPE
+		 	i16
+		 
+		 i8_BYTE_A:	// also the type of the LABEL local to SCOPE
+		 	i8
+		 i8_BYTE_B:
+		 i32_two: i32	// label = varname = "_two"
+
+			i8 usually the i8_HEAP of i24_ITEM
+			BYTE_B is obviously an old x86 friend builtin
+			BYTE_A is in almost all CPU_32 and CPU_64
+
+			CPU_i16 would also be a quick with this
+			BITFIELD_i16_i16_i16_i16 _from_LOHI_MEM
+
+				
+
+
+
+	 
+
+
+	TREE_FOLD
+		BRANCH # LIST of SUBDIRS // and HERE = LOCN
+		TWIG # LIST of ITEMS and STEPS and LIBR_CODE # OWN_SCRIPTS
+		LOCN # ADIR # LOCN_is_ADIR # 
+		ITEM # ITEM # LEAF is an ITEM #
+		PART # see also "+||-" # SHADOW_two if/of PRIMARY_one
+		EXPR # XT_RT has condensed it down to as SPECIFIC EXPR_idx
+		LEAF = HEAP_ITEM_EA( HEAP, ITEM ); # AUTO_DETECT MATCH DIALECT
+		// RET_VAL = EA // EA = EXPR "CALL_FUNC( FUNC, HEAP, ITEM )"
+		// FUNC = CT_KNOWS FUNC with INFO += FUNC_INFO 
+
+			BENCH shows reader the C_SYNTAX of 
+
+		// RET_VAL = EA  = EXPR  = CALL_FUNC( FUNC, HEAP, ITEM )
+		// PSG has tolerable pretty_printer // OPTIONAL ANNOTATIONS
+		VIEW
+
+	
+	DESKTOP windows to slide and layout // with reduced redraw flicker
+
+		Just now I hit CTRL_N and got a new browser window
+		I struggled to find the corner to resize FXX does that ?
+
+	RPC has no desktop - LAYERS and ARENAS
+
+		LOCAL CACHE REMOTE CODE_POINT 
+
+			ARENA_ITEM_LEAF is ZONE_HEAP_ITEM
+
+				ZONE_HEAP [ ITEM ] // ITEM = IDX //
+				ZONE_HEAP . ITEM  // ITEM = OBJ //
+				ZONE_HEAP [ ITEM_is_EXPR ] // ZONE_HEAP_ITEM _PLUS
+
+			PLUS can be SUB_ITEM
+			PLUS can be ANON or PEER 
+
+		TUPLO
+			" LOCAL CACHE REMOTE CODE_POINT "
+			"_LOCAL_CACHE_REMOTE_CODE_POINT_"
+			 _LOCAL_CACHE_REMOTE_CODE_POINT_
+
+			 The list of fields
+			 The ident_LIST _IDENT
+
+
+		TUPLO
+		"
+			LOCAL
+			CACHE
+			REMOTE
+			CODE_POINT 
+			...		// AUTO ... // DIALECT adds ... //
+		"

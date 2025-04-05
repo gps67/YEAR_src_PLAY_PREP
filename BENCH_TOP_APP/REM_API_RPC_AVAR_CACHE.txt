@@ -1,0 +1,123 @@
+REM_API_RPC_AVAR_CACHE.txt
+
+	RPC
+	REM
+	API
+	AVAR
+	CACHE
+
+	Each NODE in SCOPE has a profile of what it allows remote to do
+
+	SAFE MODE does not allow remote to do much
+	SAFE MODE attempts to use SAFE_AVAR_CACHE_QUOTA nbytes 
+
+CLASS TREE
+
+	C++ is providing a BEHAVIOUR 
+
+		VAR_POOL_one += "AVAR"
+
+		AVAR == "AVAR" // MENTION means AVAR always existed
+		AVAR OPTION always existed
+		AVAR OPTION CTOR_HERE or INIT_NULL_MALLOC or AVAR_CREATE
+		AVAR OPTION future existing
+		AVAR OPTION future lifecycle -esp- CTOR and WHEN in SCOPE
+		VAR_POOL_one += AVAR
+	
+	SCOPE
+
+		MINI_MACHINE mimics CPU_STEPS from LANG_DIALECT and SCOPE
+		MINI_MACHINE mimics CTOR ALLOC
+		MINI_MACHINE mimics CTOR SCOPE_use_of_VARNAME 
+
+			OPTION VAR_NAME // preferred multi_part_word JOIN "_"
+			OPTION VARNAME // DIALECT sees this as ALIAS with SUBTLE
+			SUBTLE eg an added OVER_TONE
+			EG an added quality 
+			EG a continuing existing
+			EG a CTOR existing START_POINT END_POINT DTOR
+
+		Module looks like a freepascal module or OBERON_based
+
+			CONST
+			TYPE
+			VAR
+			FUNC
+
+		Module behaves like a C or ASM or SCRIPT 
+
+			nested namespaces
+			C_PFX_ABBR_for_LIBR_ABBR
+
+			VIEW can offer SCRIPT SYNTAX nested_code_view
+
+	ES6 
+
+		load ACCTS_DSET_CSV
+
+		 SUBLEX ACCTS Module used in SUITE of APPLETS around ACCTS
+		 SUBLEX ACCTS DSET
+		 SUBLEX ACCTS DSET CSV
+
+		We WANT SCRIPT to look like ES6
+
+		 CLOSURE but GEN a named C_function
+		 CLOSURE but GEN a named ASM_V_function
+
+	QEMU RISC_V_32
+
+		Generic C i32 with typical CPU FLAGS USAGE
+
+		WE make our C look like ASM
+		A few twisted PROTOTYPE_for_ARGV and Q2 layers
+		opcode_i32_ARITH
+		opcode_i32_SHIFTS_CONVERTS_MOVES_PACKING
+		opcode_BITFIELDS_i64 but on i32 no crossing line half edge
+		// ie BITFIELD must be contained in either HALF
+		// i48 particularly PTR_in_i48 // actually i47 // OPTION u48
+		// u48 on CPU_64 does unsigned shift right 16 FILL_ZERO
+		// i48 on CPU_64 does   signed shift right 16 FILL SIGN 
+		// OPTION switch to other for entire OS // on this PC 
+		// OPTION switch to other for SESS // resume via new CTOR
+		// OPTION RESUME via CTOR_INIT_ZERO then CTOR_after_INIT_DONE
+		// OPTION SCOPE ERA of BATCH folds down to a single STEP instant
+		// entire PROGRAM BATCH ran in 1 pico-second
+		// enable resolve when second BATCH elsewhere ran overlapping t
+		// resolve by parallel of (PRIMARY CORE) (EXTRA STEPS_in_BATCH)
+		// resolve by PRIMARY CORE then UDEF overlay
+		// OPTION OVERLAY UDEF_DATA over VFS_HEAP_TREE
+
+	MMAP of ROM
+
+		RISC_V device does not have RAM but does have API to MMAP ROM
+		RISC_V task switch and data switches CACHE PICKS MMAP pages
+		RISC_V task runs ROM_CODE loaded as ELF files with TRACKS
+		RISC_V task loads MEM_BANK_SEVEN which is this TASKS SESS_ROM
+	
+	NO MMAP of ROM
+
+		a device without an MMAP is an LED fader
+		we have to load all the module in - QUOTA for Module - STO RAM
+		we have to load all the session in - QUOTA for SESSION - STO
+		we have to load all the files in - QUOTA for BATCH - STO
+		we guess a FILTER will ask for V1 x 8 - V1 = filesize bytes CSV
+	
+	TEXT FILTER
+
+		a list of Q + A
+
+			EG STATEMENT SAID ... TEXT_FFFF
+			EG annotations SAYS uses XPOS and PSG guesswork
+
+		Build a TREE of ARGS on all sides
+
+			NLP finds a few NOUNS and VERBS and KNOWS
+			Designer is limited to ASCII_IDENT soon UTF8_a1_a2
+
+		Build a LEXICON used in TOPIC
+
+			BENCH will show all resonants
+			BENCH will show as in VIEW
+
+
+

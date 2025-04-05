@@ -8,7 +8,7 @@
 #include "TOPAPP_Holder_gtk.h"
 #include <locale.h>
 
-// using namespace APPS;
+using namespace APPS;
 
 //! tv_rem
 int main(int argc, char ** argv )

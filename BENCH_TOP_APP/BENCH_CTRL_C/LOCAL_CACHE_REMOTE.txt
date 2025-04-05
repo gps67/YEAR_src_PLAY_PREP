@@ -1,0 +1,93 @@
+LOCAL_CACHE_REMOTE.txt
+
+	API PROVIDE {
+		guarantee that REMOTE OBJECT is predicatable via CACHE
+	}
+	API PROVIDE {
+		LOCAL AVAR is CACHE for REMOTE in_predicted_state( FSM_POS )
+		REMOTE AVAR changed OLD_VAL NEW_VAL 
+		CT_RT plants these TUPLES for GUESS_to_FIND_ASIF ALIAS ACTION
+
+			CACHE provides a predictable MINI_MACHINE
+
+				simulates AVAR = get_new_val AVAR
+				VAL_OLD
+				VAL_NEW
+
+				TOKENISED placeholders for EXPR.resolved
+				UNARY EXPR or a MAIN FOCUS with extra side args
+
+		guarantee that REMOTE OBJECT is predicatable via CACHE
+
+			bunch of AXIOMS and PHRASES using LOCK STEP and AVAR
+
+		AVAR is registed in a graph
+
+			when this ITEM changes
+			tell LIST to recompute over this step
+
+				invalidate use of NEW_VAL until EDGE
+				invalidate use of OLD_VAL after EDGE
+				revalidate use of OLD_VAL with DIALECT_PHRASE
+				DIALECT
+				INTENT
+				PHRASE
+	XPOS ->			EXPR ARGS // PSG PARSED EXPR ARGS as ARGV
+	ARGV -> OBJV		OBJV is the BASE FORM for ARGV
+
+				OPTION OBJ = OBJ_from_STR Q2_STR_in_BASH
+
+		ASCII ONLY
+
+			when UTF8_Latin1 is CSET_default // Latin1 is FONT
+			FONT to PROVIDE GLYPHS for Latin1 // my subset
+
+			"1234" is as much an IDENT as CIDENT_ASCII
+
+				UTF8_Latin1 with mangle filter convert ADJUST
+				expect UTF8_Latin
+				notice BYTE_Latin 8859_Latin1 BYTE not UTF8
+				notice GLYPH BYTE USAGE # near LIBR 2% 3 steps
+
+			"3.14e0" used in SCRIPT as specific SAMPLE value
+			"6.71e24" used in SCRIPT as specific SAMPLE value
+
+		ANYSTR
+
+			is one switch away from ASCII
+
+		Latin1 
+
+			for use in CIDENT_Latin1
+
+	OPTION:			a1 letters += Latin1_in_CIDENT
+				a2 letters += Latin1_in_CIDENT
+
+		CSET_BYTE_Latin1
+		CSET_BYTE_8859 == BYTE_Latin1 # defailt to  latest with euro
+		CSET_BYTE_Cyrillic # 
+		CSET_BYTE_Greek # IDK if they have a 1 BYTE CSET FONT
+
+		CSET u16
+		CSET u24
+		CSET_EXPR_i32
+		CSET_ARGS
+			GLYPH in CIDENT_PLUS
+			GLYPH not in CIDENT_PLUS // not my PUNCT //
+			GLYPH in PSG_one_PUNCT
+
+				PSG_one
+				.PUNCT
+				longest matching substr ...
+				MULTI_STEP_NEXT_MULTI_PUNCT
+
+					MATCH ... HERE ... "<<-"
+
+		PSG FSM STEP 
+
+			if "STEP" is known as AVAR 
+			MINI_MACHINE STEP AVAR NAME
+
+
+			
+	}

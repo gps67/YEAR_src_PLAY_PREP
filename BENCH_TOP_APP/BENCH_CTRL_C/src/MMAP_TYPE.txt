@@ -1,0 +1,28 @@
+MMAP_TYPE.txt
+
+	SEGMENTS ZONES
+	ZONE LOCN ITEM INFO SPEC
+
+	GROW IDX_PTR i8 i12 i16 i32 i48 i64  i12 i24 
+	BITFIELD GET in 1 CPU CYCLES
+	BITFIELD SET in 1 FUNC CALL 
+	BITFIELD i0 in DATA_PROVIDED _NONE // XPOS // TOKEN //
+	BITFIELD i1  i2  i3  i4  i5  i6  i7 i8
+	BITFIELD i9 i10 i11 i12 i13 i14 i15 i16
+
+	i4_i12_DECODER
+
+	int get_i4( int i32_WORD ) {
+		// i32_word = COPY of CPU_WORD on ARM32 // 32 is PLENTY
+		// i16_WORD = i16_AX // i8_AH i8_AL
+		DECL_BITFIELD 		i4_i12 HEAP_ITEM // GEN_GROW CALL API //
+		NBIT += NBIT_i4
+		BIT0 = 12 // HEAP_ITEM is HIGH BITS // i4_HIGH 
+
+
+		shift_left_clipping_to_BITFIELD_TOP_BIT
+		shift_right_clipping_to_BITFIELD_BIT0 // SIGNED or not
+
+
+		int GETTER_GET(
+	}
