@@ -531,4 +531,93 @@ VFS_UNIT
 			REMOTE
 			CODE_POINT 
 			...		// AUTO ... // DIALECT adds ... //
-		"
+ CRUD EDITOR
+
+ 	ITEM.field = STR
+ 	ITEM.field = VAL
+ 	ITEM.field = LIST_in_SOURCE_JSOB
+ 	ITEM.field = LIST_ITEM // LIST == field !! //
+
+	JSON LOAD ITEM from SCRIPT_JSON_ZPOS_P0P2 // RETVAL P2
+
+	
+		several different XPOS points are reached
+		dont record too many of them, localise the rest
+		ZONE_two.SEGMENT_three == RETVAL_as_EXPR
+	
+	ref_count stack items
+
+		keep EA_COPY to update COPY to new_VALUE
+
+			we pass PTR to KEPT LIST as EXPR
+			it has a SCRIPT from VTBL to call on_EVENT CALLABLE
+			it has a VTBL to call on_EVENT CALLABLE ARGS
+			to write through this EA_EXPR
+
+			that means writing it twice
+			i32_i32 PTR_as_EXPR
+			BYTE[] * PTR
+
+			that can be run on demad
+			PTR = call getter PTR_as_EXPR // run EXPR get PTR
+			PTR is still relative to BASE0 of SEGMENT_one
+			resolving the correct BASE0 or HEAP3 is the key
+			code generalises this
+			compiler notices when CPU_VAR when STO_WORD
+
+		BATCH_EDGE between_STEPS predicts grow with get_space
+
+			get_space 64K and hope space 256K leave 1M after file
+
+				ALLOC strategy - 1M realloc when < 256K
+
+			LINK chain
+
+				i64 KEPT
+				i64_KEPT_CPU_EXPR || ZERO
+				i64_NEXT_ADDR // in STACK not MMAP
+				i64_PREV_ADDR // in STACK not MMAP
+
+			add new_MEM_copy to LINK_CHAIN
+
+				caller provides MEMORY of the CHAIN_LINK
+
+			add new_CPU_COPY
+
+				caller provides MEMORY of the CHAIN_LINK 
+				caller provides REGISTER already avail and
+
+				OPTION: future USE REGISTER
+
+			del old_MEM_copy from LINK_CHAIN
+
+				expect TAIL already NULL but accept
+				splice LIST around this link
+				leave KEPT ASIS - or NULL
+				leave KEPT_CPU or set it NULL and set it NOT_KEPT
+				caller actually returns CPU_register
+
+				NB caller uses the register directly
+				NB this arranges for updates to get to register
+
+			get_BASE_ZERO from MEM
+
+				the caller provided the MEM link
+				the caller uses C "{ KEPT = LINK.KEPT  }"
+
+			update LINK_CHAIN with NEW_VAL
+
+				//
+
+		on_ZERO_ref_count
+
+			of what ? when CHAIN is reduced to EMPTY list from HEAD
+			then attempt immediate REALLOC if less than 64K (256K)
+			pre-emptive to 1M-60K
+
+			this is a POLICY of MMAP_ALLOC_PAGES_for_FILE
+			alternatively
+			MMAP file keeps a list of 8 places where BASE is stored
+			and 2 registers - 1 register
+			and 1 stack_pos - down to ZERO
+			itself a growable thing - list 3 INFO 7 WARN 15 31 63 THROW 127
