@@ -1,0 +1,152 @@
+
+	JS_ZONE_HEAP_ITEM.txt
+
+	OPTION: WASM provides HEAP_ITEM and GROW_IDX
+	OPTION: ES6 provides HEAP_ITEM and GROW_IDX
+	OPTION: ES6 provides LIBR_ITEM_# _POOL
+
+		+POOL -ALIAS-> _POOL # _%s POOL = "POOL" alias _POOL
+		_POOL 
+	
+	OPTION JS_LIBR
+
+		WASM is yet to PROVIDE LIBR_WRAP # API_of_CCALL N_BYTES
+
+	 LIBR	STRUCT	FIELD EA_EXPR GETTER
+
+	 	SELF -is- JS_OBJECT	# MACRO JS_OBJECT JS_Object # STR0 #
+
+	 LIBR	POOL_KEY_CALUE
+		
+		item = VALUE = lookup key
+
+			XPOS holds item
+			XPOS holds VALUE
+			XPOS holds = CODE_POINT
+			XPOS holds lookup # PSG says it is a ARGV FUNCTION ARGS
+			ARGS is a PHASE_SHIFT away from ARGV 
+
+		VAR_POOL # JS_LIBR provides VAR_POOL _t 
+
+			SPEC = _t.SPEC
+			SPEC = _t.SPEC.GETTER.GET // GET_SPEC
+
+		ARRAY_idx_N_of_ITEM
+
+			ITEM += LOCN
+
+				LOCN has LIST of LOCN and LIST of ITEM and ...
+				LOCN has LOCN_BASE # API PROVIDE LOCN //
+
+			LOCN += BASE_LOCN
+
+				LOCN has SELF and LOCN_SPEC and INST_SPEC
+				INST is SELF is STRUCT
+
+			INST += UDEF_SPEC
+
+				KNOWN_FIELD_NAME
+				SCRIPT_FIELD_NAME
+				CT_RT_FIELD_NAME
+
+				eg
+				SELF += UDEF_SPEC_one # _one _two _idx _%d _%s
+
+				 USAGE all start with "_" or '_'
+				 USAGE "%s" from "_%s" from %s or %d or %s%d
+				 USAGE FMT "%02X" instead of %d
+				 USAGE set default to FMT_02X # DROP % #
+
+		FILTER LEX DROP % from FMT hope for _ in its place
+
+			% is not valid in VAR_NAME in C
+
+				it is sheer LUCK reduced filtered VAR_NAME ok
+				FILTER C_ident_97 from FMT_string
+				USAGE as IDENT # as a2 # as a1_a2 # as_CIDENT99
+				CIDIENT99 = "C_ident_97"
+
+				CIDIENT99 = C_ident_97
+				C_ident_97 = "C_ident_97"
+
+					allow reverse FLOW DECL # FUTURE KNOW
+
+					always generate AVAR for STR0
+					FILTER FMT to CIDENT99 "_$04X" # _FFFF
+					OPTION _FFF
+					OPTION _xFFFF
+					OPTION _FF
+					OPTION _FFH "_%02XH" 
+					SCRIPT _ %02X H
+					SCRIPT _ % 0 2 X H // CT_RT _ ..._ H
+
+ USAGE
+ 	creating a LOCN that is a LEX in an ARGV is an XPOS in a SCRIPT
+	PARSE_SCRIPT sweeps for ARGV and TREE_TRWIG from ARGV_STEPS
+	PARSE_ARGV_SCRIPT into ARGV # possibly nested within anohter Q2 LANG
+	PARSE_ARGV into TREE # all this magic is generic # API PROVIDE API #
+	API SELF is TWIG is LOCN is ITEM with MULTI_LAYER
+
+	PARSE_ARGV
+
+		IDENT_C
+		IDENT_C_97
+		IDENT_VFS_8859_Latin1 // _VFS
+		IDENT_VFS_8859_Cyrillic
+		IDENT_VFS_UTF6_Latin1 // OPTION FONT_for_CSET_in_UTF8 // i32
+		IDENT_BASH
+		IDENT_a1_a2_star_%s %s 
+		ARGV at CT_RT does MENTION of IDENT_a1_a2_star_%s %s
+		MANGLED_NAME often reads well, sometimes SLANG, ITEM_FFFF
+
+		SP1
+		GAP_ABSENT
+		GAP SP TAB CR LF ASCII_CTRL ASCII_GAP
+
+		NUMBER_simple
+		NUMBER_parsable // pre_parsed // PSG_TREE is DOC_TREE_DATA_and_SPEC
+
+		PUNCT all PUNCT can be spelled in VAR_NAME
+		name name_LEFT_SQUARE_BRACKET IDX RIGHT_SQUARE_BRACKET
+
+		EXPR IDX with expectation of returning an EA not a VALUE
+		CT_RT and CACHE do the convert EA to VALUE // EA += EXPR
+		EVAL EXPR pulls the threads of a lazy tree of expr and values
+		CACHE runs lazy machine down to completion, using BATCH PRE_WORK
+		BATCH us a list of STEPS to LOAD DATA or FIND_XPOS of FIND_AKEY
+
+		AKEY field // AKEY is IDX in TABLE_two
+		MACRO comes with   used AVAR TABLE = TABLE_one // default[0]
+		MACRO comes with unused AVAR TABLE = TABLE_two // NULL UNUSED
+		SPECIAL_CASE unused TAble_two : OMIT_dont_EMIT all_mention
+		SPECIAL_CASE   used TAble_one : OMIT_dont_EMIT // second_reason
+		SPECIAL_CASE   used TAble_one : EMIT_dont_OMIT // PICK //
+	
+BENCH LOCN SWITCH PICK XPOS
+
+PSG is LEXER
+
+	WE have an HEAP inside a CONTAINER_HEAP with lots of API
+	WE have an FSM inside a HEAP with lots of settings
+	GROW suggests alloc u15_idx inside i16_MEM_LO_HI i16_A_B i16_BA _loaded_from_lohi
+
+	SUBLEX adds '_' to the mix,
+
+		'_' -and- "_"
+
+		'_'
+		"_"
+	
+	SUBLEX can re-parse ARGV from "([{" "}])"
+
+		What PSG found is retained as RET_VAL LIST_of_ARGS
+
+		SEQ
+		 (	"("
+		...	"..."
+		 )	")"
+	
+	CORE parser can do PSG and LEX on TEXT as if from BISON
+	CORE parser is GEN CORE PARSER for PSG_TREE_DECL and SAMPLE PRE_LOADS
+
+

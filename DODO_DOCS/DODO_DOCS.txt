@@ -1,0 +1,110 @@
+
+	DODO_DOCS/
+	DODO_DOCS.txt
+
+	DIARY
+	SCROLL
+
+		SQL list of items in tree
+
+			maybe obj_type is EA_OBJ is idx_OBJ_in_HEAP_one
+
+
+		HEAP_ITEM as i32_i32
+
+			i32_HEAP
+			i32_ITEM
+
+			LOHI for all data from this LIBR
+
+				gxx loads i32_lohi // always from here
+				gxx loads i32_lohi via swabp asif from cpu_hilo
+
+
+		HEAP_ITEM as i8_i24
+
+			i8_HEAP
+			i24_ITEM
+
+			the GROW code can GEN a variety of templates
+			i2_i6
+			i4_i12
+			i8_i8
+			
+			bitfields drawn hi_lo i2_i6 is 4 blocks of 64 items
+			byte_fields drawn LO HI BYTE_A BYTE_B _one _two
+			load_int_from_aligned_bytes_LOHI // inline MACRO //
+			OPTION use %s_one %s_two # OPTION use LHS RHS
+			OPTION CODE_POINT == XPOS
+
+	MACRO
+	TEMPLATE
+	GEN
+
+		SAMPLE_PAGE
+
+			PREVIEW select all SPELLING MIS_MATCHES RHYMES MATCHES INFO
+			as TABLE
+			PREVIEW select all used in ZONE_two 
+				
+				FILTER builds TREE // sorted by KEY1 oe UDEF
+				sort table rows by their primary keys
+
+					SYSTEM of GUESS KEYFIELD // KNOW 
+
+			PREVIEW all SPELLING as word_complete or word_partial
+
+				ADJUST for FILTER Cap1 
+				ADJUST for FILTER Cap1  ALIAS SUBST EXPR
+
+			Each independent SPELLING is an ALIAS towards TOKEN
+
+				ROM is TOKENISED by design and specification
+
+			REMOVE "SPELLING" and replace with "EXPR"
+
+				M4
+
+			GEN TEMPLATE_xFF in
+			HEAP_ITEM i0 i8 // i0 is i8 from KNOW_from_XPOS CT_RT
+			HEAP_ITEM i1_i7 // i8_MINUS i8_ZERO i8_PLUS
+			HEAP_ITEM i2_i6 // 4 tables of 64 rows
+			HEAP_ITEM i3_i5 // 8 tables of 32 rows or 32 ITEM
+			HEAP_ITEM i4_i4  // 16 x 16 // %02X // _FF
+
+			HEAP_ITEM i4_i12 // 16 ZONES of 4096 ITEMS // EIGHTS
+			HEAP_ITEM i8_i24 // 256 HEAPS of 16M ITEMS // MINI_MACHINE
+			HEAP_ITEM i16_i32 // 64K ZONES of 4G ITEMS or 4G WORDS
+
+			POOL_ITEM[i8] // alternative MINI_MACHINE P0P2 N u7 or u8
+			POOL_ITEM[u8] // TABLE is clean PLUS
+			POOL_ITEM[u7] // TABLE is second page PLUS
+			POOL_ITEM[i8] // TABLE is lower page MINUS
+
+	SIGN BIT
+
+	[-128 ... -1][0 ... 127][128 255][256
+
+		2-s complement plain i8
+		absval i1_u7 
+		adjust sub 128 // get i8 from u8 : sub 1000_0000 // sub x80
+		MACRO x80 for 0x80 # ensure TOKEN is BYTE as PARSE_02X
+		
+	
+	as used ... here here ... 
+
+
+
+ DOCS
+
+ 	Basic latex report layout with TOC and index and pdf and HTML
+
+	Added SVG DIAG (mostly static) (soon clickable) (ANIM SOON)
+
+	SPOUT renders to GEN  HTML/WEB2/flavour
+
+
+
+
+
+

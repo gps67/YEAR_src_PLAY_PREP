@@ -1,0 +1,150 @@
+	2025-04-22
+	2025-04-22_BENCH_dot.txt
+
+	STARTUP myapps/bin/ 
+	STARTUP bench # OPTION ARGV bench_calls_bench
+	# the %s/bin/ triggers --prefix ROOT_DIR # AUTO TRAIL_SLASH
+
+	STARTUP USER_DESKTOP_SESSION SESS
+	STARTUP fork_adjust_exec bench.exec // line .exe but elf libc linux
+
+	fork_adjust_exec
+
+		fork
+
+			 RET_VAL = fork()
+			
+
+			caller is PARENT_POD
+			caller returns with RET_VAL
+	
+	PROVIDE
+	MENTION
+
+		MENTION does not PROVIDE beyond these things here
+		MENTION gets a set of PRE_LOAD _ALBE _TYPES
+		PRE_LOAD SEGMENT _API_of_SEGMENT PICK_DATA rel_addr
+
+		rel_addr = SESS.CLUTCH.rel_addr
+		TREE
+
+		each:
+		 CLUTCH is a bag of items within reach
+		 CLUTCH is a group of items related by GROUP_rel_addr
+
+		LANG:
+		 CASM likes to create an in-scope C_LANG_ITEM
+		 CASM AVAR FUNC LIBR DECL ... # ... is addressable
+		 LANG directions SCRIPT FUNC LINE XPOS then 
+		 then search for ARGV[i] == TOKENISED( "..." )
+
+		CASM: outputs C or C++ which often uses MMAP
+		 CASM cident_97 is SPEC of CSET_a1_a2_PLUS
+		 CASM a1 += [a-z] += [A-Z] // REGEX_SPLINTERS
+		 CASM a1 += [a-zA-Z] // REGEX_SPLINTERS _JOINED_into_EXPR
+		 CASM a1 += [_$] // OPTION not allow $ in IDENT // SIALEXT
+		 CASM a1 += [] // OPTION not allow $ in IDENT // SIALEXT
+		 CASM a2 += a1 + [0-9] 
+
+		FSM += DIAG train_tracks // a mini model railway // PSG LEXER
+		DIAG += CSET_8859_latin1
+		DIAG += CSET_UTF8_latin1 // UTF8 within latin1 font
+		DIAG += CSET_UTF8_ALL_FONTS_and_some_NON_FONT_DECODING
+		FONT holds ITEM glyph or no_glyph_with_OPCODE
+		LIST_OPCODE += LIST_ITEM STAR // STAR is * // MULTIPLE //
+		LIST_STEP += LIST_ITEM
+		LIST_SEGT += N_LIST N_LIST_ITEM LIST_ITEM
+
+			N_LIST is a function by MENTION
+			ARGV[1] = VAR_NAME of N = N_LIST_ITEM
+			ARGV[2] = VAR_NAME of LIST = LIST_ITEM
+
+			N_LIST as ARGV function of DECL or ABSENT
+			%s decodes as "N" "LIST" // MATCH N_LIST
+			%s is IDENT is
+			CTOR %s ARGS { TEXT } # SCRIPT TEXT
+
+			N_LIST is a STRUCT with the above 2 ARGS
+			N_LIST N LIST # MENTION decodes to LEX_LIST
+
+			LEX LIST_within_LEX using SEP == "_"
+			LEX LIST_within_LEX using %s ITEM alias UNIT
+			LEX LIST_within_LEX using %s_%s PAIR
+			LEX LIST_within_LEX using %s_%s_%s TRIP
+			LEX LIST_within_LEX using %s_%s_%s %s QUAD
+			LEX LIST_within_LEX using SEP
+			LEX LIST_within_LEX using PARSE
+
+		MINI_MACHINE for TUPLO
+
+		 MATCH %s_%s // MULTI_MATCH REUSED ALIAS SPELLING
+
+		 MATCH returns SPELLING which is known to have a list of ...
+		 DECODE uses a theme where MATCH has DECODE LISTS
+		 LIST match LHS with every item of RHS ## RET_VAL idx_CSR
+		 SEARCH LIST for MATCH_USAGE or REPORT_USAGE LOG_STEP
+
+		 MATCH %s_%s_%s // parser finds SEGMENT ARGS[3]
+		 // invoke caller that invoked PARSER provides ARGS
+		 // CODE_that called PARSER provides ARGS
+		 // code that MATCH calls needs to store keep ARGS[3] 
+		 // INFER noteices that $1 $2 $3 is needed
+
+		 FAST_MATCH
+
+		  SPELLING const str " EXPR " is passed to CACHE
+		  CT_RT runs all available PARSE PHRASES
+
+		  	eventually using a tiered approach
+			SUB_LEX MATCH %02X %02d 
+			MATCH on PRE_LOAD // trained CACHE 
+			after CT_RT has done it's last COMPILE
+			because it needs to be code_checked and safe
+
+			instead it is an added LIBR_VAR_POOL_SPELLING_POOL
+			instead is it a LEX_PSG or PSG_LEX
+			SPELLING also normalises import and export at the border
+			It rewrites the original pointer
+			To point to a stepping_stone 
+
+			One way of doing this,
+			is to have a fixed i64_BITFIELD_for_i32_PAIRS
+			and the items it selects are variables
+
+			This is a lot like havig Py_Object own a CXX_PTR
+			along with some access behaviours
+			CT_RT allocates and uses a fixed IDX for ITEM
+
+		LIBR_LANG_UTILS
+
+			reflex has SOURCE loaded into PSG and LEX and
+			reflex has PRE_LOAD TABLES
+			RT has TABLES
+
+			V8 provides a JS_WORLD
+
+				raw_int
+				obj_int
+				obj_float _double
+				obj_string
+				STRING
+				LIST
+				HASH[KEY]
+				STRUCT.field
+				OBJ.func
+				CLOSURE
+				CALLABLE
+
+		LIBR_LANG
+
+			JS_SCRIPT_SESS_at_XPOS
+
+			SCOPE_is_FUNC Module provides most things
+			SCOPE_is_ ... we provide Module and use it here
+		 
+			SCOPE += AVAR // avar local to FUNCTION
+
+			gcc_jit as backend
+			tokenised_PSG_TREE as backend
+
+

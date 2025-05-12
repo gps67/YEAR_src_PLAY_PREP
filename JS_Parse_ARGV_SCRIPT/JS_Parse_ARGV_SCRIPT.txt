@@ -1,0 +1,66 @@
+
+	JS_Parse_ARGV_SCRIPT/
+	JS_Parse_ARGV_SCRIPT.txt
+
+	ARGV minimalist parser is PSG_SMART
+
+		MINI_MACHINE_ARGV _and_STACK _STACK _SESS
+
+		LIVE_in_DIALECT_with_USAGE "{ SESS = '_SESS' }"
+		KNOW 
+		USES AVOID Q2 within Q2 prefer Q1
+
+			nb many things reduce to EMPTY_STR NO_NAME
+			so SCOPE adds SCOPE.Q1 # a few KEYWORD SYMBOL TOKEN ATTR
+
+		DIALECT += AVAR
+		DIALECT += A_SPEC LEXICON SESS
+
+		SESS += CT_RT provide AVAR SESS base type LOCN_PLUS "SESS" "ALIAS" ALIAS
+		ALIAS += "ALIAS" # in an IRONIC way # LEX_INFLEX lex_is_lex #
+		IRONY += VAR_NAME_is_VAR_NAME
+		IRONY += VAR_NAME_is_VALUE_VAR_NAME
+		IRONY += VAR_NAME_as_VALUE // CODE += HERE // AUTO FILTER HERE
+		PARSE MUX LAYER
+		Parse_Text is a carefully controlled CSET_LEXER a1_a2_star a1 a2
+		AUTO AVAR a1 KNOW is VFS_IDENT C_IDENT JS_IDENT_for_PURPOSE
+		+= PURPOSE GEN_BASH // js_IDENT_for_BASH // js_IDENT_for_BASH_%s
+		IDENT = "BASH_subset_bourne_SHELL" // OPTION ARGV RUNNER
+
+		STREAM = ARGV_within_STREAM
+		STREAM = ARGV_within_STREAM_SEGMENT P0P2 P0_N_BYTES
+		BOUNCE "P0P2 in above STMT is a MENTION of a well known LIBR_ITEM
+		LIBR_ITEM PICK SCRIPT_LANG
+
+			LAN_one // AUTO VAR[0] calls itself the "_one" and is 0
+			LAN_two // AUTO VAR[1] is _one [2] is _two [0] is _zero
+
+				[0] _zero
+				[1] _one
+				[2] _two
+				[idx] _idx $1 // idx is the value of idx
+				[idx] _idx $1 // idx is the variable _idx_02X
+				idx_t idx = M2 ; // OPTION
+				idx_t idx = M1 ; // OPTION
+				idx_t idx = 0 ; // OPTION
+				idx_t idx = 1 ; // OPTION
+				idx_t idx = 2 ; // OPTION
+				idx_t idx = 3 ; // OPTION
+				idx_t idx = IDX ; // CAPS_for_a_KNOWN_CORE_ITEM
+
+				eg simplistic world, C and JS and SCRIPT
+				LEX_MATCH( IDX ) // where IDX is %X // FMT
+				LEX_MATCH( IDX_ALIAS ) // LOOKUP ALIAS //
+				LEX_MATCH( VALUE ) // LOOKUP ALIAS //
+				PSG_MATCH( EXPR ) // PSG_PARSE TEXT TREE
+				PSG_MATCH( CODE ) // PSG_PARSE TEXT TREE
+				PSG_PARSE( DATA ) // PSG_PARSE TEXT TREE STREAM
+				PSG_Parse( DATA ) // PSG_PARSE TEXT TREE STREAM
+
+				idx_t idx = M2 ; // OPTION
+				idx_t idx = M2 ; // OPTION
+
+				LAN_two compiles into two worlds
+				one where LAN_one exists and is active
+				one where LAN_two exists and is active
+		AUTO AVAR a2

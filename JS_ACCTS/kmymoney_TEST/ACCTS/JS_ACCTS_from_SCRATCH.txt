@@ -1,0 +1,85 @@
+/home/gps/YEAR/src/PREP/JS_ACCTS/kmymoney_TEST/ACCTS/.
+
+	JS_ACCTS_from_SCRATCH.txt
+
+	The KDE APP kmymoney 
+	is an advanced database structure
+	with various reports and edit updates
+
+	JS_LANG_and_DATA --SAYS-- {
+		AVAR JS_LANG_and_DATA _JS_LANG _DATA {
+		// it is up to you to rename _DATA as DATA 
+		// that is a BIND AVAR to STO moment // TREE_ADDR DECODE_ADDR
+		}
+
+		ARGV_DECODER is CT_RT PRE_RUN_DECODER _uses_SAMPLE_DATA
+
+			SPELLING += PRE_LOAD SAMPLE_DATA ALIAS_ZERO
+
+		MODULE PARSER
+		DECL_SPEC PARSER
+		DECL_AVAR PARSER
+		DECL_FUNC PARSER
+		DECL_USES PARSER // GEN import USES %s // ALIAS %s USES
+		// %s USES // means FMT_fmt == "%s" arg_plus_plus = "USES"
+		// AVAR USES // from MENTION within query string near SCRIPT
+		// SESS is asked to provide the RHS_BIND_AVAR = LIBR_two.get("%s")
+		// get("%s") // is clearly now quite enough // so bounce signal
+		// the signal includes the depencency VALUE_is_STR_is_C_IDENT
+		// C ident is ASCII or MORE C_IDENT_97 { _a1 _a2 }
+		// AUTO ALIAS a1 = _a1 // DECODE ARGV_STEP STREAM_STEP
+		// DECODE ALIAS // look for name clash // convert to _%2X %4X
+		// FMT notices MENTION of %4X ALIAS _FFFF 
+		// FMT follows ARGV_SCRIPT as SPELLING of AVAR in LOCAL.ITEM.EXPR
+		// FMT prepares UNIQUE filenames AUTO _01 _02 _03 BACK _00
+		// PSG adds SESS_INFO about STR) in CACHE
+		// CACHE is the DATA_SET held in a few tables
+		// SESS is SCRIPT running through a MINI_MACHINE API
+		// RPC += RPC_AVAR += RPC_AVAL += RPC_SPEC_LIBR += RPC_SPEC
+		// nb added "SPEC" to RPC and then needed "LIBR" to provide it
+		// nb LIBR == "LIBR" // CACHE for AVAR "LIBR" // default own_name
+		// nb LIBR == "LIBR" // CACHE for AVAR "UDEF" // default own_val
+		// RPC_UDEF += "UDEF" // primary ALIAS is RHS // AUTO CODE COPY //
+		// on_("ALIAS is RHS")  
+		// on_("ALIAS_is_RHS")  // we form a single compound noun
+		// RET_VAL = lookup KEY_STR //
+		// MATCH // when found in SCRIPT // expand_to_EA_and_Mult_iSteps
+		// DIALECT // DECoDE compound_noun_t IDENT // %s // AVAR AVAL //
+		// TECH P0P2 is usually P0_nbytes_used 
+		// DECODE P0_nbytes_used P0 nbytes_used
+		// DECODE P0_nbytes_used _P0 _nbytes_used
+		// that creats two variables _P0 and _nbytes_used in SCOPE
+		// SCOPE == "SCOPE.ES6_PLUS_SCOPE" // thats how this works,
+		// symbol tree // OOPS Module layout // RPC soon // builtin
+		// CACHE can request an absent feature with USAGE COUNT
+		// CACHE complains, counts, and uses own code to PROVIDE feature
+		// GEN COMPILE LOAD USED //
+
+		// using += to mirror ARGV_STEP_idx ++ as that STEP happens
+		// that is a SIGNAL metaphor, it is a unique STR0, XPOS = at_XPOS
+		// CODE_BOOK permits all sorts of scribbled sample values
+		// GEN creates a long list of possible phrases and data
+		// turns out its best to have ARGV per LINE and { ZONE }
+		// { ZONE } // specific expression "{" "ZONE" "}" "+= SP1"
+		// DECODE ("+= SP1") // += RHS // RHS == "SP1" //
+		// MENTION "SP1" triggers MATCH MENTION AVAR SP1
+		// SP1 token invokes a ROM writing exact GAP and INDENT and
+		STRUCT += A_FIELD %s_t %s ... ITEM_NAME_one ITEM_NAME_one
+
+		STRUCT += ... A_FIELD %s_t %s ... // STREAM PARSER LIKES ...
+		STRUCT += A_FIELD %s_t %s // AVAR %s // USAGE AVAR DUPE
+		STRUCT += A_FIELD %s_t %s // SPEC_t & AVAR  = _AVAR _SPEC _XPOS
+		STRUCT += A_FIELD %s_t %s // SPEC_t & SPEC  = AVAR _SPEC
+			... // FMT accumulates named parameters
+			// NAME_of_PARAMETER or STR_VALUE_from_GEN
+			// STR is P0_nbytes // or nbytes_P0
+			// GROW 
+			ITEM_NAME_one	_one = "SPECNAME_t"
+			ITEM_NAME_two	_two = default _one no _t
+
+		// nb LIBR == "UDEF" // CACHE retro fits SPELLING in C
+		// nb LIBR == "UDEF" // CACHE retro fits SPELLING in ES6
+
+		SCRIPT PARSER
+
+	}

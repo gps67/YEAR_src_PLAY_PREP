@@ -1,0 +1,41 @@
+
+	JS_ACCTS_WIDGET_in_SVG.txt
+
+	SPOUT to CANVAS_2d
+	SPOUT_to_TREE_SVG
+	SPOUT_to_PS_PDF_DVI_XML_API_STREAM
+
+	LIBR writes an SVG TREE of DRAW_TABLE
+
+	TABLE rows columns GC_PALLETTE_GFX_PEN_NIB_CSR_XPOS
+
+	iterate over rows - within group 
+	page-break-uses-good-guesses that seem invisible seams
+	output row of heading TEXT using different FONT and GFX
+	output row of data type _ROW_FMT
+
+
+	GFX is the currently selected NIB and INK in it
+
+		available palette of INKS and NIBS and GFX_STUFF
+		current PICK at CSR_0A # allow idx_i4_MINUS _0x0A // ID TEN TEA
+		BYTE == ASCII_CTRL_LF = ASCII_LF // but not ASCII is BINARY INT
+		PICK_0A is clipped 10 - 6 // ie 6 USED or PRE_USED
+		0F M1
+		0E M2
+		0D M3
+		0C M4
+		0B M5
+		0A M6
+		09 M7 // or badly formed OCTAL
+		08 M8 // or badly formed OCTAL
+
+		07  7 // perfectly formed OCTAL and HEX
+		6 5 4 3 2 1 0
+		00 ZERO is NULL
+		00 ZERO is IDX_0
+		00 ZERO is NULL_meaning_UNCHANGED
+
+		09  9 // or badly formed OCTAL
+		08  8 // or badly formed OCTAL
+		07  7 // perfectly formed OCTAL and HEX

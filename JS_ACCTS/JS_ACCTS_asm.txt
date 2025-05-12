@@ -1,0 +1,265 @@
+
+	JS_ACCTS/
+	JS_ACCTS_asm.txt
+
+		this is asm
+		JS_ACCTS would be using JS_STRING 
+		as TYPE of JS_ITEM "{ JS_STRING STRING }"
+		// USAGE _t OMIT||emit // USAGE Slightly unique name no _t
+		// eg "JS_STRING" is not STRING but it is // OMIT _t //
+
+		GEN runs FILTER over TREE in its BATCH_SESS
+
+			entire STEP with BATCH as a DONE THING or ONE_STEP
+
+				one_clock_cycle
+
+					ie not ZERO
+					nb may be 105 clock cycles
+
+				zero_clock_cycle
+
+					OMIT prefer OMIT for each selected ITEM
+
+					EMIT_ZERO
+
+					 OPTION detect CODE_POINT TEXT
+					 OPTION CT_RT woz_ere now_ZERO
+					 OPTION OMIT FEATURE
+
+					 	secure zone does not have LIBR
+						LIBR_provides_TRANSACTIONS
+
+					OPTIMISER does GEN and finds OMIT
+					OPTIMISER does GEN and finds EMIT
+					OPTIMISER does GEN and PICKS OPTS
+						ie GEN asm that does tracing
+						mildly slower
+						lots of incr AVAR in SEGMENT_one
+
+		SEGMENT_one
+
+			is always near THIS 
+			is always where THIS is held in HEAP_ITEM and EA_EXPR
+
+			is CURRENT SEGMENT but not SCOPE PRIMARY SEGMENT ZERO
+GROW is i0
+
+	%s_one	// this is the only PICK u0 + CODE_POINT TEXT XPOS //
+
+GROW is i1
+
+	%s_one	// _one is GLOBAL main SCOPE // initially but then
+	%s_two	// _two is USAGE as new TEMPLATE specialisation
+
+GROW is i1
+
+	%s_zero	// Then you can have [i] but low TUPLO reachable branches
+	%s_one	// I use _one as first and only _one
+
+GROW is i8
+
+	%s = FMT_02X IDX // CALL FMT_02X // GEN ... FMT = "04X" UNS
+	// i32_IDX will always be _PLUS when ALLOC = N ++
+	// i64_IDX will CHECK IDX and GROW i0 i8 i16 i32 i64 and each incl
+	// i0 // ZERO_DATA but CODE_POINT XPOS available to CT_RT
+	// i0 i1 i2 i3 i4 i5 i6 i7 i8 //
+
+
+GROW is i16 
+GROW is i32 
+GROW is i64 
+
+	loaded from LOHI_MEM often drawn as BYTES A B C D
+	loaded from BITFIELD possibly EAX
+	PRE_LOADED by CALLER writing i16 into an i32_WORD in MEMORY and CPU
+
+GROW_is_BITFIELD // ie above but SHIFTED possibly EAX or BYTE_B or WORD >> 16
+
+	i2_i6
+	i4_i12
+	i8_i24
+
+GROW is u2
+
+	0
+	1
+	2	// -2
+	3	// -1
+
+GROW is i2
+
+	-2 // M2	// M2 // UDEF // needs an extra parameter
+	01 // M1	// M1
+	0		// _two // ZERO is just another PLUS
+	1		// _one // leave _one at [1] otherwise chaos
+
+GROW is i2
+
+	-2 // M2
+	01 // M1
+	0
+	1
+	M2 // REPEATED //
+	M1 // for OCCASIONAL SIMPLE USE
+
+GROW is i2
+
+	0
+	1
+	-2
+	-1
+
+GROW is i3
+
+	-4 -3 -2 -1
+	 0  1  2  3
+
+	TEMPLATE TEST INT
+	is_MINUS switch
+	is_ZERO = is_PLUS
+	is_PLUS idx = VALUE
+
+	%s_%d
+	%s_%s // %s = FMT_02d IDX
+	%s_%s // %s = FMT_02X IDX // FMT_04X // FFFF // 000F // i16
+	%s_%s // %s = LIKE "one" "two" "ZERO" "M1" "M2"
+
+
+		SEGMENT[0] SEGMENT_zero // 
+		SEGMENT[1] SEGMENT_one // _two unused 
+		SEGMENT[2] SEGMENT_two
+		SEGMENT[3]
+
+
+	WEB_JS_ACCTS
+
+	 one struct DECL per ITEM_TYPE
+
+	 	OBJ = ROW_of_ARGV_or_LAYOUT_or_SPEC
+		SPEC = %04X // GROW FROM i12_in_i16
+		DECODE_i16 {
+			i4_i12_HEAP_ITEM {
+			 HEAP = DECODE_i4 // DECODE_i4 _as idx_HEAP i4_idx
+			 ITEM = DECODE_i12 // B0B2 16-12-8-0 TUPLO_4_each_u4_
+			}
+
+			i12_ITEM // LO_HI i8 i4 i4 //
+			i4_HEAP // 
+			i8 BYTE_A
+			i8 BYTE_B.i8_BITFIELD // 
+			i4_ITEM // HIGH BITS written LAST
+			i4_HEAP // UNIT BITS written FIRST // DIGITS //
+
+			i4_HEAP
+			i4_ITEM
+			i8_ITEM
+		}
+	
+	i8_i8_i16_i32
+
+		BITFIELDS are SPECIAL because they are still VARS / VALS
+		BITFIELDS_in_SITU are VARS or FUNC so now _COPY_KEPT 
+
+	_i32_TWO_as_i32_CPU_WORD
+
+		COMPILER has i32 mode 
+		COMPILER has i32 mode extended to i64
+
+			this also helps GROW
+			this helps when i4 BITFIELD_B2B0
+	
+	B0B2
+	B2B0
+		// HIGH BITS // HEAP //
+		B2_B0 _i4	16	12
+		B2_B0 _i12	12	 0
+		// UNIT BITS // ITEM //
+
+			Ironically the fastest way to clear the i4 bits
+			is to move the IN_SITU UNIT_BITS
+			and shift it to the top of the i64_or_less
+			and shift it SIGNED back down
+			N16 = 16
+			RETVAL get_i4 {
+				i16_WORD >> B2_B0.B2
+				i16_WORD >> B2_B0.B2
+			}
+			RETVAL get_i12 {
+				i16_WORD = B2_B0_
+				i16_WORD = B2_B0_0 
+			//	i16_WORD << = B2 // WANT LEX MIX " << = "
+				i16_WORD <<= B2
+				i16_WORD =>> B2_B0.B2
+			}
+
+
+	FOUR FIELDS inside i16
+
+		DECODER_one
+		DECODER_two
+
+	VIEW as BITS in CPU so appear HILO # RTFM CODE to write accurately
+
+		i4_i4_i4_i4
+		i4_i4 i8
+		i8 i4_i4
+		i4_12 // i4_HEAP i12_ITEM // HEAP ITEM // IDX_MGR_EA_AVAR
+	//	12_i4 // HEAP should be high bits for PAGE MERGE
+
+		i4_i4
+
+		i4 i12
+	
+ DECODER_i64
+ 	as_HEX_DENSE_BLOCKS %016X { ... } 
+ ENCODER_i64
+ 	%016X { 
+
+		// DENSE_HEX_BLOCKS_in_FILENAME_LIST
+		// OPTION apply ASCII ART using HEX only 
+		// OPTION UPPER LOWER MIX 
+	}
+	i32_i32_one_two {
+		i32_one_as_UNIT_HALF // _HALF_HALF
+		i32_two_as_HIGH_HALF
+		i64 get_i32_two( i64_WORD ) { return i64_WORD >> 32; }
+		i64 get_i32_one( i64_WORD ) { return (i64)(i32) i64_WORD; }
+		// MACRO // sign_extend_i32_to_i64 
+
+		// EXPECTATION B0_B2 stays within i32 from REG_PAIR
+		// EXCEPTION B0_B2 i16_i48 
+	}
+	i8_i8_i12_i4_i8_i24 : i32_i32_one_two {
+
+		BIT_SWEEP_LO_TO_HIGH // low idx low bits // field[0].B0 == 0
+		BIT_SWEEP_LO_TO_HIGH during DECL // i8_i8_
+		idx = idx_BITFIELD = idx_of_BITFIELD( BITFIELD_DESC )
+
+		DECL right to left HI to LO // we MUST so add annotation
+		DECL left to right LO to HI // we WANT
+
+		LIST of B2_B0 // LIMIT 128 bits // accept 128 as -128
+
+			SIGN_B2_B0 // all SIGNED // OPTION
+
+		 64	64 i48 16 i16 0	// i48 i16 //
+		 64	64 i48 16 i8 8 i8 0 // BITS_i48 i8 i8 // i8_i8_i48
+		 64	64 i48 16 i8 8 i8 0 // BITS_i48 i8 i8 // i8_i8_i48
+		 64	64 i24 40 i8 32 // 64_32_TWO 
+		 48
+		 32
+		 16
+		 12
+		 8
+		 4
+		 0
+
+
+
+
+		i5 N_fields
+		i5_B0
+	}
+
+

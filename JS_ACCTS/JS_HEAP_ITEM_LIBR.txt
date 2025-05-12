@@ -1,0 +1,104 @@
+
+	JS_HEAP_ITEM_LIBR.txt
+
+	JS
+	HEAP {
+		idx_grow_int_t idx_HEAP // limit ASIF i48_i8_i8 // BITFIELDS 64
+		idx_grow_int_t idx_HEAP // limit ASIF i24_i8    // BITFIELDS 32
+ OPTION BITFILED_64 is created as a compound noun expr ...
+ OPTION BITFILED_64 is created as "%s_%s" LHS RHS // then well known derived
+ 		// derived ALIAS EXPR // and so on ... // ARGV STREAM
+ OPTION BITFILED 64 will confuse BITFIELD () unless it accepts the unexpected
+ OPTION BITFILED 64 is why we have ARGV SCRIPT not %s_%s" required // AUTO
+ AUTO VIEW PSG compound_noun { // ironically NAME_STR = FMT "%s_%s" LHS RHS
+ AUTO KNOW USED "%s_%s" LHS RHS // well known phrase
+ AUTO PSG LEX SCRIPT // PARSE SCRIPT into ARGV_SCRIPT _STREAM
+ KNOW "ARGV" "SCRIPT" are primaries // or at least MENTION from HERE //
+
+ 		ARGV_STREAM adds PSG_LEX_MARKER PUNCT and GAP and on_PSG_finds_
+		ARGV_STREAM as/from N_LIST _of_DATA_WORDS // eg PTR to MEM_ADDR
+		ARGV_STREAM ITEM_SPEC_t ITEM_SPEC;
+		ARGV_STREAM DECL_ITEM_t ITEM_STO; ITEM += N_BYTES // _of_ITEM
+		// DIALECT filters pick_those_that_match 
+		  ITEM += N_BYTES // _of_ITEM
+		  // AUTO DECL ITEM.N_BYTES as EXPR and an DATA_t DATA
+	}
+	}
+	ITEM {
+		idx_grow_int_t idx_ITEM //
+	}
+
+	The intention is HEAP_ITEM in STO in C or C++ or UDEF_SCRIPT_incl_Py
+	The intention is JS_CODE in browser, so no C here, ES7_YES
+
+		ES7_is ES6 and then some modern APIS optional WASM ES6_PLUS
+
+		WE provide idx_%s NAME // FMT needs FMT_HELP_PARSER
+
+			each FMT_fmt gets parsed into fixed number %d 
+			so that is the MACRO that provides N of N_LIST
+
+			N_LIST in ARGV_STREAM
+
+				each WORD or PUNCT or VALUE or STR0 in TEXT
+				STEP = WORD = CPU_WORD_but_in_STRUCT // -in_MEM
+
+				requires procise FMT parser
+
+				SCRIPT parses STR and "STR"
+				PSG matches C_IDENT // C_IDENT_97 = EDITABLE 
+				PSG matches C_IDENT_PUNCT // C_IDENT =  ALIAS
+				ALIAS often suggested by MENTION
+				ALIAS often precise EXPR from MENTION
+				ALIAS is CACHED on MENTION
+
+					WE have passed the MENTION XPOS
+					WE approach it SOON
+					WE find it in SCRIPT as XPOS LIST
+					LIST annotated in DIAG explain
+
+			BOLN WORDs EOLN
+
+			MILTI_LINE_CURLIES
+			MILTI_LINE_INDENTS
+			MILTI_LINE_LIST_of_LINE // _or_BLOCK
+
+			_or_BLOCK is a MENTION of a suspected thought
+			it encourages JIT to look further // VALUE placement
+			JIT then 
+	
+	TASK_LIST += {...} 
+	TASK_LIST += { ARGV_SCRIPT in PSG with clever_LEX_PUNCT_PSG  }
+	TASK_LIST += { JS_ACCTS from_basic_JS_in_browser _HEAP_ITEM }
+	TASK_LIST += PARSER that reads and obeys SCRIPTS and ARGV
+	TASK_LIST += PARSER that reads and builds TREE incl SCRIPT }
+
+		The parser itself has a SESS
+		It runs at CT_RT mostly NOW // often DEREF_via_AVAR //
+		CT_RT has DECL_as_SCRIPT which can PRE_LOAD then CACHE
+		CACHE is CT_RT before QUOTA is assesed // literal DECL ASIS
+
+	TASK_LIST += HEAP_ITEM in ES6_PLUS // leaning to much more recent LIBE
+
+		LIBR += recent_latest API
+		LIBR += recent_latest LIBR
+		LIBR += recent_latest JS_2025 // OPTION WASM JIT BROSWER_LIBS
+	
+	TASK_LIST += HEAP_LIBR SESS STO HEAP ITEM ATTR EXPR LIBR
+
+		ATTR += treat_FIELD_as_ARRAY_or_N_LIST
+		ATTR += treat_FIELD_as_STRUCT of DECL_STRUCT
+		ATTR += treat_FIELD_as_UNION of ... LIST ... // _or_GROUP
+		// _or_GROUP // a script that runs on MENTION in CTXT
+		// CTXT is PARSE_PHRASE
+		// CTXT is RUN_SESS_STEP
+		// CTXT is VIEW_EDIT_SAVE_TEST_DOCS SAMPLES EXPLAIN
+		// ARGV is often a list of nonsense words
+		// each SPELLING  within FUNC within FILE within SEGMENT
+		// ARGV STEP is ARGV[ idx_of_STEP_in_LIST ] // INT_wrt ZERO
+		// MINUS_IDX is supposed to indicate DECODE_MINUS INDEX_PLUS
+		// INDEX_ZERO = INDEX_PLUS // and set_flag to not even test
+		// INDEX_ZERO = INDEX_NULL_means_UNSET_or_UNUSABLE_or_LOCKED
+		// INDEX_ZERO = INDEX_NULL_means_UNSET_or_NULL_or_SOMETHING
+		ATTR += treat_FIELD_as_UNION of DECL_UNIONT
+
