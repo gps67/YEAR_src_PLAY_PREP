@@ -1,0 +1,80 @@
+js_bison_XML_kmy_db_API.txt
+
+Use GEN_YACC to create BISON_PSG.EXT .x .y 
+
+Use manually written LEXER in outline of FLEX
+
+	emit a stream of LEX_STEPS // optionally SUB_LEX_STEPS
+
+		TOKEN_SPELLING
+
+		 IDX P0P2 // API provides P0P2 also N_BYTES N nbytes BYTES XPOS
+		 // API allows a mix of DIALECTS and ALIASES
+		 // Parser can also look at USAGE as well ass SPELLING
+		 
+		 union P0P2 {
+		 	this_t P0P2
+			this_t N_BYTES
+			this_t N_BYTES_of_SPEC // KNOW SPEC 
+			this_t N_BYTES_of_SPEC // LEARN SPEC via AVAR_api
+
+			STR0 is expensive because it requires a permanent STR0 
+			The text has to be copied and allocated
+
+			P0P2 is cheaper because it can make direct use
+			... of STR within TEXT
+
+			We probably do have a COPY of the SYMBOL_TABLE
+			which we are normalising to, on every use
+
+			That will have STR0 so getting caller to use STR0 +
+			ie SYMBOL_TABLE is SEGMENT.P0P2_ZONE EA_ITEM_nbytes how_related
+			SEGMENT is ELF layout and full of STR0
+			MMAP can have CTOR_in_situ_on_PAGE_in_MMAP
+			DEFINE ENOUGH: INIT_VAL is entire CTOR 
+			DEFINE ENOUGH: INIT_ZERO is a provided CTOR OPTION
+			DEFINE ENOUGH: add FUNC add ATOMS_and_LISTS_and_ARGV_TREE
+			ROM provides TABLE_of_STR0 _SPELLING_POOL _TOKEN_POOL
+			ROM OPTION CT_RT provides a RT agent for VAR_POOL
+			ROM OPTION RAM made available for WR # FEATURE
+
+ FEATURE
+
+ 	ROM becomes RAM with UDEF
+	SESS helds ROM and LIBR_STO
+
+		LIBR is incrementally rebuilding every week from SCRIPT_DATA
+
+			delete all old API vectors
+
+				find and replace all those VECTORS
+				allow WRAP_FILTER to set new code for API_VECTORS
+
+		USAGE
+			GEN C++ that runs SCRIPTS
+			GEN ROM 	// ROM.GEN
+			GEN LIBR	// LIBR.GEN
+			GEN SESS	// SESS_GEN // _ and . //
+			CACHE SESS	// SESS CACHE
+			RUN SESS
+
+			C++ is itself an Module for Python of Tcl or SWIG
+
+			C++ provides Py_Object_My_TEST_PROTOTYPE_Object
+
+			"{ ITEM_t * ITEM = EXPR }" // CTOR_with VALUE
+			"{ ITEM_t * ITEM = EXPR /* ref_count_INCR */ }" // CTOR_with VALUE and CALL_FUNC ARGS
+
+			The cost of the FUNC call is minimised when NULL = SKIP
+
+			On first exist CTOR_INIT_ZERO // everything is NUL_BYTE
+			On first exist CTOR_BASE_CLASS // C++ style
+			On first exist CTOR_UDEF // after CTOR_BASE_CLASS
+
+		USAGE
+			USE TEST DATA
+			CALL FUNC ARGS // and STRUCT_field AVAI too
+			CALL GETS ARGS // 
+			On first call, 
+
+		 

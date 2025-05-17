@@ -1,0 +1,36 @@
+
+	BYTE_A
+	BYTE_B
+	PAIR_CD
+	FOUR_EFGH	# from LOHI
+
+		i8_H	# HEAP is high byte # needs 1 shift to get i8_H as_i64
+		i24_GFE # ITEM is BITFIELD # needs 2 shift to get i24_GFE
+
+	OPTIONS
+
+		R = sign_extend  i8_BITFIELD_b32_b24
+		R = sign_extend i24_BITFIELD_b24_b0
+
+		R = sign_extend  i8_BITFIELD_b64_b56
+		R = sign_extend i24_BITFIELD_b56_b32
+
+		R = sign_extend i128_BITFIELD_b56_b32
+		R = sign_extend i256_BITFIELD_b56_b32
+		R = sign_extend i512_BITFIELD_b56_b32
+
+	REGISTER
+
+		FLAGS
+		 Z C V 
+		 P DEC_ADJ_or_CARRY sweep_direction
+		GENERAL
+		A B C D SRC DST // some specialism within group
+		FRAME
+		SP FP PC FP+OFFS._1_2_4_8_PLUS // each unique
+		i128 i256 i512 and SIMD_UNION
+		
+	
+	FORMATTING " SP SP i 8 " // _ ...
+	FORMATTING " SP  i 99 " // 99 is %d // %02d
+	FORMATTING " SP  i 123 " // 132 is %d // force LEX_EDGE by adding SP

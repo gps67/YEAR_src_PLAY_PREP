@@ -1,0 +1,116 @@
+SESS.txt
+
+SESS is AVAR is STRUCT has VARIOUS can add features can compile feature
+SESS will soon be built from scripts then launched
+You steer it step by step through BENCH 
+You write BATCH SCRIPT DATA BUNDLES
+You help SITE gen LIBR that used in BATCH processing for SETUP_INIT_CONST
+You help SITE gen LIBR that used in BATCH processing for SWITCH_CONST_VAL
+You help SITE gen LIBR that used in BATCH processing for SET_AVAR VAL
+You help SITE gen LIBR that used in BATCH processing for SET_AVAR EXPR 
+
+	EXPR += ARGV and CTXT that uses
+
+		import CTXT.LIST_one to SCOPE
+		SESS_CURR_SCOPE {
+			SESS = INIT_VAL + VAL_INIT  + VAL_CHANGE 
+			EA_ITEM += CT_RT created this var with ADDR 
+			EA_ITEM_two = EXPR // explore EXPR by CT_RT and CACHE
+
+				CT_RT flows over every line of FUNC
+				CT_RT flows over nested MACROS
+				CT_RT adds CODE_POINT_COUNTER
+
+					they get INCR every loop
+					they get CALL if_no_change
+
+						it determines NO_CHANGE else
+
+						CT_RT CT attach CODE_POINT XPOS
+						CT build all/some/none 
+						CT flexi_UDEF RT on_demand
+
+						 add feature DECL
+						 DECL AVAR "NAME" SPEC
+						 AVAR "NAME" SPEC
+
+						 SPELLING NAME
+						 DETECT USAGE OVERLAP CLASH
+
+				REF_COUNT is a WELL_KNOWN feature
+
+					GEN keeps look out for new kept references
+
+					WE can hold interest in PTR as ARG
+
+					Tcl might not bother
+					Python might have it PRE_DONE_ONE
+					CXX_uses_REF_INCR_DECR_ZERO_API
+					so do Python_3 and Tcl_9
+					_latest or _recent
+
+					WE hold SESSION_STEP_LIST
+
+					Every IDX thing ALLOC_IDX is kept
+					There is a FLOW_DTOR that sync and close
+					There is a TASK_LIST before COMPLETE
+					not transmitted down TREE asif NULL and DONE
+					transmitted where REGISTERED LINK USED
+					on_CHANGE inform DEPS SUBSCRIBERS
+					on_WATCH inform DEPS_MGR SUBSCRIBERS_MGR
+
+					so usually NULL bounces back immediately
+					and no early_DTOR_because
+
+					... let SESS PRE_LOAD and PARSE SCRIPTS
+					... let SESS run some SAMPLE DATA thru
+					... let CT_RT compile SCRIPT EXPRS
+
+					At the end of the STEP, 
+					all SUB_STEP have been done.
+					No functions will run 
+					No DATA will be accessed
+
+					release LIST and all contents
+					all retained links will remain
+					Tcl_LIST or Py_LIST will call ref_decr
+
+					MY_LIST_IN_BUFFER writes NULL over each
+					Returning BUFFER to INIT_NUL init_state
+					blk1 is grow_blk
+					grow_ZONE_as_MALLOC
+					grow_ZONE_as_STATIC_RAM_LIST_16
+
+					MMAP with LOCK SPIN_LOCK AVAR EDIT_LIST
+					MMAP with SAFE MACROS
+					for CRASH_RESILIANCE
+
+					We dont have that, so we BATCH or SHARE
+
+	BATCH puts each TASK onto a mobile PALLETTE
+
+		TASK += BLOB of SESS as N_BYTES with SPEC
+		SPEC += MMAP_HEAP_ITEM_EXPR _SCRIPT_TREE
+
+		ARGV_0 == "MMAP_HEAP_ITEM_EXPR"
+		ARGV_1 == "_SCRIPT_TREE"
+
+		FILE += FILE ../SESS/STO/
+		// CACHE reduces drain from lookup ../SESS/*/
+		// NOT ../SESS_STO/ because that means more than 1 ../SESS/
+		// YES ../SESS/. must cope with getting called with KNOWN STO
+		// YES ../SESS/. must cope with getting called with UNKNOWN STR
+		// CT prepares RT on_UNKNOWN_STR // eg _OWN_NAME_in_DECL // is //
+		CT_RT now has WELL_KNOWN ../SESS/ and maybe ../SESS/*/
+		// CT prepares RT on_UNKNOWN_STR // eg _SCRIPT_TREE
+
+		COMMON USAGE %s %s ARGV_0 ARGV_1 // ie both unknown
+		COMMON USAGE unknown before here DECL MENTION known after here
+
+
+
+					PRE_ALLOC N_LIST 
+
+
+
+		}

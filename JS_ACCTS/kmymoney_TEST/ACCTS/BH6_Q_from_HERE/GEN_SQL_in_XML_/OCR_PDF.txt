@@ -1,0 +1,38 @@
+
+OCR PDF Bank Statements
+
+	get lines of grid 
+	get db_row STMT_LINE {
+		DATE
+		AMNT
+		CAT
+		ABBR
+		DESC
+		CMNT
+	}
+
+PDF/A and then some
+
+	MINI_VFS of documents
+	MINI_VFS of FONTS LOGOS STOCK REFS 
+	MINI_VFS of FONTS LOGOS STOCK TEMPLATE LIBR
+	MINI_VFS adjacent FONT and other shared resources
+	MINI_VFS of LIBR vfs of documents in DIARY
+
+		BATCH of documents
+		FLAT_INDEX - IDX idx = 
+		TREE_INDEX
+	
+	CODE_GUESS
+
+		upgrade "IDX" to "{ IDX_t IDX }"
+		upgrade "IDX" to "{ IDX_t idx }"
+		alias idx IDX
+	
+	FORM_DATA 
+
+		https://en.wikipedia.org/wiki/XFA
+
+		XML FORMS A = DATA
+
+		https://github.com/ocrmypdf/OCRmyPDF

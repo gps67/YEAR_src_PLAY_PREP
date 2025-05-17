@@ -1,0 +1,91 @@
+LPA_DWS_one.txt
+
+LPA_DWS_one is an sqlite database file # mc F3 VIEW manages to read it as an SQL script that generates it's DATA # 
+# WASM could do that # DUMP_sqlite_to_parsable_SQL_script # needs MUX LIST_NAME LIST_DATA
+
+
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE kmmAccounts (id varchar(32) NOT NULL, institutionId varchar(32), parentId varchar(32), lastReconciled timestamp, lastModified timestamp, openingDate date, accoun
+INSERT INTO kmmAccounts VALUES('AStd::Asset',NULL,NULL,NULL,NULL,NULL,NULL,'9','Asset','N','Asset',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO kmmAccounts VALUES('AStd::Equity',NULL,NULL,NULL,NULL,NULL,NULL,'16','Equity','N','Equity',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO kmmAccounts VALUES('AStd::Expense',NULL,NULL,NULL,NULL,NULL,NULL,'13','Expense','N','Expense',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO kmmAccounts VALUES('AStd::Income',NULL,NULL,NULL,NULL,NULL,NULL,'12','Income','N','Income',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO kmmAccounts VALUES('AStd::Liability',NULL,NULL,NULL,NULL,NULL,NULL,'10','Liability','N','Liability',NULL,NULL,NULL,NULL,NULL);
+CREATE TABLE kmmAccountsPayeeIdentifier (accountId varchar(32) NOT NULL, userOrder smallint unsigned NOT NULL, identifierId varchar(32) NOT NULL, PRIMARY KEY (accountId, user
+CREATE TABLE kmmBudgetConfig (id varchar(32) NOT NULL, name text NOT NULL, start date NOT NULL, XML longtext, PRIMARY KEY (id));
+CREATE TABLE kmmCostCenter (id varchar(32) NOT NULL, name text NOT NULL, PRIMARY KEY (id));
+CREATE TABLE kmmCurrencies (ISOcode char(3) NOT NULL, name text NOT NULL, type smallint unsigned, typeString mediumtext, symbol1 smallint unsigned, symbol2 smallint unsigned,
+CREATE TABLE kmmFileInfo (version varchar(16), created date, lastModified date, baseCurrency char(3), institutions bigint unsigned, accounts bigint unsigned, payees bigint un
+INSERT INTO kmmFileInfo VALUES('12','2025-05-12','2025-05-12',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NU
+CREATE TABLE kmmInstitutions (id varchar(32) NOT NULL, name text NOT NULL, manager mediumtext, routingCode mediumtext, addressStreet mediumtext, addressCity mediumtext, addre
+CREATE TABLE kmmKeyValuePairs (kvpType varchar(16) NOT NULL, kvpId varchar(32), kvpKey varchar(255) NOT NULL, kvpData mediumtext);
+CREATE TABLE kmmOnlineJobs (id varchar(32) NOT NULL, type varchar(255) NOT NULL, jobSend timestamp, bankAnswerDate timestamp, state varchar(15) NOT NULL, locked char(1) NOT N
+CREATE TABLE kmmPayeeIdentifier (id varchar(32) NOT NULL, type varchar(255), PRIMARY KEY (id));
+CREATE TABLE kmmPayees (id varchar(32) NOT NULL, name mediumtext, reference mediumtext, email mediumtext, addressStreet mediumtext, addressCity mediumtext, addressZipcode med
+CREATE TABLE kmmPayeesPayeeIdentifier (payeeId varchar(32) NOT NULL, userOrder smallint unsigned NOT NULL, identifierId varchar(32) NOT NULL, PRIMARY KEY (payeeId, userOrder)
+CREATE TABLE kmmPluginInfo (iid varchar(255) NOT NULL, versionMajor tinyint unsigned NOT NULL, versionMinor tinyint unsigned, uninstallQuery longtext, PRIMARY KEY (iid));
+CREATE TABLE kmmPrices (fromId varchar(32) NOT NULL, toId varchar(32) NOT NULL, priceDate date NOT NULL, price text NOT NULL, priceFormatted mediumtext, priceSource mediumtex
+CREATE TABLE kmmReportConfig (name varchar(255) NOT NULL, XML longtext, id varchar(32) NOT NULL, PRIMARY KEY (id));
+CREATE TABLE kmmSchedulePaymentHistory (schedId varchar(32) NOT NULL, payDate date NOT NULL, PRIMARY KEY (schedId, payDate));
+CREATE TABLE kmmSchedules (id varchar(32) NOT NULL, name text NOT NULL, type tinyint unsigned NOT NULL, typeString mediumtext, occurence smallint unsigned NOT NULL, occurence
+CREATE TABLE kmmSecurities (id varchar(32) NOT NULL, name text NOT NULL, symbol mediumtext, type smallint unsigned NOT NULL, typeString mediumtext, smallestAccountFraction va
+CREATE TABLE kmmSplits (transactionId varchar(32) NOT NULL, txType char(1), splitId smallint unsigned NOT NULL, payeeId varchar(32), reconcileDate timestamp, action varchar(1
+CREATE TABLE kmmTagSplits (transactionId varchar(32) NOT NULL, tagId varchar(32) NOT NULL, splitId smallint unsigned NOT NULL, PRIMARY KEY (transactionId, tagId, splitId));
+CREATE TABLE kmmTags (id varchar(32) NOT NULL, name mediumtext, closed char(1), notes longtext, tagColor mediumtext, PRIMARY KEY (id));
+CREATE TABLE kmmTransactions (id varchar(32) NOT NULL, txType char(1), postDate timestamp, memo mediumtext, entryDate timestamp, currencyId char(3), bankId mediumtext, PRIMAR
+CREATE VIEW kmmBalances AS SELECT kmmAccounts.id AS id, kmmAccounts.currencyId, kmmSplits.txType, kmmSplits.value, kmmSplits.shares, kmmSplits.postDate AS balDate, kmmTransac
+CREATE INDEX kmmKeyValuePairs_type_id_idx ON kmmKeyValuePairs (kvpType,kvpId);
+CREATE INDEX kmmSplits_kmmSplitsaccount_type_idx ON kmmSplits (accountId,txType);
+COMMIT;
+
+
+
+
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE kmmAccounts (id varchar(32) NOT NULL, institutionId varchar(32), parentId varchar(32), lastReconciled timestamp, lastModified timestamp, openingDate date, accoun
+INSERT INTO kmmAccounts VALUES('AStd::Asset',NULL,NULL,NULL,NULL,NULL,NULL,'9','Asset','N','Asset',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO kmmAccounts VALUES('AStd::Equity',NULL,NULL,NULL,NULL,NULL,NULL,'16','Equity','N','Equity',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO kmmAccounts VALUES('AStd::Expense',NULL,NULL,NULL,NULL,NULL,NULL,'13','Expense','N','Expense',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO kmmAccounts VALUES('AStd::Income',NULL,NULL,NULL,NULL,NULL,NULL,'12','Income','N','Income',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO kmmAccounts VALUES('AStd::Liability',NULL,NULL,NULL,NULL,NULL,NULL,'10','Liability','N','Liability',NULL,NULL,NULL,NULL,NULL);
+
+CREATE TABLE kmmAccountsPayeeIdentifier (accountId varchar(32) NOT NULL, userOrder smallint unsigned NOT NULL, identifierId varchar(32) NOT NULL, PRIMARY KEY (accountId, user
+CREATE TABLE kmmBudgetConfig (id varchar(32) NOT NULL, name text NOT NULL, start date NOT NULL, XML longtext, PRIMARY KEY (id));
+CREATE TABLE kmmCostCenter (id varchar(32) NOT NULL, name text NOT NULL, PRIMARY KEY (id));
+CREATE TABLE kmmCurrencies (ISOcode char(3) NOT NULL, name text NOT NULL, type smallint unsigned, typeString mediumtext, symbol1 smallint unsigned, symbol2 smallint unsigned,
+
+CREATE TABLE kmmFileInfo (
+	version varchar(16),
+	created date,
+	lastModified date,
+	baseCurrency char(3),
+	institutions bigint unsigned,
+	accounts bigint unsigned,
+	payees bigint un... truncated line # came from screen 
+
+INSERT INTO  kmmFileInfo VALUES('12','2025-05-12','2025-05-12',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NU
+
+CREATE TABLE kmmInstitutions (id varchar(32) NOT NULL, name text NOT NULL, manager mediumtext, routingCode mediumtext, addressStreet mediumtext, addressCity mediumtext, addre
+CREATE TABLE kmmKeyValuePairs (kvpType varchar(16) NOT NULL, kvpId varchar(32), kvpKey varchar(255) NOT NULL, kvpData mediumtext);
+CREATE TABLE kmmOnlineJobs (id varchar(32) NOT NULL, type varchar(255) NOT NULL, jobSend timestamp, bankAnswerDate timestamp, state varchar(15) NOT NULL, locked char(1) NOT N
+CREATE TABLE kmmPayeeIdentifier (id varchar(32) NOT NULL, type varchar(255), PRIMARY KEY (id));
+CREATE TABLE kmmPayees (id varchar(32) NOT NULL, name mediumtext, reference mediumtext, email mediumtext, addressStreet mediumtext, addressCity mediumtext, addressZipcode med
+CREATE TABLE kmmPayeesPayeeIdentifier (payeeId varchar(32) NOT NULL, userOrder smallint unsigned NOT NULL, identifierId varchar(32) NOT NULL, PRIMARY KEY (payeeId, userOrder)
+CREATE TABLE kmmPluginInfo (iid varchar(255) NOT NULL, versionMajor tinyint unsigned NOT NULL, versionMinor tinyint unsigned, uninstallQuery longtext, PRIMARY KEY (iid));
+CREATE TABLE kmmPrices (fromId varchar(32) NOT NULL, toId varchar(32) NOT NULL, priceDate date NOT NULL, price text NOT NULL, priceFormatted mediumtext, priceSource mediumtex
+CREATE TABLE kmmReportConfig (name varchar(255) NOT NULL, XML longtext, id varchar(32) NOT NULL, PRIMARY KEY (id));
+CREATE TABLE kmmSchedulePaymentHistory (schedId varchar(32) NOT NULL, payDate date NOT NULL, PRIMARY KEY (schedId, payDate));
+CREATE TABLE kmmSchedules (id varchar(32) NOT NULL, name text NOT NULL, type tinyint unsigned NOT NULL, typeString mediumtext, occurence smallint unsigned NOT NULL, occurence
+CREATE TABLE kmmSecurities (id varchar(32) NOT NULL, name text NOT NULL, symbol mediumtext, type smallint unsigned NOT NULL, typeString mediumtext, smallestAccountFraction va
+CREATE TABLE kmmSplits (transactionId varchar(32) NOT NULL, txType char(1), splitId smallint unsigned NOT NULL, payeeId varchar(32), reconcileDate timestamp, action varchar(1
+CREATE TABLE kmmTagSplits (transactionId varchar(32) NOT NULL, tagId varchar(32) NOT NULL, splitId smallint unsigned NOT NULL, PRIMARY KEY (transactionId, tagId, splitId));
+CREATE TABLE kmmTags (id varchar(32) NOT NULL, name mediumtext, closed char(1), notes longtext, tagColor mediumtext, PRIMARY KEY (id));
+CREATE TABLE kmmTransactions (id varchar(32) NOT NULL, txType char(1), postDate timestamp, memo mediumtext, entryDate timestamp, currencyId char(3), bankId mediumtext, PRIMAR
+CREATE VIEW kmmBalances AS SELECT kmmAccounts.id AS id, kmmAccounts.currencyId, kmmSplits.txType, kmmSplits.value, kmmSplits.shares, kmmSplits.postDate AS balDate, kmmTransac
+CREATE INDEX kmmKeyValuePairs_type_id_idx ON kmmKeyValuePairs (kvpType,kvpId);
+CREATE INDEX kmmSplits_kmmSplitsaccount_type_idx ON kmmSplits (accountId,txType);
+COMMIT;
+
+

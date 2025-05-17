@@ -1,0 +1,115 @@
+
+db_API
+ db_link
+ 	IP4 TCP HOST PORT // SERVER_HOST SERVER_PORT // IP6 switch
+ 	IP6 TCP HOST PORT // SERVER_HOST SERVER_PORT // IP6 switch
+ 	IP4 UDP HOST PORT // REMOTE_HOST REMOTE_PORT // IP6 switch
+
+		The local ADDR and PORT are avail // from BIND from SOCKET
+
+		We are a GW - when we use UDP we become a SERVER and ROUTE
+
+		UDP is often used like TCP but with own rules
+		ACK is our addition to convert ip4_udp to UDP
+		RESEND is OPTION from deduced dropped packet
+		Our protocol adds a SEQ_ID PKT_ID
+
+user SESS // MACRO SESS.user or () or EXPR_incl_PHRASE
+db_API // first login as user with password and PRE_DONE prove owener of CLAIN
+// done by decoding something dn using something else
+// $AVAR returns as an independent $IDENT ${EXPR} _dollar_PUNCT $? $@ $_$DIGIT
+// RTFM get list for BASH for Tcl for $BASIC
+// KEY_excrypted = ENCRYPT $KEY1 # using KEY_ZERO for this RSA_PAIR_interlock
+// SECRET_KEY // held by CLAIM OWNER and leaked bypassing support desk staff
+// PROOF of HOLDING the KEY //
+// PROOF of BLIND HOLDING the KEY // MINI_MACHINE_two holds KEY1 = GET "KEY1"
+// GET can return a plain STR0
+// GET can return a TOKENISED SPELLING as an ITEM or LOCN or BOTH or STR0 STR
+// DECL { DECL { type_name var_name } : { str0 STR } }
+// DECL becomes XPOS of DECL STR // AVAR_STR // unlitter MK_AVAR build TABLES
+
+db_API {
+	SELF = $SELF // DIALECT stop using $DOLLAR_NAME
+
+	db_connection_t db_link;
+	db_link . set login_host_name "127.0.0.1" // or file or FIFO or /dev/b or
+	db_link . set login_PROTO_IP4 IP4_TCP HOST_NAME HOST_PORT STATUS
+	// STATUS is SESS.AVAR for STATUS of AVAR // unset use_it FSM_POOL STATUS
+	// STATUS use_it // CACHE says this is the latest CT_AVAL DATA_
+	// STATUS use_it // CACHE says this is the latest RT_AVAL DATA_
+	// STATUS_null means has not yet been calculated as its CTOR
+	// we have a rock climbing WALL scattered with CTOR_STATUS_of_CODE_POINT
+	// some simple rules gives us one OBJ per DECL at XPOS
+	// XPOS += { FILE OFFS }
+	// XPOS += { FILE OFFS_of_BOLN CPOS } // or BPOS // AMBIG resoulve USED
+	db_link . set login_port PROTO_IP4 HOST_NAME HOST_PORT 
+	db_link . set login_user_name "USER_01" // ALIAS "%s" USER_NAME
+
+	DECL STRCUT {
+	 SPEC_BASE BASE_CLASS _of_SPEC
+	 // that sets "BASE_CLASS" as SPEC BASE %s
+	 // additionally this AVAR is actually a SPEC for { SPEC AVAR_NAME }
+	 // SPEC can be 
+	 // SPEC is obj_ref_0 += DECL_has_NAME DECL_has_PHRASE DECL_has_EXPR
+	 // EXPR is ATOM eg STR0 or LIST
+	 // DECODE i64 gives us LOCAL SCOPE many times over
+	 // SCOPE MERGE DISTICT NAMES or MATCHING NAMES // API PROVIDER
+
+	 SPEC DECL FIELD { VAR_SPEC VAR_NAME } // IDX where NAME is DECODE
+	 DECODE grow_IDX enables CT_RT to build MINI_MACHINES with low IDX_99
+	 "%02d" // looks a lot like HEX but is decimal, works where it works
+	 
+	 CT_RT SCRIPT {
+	 	DECODE BITFIELDS
+	 	DECODE i32_i16_i8_i8
+		// MATCH // WELL KNOWN // LIBR PROVIDE BYTE_B // SIGNED ? //
+
+		DECODE i16_i16_i16_i8_i8 // DIAG VIEW is ...
+		// LOHI or HILO // bytes are always LOHI BITS are DRAWN hilo
+		// remember BYTES go out LOHI BYTES into MMAP BYTES
+		// BITS hilo_BIT_ORDER
+
+			BYTE_A
+			BYTE_B
+			i16[3] // lo to hi
+	// ||	//	i16_ZERO is UNION i8_i8 BYTE_A BYTE_B
+	 		i16_ZERO  // EA_MEM or CPU_WORD_BITFIELD_16__0
+	 		i8_BYTE_A // EA_MEM or CPU_WORD_BITFIELD_ 8__0
+			i8_BYTE_B // EA_MEM or CPU_WORD_BITFIELD_16__8
+			i16_one   // EA_MEM or CPU_WORD_BITFIELD_32_16
+			i16_two   // EA_MEM or CPU_WORD_BITFIELD_48_32
+			i16_three // EA_MEM or CPU_WORD_BITFIELD_64_48
+
+		sign_extend_BITFIELD_to_entire_CPU_WORD
+
+			our BITFIELDS dont cross the 32 bit line
+			i48_PAYLOAD does // uses 2 CPU_REGS AX DX
+			i48_PAYLOAD = i64_WORD >> 16 // SIGNED //
+			on CPU_32 go for an inline MACRO per design
+
+			GCC and CLANG and tcc and ASM have i64_WORD >> 16
+
+				i48_PAYLOAD = i64_WORD >> 16 // SIGNED //
+
+				// on CPU_32 GCC has a fast
+				// on CPU_64 entire WORD signle shift 
+				// TEST DONE // flags set by the shift
+
+
+		DECODE i64 mini_script within i16[3]
+
+			idx_HEAP = i16_one
+			idx_ITEM = i16_twp
+			idx_EXPR = i16_three
+
+			That gives us another i8_i8 on ITEM
+
+			SIGN_FILL_BYTE_B_BYTE_A = CPU_WORD_i64 >> 48 
+
+				SIGN means BYTE_B is MINUS
+				ZERO means BOTH are ZERO
+
+				REST is JUNK
+
+
+

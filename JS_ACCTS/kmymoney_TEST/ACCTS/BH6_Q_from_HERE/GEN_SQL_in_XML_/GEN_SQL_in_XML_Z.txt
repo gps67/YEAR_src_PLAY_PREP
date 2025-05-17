@@ -1,0 +1,62 @@
+
+	GEN_SQL_in_XML_/
+	GEN_SQL_in_XML_Z.txt
+
+	GEN_SQL
+
+	GEN_XML
+
+		PSG_HARDWIRED_FROM_USAGE_STATE_and_BEYOND _API_to_add_PSG_DIALECT_and_USAGE_and_SCRIPTS_in_VFS_in_XML
+
+			GENERIC STRUCT
+			GENERIC ARRY[ IDX ] of EA_EXPR // EIGHT_BYTES // one_i64 // two_i32_i32_half_pair
+
+				// OK on i32 and on i64 we have a USAGE for i32_i32 _on_32 _on_64 in_MEM in_CPU as  CPU_CODE_GENERIC_64 _32_can_use_2_regs
+				// OK on i32 and on i64 we have a USAGE for i32_i32 _on_32 _on_64 in_MEM in_CPU as  CPU_CODE_GENERIC_64 _32_can_use_2_words
+				// in_MEM // ALIGNED preferably but CPU can actually sort it out, with MEM_LOCK_LIBR too!
+				// in_CPU // as_PAIR_REGS // HIGH_half HALF_half //
+				// in_CPU // as_FULL_WORD // BITFIELD_disappears becomes WORD_64 // +- SIGNED // OPTION CPU_REG_USAGE GENERAL CALL_FRAME MMAP
+
+		XML Parser provides OFFS LINE CPOS CSET XML_STACK_mapping_onto_CACHE_VAR_POOL_MINI_MACHINE_SESS SESS
+
+	SESS_api
+
+		STATE
+		 not connected # HOW and WHY #
+		OPEN_STREAM_XML
+
+			BASE_CLASS OPEN_STREAM_request_and_response_diary
+			BASE_CLASS GEN_STREAM_GEN_XML_GEN_SQL_in_XML
+
+			Prepare SCRIPT.sql to go into XML wrapper # annoying CSET SHIFT 8859 to UTF8 # until MUX_FIELD_TYPE_CSET_MUX
+
+			USAGE guess yesterday REMOTE prepared this SCRIPT, expecting it to simply work
+			UPPER_NOUN_FUNCT_with_ARGV ARGS // eg "USAGE" then whatever english text is there "guess" "yesterday" LINE_of_ARGS=TAIL
+
+			BUILD_TREE
+			BUILD_TREE_XML
+
+			WRAP_TEXT_LINES_in_XML_BLOCK
+			<SCRIPT CSET=8859_latin>
+			<SCRIPT
+				CSET=BYTE_latin // no UTF8 found // FILTER UTF8_latin // BYTE_from_UTF8 
+				LANG="ES6_PLUS" // you dont have to know PLUS it does // it being "ES6_PLUS" // FILTER ES6 VAR_POOL
+				XPOS_FILE="SCRIPT_FILE_NAME"
+				XPOS_FILE_LOCN_of_LOCN=".."
+				XPOS_FILE_LOCN="."
+				-- irony that XPOS should be an XML TAG 
+				-- irony that XPOS is an XML ATTR of the SCRIPT tag
+				-- irony because SCRIPT is TEXT 
+				-- and this comment syntax is required
+				XPOS_EOF=recalc
+			>
+
+
+
+
+		PARSE STREAM
+		PARSE FILE
+		PARSE FILE in advance of CT_RT_WHEN // += CT_RT RT_NOW
+		
+			# 
+
