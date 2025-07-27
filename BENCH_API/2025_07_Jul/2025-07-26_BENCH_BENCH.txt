@@ -1,0 +1,116 @@
+	2025-07-26
+	2025-07-26_BENCH_BENCH.txt
+
+		A particularly hot cup of tea.
+
+	Code is a subset of C++ that we can write our own translater for
+	OUR_DIALECT is FILTER over BASE_CLASS merged with LOCN SELF
+	LOCN SELF // SELF += LOCN LOCN // own VAR_NAME holding ITEM
+	const VAR // const NAME // const SPELLING // MERGE IDX_OBJ_SPEC_STO_VTABL_SELF
+	SELF LOCN "HERE" { // += LOCN_HERE
+
+	# SESS_ZONE_HEAP_NEAR_AREA_LOCN_and_COMPONENT_LIBR
+	# LIBR_OOP # Your task is Module_%s and CFS_of_API
+	# VFS_Module_one
+	# VFS_Module_two # UNUSED triggers EMIT_OMIT
+	# FILTER those more locally, REMOTE only getus SUBSET
+	# this is a carefully queued STO.ROM.SCRIPT.XPOS_EA_EXPR
+	# STREAM is 24K of LOG_RELAY_REPLAY_BENCH # IMPORT TABLES of XPOS
+	# CODE_POINT is XPOS in SCRIPT of BOLN # BOLN OFFS SPEC ITEM #
+	# SPEC is VITAL # open_source works here # 
+	# SPEC is DECL STRUCT #
+	# IDEN is "VALUE" # SCOPE is LIBR_MODE_SPELLING_TOKEN_IDX
+	# VALUE is "SPELLING" # STR_P0P2 in CSET_from_SESS #
+	# SESS has a rich list of CSET and also LEX_USED tables #
+	# NAME is well known as NAME # often SPEC # OPTION decode as SPEC #
+	# SPEC_t * SPEC = get_expr( EXPR ARGS SESS )
+	# We keep picking up "SESS" from lookup("SESS") #
+	# STR0 is a might powerful CSET # P0P2 is also a good iea #
+	# STREAM is P0P2 followed by next P0P2 split of network Q_BLOCK
+	# Q_BLOCK is 32K # fits in i16 as u16 with on_MINUS "IS_ALIAS"
+	# above statement remains identical over extra CT_RT GEN_RUN_TEST
+	# Q_BLOCK is 16K because SSL uses that as an optimised block size
+	# All IP4 packets are limited to 1.5K over ethernet
+	# Multi packet TCP or TRANSPORT or SSL or STREAM_over_PKT
+	# WHen running at full blast, relay throttle to mimic remote
+	# WE COPY our own recommendations for CODE at GEN_EXPR
+	# we FLUSH code upto when flush gets called # SYNC_POINT #
+	# we let CACHE PRE_KNOW what it has learned # SAVE_LOAD_something
+	# AVAR exists # has EA ID as IDENT as IDX as lookup_SPELLING
+	# AVAR.STRUCT.field_one # exactly like CXX and also ARGV 
+	# ARGV ITEM HEAP SCENE LOCN = XYZ_one // NEAR = LOCN //
+	# many NEAR are += # into some LHS_ITEM_POOL_API
+	# API ENCODE IDX from SPELLING # and GROUP #
+	# API DECODE IDX to SPELLING # and GROUP #
+	# SCOPE += GROUP #
+	# SCOPE is Proper Noun Decl
+	# GROUP is a SCOPE // TABLE lhs = TABLE[rhs].PTR_to_ITEM
+	# GROUP_ITEM # is IDIOM HEAP_ITEM ## GROUP_ITEM ##
+	# %s is Proper Noun DECL # UPPER lower numeric #
+	# MULTI_MATCH -vs- BIAS_MATCH #
+	# decision tree, each branch has a WEIGHT or EMPHASIS // in WHEN
+	# explore each tree, predicting COST of 1000 # using sample data
+	# METRIC 6_byte_NAME "HERE" "_HERE" # in i64 _from_LOHI _from_ABCD
+	# METRIC 6+6 byte "12_BYTE_STR" 
+	# METRIC 6+6+6 byte "18_BYTE_STR" 
+	# 6+6+6+6 indefinitely STREAM of OPCODE and DATA and TREE
+	# PARSE STREAM i8_i8 six_byte # CD_EFGH # i48_HGFE_CDBA # BYTEFIELD
+	# A_B_CD_EFGH # ABCD_EFGH #
+	# AXIOM_NEED # CPU can access HALF_i64 at ALIGNED i64 then HALF_HALF
+	# AXIOM USEAGE # GET i64 from i32 from HIGH_HALF_of_WORD_lohi
+	# AXIOM LOHI everywhere # except DRAW BITFIELDS DCBA HGFE_DCBA
+	# BITFIELD DIAG # draws right to left # zero at right
+	# CONCEPT # BIT_OFFS_from_ZERO #
+	# PROVIDE # i32_aligned # i64_aligned strict but mostly uses i32_i32
+	# USAGE 6 bytes of STR6 list
+	# the two bytes A B are OPCODE carrying STR6 siz_byte payload
+	# BIT_OFFS = 16 # past A past B #
+	# indefinite list of STR6 with EOT marker or parsable from { and }
+	# OPCODE_AB # six_byte = i48_PAYLOAD >> 16 # A and B makes i8_i8 = i16
+	# COUNTING RULES DIAG SPACER ITEM for i4 of LIST_7
+	#
+
+ MINI_MACHINE runs CPU in DATA_MODE over STREAM of i64 using ENCODING STR6
+
+ 	# STR6 is a VAR_NAME # usually ABCD # ABCD EFGH # i64 i64_WORD[IDX]
+	# IDX is u7 in heap of 256 items (in this PAGE)
+	# GROW u7 to u15 to u31 to u47 to u63 # i48 is a fundamental BITFIELD
+	# COMPILE uses DECODE then DIRECT # DECODE PRE_LOAD MENTION 
+	# LIBR uses LIBR LEXICON # TOKENISING iis locally strong #
+	# LAYER DIALECT # how TYPES are named # how AVAR is named
+	# FILTER DIALECT # sweep L2R tree_sweep_L2R # STREAM
+	# ROM PRE_LOAD done so now not a STREAM # MMAP DONE # MENTION #
+
+	CPU_MINI_MACHINE passes over i64_WORD in MEM from STREAM
+	YES ALIGNED i64 YES WORD_64 YES CPU_64 
+	CPU32 must have a way of loading ALIGNED words from MMAP
+	CPU32 must be able to do some i64 computations eg SIMD MMX_512
+	CPU32 uses i32_idx DESIGN i32_i32 # VIEW DCBA # STR6 # i8i8_i16_i32
+	# i32_i16_i8_i8 # DRAW as BITFIELD # used by IDX
+	# i32_i16_i8_i8 # DRAW as SPELLING # used by STR6
+	# i8_i8_i16_i32 # DRAW as FIELD # used by IDX
+	yes CPU_32
+	# 
+	}
+
+ BENCH is a workspace with tools that help build WXYZ
+ BENCH + BENCH is bootstrap hardcoded after GEN
+
+ 	BIT_FIELD
+	BYTE_FIELD
+
+		i64
+		i32_i32
+		i8_i8 i16_DC i32_HGFE	VIEW BYTE FIELD L2R
+		i8_i8 i16_CD i32_EFGH	VIEW BIT FIELD R2L
+
+
+
+
+
+
+
+
+
+
+

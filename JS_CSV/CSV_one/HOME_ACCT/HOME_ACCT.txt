@@ -1,0 +1,126 @@
+
+	HOME_ACCT/
+	HOME_ACCT.txt
+
+	LPA_ACCT : public HOME_ACCT { SCRIPT }	// TYPE_DECL_IMPORT_MODULE_of_LIBR
+	LIBR_MODULE_type_decl type_decl {
+	 AUTO # type_decl_t * type_decl = EXPR
+	 AUTO # type_decl_t & type_decl = EXPR # PICK REASON VAL_is_ID_as_IDX
+
+	 CT_RT reduces it down to * which is easy enough to read
+	 CT_RT attaches to VALUE or to AVAR_of_VALUE
+	 CT_RT expects API to provide SESS.SESS.G_rrr
+	 # SESS is a field instead of our container # semantics after that #
+	 # provide SESS.SESS # somehow #
+	 # SESS.SESS is a C_BUILTIN and blindingly fast #
+	 # SESS.SESS.G_rrr is LIBR_WARN_API that once worked surprisningly well
+	 # sort of # OS says file does not exist # ENOENT # other avail info
+
+	 TYPE DECL SPEC used by API = REPORT_EXPLAIN_to_GUI
+	 DECL SPEC is CXX struct # DECL CXX_STRUCT_amd_SCRIPT
+	 Module provides a rich bunch of options
+	}
+	
+	SNAPSHOT as REPORT and its PRINT moment _NOW
+
+		_NOW forces AVAR for that NAME
+		NAME == "NOW" // OPTION == // OPTION = // OPTION lhs opcode rhs
+
+			TEMPLATE can place lhs opcode rhs in FILTERED ARGS
+
+			 AVAR lhs ALIAS LHS TYPE LHS_t 
+
+			 	seems trite
+				but that is the flavour that tells AUTO to GEN
+				GEN LHS_t // OFTEN "ITEM_t" // ALIAS "%s_t" //
+				Each RULE has MATCH EXPR RULE TITLE ARGS ETC
+	
+	Everything is a module
+
+		const
+		type
+		var
+		expr
+		func
+		api_feature
+		api
+	
+	Every NOUN os a module
+
+		IDX allocates an u7_IDX u15_IDX u31_IDX u63_IDX
+
+		MATCH is_PLUS
+		MATCH is_ZERO
+		else
+		MATCH is_MINUS {
+			This CODE is IDX and only deals with is_PLUS
+			This CODE is PLUS IDX MINUS PUZZLE_to_get_answer
+
+			ie is_PLUS is ARRAY[ IDX ] of EIGHT
+
+			CPU_32 has options when looking at i64
+
+			MATH register i256_unlikely i64_likely
+
+				LIBR uses C stanza to see as i32_i32_in_MEM
+				_in_MEM
+				_in_CPU_as_MATH_REGISTER_%s
+				_in_CPU_as_PAIR_REGISTER_%s_%s
+
+			LANG decoder
+
+				when caller calls the same expr time and again
+				they invoke a CACHE_API for that "SPELLING"
+				CT_RT detects NOUN in landscape of SCRIPT
+				CT_RT asks CACHE for API
+				CACHE provides API for CT_RT to use
+
+					GETTER
+					SETTER
+					AVAR
+					DECL SPEC and CMNT usage and MACROS
+		 on_MINUS %d # SESS XPOS_of_a_PAGE MINUS_IDX = THEME . USED
+
+			MINUS = %s
+		 	switch MINUS {
+			# then a list of PAIRS VALUE ACTION #
+			# ACTION = INDENTED_TEXT # 
+			 M1 {
+			 }
+			 M2 {
+			 }
+			 ELSE {
+			 	DECODE MINUS {
+				 i8_i8_i16_i8_i24 { // BYTES in STREAM
+				 i24_i8_i16_i8_i8 DITTO as BITFIELD
+				  LIST L2R HI to LO as BITFIELDS
+				  # CODE # CPU_WORD_%s = i32_HIGH_HALF # A B C D
+
+				 }
+				}
+			 }
+			}
+
+		on_RefCount_ZERO { pre_DTOR ; add to queue DTOR_LIST }
+
+			CACHE reports all LISTENERS DONE
+			CACHE learns from TEST_SCRIPTS
+			CACHE learns from LIVE_DATA
+			nb we are HOME_ACCTS which fits on 20K csv for 7 years
+
+
+		LIMIT READ_ONLY_or_other_LIMIT
+
+			on_FIRST_MENTION_of_PRE_COMPILED_NOUN
+
+				MENTION means NOUN says own name "SPELLING"
+				MENTION to TOKEN to BINDING to AVAR in SESS
+
+			We can write ROM by running a MINI_MACHINE with STO
+			ROM = STO after mk_ROM says DONE
+
+
+				LIBR uses ASM stanza to 
+		}
+
+

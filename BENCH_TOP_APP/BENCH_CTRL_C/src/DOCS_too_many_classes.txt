@@ -1,0 +1,7 @@
+
+Too many classes, and the need to introduce one customised in the middle
+
+Maybe instead have some FIXED Window Top App chain, of generic types
+and then attach the features, to the task
+
+

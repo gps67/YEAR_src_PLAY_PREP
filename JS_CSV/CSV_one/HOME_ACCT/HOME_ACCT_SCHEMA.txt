@@ -1,0 +1,132 @@
+HOME_ACCT_SCHEMA.txt
+
+	CSV_PLUS and also
+	 SIMPLIFIED CSV 
+	  BOLN HASH CMNT_TO_EOLN # RELAY SIGNAL EOT EOLN END_LEX # OPTION MID_
+	  	on_CMNT CMNT # default args are actually .SELF. DECL_SPEC
+	
+		SPEC += local feature within CMNT and also within this CSV subset
+		BASE SPEC += PARSE TOKENS += BOLN GAP VALUE_NUMERIC Q2_STR_Q2
+		Q1_STR_Q1  FILTER str 
+		Q2_STR_Q2  FILTER str 
+		BQ_STR_BQ  FILTER str # DETECT_SP2 _as_ABSENT_in_Q0
+		Q0 is the world of Q2, but an INST to represent the entire HEAP
+		Q2 is DIALECT of LIBR Q1 is a part of it too USAGE STYLE_one
+
+	   LHS COMMA GAP RHS # GOM is '' or NULL or OBJ_REPLY_EMPTY_ZERO
+
+	   STREAM recognises well known "LHS" for the STREAM TEXT leading here
+	   STREAM recognises well known "RHS" for the STREAM TEXT following here
+	   DIALECT notices two usages LHR RHS for pair of ITEMS in TUPLO
+	   TUPLO for THIS_ITEM_of_SPEC_TREE # the FULL Module MINI_MACHINE
+
+	   SCRIPT has a list of resources that ALLOC has provided
+	   MMAP is a builtin THERE EA = OFFS_in_SEGMENT SEG_one
+	   EA_MATH ADDR = BASE + OFFS # OFFS = LHS.P2 _as_OFFS
+	   # REWRITE # as_OFFS( LHS.P2 ) # still using symbolic CODE EXPRS
+	   # BENCH # EXPR LHS.P2 # P0 = EXPR # P2 = RHS.P0 
+	   
+		   # BENCH #
+		    EXPR LHS.P2 # EA BYTE after LHS - by DEFINITION P2 is AFTER
+		    P0 = EXPR 
+		    P0 = LHS.P2 
+		    P2 = RHS.P0 
+
+		   # DIAG #
+
+		   /l/h/s /
+		   | | |  | # diag lines in ASCII # GEN # HIDDENT BORDER EDGE
+		    L_H S [ P0 
+		    - - - [ P0 ... [ P2 
+		                   [ R H S  
+	  
+		   DIAG P0P2 over "AVAR" XPOS in SCRIPT of MENTION
+		   | | |  | # diag lines in ASCII # GEN # HIDDENT BORDER EDGE
+		          [ P0 ...[ P2 
+		          [ L H S [ P2 
+	  
+
+
+	  		That immediately needs 2 in 1 += needs evtra phase += 
+
+			This is in the same way SPELLING meets TOKEN meets %s
+
+				$s "LHS" # actual value 3 bytes then P2 NUL
+
+			We FAKE STR0 from P0P2
+			We HAVE P0P2 in FILE -
+			we AVOID COPY STR "AVAR" by API based on P0P2
+			we provide P0P2_from_STR0( STR ) { P2 points to NUL }
+			All the way upto the first NUL byte after STR.P0
+			LOOK OUT for DATA with NUL bytes all over the place
+			That needs P2 to KNOW what ALLOC gave us 
+
+		  DIAG NEST DIAG 
+		  	templates reused with different parameters
+			"LHS" "RHS" 
+			well known SPELLINGS have AUTO_ALIAS "lhs" 
+
+				BUILD PARSER for ARGV
+				SECOND PARSER within FRAG of CXX_SCRIPT
+
+				Basic CSET layer for LEX_TYPE ARGV and CXX CRIPT
+				Using an FSM MINI_MACHINE and GEN SCRIPT_DATA
+
+				SOMEHOW enable NBYTES of BLOB eg as base64
+				or CT_RT FILE_P0P2 as BLOB_nbytes
+	
+	VFS BASE64 BLOB nbytes P0P2 ALLOC_nbytes_aligned_8 MMAP ZONE FILE OFFS
+
+		ZONE = SESS.ZONE_ROOT.ZONE # where ZONE == "ROM_one" #
+		ZONE = ROM_FILE_FF_P0P2 ... ARGS ... FILE_FF file_offs_P0P2
+		# WHEN check P2 overflow # DETECT when DONE is empty overlapped
+		# PROOF of no read past 4K of next 64K page edge
+
+		ZONE is a bunch of files MMAP loaded into memory
+		BOTH ROM and STO move about so register MAIN_HEAP_as_NAMED_GROUP
+		ZONE is only 1 of those files itself MMAP 
+
+		We access extra fields via API_CODE_POINT
+		it CACHE_WRAP_S almost everything we do
+		each major table is a BENCH TASK_TOP 
+
+			each minor table is also a BENCH TASK TOP
+			both are known to be of USED in higher level table
+			table depth near zero
+
+			DECoDE_i64 {
+				i24_i8
+				i12_i4 
+				i8_i8
+			}
+
+			DECoDE_i64 {
+				i24_i8	ITEM HEAP
+				i12_i4 	ZONE_is_ITEM_HEAP ITEM HEAP
+				i8_i8	OPCODE
+			}
+
+	DECODE_i64
+		
+		i8_i8_OPCODE is based on DECODE_BITFIELDS_i8_i8
+
+			i8 BYTE_A	# sign extend to WORD_64 via i8
+			i8 BYTE_B	# C must be exact about i8 # SIGN_FILL
+
+			i16_PAYLOAD_in HALF_WORD # ie i32
+			i12_i4 in HALF_WORD # _in_MEM
+			i12_i4 in CPU_WORD # USAGE OPTIMISE for HERE PICK i64 
+
+			# i12_i4 in i16
+			# i16 in i32
+			# i32 in i64
+			# i32 in MEM
+			# i32 in MEM _ALIGN_4 
+			# i32 in MEM _ALIGN_8_KNOW_HALF
+			# i32 in MEM _ALIGN_8_HALF_HALF
+
+			DECoDE_i64 {
+				i24_i8
+				i12_i4 
+				i8_i8
+			}

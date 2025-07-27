@@ -1,0 +1,144 @@
+JS_ARGV_SCRIPT/
+JS_ARGV_SCRIPT.txt
+
+	SCRIPT is ARGV_SCRIPT
+
+	 USAGE with lots of extra gaps
+	 USAGE PUNCT_GAP_PUNCT as 2 ARGV steps in GEN_ARGV for ...
+
+	 	... PUNCT1 PUNCT2 ... # from NO_GAP_BETWEEN_NESTED_PUNCT
+
+		# NESTED brings heuristics of {( ... )}  
+		# NESTED brings heuristics of ({ ... }) 
+		# NESTED brings heuristics of  "'" ...  "'"
+		#	AGREE to appear in pairs "'" as LHS then for RHS "'"
+		#	AGREE to appear in pairs '"' as LHS then for RHS '"'
+		#	USAGE is a unique DIALECT for use once
+		#	DIALECT is a bunch of USAGE after some tokenisation
+		#	ARGV remains as itself, with added ITEM.ATTR_VAL
+		#	MINI_MACHINE has looked in "LHS_RHS" LHS = "%s"; 
+		#	MINI_MACHINE LHS = "%s" 
+		#	MINI_MACHINE RHS = "%s"
+		#	MINI_MACHINE has looked in SCOPE for "ATTR" and found it
+		#
+	
+ GEN_PARSE SPLIT
+
+ 	SUB_LEX immedaitely finds "%s_%s" # ARGV_hungry _for_AVAR _EXPR
+	SUB_LEX had a wide range of options with MODE at FEW_JOIN_LIST
+	LEX_one as_LEX.JOIN.FOUND_3_ _then_PROTOTYPE_of_C_FN use _t for simple life
+	API drops _t but welcomes it from new LIBRS describing their API
+	API keeps _t by adding it back to ROOT to get ROOT_t
+	LEX_ICON_t LEX_ICON; // local VAR_NAME UDEF_TYPE_SPEC_for_IDENT
+	GEN SWITCHABLE using PICK = SETTING
+	API lets you provide your GETTER
+	API can also ignore you and provide its own GETTER 
+	 WRAP_EVAL_of_TEXT_in_SESS
+	  BATCH has already broken STEP_EDGE into predicatable STEPS
+	  SCRIPT AVAR "NAME" SPEC "NAME_t" # STYLE of AUTO_GEN INSTANT PRE_MADE
+	  AUTO_GEN "{ IDENT_t & IDENT = EXPR }" // ALIAS EXPR = INIT_VAL //
+
+ MATCH "=" in " LHS = RHS "
+ MATCH "=" in "LHS = RHS"
+ MATCH "=" in "LHS=RHS"
+ MATCH "=" in "LHS='RHS'" // RHS gets SUBST into Q1 mode using FILTER_57
+ MATCH "=" in "LHS 'RHS'" // PAIR LHS GAP RHS IMPLIED_ASSIGN_EQUALS
+ IMPLIED_ASSIGN_EQUALS goes to a MACRO with very similar ARGS lhs = rhs
+ IMPLIED_ASSIGN_EQUALS goes to a MACRO ... lhs = rhs ... // within STREAM
+                                               =         // OPTION OMIT EMIT
+ IMPLIED_ASSIGN_EQUALS goes to a MACRO ... lhs   rhs ... // actually bind to =
+	  
+
+ ARGV_SCRIPT
+
+ 	all languages can manipulate an ARGV and then CALL it
+ 	all languages have LIST JSON_ZONE PLUS_RULE lookup SPELLING in CACHE
+
+	BASH uses ARGV 
+	ARGV is an array of STR0
+	STR0 is a string of bytes and then a NUL byte
+	N == argc # idx = N ++ # MATCH attaches to prev ARGV_STEP "idx=N++"
+
+	ARGV[N] is undefined
+	ARGV[N+1] is undefined
+
+	UNIX adds a feature of a LIST of PTR and then a NULL_PTR
+
+		NULL means NULL
+		NULL means LIST_end occupying a STEP 
+
+		WORD_is_PTR
+		WORD_is_IDX
+		WORD_is_OFFS
+		WORD_is_EA_EXPR
+		WORD_is_i64_EXPR // TODO i32_i32 all except i48 // LIMIT i32
+
+		EA_EXPR sometimes is direct BUILTIN
+		EA_EXPR returns an EA or FAILS or BOTH_WARNS
+		EA_EXPR almost always works
+		on_FAIL ... IDK ... OMIT this code or ...
+	
+	DIAG decode_i64
+	DIAG decode_i64	{
+		i8_i8_OPCODE
+		// MENTION imports that LIBR for that FIELD // TREE_MERGE
+		// STREAM MENTION LEX_one // in PHRASE 
+		i16_payload # decode as i4_i12 // BITFIELD i4_is_HIGH_VAL_LHS
+BITFIELD	i16_as_i4_i12
+BITFIELD	       i4_i12
+// HIGH_HALF // LOHI when in mem
+BITFIELD	i16_as_i4_i12
+BITFIELD	i16_as_i4_i12
+	}
+	
+	CPU_64 adds LIMIT i48 on VIEW_WORLD_HORIZON_LIMIT_u47
+
+		on_MINUS SCRIPT
+
+		on_NULL SCRIPT
+
+		on_PLUS SCRIPT // ITEM = ARRAY[ IDX ] // IDX = i48
+		// C++ bounces u47 up to i64 // occasionally u64
+		// C32 limits u23 up to i32 // C provides i32 OFFS = P1 - P0
+		// SCRIPR using P1 == OFFS // [P0 [P1 [P2
+
+		ARGS += API provides some SCOPED VARS
+
+	ARGV[N] is NULL_PTR
+	ARGV[N+1] is undefined
+
+ARGV_SCRIPT in plain JS6 with MMAP_BYTES_ARRAY loaded from FILE
+
+	SCRIPT invoked with SESS and ARGS
+
+	ES6 parses ARGV_SCRIPT using FSM_from_GEN_FSM_for_MINI_MACHINE
+
+		build tables
+		GEN dumps table as readable CSV with lots of spaces
+		GN dumps without spaces too // VIEW can MIMIC that MATCH origs
+	
+	ES6 writes ARGV as TREE of JSON_LOCN // LOCN is "ITEM" // mode_ITEM
+	ITEM as ITEM with internal VFS of LOCN // MMAP_VFS
+
+MMAP without MMAP
+
+	You need as much memory as all the files loaded at once
+	You feed BATCH through FILTER as STREAM of TEXT // PARSER //
+	You feed BATCH through FILTER as STREAM of WORD // DECODE_i64 //
+
+	of course embedded devices need their own memory to hold all the tables
+	BENCH provides PREP_MMAP_LAYOUT to group tables to ROM and STO
+	BENCH uses load TREE into MMAP
+	BENCH uses load TREE from STREAM
+
+		run STREAM upto STEP_EDGE or nearest best splice point
+		PRE_RUN can simply transfer it all (that it has)
+		STEP_EDGE is then EOF of each SCRIPT and DATA file
+		LIBR does tricks to allow treating it as STR0 
+		LIBR does tricks to allow treating it as STR upto EOLN
+		EOLN == "\n" # OPTION CRLF # require MACRO CRLF ROM_TOKENISER
+
+		FAST SPELLING MATCH with "{ PTR1 == PTR2 }"
+		NEXT SPELLING MATCH with "{ STR1 == STR2 }"
+
+

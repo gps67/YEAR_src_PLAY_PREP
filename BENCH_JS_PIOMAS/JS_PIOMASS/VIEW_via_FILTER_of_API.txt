@@ -1,0 +1,117 @@
+
+	VIEW_via_FILTER_of_API
+
+	SESS is processing STREAM from SOURCE over TRANSPORT decode(STEP) {
+	 STEP = ITEM = NEXT_ITEM_in_ARGV_STREAM
+	 STEP = ITEM = NEXT STEP in Parsed_TEXT // cset and DTP map
+	 TEXT = ARGV_SCRIPT Parsed_TEXT PSG SUB_LEX CT_RT
+	 CT_RT splits the task into 2 CT_ and _RT
+	 CT_RT asjusts rewrite items in BOTH CT_ and _RT
+	 // ie run detail CT_ then _RT 
+	 // OPTION CT_R runs PRE_LOAD_Compile // pre_CT_RT // TARDIS DIAGS //
+	 // THEN // and // THEN //
+	 // SELF is $0 //
+	 // NEAR ... //
+	 // USES { ARGV[0] is $0 } // PHRASE or CLAUSE or CARRIED_COMPONENT
+	 // XPOS gets CODE_POINT gets src_SCRIPT_XPOS // XPOS_in_SCRIPT // _t //
+	 // CT_RT uses some CXX behaviour, basic OOP, unique SPELLING USED //
+	 // ZONE independent //
+	 // ZONE overlapping //
+	 // ZONE overlapping and same SPELLING //
+	 // ZONE overlapping and different SPELLING // but_still_ASIS // MATCH
+	 // ZONE overlapping and different SPELLING // ALSO USES own IDX per SPELLING
+	 // we can sometimes expect TOKENISATION to be UNIQUE within SCOPE //
+	 // AVAR has NAME // C_ident_97 // IDENT // ALIAS VAR_NAME //
+	 // we can be ready for lookup each imported value in LEXICON VAR_POOL
+	 // we can be ready for IDX off as well as SPELLING
+	 // we grow to use PHRASE LIBR_lookup VAR_POOL KEY_NAME var_ITEM var_AVAR
+	 // inherit OOP_WRAP_JOIN SELF_TYPE += LIBR_CONST_TYPE_VAR_FUNC_ETC
+	 // PHRASE EXPR AXIOM // ARRAYS_by_IDX _by_SPELLING by_TOKEN_EXPR
+	 // TOKENISED_EXPR has its value in a SIDE array with EA_EXPR
+	 // OPCODE does DECODE i64_EXPR // LOHI // i32_i32_DESIGN_PINCH_POINT
+	 // SWITCH i48 required // or other that crosses the 32_bit line
+
+	 // TEST under qemu // IDX = BITFIELD _GETTER _SETTER _API
+	 // 64] ... 32] ... 0] // PAIR of FOUR aligned EIGHT // i32_i32 //
+	 //     B2]     B0] 0] // CHECK if it crosses 32 
+	 // B2 >= 32 && 32 > B0 // and B0 >= 0 // MINUS_BITWIDTH // DECODE //
+	 // Reserve ZERO // BASE_ADDR PAGE_ZERO ADDR_ITEM OFFS_of_ITEM //
+	 // Reserve M1 to M16 //
+	 //
+	 // CODE_VIEW draws LINE of CODE within DIAG of MINI_MACHINE
+	 // 
+	 // DATA_VIEW draws ITEM of HEAP // from ITEM_FOUND and SCRIPT and SESS
+	 // API negociates various API and QUEUES_of_STEP_LIST //
+	 // STEP can MENTION IDX by NAME within EXPR // DIAG //
+	 //
+
+	 // B2]B0] // 64] 32] 0] // 16] -HERE- 0] // B2B0 is mirror of P0P2
+	 // mirror because we draw BITS in BITFIELD right to left
+	 // B2B0 - ZERO - P0P2 // BITFIELD_B2_B0 // if KNOWN as C_FUNC
+	 // GEN BITFIELD_16_8_BYTE_B
+	 // GEN BITFIELD_8_0_BYTE_A
+	 // GEN BITFIELD_16_0_i16 // HALF_HALF //
+	 // GEN BITFIELD_32_16_i16_PAYLOAD // HIGH_HALF // use unique "PAYLOAD"
+	 // GEN BITFIELD_32_0_i32
+	 // GEN BITFIELD_64_32_i32_HIGH_HALF // i32_PAYLOAD //
+	 // AVAIL MACRO PAYLOAD "HIGH_HALF"
+
+	 // DECL i1_SWITCH // ZERO_means_FALSE // M1 means lots_of_ones _TRUE
+	 // LANG NOTE that M1 usually means UNIX_SYS_CALL_FAIL // see errno //
+	 // M1 == -1 // UNIX_SYS_CALL_FAIL == M1 // entangle this logic
+	 // SPLIT of 2 worlds BIND via TANGLED BIND // M1 means FAIL // false
+	 // SPLIT of 2 worlds BIND via TANGLED BIND // M1 means PASS // true
+	 // In all cases the rules of the MINI_MACHINE apply
+	 // M1 is a UDEF construct, and FLIPS
+	 // M1 is a part of L_z_R // B2_B1_B0 // 
+	 // M1 is a part of M_z_N 
+	 // u64 = CAST as GROW_DOWN i32 // always have [u16] available
+	 // EASY FAST OPTION // on_MINUS on_ZERO on_PLUS //
+	 // Like BYTES arriving LEFT to RIGHT numbered 0 1 2
+	 // HERE BITS arriving RIGHT to LEFT numbered 0 1 2 ...
+	 // DOCS AXIOM // DRAW BITS R2L because we write numbers backwards
+	 // 64]           32]     16]          8]         0]
+	 //                       16]  BYTE_B  8] 
+	 // 64]           32]     16]          8]  BYTE_A 0]
+	 // 64]           32]     16]          8]  i8     0]  // CPU32
+	 // 64]           32]     16]         i16_lohi    0] 
+	 // 64]           32]                 i32_lohi    0] 
+	 // CT_RT KNOW how to GEN for each as SCRIPT LINES // in case //
+	 // BENCH of CASE of OPODE_for_field // CT_ knows answer
+	 // C code uses GEN C for GETTER // uses inline a lot // low noise //
+	 // STUBS avoids need for inline
+	 // inline is quickly parsed and TOKENISED and PROCESSED ASIF
+	 // CACHE COMPILER sees PSG of TEXT and LIBR at CT_RT simulated moments
+	 // Manually prepared ASM lines get_BYTE_B_i8 // default SIGNED //
+	 // SIGNED_BITFIELD //
+	 // UNSIGNED_BITFIELD //
+	 // SHIFT LEFT 
+	 // 
+	 // 64]           32]     B2]         B0]         0]
+	 // 64]   B2B0    32]                             0]
+	 // ON CPU64 signed WORD = signed WORD >> 32
+	 // ON CPU32 signed WORD = HIGH_HALF // class provides MEM OPTION
+	 // ON CPU32 signed WORD = HIGH_HALF // class provides REG PICK R0 R1 M1
+	 //               32]     B2]         B0]         0]
+	 //               32]     B2]         B0]         0]
+
+	 // 64] X X X X X X X X X B2]S        
+	 // 64] S S S S S 32]     B2]S        B0] x x x x x]
+	 // inline ASM //
+	 // PRE_STEP
+	 // ct_ calc shift right R1 = B0 - 0 // let gcc optimise that
+	 // ct_ calc shift left L1 = 32 - B2 // DESIGN_LIMIT i48 breaks
+	 // ct_ calc shift left R2 = R1 + L1 // do both in same R2
+	 // 
+	 // STEP
+	 // rt_ call shift left L1 // when CONST when PARAMETER
+	 // rt_ call shift right R1 // SIGNED SHIFT // RTFM //
+	 // on_ZERO L1 // if const L1 GEN OMIT else GEN EMIT
+	 // OMIT_EMIT created by mention // along with friends OMIT EMIT // UDEF
+	 // CT_RT does the const explore // and optimises ZERO MINUS KNOW ETC
+	 //
+	 // STEP
+	 // rt_ call shift left L1 // when CONST when PARAMETER
+	 // shift left 64 - B2
+
+	}

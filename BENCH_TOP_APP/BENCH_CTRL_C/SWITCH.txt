@@ -1,0 +1,15 @@
+SCRIPT provides API to setup the on_EVENT tables
+SCRIPT knows about C++ TREE USED // nb entire modules need REVAMP // TODO //
+SCRIPT can do Layout and TITLE of WINDOW and setup its own on_COMMAND tables
+TOP_APP_gtk
+TOP_APP_WAX_gtk // update from pre Gtk2 to Gtk4 // w_WIDGET // no _t // drop w_
+TOP_APP_gtk w_hbox * hbox_one = w_hbox.new.CTOR_ARGV // prefer C binding
+
+BIND NAME to SESS and HERE
+SCRIPT is compiled into CXX into C++ /* simple subset mostly */ /* gcc_latest */SCRIPT is compiled into C within C++ program // API C++ compiled but C style
+SCRIPT can then add FEATURE into use // no-longer C now C++
+subset OOP MATCH OBJV with SCRIPT with Py_Obj with TclObj with V8_OBJ
+avoid C++ features that YOU cant replace with JavaScript over MMAP_ACCESS
+
+MMAP ACCESS enforces some sort of OUTER P0P2 LIMITS
+MMAP OUTER often BEYOND INSIDE EDGE_P0P2 LIMITS

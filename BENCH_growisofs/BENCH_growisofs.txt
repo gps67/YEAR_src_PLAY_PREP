@@ -1,0 +1,139 @@
+BENCH_growisofs/
+BENCH_growisofs.txt
+
+	-Z /dev/dvd	from ZERO set FIRST SESSION
+	-M /dev/dvz	MERGE add EXTRA SESSION multisession 
+
+		Already a MUX for all known DVD types
+		add MUX for USB DRIVES // dense ext3 grow in BOUNDS //
+
+		isofs in PARTITON that adds SEGMENTS
+		ext3 in PARTITON that adds SEGMENTS
+		block_fs FUTURE_ROM // readonly ext3
+
+		module ALLOC prioritise ALLOC of OLD_SEGMENT
+		module ALLOC prioritise ALLOC of NEW_SEGMENT
+		VFS to dense_ext3 // 
+
+	genisofs
+
+		RTFM
+
+
+DVD as personal archive, but sync back to CORE_ROOM_COPY
+
+	git is an option inside a SPARSE MMAP SEGMENT
+
+		realloc on use
+		rearrange to make contiguous pages into MMAP from FILE_1
+		That is frozen in ROM in GIT in VFS_ROM
+		Open an MMAP overlay of changes // SPARSE SEGMENT but MINI
+		rearrange to make contiguous pages into MMAP from FILE_2
+
+		REMAP
+		IDX_2 = XMAP(IDX_1) // lookup ITEM in SEGMENT in MMAP
+		IDX_1 = DEXMAP(IDX_2) // search table inteligently // or DEXMAP
+	
+	isofs has metrics:
+
+		each SESSION costs 
+
+			RTFM
+			block size is 32K
+			merging trees will require update
+			replace tree node with overlay
+			new dir contains links to old files
+			new dir contains links to new files
+			+= deleted FILES # == ASIF_ABSENT
+
+		 HFS hybrid filesystem on MAC
+		 ISO9660 on other
+
+		 	+= CREATOR
+			+= TYPE
+			+= certain finder flags
+
+		ISO9660
+			8.3 filename.ext
+
+			Volume and File Structure
+			File Naming
+			Interchange Levels
+		+= exts
+			Rock Ridge - name unix_dev POSIX
+			Joliet - name
+			El Torito - boot
+
+		-vs-tar-
+
+			FILE per session
+			TAPE per MILTI_SEGMENT_TAPE
+
+		-vs-parted
+
+			lsblk -e7 -o model,name,size,fstype,label,mountpoints
+	
+	USB and DVD in parallel tracking COPY on this machine
+
+		move to machine - copy all USB to A_FILE to MMAP ext3 or qemu
+		move to machine - edit pages of A_FILE to MMAP B_FILE overlay
+		grow on machine - sweep over laptop and copy to DVD or USB or LAN
+		track_on_CORE - sweep all changes to CORE_COPY
+		track_STEP_on_CORE - step session along with growisodfs APPEND
+
+ BURNER
+ 	wodim - from http://www.cdrkit.org/
+
+ genisofs
+
+ 	d1/d2/=../file_name
+
+		/d1/d2/file_name	# / ROOT same name 
+
+ 	d1/d2/new_name=../file_name
+
+		/d1/d2/new_name	# / ROOT new_name
+	
+
+ can only know is a dir when trailing / or when dir found and stat VFS item
+
+
+ 	d1/d2/=../dir_name
+
+		/d1/d2/ dir_name	# / ROOT same name 
+
+ 	d1/d2/new_name=../dir_name
+
+		/d1/d2/new_name	# / ROOT new_name
+	
+
+ perms
+ 	555 user1
+
+	-uid
+	-gid
+	-dir-mode
+	-file-mode
+        -new-dir-mode.
+
+	.genisoimagerc # default background values # ARGV takes priority
+
+	-A application_id 128 char - describe the application on the media
+
+	2G limit for files within media
+	-allow-limited-size ISO lies within u31 ISO_sz u63 UDF_sz
+	-allow-leading-dots # standard is .file becomes _file MSDOS
+#
+
+	uses DRD+RW - and overwrite an ext3 fs holding media.iso
+
+		MMAP 
+	
+	uses DVD+W	device better at tracking tracks
+	uses DVD-W	segment append and iso udf rules
+
+	SEGMENT APPEND
+		
+
+
+

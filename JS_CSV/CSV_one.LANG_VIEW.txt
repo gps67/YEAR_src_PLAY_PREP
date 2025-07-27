@@ -1,0 +1,254 @@
+MMAP_TREE_as_VFS_IMAGE
+
+	TREE_must_be_ROM # enhance uses v_STO for ROM for STO
+
+	v_STO
+	v_%s STO
+	# MATCH the two above # v_STO is MENTION from USAGE # XPOS_in_AVAR
+
+	 XPOS_within_AVAR
+	 XPOS_within_SCRIPT
+	 XPOS_within_DATA_struct_in_STREAM
+
+	 	this bribgs in SPEC ZONE HEAP ITEM NBYTES STO ROM 
+		 time split
+		  focus 75_25 PICK_MISC # MISC brings LIBR # PICK builtin ALIAS
+	
+	 XPOS and its MMAP of features in LIBR
+
+	 	CODE_MMAP via elf loader and CCX
+		CCX is the C++ dialect of the elf_C_API #
+
+	 	this bribgs in SPEC ZONE HEAP ITEM NBYTES STO ROM 
+
+	 	this brings in IDX_GROW within INT_SPLIT
+
+			u7 in i8
+			u15 in i16
+			u31 in i32
+			u63 in i54
+
+		that brings in LIBR_BITFIELD
+
+			idx_grow shifts gear to BITWIDTH
+
+			some historic fork preserved and derived identity
+			some historic fork merged into a running POOL
+			some historic fork add mostly 
+			some historic reload from IMAGE_one and run FILTER_one
+
+			BITFIELD detect and differs i32_i32 or passes to C
+
+				C on CPU_32 
+				can often do i64 in 2 registers or OTHER
+
+				LIBR provides >> to C # as ASM when C_MACRO_INVOKED
+				SCRIPT and CXX and C++ provide "int >>"
+
+	the reason we only have 4 options _one and _two
+	is so that GEN can write out 4 LINES of PARALLEL ALTERNATIVE CODE LINES
+	LINE is a STANZA # wrapped as LINE_FRAGMENT # CSET_AUTO_ASCII_BYTE_UTF8
+
+CSET_AUTO_ASCII_BYTE_UTF8
+
+	At the heart of our Parser is what it finds within the easiest CSET
+
+		additional
+		 CSET_ATTS += is_ASCII is_GLYPH is_PUNCT is_GAP is_WITHIN_GAP
+	
+	is_GAP
+
+		We write a template Parser for (this purpose)
+		WE wrap its parameters in SCRIPT at XPOS and SESS at EA_EXPR
+
+			EA_of_ITEM
+			EA_of_XPOS
+			EA_of_MMAP
+			EA_as_OFFS_from_ZERO
+
+				UPPER ZERO makes it exist # CTOR XPOS SESS
+				UPPER ZERO makes it AVAR
+				UPPER OFFS makes it AVAR 
+
+			This (above) stanza binds to SPELLING TOKEN "%s"
+
+			 AVAR ZERO XPOS
+			 AVAR OFFS XPOS
+
+			 	API OPTION allow "TEXT" as alternative "EMIT"
+			 	API OPTION allow "-" as alternative "OMIT"
+
+				"-" means NULL_ARGV_ITEM
+				"-" means NULL_HEAP_ITEM
+
+		is_PUNCT
+		is_GAP # or rather: PUNCT is within PARSED_LEX_GAP
+	
+	MINI_MACHINE obeys the above SCRIPT that uses CSET_AUTO_ASCII_BYTE_UTF8
+
+	 MINI_MACHINE obeys SCRIPT FEATURE like AVAR of SPEC with PERMIT_API
+
+	 	API is a getter, setter, that can be run over the WAN 
+		API_BATCH are some tools to help you write a BATCH
+		API_BATCH reacts on REMOTE and has MATCH_on_NULL _MINUS _PLUS
+
+			The alternative is an ONLINE round_trip_with_ANSWERS
+
+				Even that is a MINI_BATCH
+				And that is where we are SCRIPTING 
+
+				Entire BATCH completes and returns REPLY
+				CYCLE BATCH
+
+			One alternative is LOCAL and DIRECT
+
+				or as close as API like
+
+				CXX can use C++ DECL # albeit a DAFT subset
+
+			The alternative is DELAYED_and_FILTERED
+
+				append changes to change list
+				apply changes to pruned growing tree
+
+			on_COMPLETE_inner_list_DONE
+
+				send the tree back - or on to next
+				(iee retval is a zero_point RET_VAL_NOW _valid
+			
+				MATCH { with its } on_PUNCT # PSG writes this
+
+				send_tree {
+				 sweep tree foreach LOCN sweep_and_MATCH
+				 sweep LOCN foreach LOCN sweep_and_MATCH
+				 sweep LOCN foreach ITEM sweep_and_MATCH
+
+				 	ITEM's can easily themselves be LOCN
+					a sub-world that appears by magic
+					though someone needs to write LIBR 
+
+					gets here on a MENTION # import LIBR #
+
+					sweep left to right
+					sweep SCRIPT using XPOS
+
+					 use EA is XPOS_in_SCRIPT
+
+				 flush all ENQ within ACTION
+
+					EDIT PREP_STREAM
+				 	insert a MARKER into the PREP_STREAM
+					set CSR to BEFORE that CANNOT CROSS
+					set CSR to SPLIT CSR and PAGE_TAIL
+
+					arrange that DEFER COMPLETE LIST
+					does eventually get completed
+					does contribute a BUFFER SECTION
+					# articulated SECTIONS from PHASES
+					BUFF.stream_buffer_in_AVAR # OPTS
+					# OPTS NULL CT_RT optimiser
+					# OPTS += COPY_ASAP_then_release_HOLD
+					# OPTS HOLD += COPY_SCOPED_HOLD_TWIG
+
+				REQUEST return ROUTE
+
+					back to sender (callers _NOW point)
+					LOCAL created BATCH and here is RET_VAL
+					want it to arrive SOON
+					want it to arrive after PREVOUS_in_CHAIN
+
+					PARTIAL_BATCH comes from early reply
+					Single ENQ can have a few ACK waves SEQ
+
+					CALLER provided BATCH.INFO .STO .ROM
+
+						REMOTE provides ROM
+						ROM happens to be UDEF_SCRIPT
+						CT_RT matches by FILE SAME_FILE
+						CT_RT uses PRE_LOAD_ROM
+						CT_RT requires ROM be in SAFE
+
+				SAFE_MODE_CODE
+
+					all external requests go through FILTER
+					UDEF FILTER LIST
+					 VFS_API provides a VFS
+					 VFS_API uses LOCAL and REMOTE thinking
+
+					VFS_API provides a twig_of_files
+
+					 DIR DIR
+					 DIR FILE
+					 DIR symb_link
+					 DIR PIPE_SOCKET_CDEV_BDEV_UNIX_FILE
+
+				
+				VFS FEATURE
+
+					read TEXT_FILE
+					build VFS from that
+					add features to VFS
+					merge VFS_TEXT_LINES into VFS
+
+					MUX_TEXT ARGV0 has special match EARLY
+					MUX_TEXT LINE _BOLN _cpos _bpos 
+
+						CSET_AUTO_ASCII_BYTE_UTF8
+
+						 Parse_LEX_or_GAP_or_PUNCT_or
+
+						 	on_EOF {
+							 # FRAG DONE #
+							 # unwind stack #
+							 # continue #
+							 # FLAG EOF_SEEN
+							 # break in nested text
+							}
+
+							on_ASCII_GAP
+							on_ASCII_CTRL
+							on_ASCII_PUNCT
+							on_ASCII_GLYPH
+							on_ASCII_GLYPH_CIDENT
+							on_ASCII_GLYPH_VFS_IDENT
+	# must remove / and \				on_ASCII_GLYPH_BASE64
+							on_ASCII_GLYPH_HEX
+	# RFC 4648
+	# RFC 4648 # base64
+	# PLAIN: [62] == '+'
+	# PLAIN: [63] == '/'
+	# RFC 4648 # base64_url # '_' not allowed in DNS name #
+	# PLAIN: [62] == '-'
+	# PLAIN: [63] == '_'
+	# 
+
+	# suspect BUG #
+	# libs_apps/src/lib_base2/glib_1
+	# blk_base64.cxx # 175 # X Y Z -or- Z Y X
+
+
+
+				}
+
+				RET_VAL_COMPLETE # a tide marker from CTOR
+				RET_VAL_NOW
+
+
+
+
+
+	 that uses CSET_AUTO_ASCII_BYTE_UTF8
+
+
+
+
+	
+	VFS brings a list of nested tables, laid out to 2 segments of i3
+
+		[0 1 2 3
+		[0 1 2 3 [4 5 6 7 
+
+	u2	[0 1 2 3
+	u3	[0 1 2 3 [ 4  5  6  7 
+	i3	[0 1 2 3 [-4 -3 -2 -1
+

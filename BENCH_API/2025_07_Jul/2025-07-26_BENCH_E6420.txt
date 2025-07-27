@@ -1,0 +1,18 @@
+	2025-07-26
+	2025-07-26_BENCH_E6420.txt
+
+	14" + 24"
+	14" + 27" - beyond resolution of laptop
+
+	1360 x  768 13" E6330 laptop
+        1920 x 1080 24" typical
+        2560 x 1440 27" says MP273QV £120
+
+ E6420
+	1360 x  768 13" Y E6420 laptop
+        1920 x 1080 24" Y external 
+        2560 x 1440 27" N or Y
+ 	
+
+
+
